@@ -1,0 +1,50 @@
+{
+  "scope": "G:/My Drive/PARA/1. PROJECTS/0.Completed Projects/LinkedIn Content Engine",
+  "policy": "Metadata and provenance only. No source content is copied into this project, indexed, or sent to a provider. Persona specifications in core/personas.py are distilled by hand from the canonical documents listed below.",
+  "audited_on": "2026-09-09",
+  "canonical": {
+    "Ali Moizuddin": {
+      "document": "Ali Moizuddin/Ali_LinkedIn_Engine_v5_AllInOne.md",
+      "why": "v5 states in its own opening that it supersedes Master Prompt v3, Master Prompt v4, Agent Instructions v2, and Content Calendar v2, and demotes the knowledge base to optional reference.",
+      "superseded": [
+        "Ali Moizuddin/Ali_Master_LinkedIn_Prompt_v3.md",
+        "Ali Moizuddin/Prompt.txt",
+        "Ali Moizuddin/Ali_LinkedIn_Agent_Instructions_v2.md",
+        "Ali Moizuddin/Ali_Content_Calendar_v2.md",
+        "Ali Moizuddin/Archive/*"
+      ],
+      "duplicate": "Ali Moizuddin/Ali_LinkedIn_Engine_v5_AllInOne_1.md is byte identical and must not be double counted."
+    },
+    "Isshita Debnath": {
+      "document": "Isshita Debnath/Content Engine/Isshita_Debnath_LinkedIn_Engine_v1.md",
+      "why": "Only version in existence. Its calendar PDF is a render of the same content, not a newer source.",
+      "superseded": [],
+      "duplicate": null
+    },
+    "Rakhee Singhi": {
+      "document": "Rakhee Singhi/Engine/Rakhee_Singhi_LinkedIn_Engine_v1.md",
+      "companion": "Rakhee Singhi/Engine/Rakhee_Content_Calendar_v1.md",
+      "why": "The Engine folder copy is the working copy; the Archive copy is byte identical. Unlike the other two, her calendar lives in a separate file that the engine requires.",
+      "superseded": [],
+      "duplicate": "Rakhee Singhi/Archive/Complete/Rakhee_Singhi_LinkedIn_Engine_v1.md"
+    }
+  },
+  "gaps_found_in_source": [
+    "Rakhee's engine specifies no palette, no font, and no slide dimensions. The visual system in core/personas.py is derived from her own brand banners and is recorded as derived, not stated.",
+    "Isshita's engine leaves the brand font as an open slot.",
+    "Ali's engine specifies a palette but no font. All three now render in the vendored Inter.",
+    "The Be10x first prize is verified but is not attributed to any project anywhere in the corpus.",
+    "No document in the corpus contains a transcription-hours or accuracy metric.",
+    "No document in the corpus contains the title 'Systems Architect' or any 'credits' metric."
+  ],
+  "excluded_from_runtime": {
+    "raw_exports": "Bulk LinkedIn scrape datasets and LinkedIn profile PDF exports. Third party personal data.",
+    "third_party_profiles": "Competitor coach profile exports. Named individuals who did not consent to being in this system.",
+    "private_media": "WhatsApp voice notes, personal photographs, and personal portraits held in archive folders.",
+    "contact_details": "Email addresses appear inside the engine documents themselves and are not reproduced in any persona specification.",
+    "infrastructure_identifiers": "A workspace page identifier appears in one engine document and is not carried into the app.",
+    "permission_blocked": "One named client whose result is explicitly blocked pending written permission.",
+    "stale_and_contradictory": "A pre-engine profile rewrite contains health claims the canonical engine forbids. It is excluded because ingesting it would produce non-compliant copy.",
+    "executables": "An unrelated batch script parked in one client folder."
+  }
+}
