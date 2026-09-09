@@ -1,38 +1,38 @@
 {
-  "hook": "The bottleneck in automation is the description of the work, not the tooling.",
+  "hook": "The bottleneck is not the tool. It is the description of the work.",
   "body_lines": [
-    "I built an n8n workflow with Apify as the data layer for SDR research.",
-    "Prospect research dropped from about 10 hours a week for about 100 leads to about 3 hours.",
-    "A roughly 70 percent reduction, human in the loop, free tier tooling."
+    "I built an n8n SDR research pipeline with Apify as the data layer.",
+    "Manual lead research took 15 minutes per lead, roughly 5 hours per 20 lead batch.",
+    "The automated run left only a copy and paste."
   ],
-  "takeaway": "Clarity of intent is the leverage point, not the stack.",
-  "question": "Do you start with the tool or the task description when automating?",
+  "takeaway": "Clarity of description is the leverage point, not the stack.",
+  "question": "Do you start with the tool or the task description when designing automation?",
   "keywords": [
     "AI automation",
     "n8n",
     "Apify",
     "non-technical founder",
-    "workflow automation"
+    "clarity engine"
   ],
-  "keyword_rationale": "These terms reflect the verified build and target audience. 'AI automation' and 'workflow automation' frame the core idea. 'n8n' and 'Apify' are the exact tools used. 'Non-technical founder' defines the reader. Together they signal relevance without overclaiming.",
+  "keyword_rationale": "The post centers on AI automation as a practice for non-technical founders, using n8n and Apify as the named tool and Apify as the data layer. 'Clarity engine' reflects the core idea that precision in description drives leverage, aligning with the audience's need for understandable systems.",
   "hashtags": [
     "#Automation",
     "#n8n",
-    "#FounderLife"
+    "#NoCode"
   ],
   "hashtag_notes": [
-    "Broad tag for discoverability in automation space.",
-    "Niche tag matching the exact tool used in the verified build.",
-    "Buyer-side tag aligning with founder audience for potential DMs."
+    "Broad tag for discoverability in the automation space.",
+    "Names the exact tool used in the verified proof.",
+    "Signals accessibility for non-technical builders."
   ],
-  "comment_a": "The n8n workflow uses Apify for scraping LinkedIn profiles and company pages. Output goes to a Google Sheet for human review before outreach. Free tier only. What part of your weekly workflow feels most describable?",
-  "comment_b": "In the Radio Club, we scaled from zero to 200+ members by documenting every task: booking rooms, editing audio, posting schedules. The tool was WhatsApp and Google Docs. The leverage was in writing it down first.",
-  "repost_caption": "Systems start with description. The Radio Club grew because we wrote the SOPs before we had the members. Automation follows the same logic.",
+  "comment_a": "The pipeline used Apollo for sourcing, Apify for enrichment, an AI quality gate, lead scoring, routing, and CRM logging. It produced about 50 outreach communications. What part of your lead research feels most repetitive?",
+  "comment_b": "In the Radio Club, we scaled from zero to 200+ members by documenting SOPs before building any tool. The first system was a content checklist, not a platform. Clear work description came first.",
+  "repost_caption": "Systems start with clarity, not code. The Radio Club’s first SOP was a Google Doc that outlived three tool changes.",
   "reply_templates": [
-    "Thanks! What’s one task you do weekly that you could describe in five steps?",
-    "The Apify actor scrapes public LinkedIn data. n8n handles the looping, filtering, and sheet updates. No code, just config.",
-    "You’re right that tooling matters—but only after the work is clearly mapped. Description comes first.",
-    "Exactly. The human in the loop validates the output. Automation amplifies, doesn’t replace, judgment."
+    "Thanks! What’s one task you wish you could describe once and never repeat?",
+    "The AI quality gate used a simple prompt to filter low-value leads. Want the exact structure?",
+    "You’re right that tools matter—yet without a clear description, even the best tool automates confusion.",
+    "The bottleneck is not the tool. It is the description of the work."
   ],
   "publish_window": "10:00 to 11:30 AM IST"
 }

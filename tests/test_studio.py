@@ -36,10 +36,23 @@ def test_ali_title_is_exactly_the_approved_one():
     assert ALI.title == "AI Automation Engineer"
 
 
-@pytest.mark.parametrize("banned", ["Systems Architect", "10,000 credits", "10000 credits"])
-def test_retired_identity_and_metric_never_reach_a_prompt(banned):
+@pytest.mark.parametrize("banned", ["10,000 credits", "10000 credits"])
+def test_retired_metrics_never_reach_a_prompt(banned):
     for spec in (ALI, ISSHITA, RAKHEE):
         assert banned.lower() not in voice_brief(spec).lower()
+
+
+def test_past_titles_appear_only_as_prohibitions():
+    """Systems Architect is a past title, not a nonexistent one.
+
+    The prompt has to name it in order to forbid it, so the test cannot simply
+    assert its absence. What matters is that every line mentioning it is telling
+    the model not to use it.
+    """
+    for spec in (ALI, ISSHITA, RAKHEE):
+        for line in voice_brief(spec).splitlines():
+            if "systems architect" in line.lower():
+                assert "past title" in line.lower() or "never" in line.lower(), line
 
 
 def test_ali_verified_achievements_are_the_corpus_ones():
@@ -50,16 +63,46 @@ def test_ali_verified_achievements_are_the_corpus_ones():
     assert "0 to 200+ members" in claims
 
 
-def test_unsourced_claims_are_quarantined_not_asserted():
-    """The two claims the canonical engine does not support must not be facts."""
+def test_the_withdrawn_sdr_figure_is_not_a_fact_anywhere():
+    """Ali withdrew this figure on 3 August 2026 as invented.
+
+    It was seeded into this app from an engine document written before the
+    retraction and shipped as a verified fact, inside the system whose whole
+    purpose is refusing invented figures. This test is the reason it cannot come
+    back.
+    """
+    claims = " ".join(f.claim for f in ALI.star_facts)
+    assert "10 hours a week" not in claims
+    assert "70% reduction" not in claims
+    assert "15 minutes of manual research per lead" in claims
+
+    banned = " ".join(ALI.banned_claims).lower()
+    assert "10 hrs/week" in banned
+    assert "70% reduction" in banned
+
+
+def test_the_withdrawn_figure_is_blocked_if_a_human_types_it():
+    result = audit_content(ALI, "Prospect research went from 10 hours a week to 3.")
+    assert any(f.startswith("BLOCKED") for f in result["flags"])
+
+
+def test_unmeasured_outcomes_are_quarantined():
+    """Outreach results were never measured, so they are not facts."""
+    pending = " ".join(ALI.pending_verification).lower()
+    assert "reply rate" in pending
+    assert "hours saved per week" in pending
+    assert "follow-up sequences" in pending
+
+
+def test_claims_the_master_profile_confirms_are_facts_not_gaps():
     claims = " ".join(f.claim for f in ALI.star_facts)
     pending = " ".join(ALI.pending_verification)
-
-    assert "transcription hours" not in claims
-    assert "300+ transcription hours" in pending
-
-    assert "Agentic SDR Engine" not in claims
-    assert "Agentic SDR Engine" in pending
+    for confirmed in (
+        "300+ hours of multilingual audio at 95%+ accuracy",
+        "Agentic SDR Personalization Engine",
+    ):
+        assert confirmed in claims
+        assert confirmed not in pending
 
 
 def test_every_persona_has_a_visual_system_with_a_recorded_source():

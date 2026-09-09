@@ -15,11 +15,24 @@ at runtime and no raw export, profile, archive, private media, or contact detail
 is reproduced here. ``source_document`` records which document each spec came from
 so a claim can be traced back.
 
+Precedence. Where two sources disagree, the newest verified-facts log wins. Ali's
+facts come from his master profile (29 August 2026), not from his LinkedIn engine
+document (18 July 2026), because the profile records retractions the engine
+predates.
+
+That precedence rule exists because this file got it wrong once. It was first
+built from the engine document alone, and shipped a figure Ali had publicly
+withdrawn on 3 August 2026 as invented, listed as a verified fact, inside the
+system whose entire purpose is refusing invented figures. His own profile records
+the same lesson from a previous occurrence: "The stale claims were living in
+CODE, where nobody was reading them. When a fact changes, grep the pipeline as
+well as the profile."
+
 The honesty rule that governs this file: a figure appears in ``star_facts`` only
-if the canonical engine document states it. Where a number is believed but not
-sourced, it goes in ``pending_verification`` instead, which the auditor treats as
-unverified and redacts. A visible gap is a feature. A fabricated fact is a defect
-that ships silently.
+if the newest source states it. Where a number is believed but not sourced, it
+goes in ``pending_verification`` instead, which the auditor treats as unverified
+and redacts. A visible gap is a feature. A fabricated fact is a defect that ships
+silently.
 """
 from __future__ import annotations
 
@@ -254,7 +267,11 @@ ALI = PersonaSpec(
         "clearly you could run them yourself."
     ),
     audience="Non-technical founders, solo founders, operators, and engineers.",
-    source_document="Ali_LinkedIn_Engine_v5_AllInOne.md (v5, supersedes v2, v3, v4, agent instructions, calendar v2)",
+    source_document=(
+        "Facts and retractions: Ali_Moizuddin_Master_Profile.docx, verified-facts log, "
+        "29 August 2026. Voice, pillars, carousel spec and brand: "
+        "Ali_LinkedIn_Engine_v5_AllInOne.md, 18 July 2026. The profile wins on facts."
+    ),
     registers={
         "Clinical": "The default. Sharp, inversion-first, diagnostic.",
         "Casual": "Conversational, often lowercase, plain-language translation.",
@@ -415,54 +432,144 @@ ALI = PersonaSpec(
     ),
     star_facts=(
         StarFact(
-            "20+ documented systems: RAG pipelines, agentic and multi-agent workflows, n8n "
-            "automations, OCR and BM25 search, transcription pipelines, voice-to-asset infrastructure.",
+            "20+ documented systems and 20+ outside systems wired into workflows: RAG "
+            "pipelines, agentic and multi-agent workflows, n8n automations, OCR and BM25 "
+            "search, transcription pipelines, voice-to-asset infrastructure.",
             ("20", "20+"),
         ),
         StarFact(
-            "n8n SDR research pipeline: about 10 hours a week for about 100 leads reduced to "
-            "about 3 hours, a roughly 70% reduction, human in the loop, free-tier tooling.",
-            ("10", "100", "3", "70", "70%"),
+            "n8n SDR research pipeline: 15 minutes of manual research per lead, roughly 5 "
+            "hours per 20 lead batch, replaced by a fully automated run that leaves only a "
+            "copy and paste. Apollo sourcing, Apify enrichment, an AI quality gate, lead "
+            "scoring and routing, CRM logging. About 50 outreach communications produced.",
+            ("15", "5", "20", "50"),
             (
-                "2 hours per lead", "runs unattended", "CAC to zero", "$0 cost",
-                "zero human oversight",
+                # Withdrawn by Ali on 3 August 2026 as invented. It was seeded into this
+                # app from an engine document written before the retraction, which is
+                # exactly the failure this fact table exists to prevent.
+                "10 hrs/week",
+                "10 hours a week",
+                "70% reduction",
+                "2 hours per lead",
+                "CAC to zero",
+                "$0 cost",
             ),
         ),
         StarFact(
-            "OCR and BM25 search: 100+ scanned PDFs indexed.",
+            "Transcription pipeline: 300+ hours of multilingual audio at 95%+ accuracy. "
+            "Hindi and English at the core, extended to Spanish and others, up to five "
+            "languages in a single file.",
+            ("300", "300+", "95", "95%", "5"),
+            (
+                # Superseded figures. 100+ hours is correct ONLY of the Colab engine alone.
+                "90%+ bilingual",
+                "over 90% bilingual",
+            ),
+        ),
+        StarFact(
+            "Faster-Whisper Colab engine alone: 100+ hours of multilingual audio at 95%+ "
+            "accuracy. This narrower figure is true only of that engine.",
             ("100", "100+"),
+        ),
+        StarFact(
+            "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio "
+            "turned into queryable knowledge systems. OCR, BM25 and transcript extraction.",
+            ("500", "500+", "900", "900+"),
             ("40 min to 4 seconds",),
         ),
         StarFact(
-            "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one "
-            "co-founder and zero budget. Built the SOPs and content systems.",
-            ("0", "200", "200+"),
+            "Agentic research pipeline: about 80 records processed, replacing about 20 hours "
+            "of manual research at 15 minutes per record.",
+            ("80", "20", "15"),
         ),
-        StarFact("1st Prize, Be10x AI Generalist Hackathon (2026).", ("1", "2026")),
+        StarFact(
+            "Job application pipeline: application preparation reduced from about 3 hours to "
+            "about 15 minutes, roughly 90% less manual work.",
+            ("3", "15", "90", "90%"),
+        ),
+        StarFact(
+            "LinkedIn Engine Factory: engine build time reduced from 14 hours to 0.5 to 1.5 "
+            "hours, a 9x to 28x reduction. Content production for one quarter reduced from "
+            "about 25 hours to 1 hour, roughly 96%. Five engines delivered across five "
+            "domains and four cities, four individuals and one organisation, about 45,000 "
+            "words of operational documentation. All five are publishing.",
+            ("14", "0.5", "1.5", "9", "28", "25", "1", "96", "96%", "5", "4", "45,000"),
+        ),
+        StarFact(
+            "Producing one LinkedIn post by hand took 30 to 60 minutes before the engines "
+            "existed. The quarter figure assumes four posts a week, roughly 50 posts, at the "
+            "most conservative prior rate of 30 minutes each.",
+            ("30", "60", "50"),
+        ),
+        StarFact(
+            "Combined audience across the five engines: 23,000+ followers, largest single "
+            "account 22,500+.",
+            ("23,000", "23,000+", "22,500", "22,500+"),
+        ),
+        StarFact(
+            "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one "
+            "co-founder and zero budget. Built the SOPs and content systems. Weekly team "
+            "content output rose from 3 to 5 pieces a week to 40 to 50.",
+            ("0", "200", "200+", "3", "5", "40", "50"),
+        ),
+        StarFact(
+            "1st Prize, Be10x AI Generalist Hackathon (2026), won with the Agentic SDR "
+            "Personalization Engine.",
+            ("1", "2026"),
+            ("won with a Pinecone RAG support solution",),
+        ),
         StarFact("Top 0.1% global ChatGPT user, OpenAI (December 2025).", ("0.1", "0.1%", "2025")),
         StarFact("AICTE ATAL recognition (2024).", ("2024",)),
-        StarFact("MA in English Literature, Salesian College (2023 to 2025). No traditional coding background.", ("2023", "2025")),
-        StarFact("AI Automation Engineer, self-employed since February 2023, Siliguri, West Bengal, India.", ("2023",)),
+        StarFact(
+            "Manual overhead reduction across the systems built: 60 to 80 percent is the "
+            "norm, 40 to 60 percent the floor, 95 percent the ceiling case.",
+            ("60", "80", "40", "95"),
+        ),
+        StarFact(
+            "MA in English Literature, Salesian College (2023 to 2025). No traditional coding "
+            "background.",
+            ("2023", "2025"),
+        ),
+        StarFact(
+            "AI Automation Engineer, self-employed since February 2023, Siliguri, West "
+            "Bengal, India.",
+            ("2023",),
+        ),
     ),
     pending_verification=(
-        "The Be10x first prize is verified, but the canonical engine does not attribute it "
-        "to a specific project. Do not write 'first prize for the Agentic SDR Engine' until "
-        "Ali confirms the attribution in writing.",
-        "'300+ transcription hours at 95%+ accuracy' does not appear anywhere in the "
-        "canonical engine. Treat it as unverified until Ali supplies the source.",
-        "Voice-to-asset infrastructure: confirm the exact figures with Ali before any number ships.",
+        "Outreach outcomes were never measured. Never claim a connection acceptance rate, a "
+        "reply rate, a response rate, or any meetings, calls, clients or interviews "
+        "generated. The system had produced none at handover.",
+        "Never claim hours saved per week for the person running the outreach system, or any "
+        "percentage improvement in its output quality. Neither was measured.",
+        "Automated follow-up sequences on the SDR pipeline are not built. Lead scoring and "
+        "lead routing may be claimed. Follow-up sequences may not, until Ali confirms he has "
+        "built them.",
+        "Whether the outreach work may be described as client work is unresolved. The "
+        "standing rule is no paid-client claims.",
     ),
     hard_limits=(
         "No paid clients, testimonials, or client logos. Never imply revenue or named clients.",
         "Builds are self-directed plus some unpaid delegated work. Frame them as documented systems, not client deliverables.",
         "Hidden end-uses stay hidden. Describe the automation architecture only.",
-        "When a portfolio deck conflicts with the verified account, the verified account wins.",
+        "When any older document conflicts with the newest verified-facts log, the log wins.",
         "No closer implying a deliverable is AI-free unless it is.",
+        "AI Automation Engineer is the only current title. Systems Architect, AI Content "
+        "Specialist and Executive Ghostwriter are past titles and are never used in the present tense.",
+        "The Radio Club collaboration with the co-founder has ended. Never describe it as active.",
+        "Outcome numbers belong to whoever runs a handed-over system. Describe what was built "
+        "and what was fixed, never results that were not measured.",
     ),
     safety_rules=(
         SafetyRule(
             r"\b(?:zero|no)\s+human\s+(?:oversight|involvement|input)\b",
-            "Inflated automation claim. The verified account is human in the loop.",
+            "Vague autonomy claim. The verified account is specific: a fully automated run "
+            "leaving only a copy and paste. Use that wording instead.",
+        ),
+        SafetyRule(
+            r"\bfollow[\s-]up\s+sequences?\b",
+            "Automated follow-up sequences are not built on the SDR pipeline. Lead scoring "
+            "and lead routing may be claimed. This may not.",
         ),
         SafetyRule(
             r"\bCAC\s+to\s+zero\b|\$0\s+cost\b",

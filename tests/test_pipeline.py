@@ -259,7 +259,13 @@ def test_the_prompt_carries_the_verified_facts_and_refuses_the_unverified_ones(
 
     assert "Top 0.1% global ChatGPT user" in system
     assert "20+ documented systems" in system
-    assert "300+ transcription hours" in system  # named as explicitly unverified
+    assert "300+ hours of multilingual audio at 95%+ accuracy" in system
+
+    # The figure Ali withdrew as invented must never be offered as a fact, and the
+    # prompt must carry the wording that replaced it.
+    assert "10 hours a week" not in system
+    assert "15 minutes of manual research per lead" in system
+
     assert "must never be written" in system
     assert "No em dashes" in system
 
