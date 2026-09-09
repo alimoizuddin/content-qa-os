@@ -1,0 +1,36 @@
+{
+  "hook": "I am one of India's youngest AICI Certified Advanced Soft Skills Trainers. The qualifier is part of the claim and never drops.",
+  "body_lines": [
+    "That means I have met rigorous global standards in facilitation design, adult learning principles, and behavioural change measurement.",
+    "Not just theory delivery, but proven ability to move skill needles in mixed-ability groups.",
+    "When I say upskill or stay relevant, it is backed by a credential that audits both content and impact.",
+    "Many call themselves trainers; few have undergone this level of external validation.",
+    "The difference shows in session design: every activity ties to a competency framework, every feedback loop is structured.",
+    "I have trained 14,000+ learners across 250+ sessions using this methodology.",
+    "It is not about charisma; it is about construct validity and reliability in outcomes.",
+    "HR leaders who partner with me get more than engagement—they get measurable shifts in employability metrics.",
+    "The certification is real and current.",
+    "[*sparkle*]Being AI-native in employability training means I ground every tool recommendation in what actually passes screening[*sparkle*]"
+  ],
+  "takeaway": "Credibility in this space comes from verifiable standards, not self-proclamation.",
+  "question": "Which external validation do you trust when evaluating a trainer’s claim to expertise?",
+  "keywords": ["AI-native", "Head of HR", "hiring desk", "employable", "quality of hire", "14,000+ learners"],
+  "keyword_rationale": "These terms reflect the post’s focus on certified expertise in AI-driven employability training, linking the trainer’s credential to HR outcomes like quality of hire and scalability evidenced by learner volume. They help HR leaders discover content grounded in proven practice.",
+  "hashtags": ["#Employability", "#AIAtWork", "#LearningAndDevelopment", "#QualityOfHire", "#HRLeaders"],
+  "hashtag_notes": [
+    "#Employability aligns with the core mission of upskilling for job readiness.",
+    "#AIAtWork reflects the AI-native approach to modern training delivery.",
+    "#LearningAndDevelopment highlights the structured, credential-backed methodology.",
+    "#QualityOfHire connects trainer impact to HR outcomes that leaders care about.",
+    "#HRLeaders targets the intended audience for authority-building and professional dialogue."
+  ],
+  "comment_a": "The AICI certification requires documented proof of training hours, participant feedback, and competency mapping. It’s not a pay-to-play badge. Have you seen similar standards in other soft skills credentials?",
+  "comment_b": "I renew this certification every three years with updated assessments. It keeps the framework aligned with evolving workplace demands.",
+  "repost_caption": "Why certification matters when choosing a training partner—especially in AI-integrated employability work.",
+  "reply_templates": [
+    "Thanks! What part of the certification process do you think adds the most value?",
+    "The AICI Advanced badge requires 500+ documented training hours and third-party observed sessions.",
+    "You’re right that experience counts—this credential validates that experience against a global rubric."
+  ],
+  "publish_window": "9:00 to 10:30 AM IST"
+}

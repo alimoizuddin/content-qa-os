@@ -1,0 +1,25 @@
+{
+  "hook": "300+ hours of multilingual audio processed at 95%+ accuracy.",
+  "body_lines": [
+    "That’s not just transcription. It’s time returned.",
+    "Every hour the pipeline runs, a founder gets back focus.",
+    "No more rewinding. No more guessing what was said.",
+    "The system listens. You decide."
+  ],
+  "takeaway": "Clarity isn’t created in the moment. It’s engineered before it.",
+  "question": "Transcribe first or decide first?",
+  "keywords": ["transcription pipeline", "AI automation", "non-technical founder"],
+  "keyword_rationale": "These terms anchor the post in the verified system and audience. They reflect real work and real users without overclaiming. Consistency helps the platform understand who the post serves.",
+  "hashtags": ["#Automation", "#n8n", "#AIWorkflows"],
+  "hashtag_notes": ["Broad category for reach.", "Specific tool used in the pipeline.", "Names the type of system built."],
+  "comment_a": "The transcription pipeline runs on Faster-Whisper in Colab. It handles Hindi, English, Spanish, and more in a single file. No manual cleanup needed after the first pass. What language do you transcribe most often?",
+  "comment_b": "",
+  "repost_caption": "",
+  "reply_templates": [
+    "Thanks! What part of the process takes the most time for you now?",
+    "The pipeline uses Faster-Whisper with custom language routing. It’s not magic—it’s mapped.",
+    "You’re right that accuracy isn’t everything. But when it’s this high, the bottleneck shifts to action.",
+    "Good point. The real gain isn’t in the transcript—it’s in what you do next."
+  ],
+  "publish_window": "10:00 to 11:30 AM IST"
+}

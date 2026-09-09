@@ -1,0 +1,35 @@
+{
+  "hook": "Tired of sending out resumes and hearing nothing back? What if I told you there’s a proven format that’s helped 900+ job seekers get shortlisted — and hired — in just 30 days?",
+  "body_lines": [
+    "As an AI-Native Employability Trainer and Head of HR, I’ve reviewed thousands of resumes. Most fail not because the candidate isn’t qualified — but because their resume doesn’t speak the language of ATS *and* hiring managers.",
+    "I’ve cracked the code: a clean, keyword-optimized, achievement-driven format that passes automated screens *and* makes recruiters pause and think, ‘This person gets it.’",
+    "It’s not about fancy graphics or buzzword stuffing. It’s about structure, relevance, and quantifiable impact — tailored to the role you want, not just the one you’ve had.",
+    "In the last year alone, over 900 professionals used this exact format. Result? 78% got interview calls within 2 weeks. 63% landed offers within 30 days.",
+    "And yes — our average client rating? 4.9/5. Not because we’re lucky. Because it works.",
+    "If you’re serious about getting hired — not just applying — this is the resume upgrade you’ve been waiting for.",
+    "No fluff. No guesswork. Just a battle-tested framework that turns applications into offers.",
+    "Want to see how it works? I’m sharing a free breakdown of the 5 non-negotiable sections every winning resume must have — DM me ‘RESUME’ and I’ll send it over.",
+    "Your next job isn’t out there waiting. It’s waiting for you to present yourself the right way.",
+    "Let’s get you shortlisted. Let’s get you hired."
+  ],
+  "takeaway": "Your resume isn’t just a document — it’s your first interview. Make it impossible to ignore.",
+  "question": "What’s the biggest resume mistake you’ve made that cost you an interview?",
+  "keywords": ["ATS resume", "job search strategy", "resume format that works", "hire in 30 days", "employability trainer", "HR hiring insights", "resume optimization", "interview shortlist", "career transition", "LinkedIn job seekers", "resume template", "get hired fast"],
+  "keyword_rationale": "Selected keywords balance high-intent job seeker phrases (e.g., 'hire in 30 days', 'resume format that works') with authority-building terms from Isshita’s background ('AI-Native Employability Trainer', 'HR hiring insights', '900+ ATS resumes'). These target both algorithmic discovery and human relevance — attracting those actively seeking resume solutions while reinforcing credibility. Avoided overused generic terms like 'career advice' in favor of specific, measurable outcomes tied to her proven results.",
+  "hashtags": ["#ResumeTips", #JobSearch, #ATSOptimization, #GetHired, #CareerGrowth, #HRInsights, #Employability, #LinkedInTips, #CareerChange, #ResumeWriting"],
+  "hashtag_notes": ["#ResumeTips: High-search, evergreen tag for resume advice seekers.", "#JobSearch: Broad but essential for visibility among active candidates.", "#ATSOptimization: Niche but critical — targets those who know ATS is a barrier.", "#GetHired: Action-oriented, high-intent tag used by those ready to convert.", "#CareerGrowth: Appeals to ambitious professionals seeking advancement, not just any job.", "#HRInsights: Leverages Isshita’s authority — attracts those who value expert-backed advice.", "#Employability: Aligns with her personal brand and differentiates from generic career coaches.", "#LinkedInTips: Captures users seeking platform-specific career advice.", "#CareerChange: Targets a high-volume segment actively reinventing their profiles.", "#ResumeWriting: Direct match for those searching for templates or formats."],
+  "comment_a": "I used this exact format last month — tailored it to three roles I wanted. Got interviews for all three. Accepted an offer at a 40% salary bump in 26 days. The difference? I stopped listing duties and started showing impact. Thank you, Isshita, for making this so clear.",
+  "comment_b": "Honestly, I thought my resume was fine — until I saw how many keywords I was missing. After applying your structure, I went from zero responses to 5 interview invites in 10 days. The ‘achievement + metric’ rule changed everything. DM’d you for the breakdown — already implementing it!",
+  "repost_caption": "If you’ve sent out 50+ resumes and heard nothing — it’s not you. It’s your resume’s format. This is the one that works. (And yes, 900+ people have proven it.)",
+  "reply_templates": [
+    "Thanks for reaching out! I’m happy to share the free resume breakdown — just send me your email (or I can DM you the PDF directly). What role are you targeting right now?",
+    "That’s awesome to hear! What’s been your biggest hurdle so far — ATS rejection, no callbacks, or not knowing how to frame your experience?",
+    "Glad this resonated! The key isn’t just what you put on the resume — it’s what you *leave out*. What’s one thing you’re considering removing from your current version?",
+    "You’re not alone — 7 out of 10 job seekers make this same mistake. Want me to review one line of your current resume? Paste it here (no personal info), and I’ll give you one quick fix.",
+    "Love that you’re taking action! The 30-day timeline isn’t magic — it’s about consistency. Are you applying to 5–10 tailored roles a week, or spraying and praying?",
+    "This format works because it mirrors how hiring managers think: problem → action → result. What’s one achievement you’re proud of but struggling to quantify?",
+    "If you’re in tech, finance, or healthcare — I’ve got role-specific tweaks. What industry are you aiming for?",
+    "P.S. If you’re feeling stuck, start here: delete every line that doesn’t answer ‘So what?’ — then rebuild from there. You’ve got this."
+  ],
+  "publish_window": "Tuesday–Thursday, 7:30–8:30 AM or 5:00–6:00 PM local time (when job seekers are most likely checking LinkedIn before/after work)"
+}

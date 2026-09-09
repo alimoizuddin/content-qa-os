@@ -2,13 +2,15 @@
 
 The work before, and the work now.
 
-> `[[Ali: the timings below are blank on purpose. Fill them in from memory and
-> label them as estimates. Do not guess precisely. "About 40 minutes" is more
-> honest than "38 minutes" and reads better.]]`
+All timings are estimates from memory, recorded in Ali's own case study in
+August 2026. None is a stopwatch measurement, and none is presented as one.
+
+There are **three** states here, not two, and the distinction matters. The large
+time saving belongs to the middle one, which predates this Quest.
 
 ---
 
-## Before: producing one LinkedIn package by hand
+## State 1. By hand, before the engines existed
 
 ```mermaid
 flowchart TD
@@ -35,18 +37,20 @@ flowchart TD
 re-read of the whole piece, looking for a different kind of problem, and each one
 can send you back to the start.
 
-| Step | Who does it | Time | Notes |
-| --- | --- | --- | --- |
-| Pick the idea | Human | `[[FILL]]` | |
-| Find the proof | Human | `[[FILL]]` | The digging step |
-| Draft | Human, or AI with a pasted prompt | `[[FILL]]` | |
-| **Voice re-read** | Human | `[[FILL]]` | Loops back |
-| **Number check** | Human | `[[FILL]]` | Loops back |
-| **Safety check** | Human | `[[FILL]]` | Loops back |
-| Hashtags, comments, replies | Human | `[[FILL]]` | |
-| Carousel design | Human | `[[FILL]]` | |
-| Export | Human | `[[FILL]]` | |
-| **Total** | | `[[FILL]]` | Estimate from memory |
+| Step | Who does it | Notes |
+| --- | --- | --- |
+| Pick the idea | Human | |
+| Find the proof | Human | The digging step |
+| Draft | Human | |
+| **Voice re-read** | Human | Loops back |
+| **Number check** | Human | Loops back |
+| **Safety check** | Human | Loops back |
+| Hashtags, comments, replies | Human | |
+| Carousel design | Human | |
+| Export | Human | |
+| **Total** | | **30 to 60 minutes per post.** Estimate from memory |
+
+**Volume:** 3 posts a week for Ali, 4 a week for each of the other two people.
 
 ### Exceptions in the old process
 
@@ -58,7 +62,28 @@ can send you back to the start.
 
 ---
 
-## Now: the same package through the studio
+## State 2. With the content engines, before this app
+
+One written engine document per person: voice rules, verified fact table, banned
+phrasings, hashtag rules, safety limits. Run as a Claude Project.
+
+The calendar is dictated with Wispr Flow, a month to three months of rows in a
+single 30 to 60 minute sitting. Then a row is named and the engine writes the
+package.
+
+**Review time: about 5 minutes per post. Ali writes nothing by hand.**
+
+**This is where the large time saving happened, and it predates this Quest.**
+
+What it still could not do:
+
+| Limitation | Why it matters |
+| --- | --- |
+| The rules are text the model is asked to obey | It usually does. When it does not, nothing catches it except a human re-read |
+| Assets need Code Execution enabled | The PDF step fails silently in a tool without file execution |
+| Nothing is testable | No way to answer "is this better than asking the model politely" except by feeling |
+
+## State 3. The same engines as software: this app
 
 ```mermaid
 flowchart TD
@@ -81,7 +106,11 @@ flowchart TD
     style K fill:#d4edda,stroke:#0a0
 ```
 
-**What moved.** The three manual re-reads became one automatic check. The human
+**What moved from State 2.** The rules stopped being text the model is asked to obey and became code that runs every time. The assets render locally in about a second with no external service. And the whole thing became measurable.
+
+**What did not move.** Review time. It was about 5 minutes in State 2 and it is about 5 minutes now. This system is not aimed at speed.
+
+**What moved from State 1.** The three manual re-reads became one automatic check. The human
 work that remains is the work that needs judgement: choosing the idea, supplying
 the proof, and deciding whether a flagged sentence gets a real number or gets cut.
 

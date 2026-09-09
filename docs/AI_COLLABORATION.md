@@ -84,15 +84,36 @@ correct calendar could never be approved. Underneath was a plain programming
 mistake: an empty list is treated as false in Python, so a clean result was thrown
 away and recalculated.
 
-**Two claims about myself that the AI would have written and I stopped.** Reading
-my own source document properly showed that neither is supported by it. My first
-prize is real, but no document ties it to a specific project. And a transcription
-hours-and-accuracy figure appears in none of my ten documents. Both now sit in a
-"believed but not verified" list, and the system refuses to write either and says
-why.
+**A retracted figure of my own, shipping as a verified fact.** This is the one
+that matters, and I found it by pointing the AI at the right source document
+rather than the convenient one.
 
-That last one is the decision I would point to if asked which one mattered. It was
-easier to leave them in. The whole system is about not doing that.
+The persona rules were built from my LinkedIn engine document, dated 18 July 2026.
+My master profile carries a running verified-facts log and is dated 29 August 2026.
+On 3 August 2026 I had disclosed that "prospect research went from about 10 hours a
+week to about 3, a 70 percent reduction" was a figure I invented. The profile
+records the retraction. The engine document predates it.
+
+So the app was built with a claim I had publicly withdrawn, listed as a **verified
+fact**, inside the system whose entire purpose is refusing invented figures.
+
+It is now a banned phrasing, its real replacement is the fact, there is a test that
+fails if it comes back, and there is an evaluation case that asks for it directly
+and checks the system refuses.
+
+**Two claims I had wrongly quarantined.** I had told the AI to treat "300+ hours of
+multilingual audio at 95%+ accuracy" and the attribution of my Be10x prize to the
+Agentic SDR Personalization Engine as unverified, because the engine document does
+not carry them. My master profile confirms both. They are facts now.
+
+The general lesson is one my own profile already records from a previous
+occurrence: *"The stale claims were living in CODE, where nobody was reading them.
+When a fact changes, grep the pipeline as well as the profile."* It happened again,
+in a new codebase, four days later. The persona file now states in writing which
+source wins when two disagree.
+
+If asked which decision mattered most, it is this one. It was easier to leave the
+number in.
 
 ## What I would say about my own understanding
 

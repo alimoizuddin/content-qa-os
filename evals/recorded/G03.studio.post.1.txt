@@ -1,0 +1,36 @@
+{
+  "hook": "I have read 900+ ATS resumes this month, and here is what I see: a sentence that says 'I hope to contribute' vs one that says 'I built X to solve Y'.",
+  "body_lines": [
+    "Hope is vague. Decision is evidence.",
+    "One says you want a role. The other shows you have already done the work.",
+    "The desk does not shortlist wishes. It shortlists proof.",
+    "Hope lives in the future. Decision lives in the past you can verify.",
+    "Your summary is not a dream board. It is a trailer for what you have already shipped.",
+    "Hope gets scanned past. Decision gets paused on.",
+    "The contrast is stark: passive aspiration vs active ownership.",
+    "I have seen candidates with identical grades. The one who wrote 'I led a team to reduce errors by 20%' got the call. The one who wrote 'I seek to develop leadership skills' did not.",
+    "Your resume is not asking for permission. It is declaring what you have already done.",
+    "Hope is free. Decision costs effort. That is why it stands out."
+  ],
+  "takeaway": "Write your summary like a decision log, not a wish list.",
+  "question": "What is one decision you made in your last project that you can put on your resume today?",
+  "keywords": ["career ready", "employable", "ATS resume", "freshers", "job seekers", "900+ ATS resumes"],
+  "keyword_rationale": "The post uses 'career ready' and 'employable' to speak directly to freshers and job seekers who are trying to become hireable. 'ATS resume' and the verified fact '900+ ATS resumes' anchor the advice in the recruiter’s real screening behavior, making it credible and discoverable for the intended audience.",
+  "hashtags": ["#Employability", "#ATSResume", "#Freshers", "#JobSeekers"],
+  "hashtag_notes": [
+    "#Employability is the broad goal the audience is pursuing.",
+    "#ATSResume ties the advice to the recruiter’s actual screening tool.",
+    "#Freshers targets the core audience experiencing this resume mistake.",
+    "#JobSeekers captures early-career individuals actively applying."
+  ],
+  "comment_a": "I’ve seen this pattern in real time: a candidate changes their summary from 'I hope to work in marketing' to 'I ran a campus Instagram page that grew engagement by 35%' and suddenly gets interview invites. The shift is not magic. It is evidence. What’s one small decision you can document from your last college project or internship?",
+  "comment_b": "Another detail from the desk: the decision-based summary does not need to be long. One clear line like 'I automated a weekly report saving 2 hours' does more than three lines of hope. It is not about volume. It is about verifiable action.",
+  "repost_caption": "Your resume summary is not a cover letter. It is a proof point. If it reads like a hope, it gets skipped. If it reads like a decision, it gets read. Try rewriting yours today with one thing you actually did.",
+  "reply_templates": [
+    "Thanks! What’s one decision you made recently that you could add?",
+    "I suggest starting with a specific action: what did you build, lead, or improve in your last role or project?",
+    "You’re right that hope matters for motivation. On a resume, though, the recruiter needs to see what you have already done to believe you can do it again.",
+    "Hope gets you started. Decision gets you shortlisted."
+  ],
+  "publish_window": "9:00 to 10:30 AM IST"
+}

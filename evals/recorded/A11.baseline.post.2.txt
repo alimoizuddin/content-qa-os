@@ -1,0 +1,71 @@
+{
+  "hook": "In 2014, I lost 22 pounds by sticking to a simple 1,200-calorie-a-day plan — no fads, no extremes, just consistency. Here’s exactly how you can do it too, and hit your goal weight by December.",
+  "body_lines": [
+    "This isn’t about deprivation — it’s about precision. A 1,200-calorie daily target works for most women seeking sustainable fat loss while preserving energy and muscle.",
+    "Pair it with 30 minutes of daily movement (walking counts!) and 8+ hours of sleep, and you’ll create the metabolic environment your body needs to release stored fat.",
+    "I tracked every bite — not to obsess, but to learn. After two weeks, portion awareness became second nature. You’ll be surprised how much food fits in 1,200 calories when you choose nutrient-dense options.",
+    "Your goal weight by December? Aim for 1–2 pounds of fat loss per week. That’s 8–16 pounds by December 31st if you start today.",
+    "Example: If you’re currently 160 lbs and want to reach 145 lbs by year-end, that’s 15 lbs — achievable with this approach.",
+    "Focus on protein (20–30g per meal), fiber-rich veggies, healthy fats in moderation, and complex carbs timed around activity.",
+    "Hydration matters: drink half your body weight in ounces of water daily. Often, thirst masks as hunger.",
+    "Weekly check-ins > daily scale obsession. Weigh yourself same day, same time, same clothes — every Friday morning.",
+    "Non-scale victories count too: better sleep, clearer skin, looser jeans, more energy to play with your kids.",
+    "This plan worked for me in 2014. It’s worked for hundreds of clients since. It’s not sexy — but it’s science-backed and sustainable.",
+    "You don’t need perfection. You need consistency. 80% adherence beats 100% for two days followed by burnout.",
+    "Save this post. Come back to it when motivation fades. Your future self will thank you.",
+    "You’ve got this. One meal, one day, one week at a time."
+  ],
+  "takeaway": "Aim for 1,200 nutrient-dense calories daily, move consistently, and target 1–2 lbs of fat loss per week to reach your goal weight by December — sustainability beats speed every time.",
+  "question": "What’s your target weight by December 31st? Share it below — I’ll cheer you on.",
+  "keywords": [
+    "weight loss for women",
+    "1200 calorie diet",
+    "sustainable fat loss",
+    "goal weight by December",
+    "WILDFIT coaching",
+    "female metabolism",
+    "calorie tracking",
+    "healthy eating plan",
+    "non-scale victories",
+    "long-term weight management"
+  ],
+  "keyword_rationale": "Keywords target women seeking realistic, science-based weight loss strategies with a seasonal deadline. Terms like '1200 calorie diet' and 'goal weight by December' align with search intent, while 'WILDFIT coaching' and 'sustainable fat loss' differentiate the approach from fad diets. Including 'non-scale victories' and 'long-term weight management' appeals to holistic health values.",
+  "hashtags": [
+    "#WeightLossJourney",
+    "#HealthyWomen",
+    "#SustainableFatLoss",
+    "#1200CaloriePlan",
+    "#GoalWeightByDecember",
+    "#WILDFITCoach",
+    "#MindfulEating",
+    "#FatLossForWomen",
+    "#NoFadsJustResults",
+    "#HealthyHabits2024"
+  ],
+  "hashtag_notes": [
+    "#WeightLossJourney: Broad reach, high engagement in fitness communities.",
+    "#HealthyWomen: Targets core audience with gender-specific wellness focus.",
+    "#SustainableFatLoss: Positions against crash diets, aligns with WILDFIT philosophy.",
+    "#1200CaloriePlan: Specific, searchable, and directly tied to the post’s core advice.",
+    "#GoalWeightByDecember: Creates urgency and seasonal relevance.",
+    "#WILDFITCoach: Builds personal brand and credibility.",
+    "#MindfulEating: Connects to behavioral aspect of nutrition coaching.",
+    "#FatLossForWomen: Niche targeting for algorithmic relevance.",
+    "#NoFadsJustResults: Differentiates message from toxic diet culture.",
+    "#HealthyHabits2024: Encourages saves and shares as a reference for the year."
+  ],
+  "comment_a": "I started this exact approach 6 weeks ago — down 11 lbs and finally sleeping through the night. The 1,200-calorie frame gave me freedom, not restriction. Thanks for reminding me to trust the process, Rakhee!",
+  "comment_b": "Saved this for my Friday reset ritual. Seeing the math laid out simply — 1–2 lbs/week — makes the December goal feel real, not overwhelming. Appreciate the no-shame, all-support tone.",
+  "repost_caption": "Reposting this as my annual reminder: sustainable weight loss isn’t about suffering — it’s about smart, consistent choices. If you’re a woman aiming for a healthier weight by December, this framework works. Save it. Use it. You’ve got what it takes.",
+  "reply_templates": [
+    "Thanks for sharing your goal! Remember: progress isn’t linear. Celebrate the weekly wins, even if the scale stalls.",
+    "Great question! If you’re under 5’2” or very sedentary, 1,200 may need slight adjustment — but never below 1,100 without coaching. Let’s chat if you’d like personalized guidance.",
+    "So glad this resonated. The magic isn’t in the number — it’s in the awareness it builds. You’re learning to listen to your body, and that lasts a lifetime.",
+    "Absolutely — non-scale victories are the real markers of success. How’s your energy or sleep feeling since you started?",
+    "You don’t have to be perfect. Just consistent. One meal at a time. I’m here if you need a reset.",
+    "Love that you’re focusing on the habit, not just the outcome. That’s how change becomes permanent.",
+    "If hunger hits, try drinking water first and waiting 10 minutes. Often, it’s not hunger — it’s habit or boredom.",
+    "Proud of you for starting. The hardest part is beginning — you’ve already done that."
+  ],
+  "publish_window": "Tuesday or Wednesday, 7:00–8:30 AM EST"
+}

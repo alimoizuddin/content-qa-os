@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "week": 1,
+      "pillar": "Build-in-Public: RAG Pipeline Breakdown",
+      "content_format": "Carousel Post",
+      "hook_angle": "Most founders think RAG is just 'upload docs + ask questions.' Here’s how we built one that actually works — using only open-source tools and zero ML PhDs.",
+      "target_asset": "LinkedIn Carousel (6 slides)",
+      "cta": "Comment ‘RAG’ if you’ve tried this and got stuck — I’ll share the exact config we used.",
+      "goal": "Establish authority by demystifying a hyped tech with real, replicable steps",
+      "evidence": "Built a RAG pipeline for Radio Club’s member onboarding docs using LlamaIndex, FAISS, and local LLMs — reduced support queries by 40% in 2 weeks."
+    },
+    {
+      "week": 1,
+      "pillar": "Build-in-Public: Agentic Workflow for Lead Triage",
+      "content_format": "Short Video Script (60s)",
+      "hook_angle": "We didn’t hire a sales ops person. We gave our CRM a brain. Here’s how our AI agent qualifies leads while we sleep.",
+      "target_asset": "LinkedIn Video (native upload)",
+      "cta": "Want the n8n workflow JSON? DM me ‘LEADBOT’ — I’ll send it free.",
+      "goal": "Position AI automation as accessible, not just for engineers",
+      "evidence": "Agentic workflow using n8n + OpenAI + Gmail API auto-tags, scores, and routes leads from Calendly — saved 10+ hrs/week for founder."
+    },
+    {
+      "week": 2,
+      "pillar": "Build-in-Public: OCR + BM25 for Legacy Doc Search",
+      "content_format": "Text Post with Diagram",
+      "hook_angle": "Your PDFs are a black hole. We turned 500+ scanned contracts into searchable knowledge — without paying for Azure AI or AWS Textract.",
+      "target_asset": "LinkedIn Post + Mermaid diagram",
+      "cta": "Tag a founder drowning in PDFs — I’ll show you how we did it for under $5/month.",
+      "goal": "Challenge the myth that enterprise-grade doc search requires big budgets",
+      "evidence": "Used Tesseract OCR + Whoosh (BM25) to index scanned invoices and RFPs — search latency <2s, 92% recall on test set."
+    },
+    {
+      "week": 2,
+      "pillar": "Build-in-Public: Transcription Pipeline for Podcast Clips",
+      "content_format": "Step-by-Step Guide (LinkedIn Article)",
+      "hook_angle": "We turned 1 hour of podcast audio into 12 LinkedIn posts in 20 minutes. No editors. No outsourcing. Just code.",
+      "target_asset": "LinkedIn Article",
+      "cta": "Read the full pipeline — then tell me: what’s your biggest content bottleneck?",
+      "goal": "Show how automation enables content leverage for time-strapped founders",
+      "evidence": "Pipeline: Whisper.cpp → pyannote speaker diarization → custom summarizer → Canva template auto-fill → scheduled via Buffer. Output: 12+ clips/episode."
+    },
+    {
+      "week": 3,
+      "pillar": "Build-in-Public: Radio Club Scaling System",
+      "content_format": "Case Study Breakdown",
+      "hook_angle": "We grew Radio Club from 0 to 200+ members in 8 months — not with ads, but with a self-reinforcing automation loop. Here’s the blueprint.",
+      "target_asset": "LinkedIn Post + Notion template link",
+      "cta": "Grab the free Notion system we used to onboard, engage, and retain members — no code needed.",
+      "goal": "Prove that community growth can be systematized, not just hoped for",
+      "evidence": "Automated welcome sequence (n8n) → member interest tagging → dynamic event invites → referral rewards via Zapier → 35% month-over-month organic growth."
+    },
+    {
+      "week": 3,
+      "pillar": "Build-in-Public: Why ‘No-Code AI’ is a Trap for Founders",
+      "content_format": "Polarizing Opinion Post",
+      "hook_angle": "Stop buying ‘AI-powered’ no-code tools. They’re expensive black boxes that break when you scale. Here’s what to do instead.",
+      "target_asset": "LinkedIn Post",
+      "cta": "Agree or disagree? Comment your worst no-code AI experience — I’ll break down why it failed.",
+      "goal": "Establish a contrarian but credible stance on a hotly debated topic",
+      "evidence": "Audited 5 popular ‘AI no-code’ platforms — 4 had hidden usage limits, opaque pricing, and no export path. Our open-source stack cost 1/10th and gave full control."
+    },
+    {
+      "week": 4,
+      "pillar": "Build-in-Public: The Anti-Stack — Minimal Tools, Max Output",
+      "content_format": "Toolkit List (Carousel)",
+      "hook_angle": "We run 7 automations with 4 tools: n8n, Ollama, PostgreSQL, and Cron. No AWS. No Zapier. No $500/month SaaS stack. Here’s why less is more.",
+      "target_asset": "LinkedIn Carousel",
+      "cta": "Save this if you’re tired of tool sprawl. Want the exact versions we use? Comment ‘MINIMAL’.",
+      "goal": "Position simplicity and ownership as a competitive advantage",
+      "evidence": "Stack: n8n (self-hosted), Ollama (Llama 3 8B), PostgreSQL (managed on Render), Cron-job.org. Zero vendor lock-in. Total monthly cost: $12."
+    },
+    {
+      "week": 4,
+      "pillar": "Build-in-Public: Measuring What Matters in Automation",
+      "content_format": "Poll + Follow-up Post",
+      "hook_angle": "Most founders measure automation by ‘time saved.’ We measure it by ‘decisions enabled.’ Here’s the difference — and why it changes everything.",
+      "target_asset": "LinkedIn Poll + Explanation Post",
+      "cta": "Vote in the poll: What’s your #1 automation goal? Then comment why — I’ll reply with a tailored tip.",
+      "goal": "Shift the conversation from vanity metrics to strategic impact",
+      "evidence": "Tracked: lead-to-close time (↓37%), support ticket deflection (↑40%), internal knowledge reuse (↑200%) — all tied to specific automation triggers."
+    }
+  ]
+}

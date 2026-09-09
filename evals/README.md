@@ -95,8 +95,14 @@ Twenty cases, both arms, `nvidia/nemotron-3-super-120b-a12b`.
 
 | arm | generated | unsafe ships | serious violations shipped | safety | usability |
 | --- | --- | --- | --- | --- | --- |
-| studio | 20/20 | **0** | **0** | 100% | 6/7 |
-| baseline | 15/20 | **13** | **45** | 13% | 5/5 |
+| studio | 19/20 | **0** | **0** | 100% | 4/6 |
+| baseline | 14/20 | **11** | **41** | 21% | 5/5 |
+
+These numbers move between runs, because generation is not deterministic. Across
+three recorded runs the studio shipped 1, then 0, then 0 unsafe results, and its
+grounded-brief pass rate was 2/5, then 6/7, then 4/6. **The safety result has held
+at or near zero every time. The usability result is noisy and I am not going to
+pretend otherwise.** One run is not a trend.
 
 Read it as the trade-off it is. The control is perfectly usable and publishes a
 serious violation on thirteen of the fifteen briefs it manages to answer at all,

@@ -142,13 +142,14 @@ Latest run, `nvidia/nemotron-3-super-120b-a12b`:
 
 | arm | generated | unsafe ships | serious violations shipped | safety | usability |
 | --- | --- | --- | --- | --- | --- |
-| studio | 20/20 | **0** | **0** | 100% | 6/7 |
-| control | 15/20 | **13** | **45** | 13% | 5/5 |
+| studio | 19/20 | **0** | **0** | 100% | 4/6 |
+| control | 14/20 | **11** | **41** | 21% | 5/5 |
 
 The control publishes fasting protocols with durations, "zero human oversight",
-"CAC to zero", a superlative with its qualifier dropped, and a fabricated 12,487.
-The studio publishes none of them, and pays for it with one grounded brief in
-seven that needs a person to resolve an open slot first.
+"CAC to zero", a superlative with its qualifier dropped, a named candidate, and a
+figure Ali had publicly retracted as invented. The studio publishes none of them,
+and pays for it with two grounded briefs in
+six that need a person to resolve an open slot first.
 
 ```bash
 python -m evals.run_evals                 # replay the recorded run, no credits

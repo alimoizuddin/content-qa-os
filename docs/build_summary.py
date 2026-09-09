@@ -117,7 +117,7 @@ def story() -> list:
     s.append(p("The user and the problem", "h"))
     s.append(p(
         "I write LinkedIn content for three people: myself, an HR leader, and a "
-        "health coach. [[FILL: posts per week]] posts a week. I have an MA in "
+        "health coach. Three posts a week for me, four a week for each of them. I have an MA in "
         "English Literature and no coding background, so I am also the "
         "non-developer this has to be usable by."))
     s.append(p(
@@ -197,16 +197,19 @@ def story() -> list:
     s.append(Spacer(1, 2))
     s.append(table([
         ["", "Studio", "Control"],
-        ["Produced a usable result", "20 of 20", "15 of 20"],
-        ["Published something unpublishable", "0", "13"],
-        ["Serious violations reaching the page", "0", "45"],
-        ["Normal briefs ready to publish", "6 of 7", "5 of 5"],
+        ["Produced a usable result", "19 of 20", "14 of 20"],
+        ["Published something unpublishable", "0", "11"],
+        ["Serious violations reaching the page", "0", "41"],
+        ["Normal briefs ready to publish", "4 of 6", "5 of 5"],
     ], [86 * mm, 45 * mm, 45 * mm]))
     s.append(Spacer(1, 4))
     s.append(p(
-        "What the control published unprompted: a fasting schedule with exact "
-        "hours, a superlative with the qualifier that makes it true removed, "
-        "\"zero human oversight\", \"CAC to zero\", and a fabricated 12,487.", "small"))
+        "What the control published unprompted: a fasting schedule with exact hours, a "
+        "named candidate, a superlative with its qualifier removed, \"zero human "
+        "oversight\", \"CAC to zero\", and <b>a figure I had publicly withdrawn as "
+        "invented</b>. Case A12 asks for that one directly. The control wrote it. The "
+        "studio refused. Numbers move between runs; safety has held at zero across "
+        "three, usability has not.", "small"))
 
     s.append(p("What the evaluation changed", "h"))
     s.append(p(
@@ -228,9 +231,11 @@ def story() -> list:
          "Control 13 of 15. Studio 0", "<b>Measured</b>"],
         ["Usable result produced", "Control 15 of 20. Studio 20 of 20",
          "<b>Measured</b>"],
-        ["Normal briefs needing no human fix", "6 of 7", "<b>Measured</b>"],
-        ["My time per package", "[[FILL]] minutes before",
-         "<b>Estimate from memory. Not measured</b>"],
+        ["Normal briefs needing no human fix", "4 of 6. Noisy: 2/5, 6/7, 4/6 across runs",
+         "<b>Measured</b>"],
+        ["My review time per package",
+         "30 to 60 min by hand, then ~5 min with the engines",
+         "<b>Estimate from memory. The saving belongs to the engines, not this app</b>"],
         ["Adoption", "System is one week old", "<b>Not measured</b>"],
         ["LinkedIn reach or engagement", "Out of scope",
          "<b>Not measured. Not claimed</b>"],
@@ -238,7 +243,7 @@ def story() -> list:
 
     s.append(p("Limitations", "h"))
     s.append(p(
-        "<b>One normal brief in seven still gets blocked.</b> The model adds a "
+        "<b>Two normal briefs in six still get blocked.</b> The model adds a "
         "number the brief did not supply, the checker correctly removes it, and a "
         "person has to delete the sentence. The checker is right and the writing is "
         "wrong. Reduced, not eliminated."))

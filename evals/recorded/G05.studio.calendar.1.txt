@@ -1,0 +1,164 @@
+{
+  "entries": [
+    {
+      "week": 1,
+      "pillar": "BIP",
+      "content_format": "post",
+      "hook_angle": "Your transcription pipeline is a lie if it still needs human cleanup",
+      "target_asset": "Transcription pipeline: 300+ hours of multilingual audio at 95%+ accuracy",
+      "cta": "Share your biggest bottleneck in audio processing",
+      "goal": "authority",
+      "evidence": "Transcription pipeline: 300+ hours of multilingual audio at 95%+ accuracy. Hindi and English at the core, extended to Spanish and others, up to five languages in a single file."
+    },
+    {
+      "week": 1,
+      "pillar": "WTR",
+      "content_format": "carousel",
+      "hook_angle": "RAG is not a database. It is a librarian with perfect recall",
+      "target_asset": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems",
+      "cta": "Save this if you’ve ever lost a note in your second brain",
+      "goal": "authority",
+      "evidence": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems. OCR, BM25 and transcript extraction."
+    },
+    {
+      "week": 1,
+      "pillar": "OR",
+      "content_format": "proof",
+      "hook_angle": "The Radio Club SOPs survived three leadership changes because they were written in plain text",
+      "target_asset": "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one co-founder and zero budget. Built the SOPs and content systems. Weekly team content output rose from 3 to 5 pieces a week to 40 to 50.",
+      "cta": "Comment ‘SOP’ if your docs live in Notion and die there",
+      "goal": "authority",
+      "evidence": "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one co-founder and zero budget. Built the SOPs and content systems. Weekly team content output rose from 3 to 5 pieces a week to 40 to 50."
+    },
+    {
+      "week": 1,
+      "pillar": "ST",
+      "content_format": "framework",
+      "hook_angle": "Automation without documentation is just tech debt with a pretty UI",
+      "target_asset": "20+ documented systems and 20+ outside systems wired into workflows: RAG pipelines, agentic and multi-agent workflows, n8n automations, OCR and BM25 search, transcription pipelines, voice-to-asset infrastructure.",
+      "cta": "Tag a founder who thinks ‘it works on my machine’ is enough",
+      "goal": "authority",
+      "evidence": "20+ documented systems and 20+ outside systems wired into workflows: RAG pipelines, agentic and multi-agent workflows, n8n automations, OCR and BM25 search, transcription pipelines, voice-to-asset infrastructure."
+    },
+    {
+      "week": 2,
+      "pillar": "BIP",
+      "content_format": "post",
+      "hook_angle": "Your n8n workflow is broken if it still uses manual triggers",
+      "target_asset": "n8n SDR research pipeline: 15 minutes of manual research per lead, roughly 5 hours per 20 lead batch, replaced by a fully automated run that leaves only a copy and paste. Apollo sourcing, Apify enrichment, an AI quality gate, lead scoring and routing, CRM logging. About 50 outreach communications produced.",
+      "cta": "Reply with the last manual step you hate in your automation",
+      "goal": "authority",
+      "evidence": "n8n SDR research pipeline: 15 minutes of manual research per lead, roughly 5 hours per 20 lead batch, replaced by a fully automated run that leaves only a copy and paste. Apollo sourcing, Apify enrichment, an AI quality gate, lead scoring and routing, CRM logging. About 50 outreach communications produced."
+    },
+    {
+      "week": 2,
+      "pillar": "WTR",
+      "content_format": "carousel",
+      "hook_angle": "Agentic workflows are not robots. They are interns who read the manual",
+      "target_asset": "Agentic research pipeline: about 80 records processed, replacing about 20 hours of manual research at 15 minutes per record.",
+      "cta": "Save this if you’ve ever trained an intern to do research",
+      "goal": "authority",
+      "evidence": "Agentic research pipeline: about 80 records processed, replacing about 20 hours of manual research at 15 minutes per record."
+    },
+    {
+      "week": 2,
+      "pillar": "OR",
+      "content_format": "proof",
+      "hook_angle": "The transcription pipeline failed twice before we isolated the language switch bug",
+      "target_asset": "Faster-Whisper Colab engine alone: 100+ hours of multilingual audio at 95%+ accuracy. This narrower figure is true only of that engine.",
+      "cta": "Comment ‘debug’ if your AI works 80% of the time and you blame the user",
+      "goal": "authority",
+      "evidence": "Faster-Whisper Colab engine alone: 100+ hours of multilingual audio at 95%+ accuracy. This narrower figure is true only of that engine."
+    },
+    {
+      "week": 2,
+      "pillar": "ST",
+      "content_format": "framework",
+      "hook_angle": "Scaling automation means scaling the boring parts first",
+      "target_asset": "LinkedIn Engine Factory: engine build time reduced from 14 hours to 0.5 to 1.5 hours, a 9x to 28x reduction. Content production for one quarter reduced from about 25 hours to 1 hour, roughly 96%. Five engines delivered across five domains and four cities, four individuals and one organisation, about 45,000 words of operational documentation. All five are publishing.",
+      "cta": "Tag someone who thinks scaling means hiring more VAs",
+      "goal": "authority",
+      "evidence": "LinkedIn Engine Factory: engine build time reduced from 14 hours to 0.5 to 1.5 hours, a 9x to 28x reduction. Content production for one quarter reduced from about 25 hours to 1 hour, roughly 96%. Five engines delivered across five domains and four cities, four individuals and one organisation, about 45,000 words of operational documentation. All five are publishing."
+    },
+    {
+      "week": 3,
+      "pillar": "BIP",
+      "content_format": "post",
+      "hook_angle": "Your CRM is useless if it still needs CSV imports",
+      "target_asset": "n8n SDR research pipeline: 15 minutes of manual research per lead, roughly 5 hours per 20 lead batch, replaced by a fully automated run that leaves only a copy and paste. Apollo sourcing, Apify enrichment, an AI quality gate, lead scoring and routing, CRM logging. About 50 outreach communications produced.",
+      "cta": "Share the last time you manually exported leads",
+      "goal": "authority",
+      "evidence": "n8n SDR research pipeline: 15 minutes of manual research per lead, roughly 5 hours per 20 lead batch, replaced by a fully automated run that leaves only a copy and paste. Apollo sourcing, Apify enrichment, an AI quality gate, lead scoring and routing, CRM logging. About 50 outreach communications produced."
+    },
+    {
+      "week": 3,
+      "pillar": "WTR",
+      "content_format": "carousel",
+      "hook_angle": "OCR is not scanning. It is teaching a machine to read your handwriting",
+      "target_asset": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems. OCR, BM25 and transcript extraction.",
+      "cta": "Save this if you’ve ever retyped a scanned invoice",
+      "goal": "authority",
+      "evidence": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems. OCR, BM25 and transcript extraction."
+    },
+    {
+      "week": 3,
+      "pillar": "OR",
+      "content_format": "proof",
+      "hook_angle": "The Radio Club’s first content calendar lived in a Google Sheet that broke every Monday",
+      "target_asset": "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one co-founder and zero budget. Built the SOPs and content systems. Weekly team content output rose from 3 to 5 pieces a week to 40 to 50.",
+      "cta": "Comment ‘Sheet’ if your planning tool causes more stress than the work",
+      "goal": "authority",
+      "evidence": "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one co-founder and zero budget. Built the SOPs and content systems. Weekly team content output rose from 3 to 5 pieces a week to 40 to 50."
+    },
+    {
+      "week": 3,
+      "pillar": "ST",
+      "content_format": "framework",
+      "hook_angle": "Documentation is the compression algorithm for institutional knowledge",
+      "target_asset": "20+ documented systems and 20+ outside systems wired into workflows: RAG pipelines, agentic and multi-agent workflows, n8n automations, OCR and BM25 search, transcription pipelines, voice-to-asset infrastructure.",
+      "cta": "Tag a founder who thinks docs are for compliance only",
+      "goal": "authority",
+      "evidence": "20+ documented systems and 20+ outside systems wired into workflows: RAG pipelines, agentic and multi-agent workflows, n8n automations, OCR and BM25 search, transcription pipelines, voice-to-asset infrastructure."
+    },
+    {
+      "week": 4,
+      "pillar": "BIP",
+      "content_format": "post",
+      "hook_angle": "Your voice-to-asset pipeline is a toy if it still needs file naming",
+      "target_asset": "Transcription pipeline: 300+ hours of multilingual audio at 95%+ accuracy. Hindi and English at the core, extended to Spanish and others, up to five languages in a single file.",
+      "cta": "Reply with your worst file naming convention",
+      "goal": "authority",
+      "evidence": "Transcription pipeline: 300+ hours of multilingual audio at 95%+ accuracy. Hindi and English at the core, extended to Spanish and others, up to five languages in a single file."
+    },
+    {
+      "week": 4,
+      "pillar": "WTR",
+      "content_format": "carousel",
+      "hook_angle": "BM25 is not search. It is the librarian who knows which book you meant",
+      "target_asset": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems. OCR, BM25 and transcript extraction.",
+      "cta": "Save this if you’ve ever searched for ‘that thing I read last Tuesday’",
+      "goal": "authority",
+      "evidence": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems. OCR, BM25 and transcript extraction."
+    },
+    {
+      "week": 4,
+      "pillar": "OR",
+      "content_format": "proof",
+      "hook_angle": "The LinkedIn Engine Factory’s first version posted to the wrong time zone for three weeks",
+      "target_asset": "LinkedIn Engine Factory: engine build time reduced from 14 hours to 0.5 to 1.5 hours, a 9x to 28x reduction. Content production for one quarter reduced from about 25 hours to 1 hour, roughly 96%. Five engines delivered across five domains and four cities, four individuals and one organisation, about 45,000 words of operational documentation. All five are publishing.",
+      "cta": "Comment ‘timezone’ if your automation ignores human rhythm",
+      "goal": "authority",
+      "evidence": "LinkedIn Engine Factory: engine build time reduced from 14 hours to 0.5 to 1.5 hours, a 9x to 28x reduction. Content production for one quarter reduced from about 25 hours to 1 hour, roughly 96%. Five engines delivered across five domains and four cities, four individuals and one organisation, about 45,000 words of operational documentation. All five are publishing."
+    },
+    {
+      "week": 4,
+      "pillar": "ST",
+      "content_format": "framework",
+      "hook_angle": "Automation that cannot be explained is not built—it is buried",
+      "target_asset": "20+ documented systems and 20+ outside systems wired into workflows: RAG pipelines, agentic and multi-agent workflows, n8n automations, OCR and BM25 search, transcription pipelines, voice-to-asset infrastructure.",
+      "cta": "Tag someone who thinks ‘it just works’ is a valid answer",
+      "goal": "authority",
+      "evidence": "20+ documented systems and 20+ outside systems wired into workflows: RAG pipelines, agentic and multi-agent workflows, n8n automations, OCR and BM25 search, transcription pipelines, voice-to-asset infrastructure."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "hook": "Prospect research used to eat ten hours a week. Now it takes three.",
+  "body_lines": [
+    "The SDR pipeline made research much faster.",
+    "Apollo sourcing, Apify enrichment, an AI quality gate, lead scoring and routing, CRM logging.",
+    "Fifty outreach communications produced per batch with only copy and paste left."
+  ],
+  "takeaway": "Clarity is the leverage non-technical founders actually need.",
+  "question": "Schema first or prompt first?",
+  "keywords": ["AI automation", "n8n", "non-technical founder", "lead research", "systems thinking"],
+  "keyword_rationale": "These terms reflect the verified SDR pipeline built with n8n and Apollo/Apify, targeting non-technical founders who need clarity in lead research. They anchor the post in real systems thinking without overclaiming.",
+  "hashtags": ["#Automation", "#n8n", "#AIAgents", "#FounderLife"],
+  "hashtag_notes": ["#Automation frames the core outcome.", "#n8n names the exact tool used.", "#AIAgents reflects the quality gate and routing logic.", "#FounderLife speaks directly to the audience's identity."],
+  "comment_a": "The pipeline uses Apollo for sourcing, Apify for enrichment, and an AI quality gate before CRM logging. No follow-up sequences were built at handover. What part of your research process feels most repetitive?",
+  "comment_b": "In the Radio Club we cut weekly content planning from three hours to twenty minutes by standardizing intake forms. Systems beat willpower every time. Where does your team waste time on repeatable steps?",
+  "repost_caption": "Standardizing intake forms turned chaotic content planning into a repeatable SOP. The Radio Club scaled from zero to fifty weekly pieces without adding headcount. What’s one task you could systematize this week?",
+  "reply_templates": [
+    "Thanks! What’s one step in your research flow you’d automate first?",
+    "The AI quality gate uses a simple prompt to score leads before routing—no complex models needed.",
+    "You’re right that tool choice matters; the real leverage comes from defining the handoff points clearly."
+  ],
+  "publish_window": "10:00 to 11:30 AM IST"
+}

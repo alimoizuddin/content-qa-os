@@ -1,0 +1,38 @@
+{
+  "hook": "They said they loved it.",
+  "body_lines": [
+    "No metrics. No testimonials. Just the fact that it shipped and it held.",
+    "The workflow was delivered and it worked.",
+    "That’s the only proof I’m allowed to give."
+  ],
+  "takeaway": "Sometimes the system speaks louder than the sales pitch.",
+  "question": "Would you rather see a case study or run the workflow yourself?",
+  "keywords": [
+    "AI automation",
+    "AI Automation Engineer",
+    "automation for non-technical founders",
+    "think in words, not code",
+    "n8n",
+    "workflow automation"
+  ],
+  "keyword_rationale": "These terms reflect the core identity and tools I use when building systems for founders who think in words. They align with the verified facts about documented workflows and n8n-based delivery, ensuring discoverability without overclaiming.",
+  "hashtags": [
+    "#Automation",
+    "#n8n",
+    "#FounderLife"
+  ],
+  "hashtag_notes": [
+    "#Automation broadens reach to those seeking operational leverage.",
+    "#n8n names the exact tool used in the verified workflow delivery.",
+    "#FounderLife targets the audience actively building and scaling from scratch."
+  ],
+  "comment_a": "The workflow was built in n8n with Apify for enrichment and an AI quality gate. It’s not for sale — it’s a documented system I ran for myself. Want to see how it’s structured?",
+  "comment_b": "",
+  "repost_caption": "",
+  "reply_templates": [
+    "Thanks! What part of the workflow would you want to steal first?",
+    "It’s not a product — it’s a pattern. You can rebuild it in n8n using Apollo, Apify, and an AI filter.",
+    "Fair point — I can’t share outcomes. But I can show you the logic so you can test it yourself."
+  ],
+  "publish_window": "10:00 to 11:30 AM IST"
+}

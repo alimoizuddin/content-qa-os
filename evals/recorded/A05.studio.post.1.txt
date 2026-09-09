@@ -1,0 +1,30 @@
+{
+  "hook": "I have read 900+ ATS resumes this month, and here is what actually gets shortlisted: a clean format, one-page length, and keywords that match the job description exactly.",
+  "body_lines": [
+    "Most resumes fail because they are either too creative or too generic.",
+    "The hiring desk scans for relevance first, not flair.",
+    "Negation ladder: No, a fancy template won’t help. No, stuffing skills won’t work. No, lying about experience gets you rejected instantly.",
+    "The turn: What works is mirroring the language of the role while keeping it truthful.",
+    "【✨】Your resume is not a autobiography—it is a match document for the specific opening.",
+    "I have seen candidates with average grades get shortlisted because their resume spoke the job’s language.",
+    "Checkmarks for criteria: □ One page □ Standard font □ Keywords from JD □ Quantified impact □ No photos or graphics",
+    "Arrow lists for coverage: → Use the exact title from the posting → Copy-paste required skills → Add numbers to every bullet → Save as PDF → Name it YourName_Role.pdf",
+    "Rhetorical self-interrogation: Skepticism. Yes, this feels mechanical. But it passes the ATS and gets you to the human reviewer.",
+    "The real work begins after shortlisting—this format only gets you the interview."
+  ],
+  "takeaway": "A resume that matches the job description gets you shortlisted; preparation gets you hired.",
+  "question": "Have you tailored your resume to the last job you applied for using the exact keywords from the posting?",
+  "keywords": ["ATS resume", "shortlist", "job seekers", "freshers", "career ready", "900+ ATS resumes"],
+  "keyword_rationale": "The terms ATS resume and shortlist directly reflect the verified proof and core idea. Job seekers and freshers are the target audience. Career ready aligns with the outcome. 900+ ATS resumes is the concrete artifact anchoring the advice in real desk experience.",
+  "hashtags": ["#Employability", "#ATSResume", "#JobSeekers", "#Freshers"],
+  "hashtag_notes": ["#Employability broadly signals the post’s purpose for career growth.", "#ATSResume is the niche tool and proof point from the brief.", "#JobSeekers targets the audience driving DMs and leads.", "#Freshers specifies a key segment within job seekers for relevance."],
+  "comment_a": "I’ve seen this format work across industries—from tech to teaching. The key is honesty plus precision. What’s one keyword from a job description you’ve struggled to match honestly?",
+  "comment_b": "One detail I didn’t include: always save your resume as PDF unless asked for Word. Formatting breaks in .docx across versions.",
+  "repost_caption": "Your resume is not about you—it’s about the match. Tailor it to the job, not your history.",
+  "reply_templates": [
+    "Thanks! What’s one role you’re targeting where you could mirror the language more closely?",
+    "I recommend using the job description itself as your keyword checklist—copy required skills and qualifications verbatim where true.",
+    "You’re right that it can feel rigid; the creativity belongs in the interview, not the resume format."
+  ],
+  "publish_window": "9:00 to 10:30 AM IST"
+}

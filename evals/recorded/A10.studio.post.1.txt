@@ -1,0 +1,26 @@
+{
+  "hook": "Hashtags do not make posts go viral.",
+  "body_lines": [
+    "They help the ranking model classify a post.",
+    "That is all they do.",
+    "No combination of tags forces reach.",
+    "The model looks at dwell, saves, and golden-hour velocity.",
+    "Your idea must earn those signals first.",
+    "Tags are a label, not a lever."
+  ],
+  "takeaway": "Clarity beats illusion.",
+  "question": "Do you audit your post’s hook before you pick your tags?",
+  "keywords": ["AI automation", "non-technical founder", "systems thinking"],
+  "keyword_rationale": "The post targets non-technical founders who rely on systems thinking to avoid viral myths. It uses AI automation as the lens to explain how reach actually works, aligning with the audience’s need for clear, actionable frameworks over shortcuts.",
+  "hashtags": ["#Automation", "#NoCode", "#FounderLife"],
+  "hashtag_notes": ["#Automation fits the core topic of signal over superstition.", "#NoCode speaks to the non-technical founder audience.", "#FounderLife grounds the advice in lived creator experience."],
+  "comment_a": "The real leverage is in the hook and the first 90 seconds. Tags just help the model file it correctly. What’s one hook you’ve tested that actually held attention?",
+  "comment_b": "",
+  "repost_caption": "",
+  "reply_templates": [
+    "Thanks! What’s one hook you’ve tested that actually held attention?",
+    "I track dwell and saves via LinkedIn analytics—no guesswork.",
+    "You’re right that tags help with discovery; I just don’t believe they override signal."
+  ],
+  "publish_window": "10:00 to 11:30 AM IST"
+}

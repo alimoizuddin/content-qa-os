@@ -1,0 +1,35 @@
+{
+  "hook": "I used to think changing my body meant I’d finally feel at home in it.",
+  "body_lines": [
+    "In 2014, at 42, I weighed 82kg. I was tired, medicated, and disconnected — not just from my body, but from my own hunger cues.",
+    "By 2017, after three years of relentless training, I crossed the finish line of my first half marathon at 62kg.",
+    "I looked strong. I felt proud. But inside? I was still counting calories, still afraid of food, still waiting for permission to trust myself.",
+    "I had changed my body — but not my relationship with it.",
+    "WILDFIT didn’t give me another diet. It gave me a way to listen.",
+    "No more pills. No more guilt. Just curiosity: What does my body actually need today?",
+    "This isn’t about weight. It’s about wisdom. About reclaiming the quiet voice inside that knows when to eat, when to rest, and when to say ‘enough’.",
+    "If you’re tired of fighting your body — and ready to befriend it — you’re not alone.",
+    "Speak to your doctor about your own situation. Your journey is yours alone.",
+    "But you don’t have to walk it in silence."
+  ],
+  "takeaway": "True health isn’t measured in kilos lost — it’s felt in the peace you find when you stop fighting your body and start listening to it.",
+  "question": "What’s one small way you’ve started listening to your body lately — not to change it, but to understand it?",
+  "keywords": ["midlife wellness", "intuitive eating", "body trust", "WILDFIT", "health coaching", "menopause and metabolism", "food freedom", "self-trust", "holistic nutrition", "non-diet approach"],
+  "keyword_rationale": "Selected keywords reflect the core themes of body autonomy, midlife women’s health, and non-restrictive nutrition — aligning with Rakhee’s WILDFIT coaching philosophy and the post’s goal of relatability without prescriptive advice. Terms like ‘intuitive eating’ and ‘food freedom’ resonate with audiences seeking sustainable change, while ‘WILDFIT’ and ‘health coaching’ anchor her expertise. Avoided overly clinical terms to keep tone warm and accessible.",
+  "hashtags": ["#BodyTrust", "#IntuitiveEating", "#MidlifeWellness", "#WILDFIT", "#FoodFreedom", "#HealthCoaching", "#NonDietApproach", "#SelfCare", "#MenopauseAndMetabolism", "#ListenToYourBody"],
+  "hashtag_notes": ["#BodyTrust: Central theme — shifts focus from appearance to internal wisdom.", "#IntuitiveEating: Widely searched term; signals anti-diet, sustainable approach.", "#MidlifeWellness: Directly targets audience; high engagement potential.", "#WILDFIT: Brand-specific; builds credibility and discoverability for her niche.", "#FoodFreedom: Emotional trigger word; resonates with those tired of restriction.", "#HealthCoaching: Professional identifier; helps ideal clients find her.", "#NonDietApproach: Aligns with WILDFIT philosophy; attracts like-minded community.", "#SelfCare: Broad but relevant; invites reflection beyond physical health.", "#MenopauseAndMetabolism: Addresses unspoken midlife concern; increases relevance.", "#ListenToYourBody: Reinforces core message; encourages personal reflection and engagement."],
+  "comment_a": "I remember the day I realized I was eating not because I was hungry, but because I was bored, sad, or trying to earn rest. That moment — when I paused and asked, ‘What do I really need?’ — changed everything. No scale involved. Just awareness.",
+  "comment_b": "Thank you for naming this. I’ve spent decades thinking I needed to shrink to be worthy. Learning to trust my body’s signals? That’s the real transformation. It’s quiet. It’s daily. And it’s everything.",
+  "repost_caption": "Rakhee’s words hit deep: changing your body doesn’t automatically change your relationship with it. True healing begins when we stop fixing and start listening. This is the work that lasts.",
+  "reply_templates": [
+    "Thank you for sharing this — it’s so validating to hear someone else name this quiet struggle.",
+    "I’ve been there too. The scale moved, but the inner critic didn’t. What helped you begin to shift that inner dialogue?",
+    "This resonates deeply. I’m learning to trust my hunger — one meal at a time. How do you stay gentle with yourself on the hard days?",
+    "So true: strength isn’t just in the miles we run, but in the moments we choose kindness over control.",
+    "I appreciate that you’re not telling anyone what to do — just sharing your truth. That’s what makes it powerful.",
+    "WILDFIT sounds like a gentle revolution. What’s one practice from it that you return to again and again?",
+    "Your honesty is a gift. It reminds me that healing isn’t loud — it’s in the pauses, the breaths, the ‘I’m listening’ moments.",
+    "This is exactly the conversation we need more of: honoring our bodies without turning wellness into another performance."
+  ],
+  "publish_window": "Tuesday–Thursday, 7:30–8:30 AM or 5:00–6:00 PM local time (midlife women often check LinkedIn during morning routines or evening wind-down)"
+}

@@ -1,0 +1,42 @@
+{
+  "hook": "Prospect research used to eat up 10 hours of my week. Now? Just 3. That’s a 70% reduction — not from working harder, but from working smarter with AI automation.",
+  "body_lines": [
+    "As an AI Automation Engineer, I’ve seen too many founders waste precious time on manual research — scrolling LinkedIn, cross-referencing Crunchbase, guessing ICP fit — when the real work is building relationships and closing deals.",
+    "That’s why I built an SDR pipeline that doesn’t just scrape data — it understands context. It enriches leads with firmographics, tech stacks, recent funding, and even sentiment from news and social signals — all in under 90 seconds per prospect.",
+    "The magic isn’t in the tools. It’s in the design: connecting APIs intelligently, filtering noise with LLMs, and surfacing only what matters to a founder’s next conversation.",
+    "Result? My clients go from guessing who to call… to knowing exactly why they should call — and what to say when they do.",
+    "This isn’t about replacing humans. It’s about freeing them to do what only humans can: listen, empathize, and close.",
+    "If you’re a founder spending more time researching than selling — let’s talk. I’ll show you how to get your time back.",
+    "P.S. The pipeline runs on low-code + custom Python logic — no PhD required. Just a clear goal and the willingness to automate the grind."
+  ],
+  "takeaway": "Stop letting research steal your selling time. Automate the grunt work — so you can focus on what moves the needle: real conversations that convert.",
+  "question": "How many hours a week are you currently spending on prospect research — and what would you do with 7 extra hours?",
+  "keywords": ["AI automation", "SDR pipeline", "prospect research", "founder productivity", "lead enrichment", "LLM workflow", "sales efficiency", "no-code AI", "time savings", "B2B sales", "founder tools", "outbound optimization"],
+  "keyword_rationale": "Selected keywords balance technical accuracy (for credibility) with founder-friendly terms (for accessibility). Terms like 'AI automation', 'SDR pipeline', and 'LLM workflow' signal expertise without jargon overload. Founder-focused phrases like 'founder productivity', 'time savings', and 'B2B sales' align with audience pain points. Avoided overly niche terms (e.g., 'vector embeddings', 'LangChain') to keep it approachable. Prioritized terms with strong LinkedIn search volume in the founder/sales tech space.",
+  "hashtags": ["#AIAutomation", "#FounderLife", "#SalesEfficiency", "#SDR", "#ProductivityHack", "#NoCodeAI", "#B2BSales", "#WorkSmarter", "#FounderTools", "#AutomateTheGrind"],
+  "hashtag_notes": [
+    "#AIAutomation - Core topic, high relevance in tech founder circles",
+    "#FounderLife - Targets audience identity, builds community feel",
+    "#SalesEfficiency - Directly ties to outcome, high intent",
+    "#SDR - Industry-standard term, attracts sales ops and founders",
+    "#ProductivityHack - Broad appeal, drives engagement",
+    "#NoCodeAI - Addresses founder fear of complexity, lowers barrier",
+    "#B2BSales - Precise audience targeting",
+    "#WorkSmarter - Aspirational, shareable mindset",
+    "#FounderTools - Niche but high-value for early-stage founders",
+    "#AutomateTheGrind - Memorable, emotional hook that resonates with burnout"
+  ],
+  "comment_a": "This is exactly what I needed to hear. I’ve been drowning in research — manually pulling data from 5 different tools just to build one outreach list. If your pipeline can cut that to 3 hours a week while improving quality, I’d love to see a demo. How do you handle data privacy and compliance with GDPR/CCPA when enriching leads?",
+  "comment_b": "Love the focus on *freeing up humans* — not replacing them. Too many AI sales tools promise to ‘automate outreach’ and end up spamming bad messages. Yours sounds like it’s built for signal, not noise. Curious: does the pipeline adapt to different industries (e.g., SaaS vs. hardware) or is it more of a one-size-fits-all enrichment layer?",
+  "reply_templates": [
+    "Great question! We handle compliance by only using publicly available data and giving users full control over what fields to enrich — plus built-in opt-out flags. Happy to share our data governance checklist if you’d like.",
+    "The pipeline uses industry-specific prompt templates and dynamic weighting — so a SaaS startup gets tech stack and funding signals, while a hardware firm gets supply chain news and patent activity. It’s not one-size-fits-all; it’s context-aware automation.",
+    "Thanks for asking! We actually built a lightweight version for founders who aren’t technical — it runs via a simple Airtable + Make.com setup with pre-configured AI enrichments. No code needed to get started.",
+    "I’ve seen founders try to DIY this with Zapier and ChatGPT — and end up with brittle, inconsistent results. Our edge is the LLM-powered reasoning layer that decides *what* to enrich and *why*, not just *how*.",
+    "Happy to jump on a 15-minute call to show you a before/after of a real prospect list — no pitch, just the workflow. DM me your availability!",
+    "The 3-hour number isn’t magic — it’s the result of cutting out 80% of redundant clicks, context-switching, and manual validation. The AI does the heavy lifting; you do the human part.",
+    "We’ve seen 3x reply rates after implementing this — not because we sent more messages, but because the messages were actually relevant. That’s the real ROI.",
+    "If you’re curious about the stack: we use Python (FastAPI) for orchestration, Hugging Face LLMs for reasoning, and Apify/Proxycurl for scraping — all wrapped in a founder-friendly UI. But you don’t need to know any of that to use it."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM EST (when founders are planning their week and checking LinkedIn before deep work)"
+}

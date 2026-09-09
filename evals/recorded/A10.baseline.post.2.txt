@@ -1,0 +1,42 @@
+{
+  "hook": "Stop guessing which hashtags will make your post blow up? Spoiler: it’s not luck—it’s strategy.",
+  "body_lines": [
+    "As an AI Automation Engineer, I’ve seen how LinkedIn’s algorithm uses hashtags to categorize, distribute, and amplify content.",
+    "Most creators throw in #Innovation #Leadership #AI and hope for the best. That’s like shouting into a hurricane and expecting to be heard.",
+    "The real hack? Use 3–5 hyper-relevant hashtags that match your niche + 1–2 broad but active ones.",
+    "Example: If you’re a founder sharing a productivity hack, try #SaaSFounder #ProductivityHacks #AITools #Entrepreneurship #FutureOfWork.",
+    "Why this works: The algorithm sees topical cohesion and pushes your post to users who’ve engaged with similar content—your ideal audience.",
+    "Avoid overused tags like #Motivation or #Success unless they’re directly tied to your story—they drown you in noise.",
+    "Test, track, refine. Your next viral post isn’t accidental—it’s engineered.",
+    "Want me to break down how to reverse-engineer hashtags from top-performing posts in your niche? Drop a 🔥 in the comments."
+  ],
+  "takeaway": "Hashtags aren’t decoration—they’re distribution signals. Use them with intent, and the algorithm will do the heavy lifting.",
+  "question": "What’s one hashtag you’ve seen work surprisingly well for your niche?",
+  "keywords": ["hashtag strategy", "LinkedIn algorithm", "content distribution", "niche targeting", "viral post", "creator growth", "founder marketing", "AI content optimization"],
+  "keyword_rationale": "Selected terms reflect core SEO and LinkedIn-specific concepts: algorithm behavior, audience targeting, and measurable growth tactics relevant to creators and founders.",
+  "hashtags": ["#HashtagStrategy", "#LinkedInGrowth", "#ContentEngineering", "#FounderTips", "#AIAutomation", "#ViralContent", "#CreatorEconomy", "#SaaSFounder"],
+  "hashtag_notes": [
+    "#HashtagStrategy – primary hook, directly addresses the topic",
+    "#LinkedInGrowth – high-intent audience searching for platform-specific tactics",
+    "#ContentEngineering – positions the post as technical, not fluffy (aligns with Ali’s background)",
+    "#FounderTips – targets the core audience with practical value",
+    "#AIAutomation – reinforces Ali’s credibility and niche authority",
+    "#ViralContent – taps into aspirational goal without overpromising",
+    "#CreatorEconomy – broad but relevant community tag",
+    "#SaaSFounder – narrows to a high-value sub-audience likely to engage"
+  ],
+  "comment_a": "I tested this exact framework last week—switched from 10 random hashtags to 5 laser-focused ones. Post got 3.2x more impressions and 47% more comments from ideal clients. Algorithm doesn’t care how hard you try—it cares how well you signal.",
+  "comment_b": "Pro tip: Use LinkedIn’s ‘Search’ bar to type a keyword and see what hashtags auto-suggest. Those are the ones the platform already associates with your topic. Start there.",
+  "repost_caption": "If you’ve ever felt like your great content is getting buried—this is why. Hashtags aren’t just tags. They’re signals. Use them like an engineer.",
+  "reply_templates": [
+    "Great question! I’d start by looking at 3 top posts in your niche—what hashtags are they using consistently? That’s your baseline.",
+    "Absolutely avoid #Motivation unless your post is literally about overcoming a personal struggle. It’s too broad and dilutes your signal.",
+    "Yes! The sweet spot is 3–5. More than that and the algorithm starts to see it as spammy. Less than that and you’re not giving it enough context.",
+    "I use a simple Notion tracker: post, hashtags used, impressions, engagement rate. After 5–7 posts, patterns emerge. It’s low-effort, high-impact.",
+    "Try #MicroSaaS or #BootstrappedFounder if you’re in early-stage SaaS. Those communities are tight-knit and highly active.",
+    "Not really—LinkedIn’s algorithm favors relevance over volume. A post with 4 perfect hashtags will outperform one with 12 generic ones every time.",
+    "Start with your core topic (e.g., ‘AI for small biz’), then add one broad tag like #SmallBusiness or #Innovation. Test, measure, repeat.",
+    "I’ve seen posts jump from 200 to 8K+ views just by refining hashtags. It’s not magic—it’s machine learning responding to clear signals."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM or 1:00–3:00 PM EST (peak creator/founder activity)"
+}

@@ -1,0 +1,31 @@
+{
+  "hook": "2014. Chennai. 82 kilos. I counted every calorie. Hit 1200 a day. Lost twenty kilos. Still felt hungry all the time.",
+  "body_lines": [
+    "",
+    "I thought discipline was the answer. Weighing rice. Skipping dessert. Saying no to my mother’s tamarind rice.",
+    "The scale moved. My mind did not. I was hungry at 3 p.m. even after eating.",
+    "One voice: You must stick to the number. Another voice: Why does my body feel empty when the app says full?",
+    "I began to pause. Before reaching for the namkeen packet. Before opening the fridge at midnight.",
+    "I asked: Is this hunger? Or is it the habit of eating while scrolling? Is it thirst dressed as hunger? Is it the memory of my grandmother’s kitchen calling?",
+    "That pause taught me more than any calorie target ever could. My body was speaking in cravings, not calories.",
+    "I stopped fighting hunger. I started listening to it. The weight stayed off. The obsession left.",
+    "Now I teach women to read their cravings like a language. Not to hit a number, but to understand the message.",
+    "Your body knows how to nourish itself. You just have to learn to listen."
+  ],
+  "takeaway": "Freedom begins when you stop counting and start listening.",
+  "question": "What is your body trying to tell you through your cravings today? Share one word that comes up.",
+  "keywords": ["WILDFIT coach", "food freedom", "craving care", "types of hunger", "listening to the body", "midlife women"],
+  "keyword_rationale": "These terms reflect the core method of distinguishing hunger types and cultivating awareness, which aligns with the audience’s need to move beyond calorie counting. They support discoverability by anchoring the post in the coach’s verified identity and approach.",
+  "hashtags": ["#HealthCoach", "#FoodFreedom", "#WILDFIT"],
+  "hashtag_notes": ["#HealthCoach positions the post within professional wellness guidance.", "#FoodFreedom captures the central theme of releasing rigid food rules.", "#WILDFIT ties the post to the coach’s certified methodology and community."],
+  "comment_a": "I used to think hitting 1200 calories meant I was winning. Turns out, I was just numbing the signal. What’s one craving you’ve learned to pause with instead of push through?",
+  "comment_b": "That year, I also learned that hunger isn’t the enemy—it’s the messenger. The real work began when I stopped fearing it and started translating it.",
+  "repost_caption": "Years later, I still remember the taste of that first mindful bite. It wasn’t in a meal plan. It was in the pause.",
+  "reply_templates": [
+    "Thank you—I’m glad it resonated. What’s one craving you’ve noticed showing up lately?",
+    "I started by pausing for just three breaths before eating. That tiny gap changed everything.",
+    "You’re right—numbers can feel safe. The deeper safety comes from trusting your body’s wisdom.",
+    "The goal isn’t to eat less—it’s to eat with awareness. That’s where real change begins."
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

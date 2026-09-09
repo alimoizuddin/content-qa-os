@@ -1,0 +1,69 @@
+{
+  "hook": "Our transcription pipeline has saved 12,487 hours — that’s 520 full workdays — across every audio file it’s processed so far.",
+  " +
+          "far.",
+  "body_lines": [
+    "Think about what that means: no more manual note-taking from interviews, no more replaying calls to catch details, no more " +
+    "lost insights buried in voice memos.",
+    "For founders juggling product, hiring, and fundraising, those hours aren’t just saved — they’re reclaimed for decisions that " +
+    "actually move the needle.",
+    "We built this not to show off tech, but to give back time — the one resource you can’t earn more of.",
+    "When automation works quietly in the background, it lets you focus on what only you can do: lead.",
+    "What’s one repetitive task in your workflow you’d love to hand off today?"
+  ],
+  "takeaway": "Smart automation isn’t about replacing humans — it’s about protecting your most valuable asset: time.",
+  "question": "What’s one repetitive task in your workflow you’d love to hand off today?",
+  "keywords": [
+    "AI automation",
+    "time savings",
+    "founder productivity",
+    "transcription technology",
+    "workflow optimization",
+    "operational efficiency",
+    "non-technical leadership",
+    "AI for business",
+    "time reclamation",
+    "founder focus"
+  ],
+  "keyword_rationale": "Each keyword targets non-technical founders by focusing on outcomes (time savings, productivity, focus) rather than " +
+    "technical jargon. Terms like 'founder productivity' and 'operational efficiency' speak directly to pain points, while 'AI for business' " +
+    "and 'AI automation' position the topic accessibly. Avoiding overly technical terms like 'pipeline' or 'NLP' keeps it relatable.",
+  "hashtags": [
+    "#FounderLife",
+    "#TimeIsYourAsset",
+    "#AIFounders",
+    "#WorkSmarter",
+    "#AutomationNotReplacement",
+    "#FounderFocus",
+    "#ProductivityHacks",
+    "#AIForBusiness",
+    "#WorkflowWin",
+    "#BuildBetter"
+  ],
+  "hashtag_notes": [
+    "#FounderLife — taps into founder identity and community",
+    "#TimeIsYourAsset — reframes time as a non-renewable resource founders understand",
+    "#AIFounders — targets the intersection of AI and entrepreneurship",
+    "#WorkSmarter — aligns with founder mindset of leverage over grind",
+    "#AutomationNotReplacement — addresses fear of AI with a human-centered frame",
+    "#FounderFocus — speaks to the desire to work on what matters",
+    "#ProductivityHacks — low-barrier, high-engagement term for practical tips",
+    "#AIForBusiness — makes AI feel accessible, not intimidating",
+    "#WorkflowWin — celebrates small, tangible wins founders can relate to",
+    "#BuildBetter — aspirational, ties automation to long-term vision"
+  ],
+  "comment_a": "I used to spend 3–4 hours a week just transcribing customer interviews. After switching to an automated pipeline, I got that time back — and started spotting patterns I’d missed before. It’s not about the tech; it’s about what you do with the time you regain.",
+  "comment_b": "This resonates hard. As a non-technical founder, I used to feel guilty using AI tools — like I was ‘cheating.’ Now I see it as leveraging leverage. If you’re not automating the repeatable, you’re taxing your own bandwidth.",
+  "repost_caption": "Just saw this: our transcription pipeline has saved over 12,000 hours — equivalent to 520 workdays — across every file it’s touched. For founders, that’s not just efficiency. It’s freedom to lead. What’s one task you’d automate to get your time back?",
+  "reply_templates": [
+    "Totally agree — the real win isn’t the automation, it’s the mental space it creates.",
+    "I’ve seen founders reclaim 10+ hours/week just by automating meeting notes. What’s your biggest time-sink?",
+    "This is why I tell early-stage founders: automate the boring stuff so you can focus on the brave stuff.",
+    "If you’re not tracking time saved by your tools, you’re missing your biggest ROI metric.",
+    "The best AI doesn’t shout — it just quietly gives you back your day.",
+    "Started with transcription, now automating follow-ups and CRM updates. The compound effect is unreal.",
+    "Time saved = more time for customer conversations, strategy, and sleep. Non-negotiable for founders.",
+    "Don’t wait for ‘perfect’ automation. Start with one repetitive task — even 30 minutes saved a day adds up fast."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM or 1:00–3:00 PM EST (when founders check LinkedIn before/after morning standups or post-lunch)"
+}

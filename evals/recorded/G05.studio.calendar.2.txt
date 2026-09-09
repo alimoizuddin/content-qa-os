@@ -1,0 +1,164 @@
+{
+  "entries": [
+    {
+      "week": 1,
+      "pillar": "BIP",
+      "content_format": "post",
+      "hook_angle": "Error hook: The transcription pipeline gave perfect Hindi but dropped every English word.",
+      "target_asset": "Transcription pipeline: 300+ hours of multilingual audio at 95%+ accuracy",
+      "cta": "Save this if you’ve fought language drift in AI",
+      "goal": "authority",
+      "evidence": "Transcription pipeline: 300+ hours of multilingual audio at 95%+ accuracy. Hindi and English at the core, extended to Spanish and others, up to five languages in a single file."
+    },
+    {
+      "week": 1,
+      "pillar": "WTR",
+      "content_format": "carousel",
+      "hook_angle": "Paradox hook: The RAG pipeline knew everything but answered nothing useful.",
+      "target_asset": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems",
+      "cta": "Swap this for your team’s next knowledge dump",
+      "goal": "authority",
+      "evidence": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems. OCR, BM25 and transcript extraction."
+    },
+    {
+      "week": 1,
+      "pillar": "OR",
+      "content_format": "framework",
+      "hook_angle": "Scene first: 2 a.m., fixing a broken n8n node while the Radio Club SOPs sat untouched.",
+      "target_asset": "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one co-founder and zero budget. Built the SOPs and content systems.",
+      "cta": "Try this SOPs audit this week",
+      "goal": "authority",
+      "evidence": "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one co-founder and zero budget. Built the SOPs and content systems. Weekly team content output rose from 3 to 5 pieces a week to 40 to 50."
+    },
+    {
+      "week": 1,
+      "pillar": "ST",
+      "content_format": "proof",
+      "hook_angle": "Contrarian reframe: You think automation saves time. It just moves the work.",
+      "target_asset": "20+ documented systems and 20+ outside systems wired into workflows: RAG pipelines, agentic and multi-agent workflows, n8n automations, OCR and BM25 search, transcription pipelines, voice-to-asset infrastructure.",
+      "cta": "Name one task your automation created",
+      "goal": "authority",
+      "evidence": "20+ documented systems and 20+ outside systems wired into workflows: RAG pipelines, agentic and multi-agent workflows, n8n automations, OCR and BM25 search, transcription pipelines, voice-to-asset infrastructure."
+    },
+    {
+      "week": 2,
+      "pillar": "BIP",
+      "content_format": "post",
+      "hook_angle": "Number hook: 15 minutes of manual research per lead. 5 hours per 20 lead batch. Then zero.",
+      "target_asset": "n8n SDR research pipeline: 15 minutes of manual research per lead, roughly 5 hours per 20 lead batch, replaced by a fully automated run that leaves only a copy and paste. Apollo sourcing, Apify enrichment, an AI quality gate, lead scoring and routing, CRM logging. About 50 outreach communications produced.",
+      "cta": "Run this audit on your lead list",
+      "goal": "authority",
+      "evidence": "n8n SDR research pipeline: 15 minutes of manual research per lead, roughly 5 hours per 20 lead batch, replaced by a fully automated run that leaves only a copy and paste. Apollo sourcing, Apify enrichment, an AI quality gate, lead scoring and routing, CRM logging. About 50 outreach communications produced."
+    },
+    {
+      "week": 2,
+      "pillar": "WTR",
+      "content_format": "carousel",
+      "hook_angle": "Pure inversion: Four lines. Just the flip. Nothing else. The agentic pipeline didn’t research. It waited.",
+      "target_asset": "Agentic research pipeline: about 80 records processed, replacing about 20 hours of manual research at 15 minutes per record.",
+      "cta": "Map your waiting steps",
+      "goal": "authority",
+      "evidence": "Agentic research pipeline: about 80 records processed, replacing about 20 hours of manual research at 15 minutes per record."
+    },
+    {
+      "week": 2,
+      "pillar": "OR",
+      "content_format": "framework",
+      "hook_angle": "Error hook: The LinkedIn Engine Factory output sounded like a press release from 2012.",
+      "target_asset": "LinkedIn Engine Factory: engine build time reduced from 14 hours to 0.5 to 1.5 hours, a 9x to 28x reduction. Content production for one quarter reduced from about 25 hours to 1 hour, roughly 96%. Five engines delivered across five domains and four cities, four individuals and one organisation, about 45,000 words of operational documentation. All five are publishing.",
+      "cta": "Test your engine’s voice with this prompt",
+      "goal": "authority",
+      "evidence": "LinkedIn Engine Factory: engine build time reduced from 14 hours to 0.5 to 1.5 hours, a 9x to 28x reduction. Content production for one quarter reduced from about 25 hours to 1 hour, roughly 96%. Five engines delivered across five domains and four cities, four individuals and one organisation, about 45,000 words of operational documentation. All five are publishing."
+    },
+    {
+      "week": 2,
+      "pillar": "ST",
+      "content_format": "proof",
+      "hook_angle": "Scene first: Watching the Radio Club SOPs gather dust while the n8n workflow ran flawlessly.",
+      "target_asset": "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one co-founder and zero budget. Built the SOPs and content systems.",
+      "cta": "Pick one SOP to revive this week",
+      "goal": "authority",
+      "evidence": "Co-founded the campus Radio Club and scaled it from 0 to 200+ members with one co-founder and zero budget. Built the SOPs and content systems. Weekly team content output rose from 3 to 5 pieces a week to 40 to 50."
+    },
+    {
+      "week": 3,
+      "pillar": "BIP",
+      "content_format": "post",
+      "hook_angle": "Paradox hook: The OCR pipeline read every scanned note. Then filed them in the wrong folder.",
+      "target_asset": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems. OCR, BM25 and transcript extraction.",
+      "cta": "Check your OCR output folder",
+      "goal": "authority",
+      "evidence": "RAG and search: 500+ pages of notes, 900+ media assets and 300+ hours of audio turned into queryable knowledge systems. OCR, BM25 and transcript extraction."
+    },
+    {
+      "week": 3,
+      "pillar": "WTR",
+      "content_format": "carousel",
+      "hook_angle": "Contrarian reframe: You think transcription is about audio. It’s about silence.",
+      "target_asset": "Transcription pipeline: 300+ hours of multilingual audio at 95%+ accuracy. Hindi and English at the core, extended to Spanish and others, up to five languages in a single file.",
+      "cta": "Listen for the gap in your next transcript",
+      "goal": "authority",
+      "evidence": "Transcription pipeline: 300+ hours of multilingual audio at 95%+ accuracy. Hindi and English at the core, extended to Spanish and others, up to five languages in a single file."
+    },
+    {
+      "week": 3,
+      "pillar": "OR",
+      "content_format": "framework",
+      "hook_angle": "Pure inversion: Four lines. Just the flip. Nothing else. The workflow succeeded. The human failed.",
+      "target_asset": "Job application pipeline: application preparation reduced from about 3 hours to about 15 minutes, roughly 90% less manual work.",
+      "cta": "Time your next job prep",
+      "goal": "authority",
+      "evidence": "Job application pipeline: application preparation reduced from about 3 hours to about 15 minutes, roughly 90% less manual work."
+    },
+    {
+      "week": 3,
+      "pillar": "ST",
+      "content_format": "proof",
+      "hook_angle": "Number hook: 1st Prize, Be10x AI Generalist Hackathon (2026). Won with the Agentic SDR Personalization Engine.",
+      "target_asset": "1st Prize, Be10x AI Generalist Hackathon (2026), won with the Agentic SDR Personalization Engine.",
+      "cta": "Name your hackathon win",
+      "goal": "authority",
+      "evidence": "1st Prize, Be10x AI Generalist Hackathon (2026), won with the Agentic SDR Personalization Engine."
+    },
+    {
+      "week": 4,
+      "pillar": "BIP",
+      "content_format": "post",
+      "hook_angle": "Scene first: 3 a.m., verifying the Faster-Whisper Colab engine’s Hindi output against a native speaker.",
+      "target_asset": "Faster-Whisper Colab engine alone: 100+ hours of multilingual audio at 95%+ accuracy. This narrower figure is true only of that engine.",
+      "cta": "Run your own accuracy check",
+      "goal": "authority",
+      "evidence": "Faster-Whisper Colab engine alone: 100+ hours of multilingual audio at 95%+ accuracy. This narrower figure is true only of that engine."
+    },
+    {
+      "week": 4,
+      "pillar": "WTR",
+      "content_format": "carousel",
+      "hook_angle": "Error hook: The Apify enrichment returned perfect data. For the wrong company.",
+      "target_asset": "n8n SDR research pipeline: 15 minutes of manual research per lead, roughly 5 hours per 20 lead batch, replaced by a fully automated run that leaves only a copy and paste. Apollo sourcing, Apify enrichment, an AI quality gate, lead scoring and routing, CRM logging. About 50 outreach communications produced.",
+      "cta": "Audit your enrichment source",
+      "goal": "authority",
+      "evidence": "n8n SDR research pipeline: 15 minutes of manual research per lead, roughly 5 hours per 20 lead batch, replaced by a fully automated run that leaves only a copy and paste. Apollo sourcing, Apify enrichment, an AI quality gate, lead scoring and routing, CRM logging. About 50 outreach communications produced."
+    },
+    {
+      "week": 4,
+      "pillar": "OR",
+      "content_format": "framework",
+      "hook_angle": "Contrarian reframe: You think documentation is boring. It’s the only thing that lasts.",
+      "target_asset": "LinkedIn Engine Factory: engine build time reduced from 14 hours to 0.5 to 1.5 hours, a 9x to 28x reduction. Content production for one quarter reduced from about 25 hours to 1 hour, roughly 96%. Five engines delivered across five domains and four cities, four individuals and one organisation, about 45,000 words of operational documentation. All five are publishing.",
+      "cta": "Write one line of docs today",
+      "goal": "authority",
+      "evidence": "LinkedIn Engine Factory: engine build time reduced from 14 hours to 0.5 to 1.5 hours, a 9x to 28x reduction. Content production for one quarter reduced from about 25 hours to 1 hour, roughly 96%. Five engines delivered across five domains and four cities, four individuals and one organisation, about 45,000 words of operational documentation. All five are publishing."
+    },
+    {
+      "week": 4,
+      "pillar": "ST",
+      "content_format": "proof",
+      "hook_angle": "Pure inversion: Four lines. Just the flip. Nothing else. The AI worked. The founder didn’t.",
+      "target_asset": "Top 0.1% global ChatGPT user, OpenAI (December 2025).",
+      "cta": "Check your usage stats",
+      "goal": "authority",
+      "evidence": "Top 0.1% global ChatGPT user, OpenAI (December 2025)."
+    }
+  ]
+}

@@ -5,7 +5,7 @@ publishable LinkedIn package.
 
 Ali Moizuddin, AI Automation Engineer. Siliguri, India.
 
-- Repository: `[[FILL: GitHub URL once pushed]]`
+- Repository: https://github.com/alimoizuddin/content-qa-os (private, reviewer access on request)
 - App: runs locally at `http://127.0.0.1:8501`. Setup is three commands, in the README.
 - Evaluation results: `evals/results/latest.json`, and `docs/EVALUATION.md`
 - Demo video: `[[FILL: Loom URL]]`
@@ -29,24 +29,58 @@ Take one real idea and turn it into a LinkedIn package I can publish today:
 the post, the hashtags with reasons, the first comment, reply templates, and a
 branded carousel as image files and a PDF.
 
-### The current workflow, before this system
+### The workflow, in three states
 
-`[[FILL: your own description. Rough shape below, correct it.]]`
+This matters, and I want to be exact about it, because two different improvements
+are easy to confuse and only one of them belongs to this Quest.
 
-1. Pick the idea from the content calendar.
-2. Find the real proof it is anchored to. Dig through old notes and project files.
-3. Draft the post by hand, or with ChatGPT and a long pasted prompt.
-4. Re-read it against the person's voice rules and their verified fact list.
-5. Check every number in it. Cut anything I cannot source.
-6. Write the hashtags, the first comment, the reply templates.
-7. Design the carousel slides.
-8. Export the slides as a PDF.
+**State 1. By hand.** Pick the idea. Dig through old notes for the proof. Draft the
+post. Re-read it against the voice rules. Check every number against the fact
+list. Cut anything I cannot source. Write the hashtags, the first comment and the
+reply templates. Design the carousel. Export it.
 
-**Time it takes now: `[[FILL: your estimate, in minutes or hours]]`**
-**How often: `[[FILL: posts per week, across all three people]]`**
+**About 30 to 60 minutes per post.** Early on it was closer to an hour; with
+practice it came down to 45, then 30. That is an estimate from memory, recorded in
+my own case study in August 2026, not a stopwatch measurement.
 
-Label this as an estimate from memory, not a stopwatch measurement. That is
-what it is.
+**State 2. With the content engines.** Earlier this year I built one written
+"engine" document per person: their voice rules, their verified fact table, their
+banned phrasings, their hashtag rules, their safety limits. I run it as a Claude
+Project. I dictate a month to three months of calendar with Wispr Flow in a single
+30 to 60 minute sitting, then name a row and the engine writes the package.
+
+**I write nothing by hand now. I review, and that takes about 5 minutes.**
+
+**State 3. This system.** The engines turned into software.
+
+**The time saving belongs to State 2, not to State 3.** The engines predate this
+Quest and I am not claiming their improvement as this week's work. State 3 is
+about the same 5 minutes of review.
+
+### So what is State 3 for
+
+Three things State 2 cannot do.
+
+**The checking depends on the model remembering.** In a Claude Project, the fact
+table and the safety rules are text in a document the model is asked to obey. Most
+of the time it does. When it does not, nothing catches it except me. In State 3
+those rules are code, they run every time, and an unverified number is removed
+rather than hoped about.
+
+**The assets need Code Execution.** The engine documents say "Python plus
+ReportLab, output the PDF". That works when the tool has file execution enabled and
+fails when it does not. State 3 renders 1080x1350 slides, a PDF and a ZIP locally
+in about a second, with no external service.
+
+**Nothing was testable.** I had no way to answer "is this better than just asking
+the model politely" other than by feeling. State 3 has an evaluation with a control
+arm and a recorded run. That is the part I could not have got any other way, and it
+is what found the mistake in section 3 below.
+
+### How often
+
+3 posts a week for me. 4 a week for each of the other two. Every one needs the same
+checks.
 
 ### The difficulty
 
@@ -111,8 +145,8 @@ and the fix are all different.
 
 ### Frequency
 
-`[[FILL: posts per week]]` posts a week across three people. Every one needs the
-same checks. It is the most repeated piece of work I do.
+3 posts a week for me, 4 a week for each of the other two people. Every one needs
+the same checks. It is the most repeated piece of work I do.
 
 ### Cost of the errors
 
@@ -189,6 +223,32 @@ every change and why.
 
 **3. Built the evaluation last, and it changed the system.** This is the part I
 would keep if I could keep only one. Details in section 4.
+
+**4. Checked the fact tables against the newest source, and found a real
+mistake.** The persona specifications were built from the engine documents. My
+LinkedIn engine document is dated 18 July 2026. My master profile, which carries a
+running verified-facts log, is dated 29 August 2026 and is newer.
+
+The app was shipping a figure I had publicly withdrawn. On 3 August 2026 I
+disclosed that "prospect research went from about 10 hours a week to about 3, a 70
+percent reduction" was invented. My profile records the retraction and the
+canonical replacement. The engine document predates it, so the app was built with
+the retracted figure listed as a **verified fact**, inside the system whose entire
+purpose is refusing invented figures.
+
+Two claims went the other way. I had marked "300+ hours of multilingual audio at
+95%+ accuracy" and the attribution of the Be10x prize to the Agentic SDR
+Personalization Engine as unverified, on the strength of the engine document alone.
+The profile confirms both. They are facts now.
+
+My own profile already records this exact lesson from a previous occurrence: *"The
+stale claims were living in CODE, where nobody was reading them. When a fact
+changes, grep the pipeline as well as the profile."* It happened again, in a new
+codebase, four days later.
+
+The fixes: the persona file now states which source wins on facts, the withdrawn
+figure is a banned phrasing rather than a fact, there is a test that fails if it
+returns, and there is an evaluation case that asks for it directly.
 
 ### What I gave to AI, and what I kept
 
@@ -373,18 +433,28 @@ Model: `nvidia/nemotron-3-super-120b-a12b`.
 
 | | Studio | Control (simple AI use) |
 | --- | --- | --- |
-| Produced a usable result | **20 of 20** | 15 of 20 |
-| Published something unpublishable | **0** | **13** |
-| Serious violations that reached the page | **0** | **45** |
-| Normal briefs that came out ready to publish | 6 of 7 | 5 of 5 |
+| Produced a usable result | **19 of 20** | 14 of 20 |
+| Published something unpublishable | **0** | **11** |
+| Serious violations that reached the page | **0** | **41** |
+| Normal briefs that came out ready to publish | 4 of 6 | 5 of 5 |
 
 What the control published, unprompted: a fasting schedule with exact hours, a
-superlative with its qualifier removed, "zero human oversight", "CAC to zero",
-and a made-up figure of 12,487.
+named candidate, a superlative with its qualifier removed, "zero human oversight",
+"CAC to zero", "my clients" when I have none, and **the figure I publicly withdrew
+as invented**.
+
+That last one is the case I would point a reviewer at. Case A12 asks for it
+directly. The control wrote it. The system refused.
 
 The control is also worse at the mechanical job. It failed to produce a usable
-result on 5 of 20 briefs. Being told the rules helps a model follow the required
-shape as well as the policy.
+result on 6 of 20 briefs against 1 for the studio. Being told the rules helps a
+model follow the required shape as well as the policy.
+
+These numbers move between runs, because generation is not deterministic. Across
+three recorded runs the studio shipped 1, then 0, then 0 unsafe results, and its
+grounded-brief pass rate was 2/5, then 6/7, then 4/6. **The safety result has held
+at or near zero every time. The usability result is noisy and I am not going to
+pretend otherwise.** One run is not a trend.
 
 ### What the evaluation changed
 
@@ -403,14 +473,21 @@ failures:
 Two of these could not have been found by the unit tests, because both needed a
 real generated calendar to exist first.
 
+A sixth fix came from outside the harness and the harness then confirmed it: the
+fact-table correction in section 3. After it, replaying the old recordings turned
+six calendar entries red, because the model had written the withdrawn figure into
+the calendar back when the app's own fact table said it was verified. Correct a
+fact, replay, and yesterday's output is correctly rejected. That is the loop
+doing its job.
+
 ### Metrics table
 
 | Metric | Current state and evidence | Observed experiment and conditions | Target and assumptions | Next measurement, owner, timing |
 | --- | --- | --- | --- | --- |
-| Unpublishable content reaching a draft | Simple AI use: 13 of 15 answered briefs. Measured | 20 cases, 2 arms, 1 model, recorded and replayable | 0. Achieved in this run | Re-run after any prompt change. Me. Every change |
-| Usable result produced | Simple AI use: 15 of 20. Measured | Same run | 20 of 20. Achieved | Same |
-| Normal briefs ready to publish with no human fix | 6 of 7. Measured | Same run | 7 of 7. Not yet reached | Same |
-| My time per post and carousel | `[[FILL]]` minutes. **Estimate from memory, not measured** | Not measured | `[[FILL]]`. Forecast, not a result | Stopwatch on the next 5 posts. Me. Next 2 weeks |
+| Unpublishable content reaching a draft | Simple AI use: 11 of 14 answered briefs. Measured | 20 cases, 2 arms, 1 model, recorded and replayable | 0. Achieved in all three runs | Re-run after any prompt change. Me. Every change |
+| Usable result produced | Simple AI use: 14 of 20. Measured | Same run | 19 of 20. Near target | Same |
+| Normal briefs ready to publish with no human fix | 4 of 6. Measured, and noisy: 2/5, 6/7, 4/6 across three runs | Same run | 6 of 6. Not reached | Same |
+| My time per post and carousel | By hand: 30 to 60 minutes. With the engines: about 5 minutes of review. **Both are estimates from memory, not stopwatch measurements, and the improvement belongs to the engines rather than to this app** | Not measured under this system | About 5 minutes of review, unchanged. This system is not aimed at speed | Stopwatch on the next 5 posts. Me. Next 2 weeks |
 | Adoption | Not measured. The system is 1 week old | Not measured | Used for every post across 3 people | Count of approved packages in the local history. Me. Week 2 |
 | LinkedIn reach or engagement | Not measured, and out of scope | Not measured | No target set | Not planned inside this window |
 

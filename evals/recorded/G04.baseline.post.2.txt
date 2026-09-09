@@ -1,0 +1,43 @@
+{
+  "hook": "That moment when you reach for a packaged snack… but what your body really wants is tamarind rice powder on eggs? That’s not weakness. That’s wisdom.",
+  "body_lines": [
+    "We’ve been taught to see cravings as failures — signs we lack willpower, discipline, or control.",
+    "But what if your craving isn’t asking for junk food… it’s asking for *familiarity*?",
+    "Last week, I found myself staring at a chip packet, hand halfway there — when suddenly, I paused. My body wasn’t craving salt or crunch. It was craving the tang of tamarind, the warmth of home-cooked spice, the comfort of my mother’s kitchen.",
+    "So I made tamarind rice powder over scrambled eggs. Simple. Real. Deeply satisfying.",
+    "The craving vanished — not because I resisted, but because I listened.",
+    "Cravings are not enemies. They’re messengers. Especially for midlife women navigating hormonal shifts, stress, and busy schedules — your body is trying to tell you what it needs: nourishment, rhythm, memory, balance.",
+    "Next time you reach for something processed, pause. Ask: *What flavour, texture, or memory is my body actually hungry for?*",
+    "You might be surprised — and deeply nourished — by the answer."
+  ],
+  "takeaway": "Your cravings aren’t a sign you’re broken — they’re your body’s intelligent way of guiding you back to what truly nourishes you. Listen. Don’t fight.",
+  "question": "What’s one ‘unexpected’ craving you’ve had lately that turned out to be a call for something real, familiar, or comforting from your roots?",
+  "keywords": ["cravings", "midlife wellness", "intuitive eating", "Indian nutrition", "hormonal health", "mindful eating", "WILDFIT", "nutrition coaching", "women's health", "Indian superfoods", "emotional eating", "body wisdom"],
+  "keyword_rationale": "Selected keywords blend the core theme (cravings as information) with Rakhee’s niche (WILDFIT, Indian nutrition, midlife women) and broader wellness trends. Terms like 'intuitive eating', 'body wisdom', and 'hormonal health' resonate with the audience’s search behavior and align with LinkedIn’s professional wellness community. Including culturally specific terms like 'tamarind rice powder' and 'Indian superfoods' boosts relatability and discoverability among Indian professionals seeking authentic, rooted health advice.",
+  "hashtags": ["#CravingsAreInformation", "#MidlifeWellness", "#IndianNutrition", "#WILDFITCoach", "#MindfulEating", "#HormonalBalance", "#NutritionNotWillpower", "#DesiWellness", "#EatLikeYourGrandma", "#BodyWisdom"],
+  "hashtag_notes": [
+    "#CravingsAreInformation - Core message hook, unique and ownable.",
+    "#MidlifeWellness - Targets audience directly; high search volume in Indian wellness circles.",
+    "#IndianNutrition - Culturally specific, helps reach diaspora and local professionals seeking relevant advice.",
+    "#WILDFITCoach - Brand visibility and credibility; aligns with her certification.",
+    "#MindfulEating - Broad wellness trend; attracts engagement from professionals interested in sustainable habits.",
+    "#HormonalBalance - Critical for midlife women; high relevance and search intent.",
+    "#NutritionNotWillpower - Challenges diet culture; shareable and provocative.",
+    "#DesiWellness - Niche but growing community; builds cultural connection.",
+    "#EatLikeYourGrandma - Evokes nostalgia and tradition; highly relatable for Indian audience.",
+    "#BodyWisdom - Reinforces the post’s central philosophy; encourages reflection and sharing."
+  ],
+  "comment_a": "This is so true — I’ve had the same experience with wanting aam papad instead of candy. It’s not about the sugar; it’s about the taste of childhood summers. Thank you for reframing this so beautifully.",
+  "comment_b": "As a working mom in Bangalore, I often feel guilty for ‘giving in’ to cravings. This post reminded me that my body isn’t betraying me — it’s trying to communicate. Going to try the tamarind egg trick tonight!",
+  "reply_templates": [
+    "Thank you for sharing that — it’s so powerful when we realize our cravings are actually love letters from our bodies.",
+    "I love that you noticed the pattern. Often, the real craving isn’t the food — it’s the feeling or memory tied to it.",
+    "That’s such a relatable moment. The pause is where the power lives — glad you’re honoring it.",
+    "Exactly! Our bodies know what they need long before our minds catch up. Trusting that is the real discipline.",
+    "So glad this resonated. Sometimes the most nourishing thing isn’t what’s in the packet — it’s what’s in your pantry, and your heart.",
+    "This is why I love coaching — watching women reconnect with their intuition. You’re not alone in this.",
+    "The tamarind trick is a keeper! Simple, real, and deeply satisfying — exactly what the body asks for when it’s truly heard.",
+    "You’ve just described intuitive eating in its purest form: listening, not fighting. Beautifully said."
+  ],
+  "publish_window": "Wednesday 11:00 AM - 1:00 PM IST"
+}

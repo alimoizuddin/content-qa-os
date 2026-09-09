@@ -172,6 +172,44 @@ The independent scorer also caught a safety gap the application's own rule misse
 auditor's pattern required a singular noun. That is exactly the class of thing a
 scorer sharing code with the thing it scores can never find.
 
+## The mistake worth recording
+
+The persona specifications were built from the engine documents in the corpus.
+Ali's LinkedIn engine document is dated 18 July 2026. His master profile carries a
+running verified-facts log and is dated 29 August 2026.
+
+On 3 August 2026 he had disclosed that "prospect research went from about 10 hours
+a week to about 3, a 70 percent reduction" was a figure he invented. His profile
+records the retraction and the wording that replaced it. The engine document
+predates it and still carries the old number.
+
+So this app shipped a publicly withdrawn claim as a **verified fact**, inside the
+system whose entire purpose is refusing invented figures. It was in `star_facts`,
+it licensed the numbers 10, 3 and 70 for every generation, and it would have been
+written into real posts.
+
+Two claims went the other way and had been wrongly quarantined: "300+ hours of
+multilingual audio at 95%+ accuracy", and the attribution of the Be10x prize to the
+Agentic SDR Personalization Engine. The profile confirms both.
+
+**What changed as a result:**
+
+- `core/personas.py` now states in its docstring which source wins on facts.
+- The withdrawn phrasing is a banned inflation, so the auditor blocks it.
+- A test fails if it reappears in `star_facts`.
+- Evaluation case A12 asks for it directly. The studio blocks it. The control
+  published it.
+- After the correction, replaying the old recordings turned six calendar entries
+  red, because the model had written the withdrawn figure into the calendar back
+  when the fact table said it was verified. Correct a fact, replay, and yesterday's
+  output is correctly rejected.
+
+Ali's own profile already records this lesson from a previous occurrence: *"The
+stale claims were living in CODE, where nobody was reading them. When a fact
+changes, grep the pipeline as well as the profile."* It happened again, in a new
+codebase, four days later. A written precedence rule is the only thing that stops
+it happening a third time.
+
 ## What is still open
 
 - The picture package needs an OpenRouter key and an image-capable model to produce

@@ -1,0 +1,34 @@
+{
+  "hook": "I have read N resumes this month, and here is what X looks like from my side. Training 14,000+ learners across 250+ sessions while running hiring for a 50+ member organisation taught me one thing: volume is not the credential.",
+  "body_lines": [
+    "I have deployed 100+ educators and trainers across programs and locations, yet I still see the same mistake: confusing hours logged with impact made.",
+    "Sitting on the deciding side while you train changes everything—you see which skills actually move the needle in real hiring cycles.",
+    "The contrast couplet: You can train thousands and still miss the mark, or you can train fewer and hit the bullseye every time.",
+    "[✨] The real credential is not the number of sessions you run, but the clarity you bring to what employers actually need.",
+    "The negation ladder: It is not about how many people you reach. It is not about how many sessions you deliver. It is not about the scale alone.",
+    "The turn comes when you anchor your training in the hiring desk—where you witness what gets shortlisted, what gets rejected, and why.",
+    "Your upskill effort must mirror the real work: adaptable, credible, and visible to the people who decide.",
+    "Stop measuring output by headcount. Start measuring it by hireability."
+  ],
+  "takeaway": "Your training’s worth is proven not by how many you teach, but by how many you help get shortlisted.",
+  "question": "When you train from the hiring desk, does your curriculum reflect what actually gets candidates hired?",
+  "keywords": ["AI-native", "Head of HR", "hiring desk", "quality of hire", "shortlist", "14,000+ learners", "250+ sessions"],
+  "keyword_rationale": "These terms anchor the post in the speaker’s verified role and proof points, signaling authority to HR leaders and institutions. They reinforce the core idea that credibility comes from sitting on the deciding side, not from volume alone.",
+  "hashtags": ["#Employability", "#HRLeaders", "#QualityOfHire", "#LearningAndDevelopment"],
+  "hashtag_notes": [
+    "#Employability ties to the core mission of effective training that leads to real hiring outcomes.",
+    "#HRLeaders targets the intended audience who make hiring and training decisions.",
+    "#QualityOfHire reflects the metric that matters when training is anchored in real hiring desk insights.",
+    "#LearningAndDevelopment situates the post within the functional domain of credible, impact-driven upskilling."
+  ],
+  "comment_a": "Just finished a session with campus placement teams where we mapped soft skills modules to actual interview scorecards. The gap between what’s taught and what’s hired on is shrinking—but only when we train from the desk. What’s one skill you’ve seen get overlooked in training but consistently valued in hiring?",
+  "comment_b": "One detail I didn’t include in the post: last quarter, we revised our new hire onboarding based on exit interview patterns from the first 90 days. Training that ignores retention data is training that misses half the picture.",
+  "repost_caption": "Resharing this for talent heads and L&D leads: the most credible training isn’t measured in attendees—it’s measured in hires. Let’s build what actually works.",
+  "reply_templates": [
+    "Thanks! I’m curious—what’s one hiring signal you wish more training programs would reflect?",
+    "I’ve seen this work best when training modules are co-designed with hiring managers—has your team tried that?",
+    "You’re right that scale matters for reach—but without desk-side insight, reach can reinforce the wrong skills.",
+    "9:00 to 10:30 AM IST"
+  ],
+  "publish_window": "9:00 to 10:30 AM IST"
+}

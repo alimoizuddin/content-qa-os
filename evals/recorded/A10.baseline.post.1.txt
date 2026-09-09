@@ -1,0 +1,46 @@
+{
+  "hook": "Stop guessing which hashtags will work. Start using the ones the algorithm actually rewards.",
+  "body_lines": [
+    "Most creators treat hashtags like confetti—throw a bunch in and hope something sticks.",
+    "But LinkedIn’s ranking model doesn’t care about volume. It cares about relevance.",
+    "It scans your hashtags to understand: Who is this for? What problem does it solve? Where does it fit in the conversation?",
+    "If your tags are generic (#Innovation, #Leadership, #AI), you’re invisible to the people who actually need to see your post.",
+    "The fix? Use 3 hyper-specific hashtags that mirror the exact language your ideal audience uses when searching.",
+    "Example: Instead of #AI, try #AIFoundersBuildingMVPs or #PromptEngineeringForSaaS.",
+    "These aren’t just tags—they’re signals. They tell the algorithm: ‘This post belongs in this niche feed.’",
+    "And when the algorithm knows where to put you? It puts you in front of the right people.",
+    "Result? Higher reach. More comments. Real engagement—not just vanity metrics.",
+    "Try this on your next post. Track the difference. Then come back and tell me what changed."
+  ],
+  "takeaway": "Hashtags aren’t about popularity—they’re about precision. Use them like keywords in a search query, and the algorithm will do the rest.",
+  "question": "What’s one hyper-specific hashtag you’ve started using that actually got you noticed?",
+  "keywords": ["hashtag strategy", "LinkedIn algorithm", "content discovery", "niche targeting", "creator growth", "founder marketing", "engagement tactics", "viral post formula", "audience targeting", "social media SEO"],
+  "keyword_rationale": "Selected terms reflect how creators and founders think about growth: they want actionable, measurable tactics tied to platform mechanics. Words like 'algorithm', 'niche targeting', and 'social media SEO' speak to their desire to hack systems, not just post randomly. Avoiding fluff like 'viral' in keywords keeps it credible—this is about repeatable systems, not luck.",
+  "hashtags": ["#HashtagStrategy", "#LinkedInGrowth", "#CreatorTips", "#FounderHack", "#ContentThatConverts", "#AIAutomation", "#NicheTargeting", "#AlgorithmFriendly", "#EngagementOverVanity", "#PostLikeAPro"],
+  "hashtag_notes": [
+    "#HashtagStrategy - Primary hook term, searchable and ownable",
+    "#LinkedInGrowth - High-intent audience searching for this",
+    "#CreatorTips - Broad but relevant, catches mid-tier creators",
+    "#FounderHack - Speaks directly to the time-strapped founder mindset",
+    "#ContentThatConverts - Appeals to outcome-driven users",
+    "#AIAutomation - Leverages Ali’s credibility, attracts relevant niche",
+    "#NicheTargeting - Core concept, reinforces the lesson",
+    "#AlgorithmFriendly - Signals understanding of platform mechanics",
+    "#EngagementOverVanity - Counters shallow metrics, builds trust",
+    "#PostLikeAPro - Aspirational, encourages sharing and saves"
+  ],
+  "comment_a": "I used to slap on #AI #Innovation #Startup and wonder why my posts got 20 views. Switched to #LLMopsForEarlyStageSaaS and #PromptEngineeringForB2B last week—same content, 3.2x reach. The algorithm didn’t change my post. It changed who saw it.",
+  "comment_b": "This is why I tell founders: your hashtags are your SEO metadata. If you’re not thinking like a search engine, you’re shouting into a void. Start small: pick one niche term your ideal customer actually types into LinkedIn search. Use it. Watch what happens.",
+  "repost_caption": "This is the hashtag strategy I wish I knew 6 months ago. No fluff. Just how the algorithm actually works—and how to use it to get seen by the right people.",
+  "reply_templates": [
+    "Great question! The key is specificity over volume. Try replacing one broad tag with a phrase your ideal customer would actually search for—like ‘SaaS founders hiring AI engineers’ instead of just #AI. Test it for a week and track impressions.",
+    "Totally get why it feels counterintuitive. We’re taught to use popular tags. But LinkedIn’s model rewards relevance, not popularity. Think of it like Google: you don’t rank for ‘best pizza’ by stuffing the word 20x—you rank by matching intent.",
+    "Start with your audience’s language. Go to LinkedIn search, type in a problem they have, and see what phrases pop up in posts and profiles. Those are your gold. Use 2–3 of those as hashtags.",
+    "I’ve seen posts go from 50 to 500+ views just by switching from #Leadership to #EngineeringManagersInRemoteTeams. Same content. Different audience. The algorithm finally knew where to put it.",
+    "Nope—this isn’t about gaming the system. It’s about speaking its language. The algorithm wants to show your post to people who’ll engage. Help it do that by being crystal clear about who you’re talking to.",
+    "If your post is about AI for healthcare founders, #AI is too broad. #AIInHealthcareForFounders is the signal. It’s longer, but it’s precise. And precision beats volume every time in niche B2B spaces.",
+    "Try this: after you write your post, ask: ‘If my ideal customer was searching LinkedIn for this exact topic, what would they type?’ Use those words as your hashtags. That’s it.",
+    "The magic isn’t in the hashtag—it’s in the match. When your hashtags mirror the search intent of your audience, the algorithm doesn’t just show your post—it recommends it."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM or 1:00–3:00 PM EST (when creators and founders are scrolling during breaks or planning their day)"
+}

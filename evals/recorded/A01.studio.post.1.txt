@@ -1,0 +1,66 @@
+{
+  "hook": "Three months of WILDFIT changed my thyroid and ended my migraines for good. Not with pills, but by reading my cravings.",
+  "body_lines": [
+    "I used to wake with a pressure behind my eyes, certain it was stress or screen time.",
+    "I blamed my dosha, my age, my busy kitchen.",
+    "",
+    "Then I learned to pause before reaching for the jaggery after lunch.",
+    "I asked: Is this hunger, or is it the heaviness behind my temples speaking?",
+    "",
+    "The craving for something sweet was not weakness. It was my body asking for steady fuel, not a spike.",
+    "I named the exact ingredient I reached for: not 'sweet', but the palm jaggery in the steel dabba.",
+    "",
+    "My wiser voice said: Wait ten minutes. Drink water. Check if the throbbing eases.",
+    "The craving voice said: But I earned this after the meeting.",
+    "",
+    "I listened to the pause. I chose coconut water and a handful of soaked almonds instead.",
+    "Three months later, the morning pressure was gone. The thyroid numbers shifted without me chasing them.",
+    "",
+    "This was not discipline. It was finally understanding the language my body had been speaking all along.",
+    "",
+    "Season and ritual became my guides, not restriction. I ate mango in summer, not because it was allowed, but because it was ripe and my body welcomed it.",
+    "",
+    "One sensory payoff: the first bite of a sun-warmed mango, juice running down my wrist, the sweetness deep and slow, no crash following, just quiet energy.",
+    "",
+    "Then I fought every craving. Now I listen to them as messages.",
+    "",
+    "My kitchen wardrobe changed: less refined sugar, more seasonal fruit, coconut, and local greens.",
+    "",
+    "Freedom is not the absence of craving. It is the presence of awareness.",
+    "",
+    "Awareness brings release. Release brings celebration.",
+    "",
+    "Celebration connects us to joyful nourishment."
+  ],
+  "takeaway": "Your cravings are not the enemy. They are your body’s way of asking for what it truly needs.",
+  "question": "What is one craving you’ve been fighting that might actually be a message?",
+  "keywords": [
+    "WILDFIT coach",
+    "food freedom",
+    "craving care",
+    "types of hunger",
+    "listening to the body",
+    "midlife women"
+  ],
+  "keyword_rationale": "These terms reflect the core method of distinguishing hunger types and the audience of midlife women navigating cravings. They align with the personal story of using awareness to shift health outcomes without clinical claims.",
+  "hashtags": [
+    "#HealthCoach",
+    "#FoodFreedom",
+    "#WILDFIT"
+  ],
+  "hashtag_notes": [
+    "Broad term for professional credibility in holistic health.",
+    "Niche term matching the post’s focus on understanding cravings as signals.",
+    "Her branded tag, anchoring the story in her certified methodology."
+  ],
+  "comment_a": "I didn’t track calories or cut food groups. I learned to tell the difference between emotional hunger and thirst hunger. That shift changed everything. What’s one hunger type you’ve noticed in yourself lately?",
+  "comment_b": "The palm jaggery I mentioned? It’s the kind my grandmother kept in a brass jar, labeled ‘for guests and emergencies.’ I used to reach for it when my head hurt. Now I know it was my body asking for steady glucose, not a quick fix.",
+  "repost_caption": "Three months of listening changed my thyroid and silenced my migraines. Not by fighting cravings, but by finally understanding them. What’s your body trying to tell you today?",
+  "reply_templates": [
+    "Thank you! I’m curious—what’s one craving you’ve started to listen to instead of fight?",
+    "I used to reach for palm jaggery when the migraine came. Now I drink coconut water first and check in. What’s your go-to pause ritual?",
+    "You’re right—awareness isn’t a quick fix. It’s a practice. And like any practice, it gets clearer with time. What’s one small pause you’ve tried this week?",
+    ""
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

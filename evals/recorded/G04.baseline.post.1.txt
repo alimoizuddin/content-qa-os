@@ -1,0 +1,70 @@
+{
+  "hook": "That moment when you reach for a packaged snack… but what your body really wanted was tamarind rice powder on eggs?",
+  "body_lines": [
+    "We’ve all been there: standing in front of the pantry, eyes scanning for something quick, salty, sweet — anything to quiet the urge.",
+    "But what if that craving isn’t a sign of weak willpower? What if it’s your body whispering a message in a language we’ve forgotten how to listen to?",
+    "For me, it was tamarind rice powder over eggs. Not the biscuit. Not the namkeen. Not even the chocolate.",
+    "It was the tang, the warmth, the familiar depth of home — a flavour my body recognized as nourishment, long before my mind caught up.",
+    "Cravings aren’t failures. They’re data. They’re your body’s way of saying: ‘I need this. I remember this. This feels safe.’",
+    "In midlife, when hormones shift and stress piles up, our cravings often point to deeper needs — not just for food, but for comfort, rhythm, or connection to roots.",
+    "Instead of fighting the urge, pause. Ask: What flavour am I really craving? What memory does it tie to? What need is it trying to meet?",
+    "Sometimes, the answer isn’t in the snack aisle. It’s in your grandmother’s spice box. Or your own kitchen, waiting to be rediscovered.",
+    "Honour the craving. Don’t shame it. Listen. Then respond with wisdom — not restriction.",
+    "Your body knows what it needs. You just have to learn to speak its language again."
+  ],
+  "takeaway": "Your cravings aren’t a lack of discipline — they’re your body’s wisdom speaking in flavour. Listen closely. The answer is often closer than you think.",
+  "question": "What’s one craving you’ve had lately that turned out to be about more than just hunger? Share below — I’d love to hear your story.",
+  "keywords": [
+    "cravings and nutrition",
+    "mindful eating",
+    "midlife wellness",
+    "Indian flavours",
+    "emotional eating",
+    "WILDFIT coaching",
+    "body intuition",
+    "healthy snacking",
+    "women’s health India",
+    "nutrition mindset",
+    "food as information",
+    "holistic health"
+  ],
+  "keyword_rationale": "Selected keywords blend the core theme (cravings as body signals) with audience relevance (midlife women, working professionals in India) and Rakhee’s niche (WILDFIT, Indian flavours, mindful eating). Terms like 'body intuition' and 'food as information' reinforce the post’s reframing of cravings, while location- and culture-specific terms increase discoverability among the target demographic.",
+  "hashtags": [
+    "#CravingsAreInformation",
+    "#MindfulEating",
+    "#MidlifeWellness",
+    "#IndianNutrition",
+    "#WILDFITCoach",
+    "#BodyWisdom",
+    "#HealthyHabits",
+    "#NutritionMindset",
+    "#WomenHealthIndia",
+    "#EatIntuitively"
+  ],
+  "hashtag_notes": [
+    "#CravingsAreInformation - Central theme, unique and ownable for Rakhee’s messaging",
+    "#MindfulEating - Broad but relevant wellness conversation",
+    "#MidlifeWellness - Directly targets audience life stage",
+    "#IndianNutrition - Culturally specific, improves reach in target region",
+    "#WILDFITCoach - Personal brand and credential reinforcement",
+    "#BodyWisdom - Reinforces the post’s core philosophy",
+    "#HealthyHabits - Evergreen wellness tag",
+    "#NutritionMindset - Shifts focus from restriction to awareness",
+    "#WomenHealthIndia - Geographic and demographic targeting",
+    "#EatIntuitively - Aligns with anti-diet, intuitive eating movement"
+  ],
+  "comment_a": "This is so relatable! I kept reaching for chips during work stress, but realized I just wanted the crunch and salt of homemade chana jor garam. Making a batch at home changed everything — no guilt, just satisfaction.",
+  "comment_b": "Thank you for reframing this. I’ve spent years feeling guilty for my cravings. Seeing them as signals instead of failures feels like a weight lifted. Going to try the tamarind egg trick tonight!",
+  "repost_caption": "Rakhee Singhi beautifully reframes cravings as body wisdom — not weakness. A must-read for anyone who’s ever felt at war with their appetite.",
+  "reply_templates": [
+    "Thanks for sharing! It’s amazing how often the real craving is tied to a memory or emotion — not just the food itself.",
+    "I love that you honoured the signal instead of fighting it. That’s where real change begins.",
+    "So glad this resonated. Your body’s wisdom is always speaking — you’re just learning to listen.",
+    "That’s such a powerful example. Sometimes the simplest flavours carry the deepest nourishment.",
+    "Exactly! Cravings aren’t the enemy — disconnection from our bodies is. Reconnecting is the real work.",
+    "Beautifully said. When we stop judging cravings, we start understanding them.",
+    "This is the shift we need: from willpower to wisdom. From restriction to resonance.",
+    "Your story is a perfect reminder: the answer is often in the familiar, not the packaged."
+  ],
+  "publish_window": "Best posted between 7:00 AM and 9:00 AM IST on Tuesday, Wednesday, or Thursday — when midlife professionals are checking LinkedIn before work or during morning breaks."
+}

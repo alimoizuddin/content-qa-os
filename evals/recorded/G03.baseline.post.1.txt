@@ -1,0 +1,34 @@
+{
+  "hook": "Most resumes say 'I hope to grow in this role.' That’s not a summary — it’s a wishlist.",
+  "body_lines": [
+    "After reviewing 900+ ATS-optimized resumes for freshers and early-career candidates, I noticed a quiet but critical pattern:",
+    "The weakest summaries describe aspirations. The strongest ones declare decisions.",
+    "",
+    "'I hope to leverage my skills in a dynamic environment' → passive, vague, forgettable.",
+    "'I decided to build my foundation in data analysis by completing three certified projects, leading to a 20% efficiency gain in my internship — and I’m ready to bring that same rigor to your team.' → active, evidence-based, unforgettable.",
+    "",
+    "Hope is what you feel. Decision is what you’ve done.",
+    "Your resume summary isn’t a dream journal — it’s a professional promise.",
+    "Stop asking for a chance. Start showing why you’ve already earned it."
+  ],
+  "takeaway": "Replace hope with proof. Your summary should reflect decisions you’ve made — not wishes you’re still making.",
+  "question": "What’s one decision you’ve made in your early career that proves you’re ready — not just hoping?",
+  "keywords": ["resume summary", "freshers job search", "ATS optimization", "early career branding", "professional summary", "job seeker tips", "career launch", "employability training", "HR insights", "LinkedIn for job seekers"],
+  "keyword_rationale": "Selected keywords align with Isshita’s expertise in AI-native employability training and HR leadership, targeting freshers and early-career job seekers actively improving their resumes. Terms like 'ATS optimization' and 'professional summary' capture search intent, while 'employability training' and 'HR insights' reinforce her authority. Avoided overly broad terms to maintain relevance and specificity.",
+  "hashtags": ["#ResumeTips", "#FreshersJobs", "#CareerStart", "#ATSFriendly", "#JobSearchHelp", "#Employability", "#EarlyCareer", "#HRLeader", "#LinkedInTips", "#CareerGrowth"],
+  "hashtag_notes": "Each hashtag targets a specific segment of the audience: #ResumeTips and #ATSFriendly speak directly to the pain point; #FreshersJobs and #EarlyCareer narrow the audience; #Employability and #HRLeader position Isshita as the expert; #LinkedInTips and #CareerGrowth boost discoverability in professional development feeds.",
+  "comment_a": "I’ve seen so many resumes that read like a cover letter’s first draft — full of ‘I want to learn’ and zero ‘I already did.’ This shift from hope to decision is everything. Thanks for naming it, Isshita.",
+  "comment_b": "This is why I tell my students: your resume isn’t about what you hope to become — it’s about what you’ve already chosen to do. Love this framing.",
+  "repost_caption": "If your resume summary sounds like a wishlist, it’s time to rewrite it as a record of decisions. Here’s how.",
+  "reply_templates": [
+    "Great point — I’ve noticed the same thing. The moment candidates start showing proof of action instead of stating intent, their callback rates jump.",
+    "This is gold. I’m going to share this with my career coaching clients today. The ‘hope vs decision’ lens is so simple, yet so powerful.",
+    "Thanks for putting this into words. I’ve been struggling to explain why my summary felt flat — now I know why.",
+    "Exactly. Employers don’t hire hope. They hire evidence of decision-making, initiative, and follow-through.",
+    "This reframing changed how I view my own resume. Time to go edit mine — thanks, Isshita!",
+    "I’ve reviewed 200+ resumes this month — and you’re absolutely right. The ones that get interviews don’t say ‘I hope to.’ They say ‘I did.’",
+    "Love this. It’s not about being perfect — it’s about being proactive. Even small decisions, clearly stated, make a huge difference.",
+    "This should be taught in every career center. Hope gets you nowhere. Decisions get you hired."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM or 12:00–2:00 PM (local time) for maximum visibility among active job seekers and recruiters"
+}

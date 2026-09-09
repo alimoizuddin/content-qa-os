@@ -1,0 +1,36 @@
+{
+  "hook": "My hand reached for the packaged namkeen. My body whispered for tamarind rice powder over eggs.",
+  "body_lines": [
+    "",
+    "The craving wasn’t for crunch or salt. It was for the sour tang of dried tamarind, the warmth of roasted chana dal, the faint curry leaf note that lives in my mother’s spice box.",
+    "I paused. Not to resist. To listen.",
+    "One voice said: You’ve been good all day. Have the snack. It’s easier.",
+    "The other asked: What is this hunger really pointing to? What flavour memory is my body trying to recreate?",
+    "I chose the powder. Two eggs. A spoonful of the mix. A drizzle of ghee.",
+    "The first bite was not satisfaction. It was recognition. Like hearing a song you forgot you loved.",
+    "That moment taught me: cravings are not enemies to defeat. They are messengers in the language of taste and memory.",
+    "Discipline never solved the real question. Awareness did.",
+    "Now I keep my kitchen wardrobe stocked with the real ingredients, not just the substitutes.",
+    "When a craving comes, I ask: What season is this? What ritual is missing? What does my body actually want to celebrate?",
+    "The answer is never in the packet. It’s always in the pantry.",
+    "Listen. Pause. Choose the real thing.",
+    "Your body knows the difference between a substitute and a soul memory.",
+    "What is your craving trying to tell you today?"
+  ],
+  "takeaway": "Cravings are information, not failure.",
+  "question": "What is your craving trying to tell you today?",
+  "keywords": ["WILDFIT coach", "food freedom", "craving care", "Indian food culture", "kitchen wardrobe", "listening to the body"],
+  "keyword_rationale": "These terms reflect the core message of interpreting cravings as signals, rooted in personal experience with Indian flavours and kitchen practices. They align with the audience’s cultural context and the coach’s method of tuning into bodily wisdom rather than external rules.",
+  "hashtags": ["#WILDFIT", "#CravingCare", "#TheIndianPlate", "#FoodPsychology"],
+  "hashtag_notes": ["#WILDFIT identifies her coaching methodology and credibility.", "#CravingCare names her unique approach to hunger as information.", "#TheIndianPlate grounds the post in Indian food traditions and audience identity.", "#FoodPsychology supports the scientific framing of cravings as meaningful signals."],
+  "comment_a": "That tamarind rice powder moment was real—it happened last Tuesday when I was drafting this post. The packaged namkeen looked easy, but my body knew what it truly needed. Have you ever had a craving that led you back to a childhood flavour?",
+  "comment_b": "I’ve noticed this pattern most strongly in the late afternoon, when energy dips and the mind seeks comfort. The body often isn’t asking for distraction—it’s asking for reconnection to taste, memory, or season. What time of day do your cravings usually show up?",
+  "repost_caption": "A craving for namkeen once led me to tamarind rice powder instead. Not because I was being good—but because my body was speaking a language I’d forgotten how to hear. Sometimes the wisest choice is the one that tastes like home.",
+  "reply_templates": [
+    "Thank you—I’m glad it resonated. What’s one flavour from your past that still shows up in your cravings?",
+    "The tamarind rice powder I use is homemade—sun-dried tamarind, roasted chana dal, mustard seeds, curry leaf, and a touch of jaggery, ground fresh. It’s not a recipe; it’s a memory.",
+    "You’re absolutely right that discipline has its place. And I’ve found that when I listen first, the need for discipline often softens because the body feels understood.",
+    "What time of day do your cravings usually appear?"
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

@@ -1,0 +1,31 @@
+{
+  "hook": "I stopped depending on daily pills myself. Not because I willed it. Because I finally listened.",
+  "body_lines": [
+    "",
+    "For years I took a small white tablet every morning. Blood pressure. The doctor said lifelong. I believed him.",
+    "Then I started noticing what my body whispered before the craving hit. A tight jaw. A dull headache behind the eyes. Not hunger. A signal.",
+    "I began to pause. Not to resist the urge to eat, but to ask: What is this really asking for? Rest? Water? The sourness of tamarind?",
+    "One monsoon, I skipped the pill after eating tamarind rice with curd and a spoon of ghee. My head felt clear. My hands warm. No spike.",
+    "That was not luck. That was my body correcting itself when I gave it the right signal at the right time.",
+    "I coached over a thousand women like me. Many told me the same thing: their pills changed when their plate did.",
+    "Not because food replaced medicine. But because nourishment reduced the noise the medicine was masking.",
+    "The shift was never in the dosage. It was in the awareness. The pause. The ingredient named.",
+    "Now I eat with the season. Tamarind in summer. Jaggery in winter. My kitchen wardrobe holds what the monsoon demands.",
+    "My body no longer screams for balance. It whispers. And I finally know how to answer."
+  ],
+  "takeaway": "Your pills may be managing symptoms. Your food could be addressing the root.",
+  "question": "What is one pill you take daily that you wonder if your food could eventually replace? Share one ingredient you crave when you feel off.",
+  "keywords": ["WILDFIT coach", "food freedom", "craving care", "types of hunger", "listening to the body", "midlife women"],
+  "keyword_rationale": "These terms reflect the core method of distinguishing true hunger from conditioned signals, which is central to the post’s message about medication and food. They align with the audience of midlife women managing daily prescriptions through self-awareness.",
+  "hashtags": ["#WILDFIT", "#CravingCare", "#FoodFreedom", "#MidlifeWomen"],
+  "hashtag_notes": ["#WILDFIT grounds the post in her certified methodology.", "#CravingCare names her unique approach to hunger signals.", "#FoodFreedom reflects the outcome of reducing reliance on external fixes.", "#MidlifeWomen specifies the audience navigating long-term prescriptions."],
+  "comment_a": "I’m not suggesting anyone stop medication without their doctor’s guidance. This is about noticing how food shifts the body’s baseline so that, over time, prescriptions may need revisiting. Have you ever noticed a change in how you feel after eating something truly nourishing?",
+  "comment_b": "After I began eating tamarind rice during the summer months, my morning headaches faded. It wasn’t the rice alone—it was the pattern of listening. What’s one seasonal food that has changed how you feel?",
+  "repost_caption": "We often forget that food is the first medicine. When we learn to listen, the body tells us what it truly needs—sometimes long before the pill does.",
+  "reply_templates": [
+    "Thank you—I’m glad it resonated. What’s one signal your body sends before you reach for food?",
+    "That’s a great question. For me, it was tamarind during the hot months—it’s cooling and grounding. What’s your go-to seasonal ingredient?",
+    "You’re absolutely right to consult your doctor. This isn’t about stopping pills—it’s about understanding how food influences the signals they’re managing."
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

@@ -1,0 +1,69 @@
+{
+  "hook": "I’ve trained 14,000+ learners across 250+ sessions. But the real credential isn’t the volume — it’s the seat I sat in while doing it.",
+  "body_lines": [
+    "As Head of HR, I didn’t just design training programs — I lived the consequences of them.",
+    "I hired the people who went through those programs. I fired the ones who didn’t stick. I promoted the ones who grew because of them.",
+    "That’s when I realized: training volume is a vanity metric. What matters is accountability.",
+    "When you’re on the deciding side — when your hiring, retention, and promotion decisions hinge on the output of your training — you stop chasing completion rates.",
+    "You start asking: Did this actually change behavior? Did it close the skill gap? Did it make someone more employable?",
+    "Too many institutions measure training by hours logged or certificates issued. We measure it by promotions earned, turnover reduced, and hiring managers who stop complaining about ‘not enough ready talent’.",
+    "If you’re not sitting in the hiring manager’s chair while you train, you’re not training for employability — you’re training for attendance.",
+    "The future of workforce development isn’t in more sessions. It’s in tighter feedback loops between L&D and HR.",
+    "Train like your job depends on it — because it does."
+  ],
+  "takeaway": "Training’s true ROI isn’t in how many people you teach — it’s in how many people you hire, retain, and promote because of what they learned.",
+  "question": "How do you ensure your training programs are accountable to hiring outcomes — not just completion rates?",
+  "keywords": [
+    "HR leadership",
+    "employability training",
+    "learning and development",
+    "workforce readiness",
+    "talent development",
+    "skills gap",
+    "hiring accountability",
+    "L&D strategy",
+    "employee performance",
+    "corporate training",
+    "HR metrics",
+    "talent pipeline"
+  ],
+  "keyword_rationale": "These keywords target HR leaders and institutions focused on measurable impact in training. Terms like 'employability training', 'hiring accountability', and 'skills gap' align with the post’s core argument — shifting from volume to outcome. Including 'L&D strategy' and 'talent pipeline' captures strategic HR audiences, while 'corporate training' and 'employee performance' broaden reach without diluting the niche authority angle.",
+  "hashtags": [
+    "#HRLeadership",
+    "#LearningAndDevelopment",
+    "#Employability",
+    "#TalentDevelopment",
+    "#SkillsGap",
+    "#L&DStrategy",
+    "#WorkforceReadiness",
+    "#HiringAccountability",
+    "#CorporateTraining",
+    "#TalentPipeline"
+  ],
+  "hashtag_notes": [
+    "#HRLeadership targets decision-makers in HR — core audience.",
+    "#LearningAndDevelopment is broad but essential for reach in L&D circles.",
+    "#Employability is the post’s central theme and a rising search term in edtech and workforce circles.",
+    "#TalentDevelopment and #SkillsGap speak directly to HR pain points around readiness and retention.",
+    "#L&DStrategy signals strategic thinking — important for establishing authority.",
+    "#WorkforceReadiness and #HiringAccountability reinforce the post’s unique argument: training must be tied to hiring outcomes.",
+    "#CorporateTraining ensures visibility among L&D vendors and internal teams.",
+    "#TalentPipeline connects training to long-term HR planning — a key concern for leaders.",
+    "Avoided overly generic tags like #Leadership or #Training to maintain focus and credibility.",
+    "Each hashtag serves a dual purpose: discoverability and reinforcement of the post’s authority positioning."
+  ],
+  "comment_a": "This hits hard. I’ve seen too many L&D teams celebrate 90% completion rates while hiring managers still say, ‘We can’t find anyone who can actually do the job.’ The disconnect isn’t a gap — it’s a chasm. Training without accountability is just expensive theater.",
+  "comment_b": "As someone who’s built training programs from scratch, I used to think more sessions = better impact. Then I started sitting in on performance reviews and exit interviews. That’s when I realized: if the person you trained still can’t solve the problem they were trained to solve, you didn’t train them — you just checked a box. Love this reframing.",
+  "repost_caption": "Reframing training: It’s not about how many you teach — it’s about how many you hire, keep, and promote because of what they learned. If you’re not in the hiring room while you train, you’re not training for employability. You’re training for attendance.",
+  "reply_templates": [
+    "Great point — have you found a specific metric or feedback loop that best bridges L&D and hiring outcomes?",
+    "This resonates. How do you convince leadership to shift from measuring activity to measuring impact in training?",
+    "I’ve seen this disconnect too. What’s one small change HR leaders can make today to start aligning training with hiring accountability?",
+    "Love the emphasis on ‘sitting in the deciding side.’ How do you structure your L&D-HR collaboration to ensure real-time feedback?",
+    "This is exactly the conversation we need more of. What role do hiring managers play in your training design process?",
+    "If you could change one thing about how institutions measure training success, what would it be?",
+    "The shift from volume to validity is overdue. How do you recommend scaling this mindset across large, decentralized HR teams?",
+    "This post made me rethink our L&D KPIs. What’s the first question you ask when evaluating a training program’s effectiveness?"
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM or 1:00–3:00 PM local time (ideal for HR leaders checking LinkedIn during work breaks)"
+}

@@ -1,0 +1,35 @@
+{
+  "hook": "I used to think changing my body meant changing my worth.",
+  "body_lines": [
+    "In 2014, at 42, I weighed 82kg. I was tired, medicated, and disconnected from my own hunger cues.",
+    "By 2017, after three years of training for my first half marathon, I’d lost 20kg — but I still didn’t know how to listen to my body.",
+    "I had the miles logged, the scale moving down — yet I was still reaching for pills to manage how I felt.",
+    "Weight loss didn’t automatically bring peace. It just made the silence louder.",
+    "I didn’t need another diet. I needed to relearn trust — with myself.",
+    "This isn’t about telling you what to do. It’s about saying: I’ve been there. And you’re not alone.",
+    "If you’re midlife, weary of the cycle, and craving a relationship with your body that feels like home — not a project — I see you.",
+    "Healing isn’t in the scale. It’s in the pause before you eat. The breath after you move. The honesty with yourself.",
+    "You don’t have to fix yourself to be worthy. You just have to begin — gently, honestly, your own way.",
+    "Speak to your doctor about your own situation. Your journey is yours alone."
+  ],
+  "takeaway": "Your worth isn’t tied to your weight — but your peace begins when you stop fighting your body and start listening to it.",
+  "question": "What’s one small way you’ve started to listen to your body lately — not to change it, but to understand it?",
+  "keywords": ["midlife wellness", "body trust", "intuitive eating", "health coaching", "WILDFIT", "nutrition mindset", "self-compassion", "hormonal health", "non-diet approach", "midlife women", "body neutrality", "sustainable health"],
+  "keyword_rationale": "Selected keywords reflect Rakhee’s WILDFIT coaching background, the emotional and physical journey described, and the target audience of midlife women seeking sustainable, non-diet approaches to health. Terms like 'body trust', 'intuitive eating', and 'non-diet approach' align with the post’s message of internal awareness over external metrics, while 'WILDFIT' and 'health coaching' anchor her professional identity. Including 'hormonal health' and 'midlife women' increases discoverability among the intended audience searching for relevant, stage-specific wellness content.",
+  "hashtags": ["#BodyTrust", "#MidlifeWellness", "#IntuitiveEating", "#WILDFIT", "#HealthCoach", "#NonDietApproach", "#SelfCompassion", "#MidlifeWomen", "#HormonalHealth", "#SustainableHealth"],
+  "hashtag_notes": ["#BodyTrust: Core theme of relearning to listen to oneself.", "#MidlifeWellness: Targets the audience directly and improves reach in niche communities.", "#IntuitiveEating: Aligns with the anti-diet, internal-cue focus of the message.", "#WILDFIT: Brand-specific tag to strengthen professional identity and coaching credibility.", "#HealthCoach: Positions Rakhee as a guide, not a guru — supportive and credentialed.", "#NonDietApproach: Signals alignment with a growing movement, attracting like-minded followers.", "#SelfCompassion: Reinforces the emotional tone — kind, not punitive.", "#MidlifeWomen: Ensures visibility among the exact demographic being addressed.", "#HormonalHealth: Addresses a common, often unspoken concern in midlife that ties into hunger, weight, and energy.", "#SustainableHealth: Contrasts quick fixes with the long-term, relational approach Rakhee advocates."],
+  "comment_a": "Thank you for sharing this so honestly. I’ve been on the scale rollercoaster for years, and it’s exhausting. This reminded me that healing starts with kindness, not another plan.",
+  "comment_b": "I love that you didn’t prescribe a solution — you just shared your truth. Sometimes that’s the most powerful thing we can offer each other: ‘Me too.’",
+  "repost_caption": "Rakhee’s words hit deep: changing your body doesn’t automatically change your relationship with it. This is a gentle reminder for anyone who’s ever felt like they had to earn peace with themselves.",
+  "reply_templates": [
+    "Thank you for sharing your story — it takes courage to be this real.",
+    "I’m right there with you. It’s not about the weight — it’s about the whisper inside.",
+    "So glad this resonated. You’re not alone in this.",
+    "Yes — the scale doesn’t measure peace. Glad you’re tuning into what does.",
+    "This is exactly why I do this work. Meeting you where you are.",
+    "Your honesty is a gift. Keep listening — you’re already on the path.",
+    "So true. Transformation begins in the quiet moments, not the workout log.",
+    "Appreciate you naming this. So many of us are silent about this struggle."
+  ],
+  "publish_window": "Tuesday–Thursday, 7:30–9:00 AM or 12:00–1:30 PM (local time)"
+}

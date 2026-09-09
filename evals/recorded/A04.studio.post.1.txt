@@ -1,0 +1,33 @@
+{
+  "hook": "This week, Mr. Sharma from the Pune office sat across from me for an interview. He listed a skill on his resume he could not describe when asked.",
+  "body_lines": [
+    "I asked him to explain the project where he used that skill. He paused, then said he had only copied it from a template.",
+    "No follow-up examples, no ownership, no clarity on what he actually did.",
+    "His resume passed the ATS. It failed the human check.",
+    "Not knowing your own resume is not a gap in knowledge—it’s a gap in credibility.",
+    "I have read 900+ ATS resumes this month, and this is what happens when you list without learning.",
+    "The contrast couplet: Your resume gets you seen. Your ability to talk about it gets you hired.",
+    "{✨ Your resume is not a keyword dump—it’s your professional story. Tell it truthfully. ✨}",
+    "Negation ladder: It’s not about fancy formatting. It’s not about stuffing skills. It’s about being able to walk through every line.",
+    "So what do you do? Audit your resume. For every skill, ask: Can I explain this in 60 seconds?",
+    "If the answer is no, remove it or learn it. There is no shortcut to credibility.",
+    "The real work starts when you stop gaming the system and start owning your narrative.",
+    "Freshers, your resume is your first interview. Make sure you can pass it.",
+    "What’s one skill on your resume you can explain right now—without looking?"
+  ],
+  "takeaway": "Your resume must survive both the ATS and the human who reads it—starting with you.",
+  "question": "What’s one skill on your resume you can explain right now—without looking?",
+  "keywords": ["freshers", "ATS resume", "stand out", "employable", "career ready"],
+  "keyword_rationale": "These terms align with the audience (freshers) and the core message: an ATS resume must reflect real skills to make candidates employable and career ready. They help the post surface in relevant searches without overpromising reach.",
+  "hashtags": ["#Employability", "#ATSResume", "#Freshers"],
+  "hashtag_notes": ["#Employability ties to the core idea of credibility and real skills.", "#ATSResume anchors the post in the screening process discussed.", "#Freshers targets the intended audience directly."],
+  "comment_a": "I’ve seen this pattern too often—great keywords, zero substance. If you listed it, you should own it. What’s one line on your resume you’ve actually practiced explaining out loud?",
+  "comment_b": "Remember: the goal isn’t to trick the ATS. It’s to prepare for the conversation that follows. Your resume should be a launchpad, not a mask.",
+  "repost_caption": "Re-sharing because your resume isn’t just for bots—it’s for the human who’ll ask, ‘Tell me about this.’ Can you answer?",
+  "reply_templates": [
+    "Thanks! Now, can you tell me one project where you used that skill?",
+    "I recommend recording yourself explaining each skill for 60 seconds. Play it back—does it sound like you?",
+    "You’re right that keywords matter for screening—but they’re meaningless if you can’t back them up in conversation."
+  ],
+  "publish_window": "9:00 to 10:30 AM IST"
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Why Your Automation Fails at the Handoff (And How to Fix It)",
+  "slides": [
+    {
+      "headline": "Automation doesn’t break inside the step — it breaks between them",
+      "body": "You built a slick OCR pipeline. It reads scanned invoices perfectly. Then it hands off to search indexing… and everything stalls. Why? Because the handoff is where assumptions collide.",
+      "design_note": "Visual: A clean flowchart with two boxes labeled 'OCR Parsing' and 'Search Indexing', with a red 'X' between them and a warning icon. Background: subtle grid texture.",
+      "momentum": "The real bottleneck isn’t the tech — it’s the transition."
+    },
+    {
+      "headline": "Your v1 worked in isolation — but failed in flow",
+      "body": "Each component passed unit tests. OCR accuracy: 98%. BM25 recall: 92%. But when chained? Documents vanished. Metadata got lost. File paths changed. No one owned the handoff.",
+      "design_note": "Visual: Split screen — left side: green checkmarks on OCR and search modules; right side: red error logs and missing file icons between them. Use contrasting colors.",
+      "momentum": "Isolated success ≠ system success."
+    },
+    {
+      "headline": "The handoff is where context dies",
+      "body": "OCR outputs raw text with bounding boxes. Search expects clean, normalized chunks with document IDs. But no one defined: What format? What encoding? What happens if a page is rotated? The gap swallowed the data.",
+      "design_note": "Visual: Two contrasting data structures side-by-side — OCR JSON (with coords) vs. Search input (clean text + doc_id). A dashed arrow labeled '???' between them with a question mark cloud.",
+      "momentum": "Assumptions are silent killers in automation."
+    },
+    {
+      "headline": "Founders don’t see the handoff — until it breaks",
+      "body": "You demoed the OCR. It looked magic. You showed the search. It felt fast. But when users tried to upload a real scanned contract? Nothing came back. Silence. No error. Just… nothing.",
+      "design_note": "Visual: Founder smiling at a laptop showing a demo, then cut to same founder frowning at a blank search results screen. Use a before/after split with a timestamp.",
+      "momentum": "The illusion of progress is the most dangerous kind."
+    },
+    {
+      "headline": "Fix the handoff — not the components",
+      "body": "We didn’t retrain OCR or tune BM25. We added a thin, explicit 'handoff layer': a schema validator that transformed OCR output into search-ready chunks, logged transformations, and failed loudly if mismatched.",
+      "design_note": "Visual: A new middle box labeled 'Handoff Layer (Schema + Validator)' between OCR and Search, with green checkmarks and a small log icon. Use a subtle glow to highlight it.",
+      "momentum": "The fix wasn’t smarter AI — it was clearer contracts."
+    },
+    {
+      "headline": "Your automation needs a handoff contract — not just code",
+      "body": "Define: What format leaves step A? What format enters step B? Who validates it? What happens if it’s wrong? Document this like an API — because it is.",
+      "design_note": "Visual: A simple contract-style document with bullet points: 'Input: OCR JSON v2.1', 'Output: Normalized text chunks', 'Validator: Schema + checksum', 'Error: Alert + retry queue'. Use a monospace font for authenticity.",
+      "momentum": "Clarity prevents chaos. Contracts prevent crashes."
+    },
+    {
+      "headline": "The best automation is invisible — until it’s not",
+      "body": "When the handoff works, users never notice it. They just get results. That’s the goal: engineer the transitions so well, they become forgettable. That’s not luck — it’s design.",
+      "design_note": "Visual: A calm, flowing river with stones labeled 'OCR', 'Handoff', 'Search' — water moving smoothly over them. No splashes, no blocks. Soft blue tones.",
+      "momentum": "Engineer for silence. Celebrate the unseen work."
+    }
+  ]
+}

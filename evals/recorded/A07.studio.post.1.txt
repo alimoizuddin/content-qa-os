@@ -1,0 +1,23 @@
+{
+  "hook": "The SDR pipeline runs with zero human oversight.",
+  "body_lines": [
+    "It sources leads via Apollo, enriches them through Apify, scores and routes them with an AI quality gate, then logs to CRM—all in n8n.",
+    "No copy-paste, no tabs, no context-switching.",
+    "Cost of acquisition dropped to zero because the only human action left is hitting send on the outreach."
+  ],
+  "takeaway": "Automation isn’t about saving time—it’s about removing the human from the loop until the moment of intent.",
+  "question": "Would you trust a system that never sleeps, never tires, and never misses a lead?",
+  "keywords": ["n8n", "Apify", "AI agents", "non-technical founder"],
+  "keyword_rationale": "n8n and Apify are the named tools in the verified proof, grounding the claim in real architecture. AI agents and non-technical founder reflect the audience and the automation layer described, ensuring discoverability among founders evaluating no-code AI systems.",
+  "hashtags": ["#ArtificialIntelligence", "#n8n", "#AIAgents"],
+  "hashtag_notes": ["#ArtificialIntelligence positions the post in the broader AI conversation for founders scanning for leverage.", "#n8n ties directly to the verified tool stack, attracting builders who recognize the platform.", "#AIAgents signals the autonomous layer that makes zero-human-oversight possible, speaking to founders evaluating autonomy."],
+  "comment_a": "The pipeline uses Apollo for sourcing and Apify for enrichment—both configured as nodes in n8n. The AI quality gate is a simple OpenAI API call that scores lead fit before routing. No custom code, just configured services. What part of this stack feels most unfamiliar to you?",
+  "comment_b": "In the Radio Club, we built SOPs so new members could run the board without training. This is the same principle: design the system so the human only acts at the point of decision, not execution. The backbone isn’t the tech—it’s the trust in the process.",
+  "repost_caption": "We scaled the Radio Club from zero to 200+ members by documenting every repeatable task. This SDR pipeline is the same logic: automate the repeatable, reserve the human for the meaningful. Systems don’t scale by adding people—they scale by removing friction.",
+  "reply_templates": [
+    "Thanks! If you could automate one repetitive task in your founder workflow tomorrow, what would it be?",
+    "The AI quality gate uses a simple prompt: 'Does this lead match our ICP? Reply with yes or no and one reason.' It’s not magic—it’s clarity.",
+    "You’re right—oversight isn’t zero forever. But once the system is stable, the human shifts from operator to auditor. That’s the leap."
+  ],
+  "publish_window": "10:00 to 11:30 AM IST"
+}

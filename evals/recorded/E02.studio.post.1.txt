@@ -1,0 +1,38 @@
+{
+  "hook": "In 2014 I weighed 82kg at 42. By my first half marathon in 2017 I was 62kg after three years of training.",
+  "body_lines": [
+    "",
+    "I thought the weight loss meant I had figured it out.",
+    "But every afternoon, the craving came like a knock on the door.",
+    "Not for food. For relief.",
+    "I would eat the same lunch, same rice, same dal, and still feel hollow by three.",
+    "My body was not asking for more calories.",
+    "It was asking for something I had no language for.",
+    "The craving was not the enemy.",
+    "It was the messenger.",
+    "I had trained my body to run 21 kilometres.",
+    "But I had not trained myself to pause and listen.",
+    "That gap between effort and understanding is where I lived for years.",
+    "Until I learned to name the hunger—not as weakness, but as wisdom.",
+    "Now when the knock comes, I ask: What are you really here for?",
+    "Sometimes it’s rest. Sometimes it’s tears. Sometimes it’s just the need to be seen.",
+    "I no longer answer with a snack.",
+    "I answer with awareness.",
+    "And that changed everything."
+  ],
+  "takeaway": "Your craving is not a flaw to fix. It is a signal to follow.",
+  "question": "What is your craving trying to tell you today?",
+  "keywords": ["WILDFIT coach", "craving care", "types of hunger", "listening to the body", "midlife women", "Chennai"],
+  "keyword_rationale": "These terms reflect the personal journey shared—using WILDFIT coach identity and craving care framework to explore types of hunger through listening to the body. They resonate with midlife women in Chennai and beyond who seek self-trust over prescriptions.",
+  "hashtags": ["#WILDFIT", "#CravingCare", "#TheIndianPlate", "#FoodPsychology"],
+  "hashtag_notes": ["#WILDFIT grounds the post in her certified coaching identity.", "#CravingCare names the core method she teaches.", "#TheIndianPlate ties the message to Indian food culture and lived experience.", "#FoodPsychology supports the exploration of hunger as emotional and seasonal signal."],
+  "comment_a": "I still keep that 2014 photo in my kitchen wardrobe—not as a before picture, but as a reminder of the woman who thought discipline was the answer. What’s one thing your body has been trying to tell you that you’ve mistaken for weakness?",
+  "comment_b": "After the half marathon, I thought I had earned peace with my body. Instead, I felt more disconnected than ever. That’s when I knew: strength without self-awareness is just another form of neglect.",
+  "repost_caption": "Years of training taught me how to move my body. It took WILDFIT to teach me how to hear it.",
+  "reply_templates": [
+    "Thank you—I’m glad it resonated. What’s one small way you’ve started listening to your own hunger lately?",
+    "That pause between craving and action? That’s where the wisdom lives. Have you noticed what shows up in yours?",
+    "You’re right—it’s not about willpower. It’s about translating the signal. What’s your body asking for right now?"
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

@@ -1,0 +1,45 @@
+{
+  "hook": "What if your SDR pipeline ran 24/7 — no humans, no fatigue, no cost — and still booked qualified meetings?",
+  "body_lines": [
+    "We built an end-to-end AI automation engine using n8n and Apify that does everything:",
+    "- Scrapes intent signals from LinkedIn, Crunchbase, and tech stacks",
+    "- Enriches leads with firmographics and technographics in real time",
+    "- Scores and segments prospects using custom LLMs trained on our ICP",
+    "- Sends hyper-personalized multi-touch sequences via email and LinkedIn",
+    "- Books meetings directly into Calendly — all without a single human touching the process",
+    "Result? Our cost of acquisition dropped to zero. Not reduced. Not optimized. Zero.",
+    "And the pipeline keeps running — while we sleep, scale, and focus on product.",
+    "This isn’t the future of sales. It’s the present — if you’re willing to automate the boring stuff.",
+    "Founders: if your team is still manually researching leads, you’re leaving revenue on the table.",
+    "Let’s talk about how you can build your own zero-CAC engine."
+  ],
+  "takeaway": "Your SDR function doesn’t need more people — it needs the right automation. Zero human oversight. Zero CAC. All pipeline.",
+  "question": "What’s one repetitive sales task you’d eliminate today if you could automate it perfectly?",
+  "keywords": ["AI automation", "n8n", "Apify", "SDR pipeline", "zero CAC", "founder growth", "lead generation", "sales automation", "LLM enrichment", "inbound marketing"],
+  "keyword_rationale": "Selected keywords balance technical specificity (n8n, Apify, LLM enrichment) with founder-focused pain points (zero CAC, SDR pipeline, lead generation) to attract both technical builders and decision-makers. Avoided overly generic terms like 'AI' or 'automation' alone to improve discoverability in niche founder and growth hacker circles.",
+  "hashtags": ["#AIAutomation", "#ZeroCAC", "#SDR", "#n8n", "#Apify", "#FounderGrowth", "#SalesAutomation", "#LeadGen", "#NoCodeAI", "#GrowthHacking"],
+  "hashtag_notes": [
+    "#AIAutomation - Core tech stack, high intent among builders",
+    "#ZeroCAC - Bold, provocative, drives curiosity and shares",
+    "#SDR - Targets sales ops and founders rethinking go-to-market",
+    "#n8n/#Apify - Signals technical credibility to automation-savvy audience",
+    "#FounderGrowth - Directly speaks to audience",
+    "#SalesAutomation/#LeadGen - Broad but relevant catch-all",
+    "#NoCodeAI - Appeals to non-engineer founders using low-code tools",
+    "#GrowthHacking - Taps into growth community mindset"
+  ],
+  "comment_a": "This is exactly what we’re building at [Your Company] — replacing manual research with AI agents that work while you sleep. The real magic isn’t in the tools, it’s in designing the workflow so humans only touch the high-value conversations. Would love to hear how others are structuring their LLM-led enrichment layers.",
+  "comment_b": "Zero CAC sounds too good to be true — until you see the math. If your automation cost is <$50/mo and it books 10+ qualified meetings, you’re not just saving money — you’re creating a leverage multiplier. The real bottleneck now? Not cost — it’s trust in the system. How do you get your team to trust the AI enough to let it run unattended?",
+  "repost_caption": "Just saw this and had to share: Ali Moizuddin’s team built an n8n + Apify SDR pipeline that runs with zero human oversight and drove CAC to zero. If you’re a founder still manually researching leads — this is your wake-up call. The future of sales isn’t more SDRs. It’s smarter automation.",
+  "reply_templates": [
+    "Totally agree — the shift from human-led to AI-led prospecting is the biggest leverage point in early-stage GTM. What’s your biggest hurdle in trusting the automation?",
+    "Love this. We’ve seen similar results with Apify for scraping + n8n for orchestration. Did you hit any walls with data quality or enrichment accuracy early on?",
+    "This is the kind of system that makes founders rethink hiring. Did you start with a MVP version before going full zero-touch?",
+    "Incredible result. How are you handling compliance/GDPR with the automated scraping and outreach?",
+    "Would love to see a sanitized version of your workflow — even a high-level diagram. This is gold for founders trying to build lean.",
+    "The real win isn’t zero CAC — it’s the mental freedom to focus on product instead of chasing leads. How’s that changed your team’s rhythm?",
+    "Did you use any specific LLMs for scoring or personalization? Or is it mostly rule-based with LLM augmentation?",
+    "This is why I tell founders: automate the repetitive, elevate the strategic. Your SDRs aren’t replaced — they’re promoted to relationship managers."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM EST (when founders check LinkedIn before deep work)"
+}

@@ -1,0 +1,35 @@
+{
+  "hook": "When your resume says you can't explain your own resume... 😬",
+  "body_lines": [
+    "This week, Mr. Sharma from our Pune office sat down for an interview — and couldn’t answer a single question about his own resume.",
+    "Not one. Not even the skill he listed as his ‘core strength’.",
+    "It wasn’t a trick question. It wasn’t a curveball. It was: ‘Can you walk me through how you used [skill] in your last role?’",
+    "Silence. Then a shrug. Then, ‘I guess I just put it there because it sounded good.’",
+    "Freshers — this is your wake-up call.",
+    "Your resume isn’t a wishlist. It’s a contract.",
+    "Every line you write is a promise you’ll be asked to keep.",
+    "If you can’t explain it, don’t put it on the page.",
+    "Authenticity > buzzwords. Always.",
+    "Let’s build resumes that reflect real growth — not just keyword stuffing."
+  ],
+  "takeaway": "Your resume should tell your story — not someone else’s idea of what you should be.",
+  "question": "What’s one skill on your resume you’re 100% ready to explain in detail?",
+  "keywords": ["resume authenticity", "interview prep", "freshers guide", "HR insights", "skill verification", "honest resume", "job interview tips", "career honesty", "employability", "AI-native trainer"],
+  "keyword_rationale": "Selected keywords balance specificity and searchability: 'resume authenticity' and 'honest resume' target the core lesson; 'interview prep' and 'freshers guide' align with audience intent; 'HR insights' and 'AI-native trainer' reinforce Isshita’s credibility; broader terms like 'job interview tips' and 'employability' widen reach without diluting relevance.",
+  "hashtags": ["#ResumeTruth", "#FreshersGuide", "#InterviewReality", "#HRInsights", "#AuthenticCareer", "#SkillNotBuzzword", "#EmployabilityMatters", "#PuneOfficeStory", "#AINativeTrainer", "#NoFluffResume"],
+  "hashtag_notes": ["#ResumeTruth — central theme, ownable and searchable", "#FreshersGuide — targets audience directly", "#InterviewReality — taps into shared experience", "#HRInsights — positions Isshita as expert", "#AuthenticCareer — reinforces values", "#SkillNotBuzzword — memorable contrast", "#EmployabilityMatters — aligns with her role", "#PuneOfficeStory — adds local, human touch", "#AINativeTrainer — personal brand anchor", "#NoFluffResume — punchy, shareable takeaway"],
+  "comment_a": "I’ve seen this too many times. Candidates memorize templates but forget to live the skills. Your resume should be a mirror, not a mask.",
+  "comment_b": "Pro tip: Before you add a skill to your resume, ask yourself: ‘If I were asked to teach this tomorrow, could I?’ If not — take it off or learn it first.",
+  "repost_caption": "Sharing this because every fresher deserves to walk into an interview feeling prepared — not exposed. Let’s normalize resumes that reflect real ability, not just aspirational keywords.",
+  "reply_templates": [
+    "Thanks for sharing this — so real. I’ve been guilty of padding my resume too. Time to clean it up.",
+    "This hit home. I listed ‘Python’ but only did a 2-hour tutorial. Going to take it off and actually learn it.",
+    "As a fresher, I’m terrified of this happening to me. Any tips on how to build honest experience fast?",
+    "Love this. HR folks — how do you gently call this out in interviews without discouraging candidates?",
+    "This is why I now ask candidates to demo a skill on the spot. No more resume surprises.",
+    "My rule: If I can’t explain it in 60 seconds, it doesn’t go on the CV.",
+    "Thanks for the honesty, Isshita. This is the kind of post that actually helps freshers grow.",
+    "I’ve started keeping a ‘skill journal’ — noting real projects and outcomes. Makes resume writing way easier."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM IST (peak fresher engagement pre-work)"
+}

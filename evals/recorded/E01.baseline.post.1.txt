@@ -1,0 +1,39 @@
+{
+  "hook": "Automation isn’t about fancy bots or complex workflows—it’s about clarity.",
+  "body_lines": [
+    "I’ve seen teams spend months building automations that never get used.",
+    "Why? Because they automated confusion.",
+    "They automated unclear processes, vague handoffs, and undefined outcomes.",
+    "The result? More noise, not less work.",
+    "True automation starts when you ask:",
+    "- What does ‘done’ actually look like?",
+    "- Where do people get stuck today?",
+    "- What’s the one decision that, if clarified, would eliminate 80% of the back-and-forth?",
+    "Automation amplifies what’s already there.",
+    "If your process is fuzzy, automation just makes the fuzziness faster—and more expensive.",
+    "But if you get crystal clear on the intent, the handoffs, and the success criteria?",
+    "Then automation becomes a force multiplier—not a band-aid.",
+    "Founders: before you automate, clarify.",
+    "The best automations aren’t the smartest—they’re the ones that make everyone say, ‘Oh, that’s how it’s supposed to work.’"
+  ],
+  "takeaway": "Automation doesn’t fix broken processes—it exposes them. Start with clarity, then automate.",
+  "question": "What’s one process in your business you’ve automated… but still feel unsure about how it really works?",
+  "keywords": ["automation", "process clarity", "founder advice", "AI engineering", "workflow design", "operational efficiency", "business systems", "tech leadership", "startup ops", "process improvement"],
+  "keyword_rationale": "Selected terms balance technical credibility (AI Automation Engineer, workflow design) with founder-relevant pain points (operational efficiency, startup ops, process improvement). Avoids jargon overload while targeting LinkedIn’s algorithm for professional, solution-oriented content. Includes both broad ('automation') and niche ('process clarity') terms to capture search intent and audience specificity.",
+  "hashtags": ["#Automation", "#ProcessClarity", "#FounderLife", "#AIEngineering", "#StartupOps", "#WorkflowDesign", "#BusinessSystems", "#TechLeadership", "#OperationalExcellence", "#BuildBetter"],
+  "hashtag_notes": "Mix of broad reach (#Automation, #FounderLife) and niche, high-intent tags (#ProcessClarity, #StartupOps) to attract both general engagement and qualified founder audience. Avoided overused tags like #Innovation or #Leadership in favor of more specific, credible alternatives that align with the post’s core message.",
+  "comment_a": "This hit home. We automated our client onboarding… only to realize we hadn’t defined what ‘successful onboarding’ meant. Now we’re rewriting the SOP before touching the code again. Thanks for the reminder.",
+  "comment_b": "Clarity is the invisible ROI of automation. Teams chase bots when they should be chasing alignment. Great post—this is the kind of insight that saves founders months of wasted dev time.",
+  "repost_caption": "Reposting because this is the conversation every founder needs to have before hiring their first automation engineer.",
+  "reply_templates": [
+    "Thanks for sharing! I’ve seen the same—automation without clarity just creates technical debt disguised as progress.",
+    "This is so true. The best automation projects I’ve led started with a 2-hour process mapping session—not a single line of code.",
+    "Clarity isn’t sexy, but it’s the foundation. Love how you framed this.",
+    "Automation amplifies intent. If the intent is muddy, the output is messy. Nailed it.",
+    "As a founder, I’ve wasted more time on ‘clever’ automations than on simple, clear processes. This is a wake-up call.",
+    "The ‘what does done look like?’ question is gold. I’m adding that to our team’s retrospective template.",
+    "You’ve just saved me from building another bot that nobody will use. Thank you.",
+    "This is why I hire engineers who ask ‘why’ before they ask ‘how.’"
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM EST"
+}

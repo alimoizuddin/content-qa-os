@@ -1,0 +1,33 @@
+{
+  "hook": "Automation isn’t about fancy tools or complex workflows. It’s about clarity.",
+  "body_lines": [
+    "Too many founders chase automation like it’s a magic bullet — buying software, hiring consultants, building pipelines… only to end up with more noise, not less.",
+    "The truth? Automation fails when the process it’s trying to automate is fuzzy.",
+    "If you can’t clearly define the input, the decision point, and the desired output — no amount of AI or RPA will save you.",
+    "Clarity comes first: mapping the real workflow, questioning every step, eliminating waste before you automate.",
+    "I’ve seen teams automate a 10-step manual process… only to realize 7 of those steps were unnecessary. The real win wasn’t the bot — it was the conversation that preceded it.",
+    "Automation exposes ambiguity. It doesn’t hide it.",
+    "So before you invest in the next AI agent or workflow tool, ask: ‘What exactly are we trying to make repeatable — and why does it matter?’",
+    "The most powerful automation isn’t the one that runs fastest. It’s the one that makes your team stop guessing — and start knowing."
+  ],
+  "takeaway": "Automation doesn’t create clarity — it reveals it. Start with clarity, and the tech will follow.",
+  "question": "What’s one process in your business you’ve automated — only to realize later you didn’t fully understand it to begin with?",
+  "keywords": ["automation", "founder", "clarity", "process optimization", "AI engineering", "workflow design", "operational efficiency", "tech strategy", "business scaling", "decision clarity"],
+  "keyword_rationale": "Selected keywords balance technical credibility (AI Automation Engineer, process optimization) with founder-relevant pain points (clarity, scaling, strategy). Terms like 'workflow design' and 'operational efficiency' signal expertise without jargon overload. 'Decision clarity' ties directly to the core theme, making the post discoverable by founders seeking practical, insight-driven content — not just tech hacks.",
+  "hashtags": ["#AutomationWithPurpose", #ClarityOverComplexity, #FounderMindset, #ProcessBeforeTech, #AIEngineering, #SmartScaling, #WorkflowWisdom, #BuildBetterNotFaster, #FounderInsights, #TechWithIntent"],
+  "hashtag_notes": ["#AutomationWithPurpose: Reinforces the post’s core message — automation as a tool for insight, not just speed.", "#ClarityOverComplexity: Memorable, contrarian phrase that challenges founder bias toward shiny objects.", "#FounderMindset: Targets the audience directly — speaks to their identity, not just their role.", "#ProcessBeforeTech: A punchy, repeatable mantra that encapsulates the argument.", "#AIEngineering: Establishes Ali’s credibility without sounding self-promotional.", "#SmartScaling: Appeals to founders focused on sustainable growth, not just hype.", "#WorkflowWisdom: Positions the post as thoughtful, not tactical — ideal for LinkedIn’s professional audience.", "#BuildBetterNotFaster: Contrasts with hustle culture; resonates with mature founders tired of burnout tactics.", "#FounderInsights: Broad but relevant tag for discoverability in founder-focused feeds.", "#TechWithIntent: Elevates the conversation from ‘how’ to ‘why’ — aligns with Ali’s engineering philosophy."],
+  "comment_a": "This hit home. We automated our client onboarding last year — only to realize we were automating a 12-step process that had 3 redundant approvals nobody could explain. After we mapped it out first? Cut it to 5 steps. Saved 15 hours/week. The bot was the easy part. The clarity was the hard work.",
+  "comment_b": "Love this. As a founder, I’ve fallen for the ‘automate first, understand later’ trap too many times. The moment we started asking ‘What does success look like here?’ before touching a tool — everything changed. Automation became a mirror, not a magic wand.",
+  "repost_caption": "Reposting this because every founder needs to hear it: Automation doesn’t fix broken processes — it exposes them. Start with clarity. The tech will follow.",
+  "reply_templates": [
+    "Thanks for sharing — I’ve been there. What was the one step you cut that surprised you most?",
+    "This is so true. How did you get your team to slow down and map the process before jumping into automation?",
+    "Great point. I’ve seen teams automate chaos and wonder why things got worse. Clarity first is non-negotiable.",
+    "Exactly. Automation is a mirror — not a mask. What’s one process you’re re-evaluating now because of this?",
+    "This reframing changed how I think about tech investments. Do you have a simple framework for assessing process clarity before automation?",
+    "I love the idea that automation reveals ambiguity. Have you found a particular method (like value stream mapping) that works best for early-stage teams?",
+    "So many founders skip the ‘why’ and go straight to the ‘how.’ This is a much-needed course correction.",
+    "If you could give one piece of advice to a founder about to automate their first workflow — what would it be?"
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM EST (peak founder engagement window)"
+}

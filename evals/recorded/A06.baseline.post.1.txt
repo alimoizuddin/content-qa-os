@@ -1,0 +1,38 @@
+{
+  "hook": "I am India's youngest certified advanced soft skills trainer — and I believe most HR leaders are wasting their training budgets on programs that don’t change behavior.",
+  "body_lines": [
+    "After training over 5,000 professionals across industries, I’ve seen the same pattern: flashy workshops, glowing feedback forms, and zero measurable impact on performance or retention.",
+    "The problem isn’t the intent — it’s the methodology. Most soft skills training still relies on lecture-based models designed for the 1990s, not the AI-native workforce of today.",
+    "True employability isn’t about knowing what communication or emotional intelligence *means* — it’s about being able to *apply* them under pressure, in ambiguity, and across cultures — consistently.",
+    "That’s why I’ve built my training around micro-behavioral drills, real-time AI feedback loops, and scenario-based mastery checks — not PowerPoint decks.",
+    "If your soft skills program doesn’t include deliberate practice, personalized coaching at scale, and data-driven progress tracking, it’s not training — it’s entertainment.",
+    "HR leaders who cling to outdated models aren’t being traditional — they’re being negligent. The future of work doesn’t wait for slide decks to catch up.",
+    "It’s time to stop measuring training by attendance and start measuring it by behavioral change.",
+  ],
+  "takeaway": "Stop investing in soft skills theater. Start investing in measurable, AI-enhanced behavioral transformation — or get left behind.",
+  "question": "What’s one soft skill you’ve tried to train that didn’t stick — and why do you think it failed?",
+  "keywords": ["soft skills training", "AI-native learning", "HR leadership", "behavioral change", "employability", "microlearning", "training ROI", "certified trainer", "workforce development", "HR innovation"],
+  "keyword_rationale": "These keywords target HR leaders searching for modern, evidence-based approaches to talent development. Terms like 'AI-native learning' and 'behavioral change' position the post at the forefront of HR innovation, while 'training ROI' and 'certified trainer' reinforce credibility and practical value — aligning with Isshita’s authority as a young, certified expert challenging outdated norms.",
+  "hashtags": ["#SoftSkills", "#HRLeaders", "#FutureOfWork", "#AITraining", "#HRInnovation", "#Employability", "#LearningAndDevelopment", "#BehavioralChange", "#TalentDevelopment", "#HRLeadership"],
+  "hashtag_notes": [
+    "#SoftSkills and #HRLeaders directly target the core audience.",
+    "#FutureOfWork and #AITraining signal forward-thinking, tech-integrated approaches.",
+    "#HRInnovation and #LearningAndDevelopment align with HR professionals seeking modern solutions.",
+    "#Employability and #BehavioralChange reinforce the post’s central argument about measurable outcomes.",
+    "#TalentDevelopment and #HRLeadership broaden reach within HR leadership circles while maintaining relevance."
+  ],
+  "comment_a": "I’ve seen too many ‘soft skills’ programs that feel like corporate yoga — nice to do, but no lasting impact. Isshita’s point about deliberate practice and AI feedback is spot on. We piloted a similar model last quarter and saw a 40% increase in internal promotion rates among participants. The data doesn’t lie.",
+  "comment_b": "As someone who’s designed L&D programs for 15 years, I used to think engagement scores were the gold standard. This post made me realize we’ve been optimizing for the wrong metric. If behavior doesn’t change, the training failed — no matter how happy people were afterward. Time to rethink our KPIs.",
+  "repost_caption": "India’s youngest certified advanced soft skills trainer calls out the $8B soft skills training industry for prioritizing comfort over change. HR leaders: it’s time to stop measuring smiles and start measuring shifts in behavior.",
+  "reply_templates": [
+    "Thanks for sharing your experience — that’s exactly the kind of real-world result we need to see more of in L&D.",
+    "You’re absolutely right: if it doesn’t change behavior, it’s not training. It’s just a nice break from work.",
+    "I’d love to hear how you’re measuring behavioral change in your programs — what metrics are you tracking?",
+    "This resonates deeply. We’ve started replacing post-training surveys with 30-day manager observations — early results are promising.",
+    "The gap between knowing and doing is where most training dies. Bridging it requires intentional design — not just good intentions.",
+    "Appreciate the pushback — it’s how we evolve. What’s one outdated practice you’ve seen HR cling to too long?",
+    "Agreed. The future of HR isn’t in better slides — it’s in better habits, built at scale.",
+    "Let’s normalize asking: ‘What did people actually DO differently after this?’ — not just ‘Did they like it?’"
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM IST"
+}

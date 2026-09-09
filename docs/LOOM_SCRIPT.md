@@ -20,10 +20,16 @@ Face camera is not required. Screen only is fine.
 **Say, roughly:**
 
 > I write LinkedIn content for three people. Myself, an HR leader, and a health
-> coach. `[[FILL: how many posts a week]]` posts a week.
+> coach. Three posts a week for me, four a week for each of them.
 >
-> The slow part was never the writing. It was the checking. A general AI tool
-> gives you text in thirty seconds and then hands you all the verification.
+> By hand a post took me thirty to sixty minutes. I already fixed that: I built a
+> written engine per person and I run it as a Claude Project, and now I review for
+> five minutes instead of writing. That saving is not what this week was about, and
+> I want to be clear about that up front.
+>
+> What the engine could not do is prove it was safe. The rules live in a document
+> the model is asked to obey. Most of the time it does. When it does not, nothing
+> catches it except me.
 >
 > Three things go wrong every time. It invents numbers that sound right. It breaks
 > voice rules quietly, so the copy still reads fine. And for two of these three

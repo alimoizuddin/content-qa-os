@@ -1,0 +1,47 @@
+{
+  "title": "The Handoff Is Where Automations Die",
+  "slides": [
+    {
+      "headline": "Your automation broke at the handoff",
+      "body": "OCR and BM25 search: 100+ scanned PDFs indexed. The v1 broke at the transition between document parsing and retrieval indexing.",
+      "design_note": "A torn piece of paper with OCR text on one half and BM25 tokens on the other, taped poorly in the middle",
+      "momentum": "but here is the catch >"
+    },
+    {
+      "headline": "Steps lie, handoffs tell truth",
+      "body": "Each step works alone. The break is never inside OCR or inside indexing. It is the gap between them.",
+      "design_note": "Two sealed boxes labeled OCR and BM25 with a visible air gap between them, no connection",
+      "momentum": "so we stopped fixing steps >"
+    },
+    {
+      "headline": "We named the gap",
+      "body": "We called it the Handoff Layer. Not a tool. Not a step. The contract between steps.",
+      "design_note": "A brass coupling joining two pipes, engraved with 'Handoff Layer', no tools attached",
+      "momentum": "then we built it like this >"
+    },
+    {
+      "headline": "Handoff Layer has three rules",
+      "body": "1. Define the output schema first. 2. Validate at the edge. 3. Fail loud if mismatched.",
+      "design_note": "Three stacked index cards: Schema, Validate, Fail Loud, each with a checkbox and a red X on the last",
+      "momentum": "here is what it looks like >"
+    },
+    {
+      "headline": "Schema first, always",
+      "body": "Before OCR runs, we agree: output is plain text with line breaks. No PDF, no images. Just text.",
+      "design_note": "A typewriter sheet showing clean text lines, next to a scanned PDF with a red X over it",
+      "momentum": "then we validate the edge >"
+    },
+    {
+      "headline": "Validate at the edge, not inside",
+      "body": "After OCR, before indexing, we check: is it plain text? If not, stop. No guessing. No repair.",
+      "design_note": "A bouncer at a velvet rope checking a ticket labeled 'plain text', turning away a blob labeled 'PDF junk'",
+      "momentum": "this is the framework >"
+    },
+    {
+      "headline": "Save this framework",
+      "body": "Handoff Layer: Schema first. Validate at the edge. Fail loud. Every automation needs this.",
+      "design_note": "A laminated card on a desk with the three rules in bold, coffee cup beside it, morning light",
+      "momentum": ""
+    }
+  ]
+}

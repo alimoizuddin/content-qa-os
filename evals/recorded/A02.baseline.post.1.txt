@@ -1,0 +1,50 @@
+{
+  "hook": "What if your daily pill wasn’t a life sentence — but a sign your body was asking for better fuel?",
+  "body_lines": [
+    "I used to take a pill every morning — not because I wanted to, but because I thought I had to.",
+    "Headaches. Fatigue. Bloating. The kind of ‘normal’ that creeps in after 45 and gets labeled ‘just aging’ or ‘hormones.’",
+    "I was told: ‘This is what you need to manage it.’",
+    "But what if managing symptoms isn’t the same as healing the root?",
+    "After studying WILDFIT and rewiring my relationship with food — not as restriction, but as restoration — something shifted.",
+    "My energy returned. My digestion settled. My headaches faded.",
+    "And one day, I realized: I hadn’t taken my pill in weeks.",
+    "Not because I forgot. Not because I was brave.",
+    "But because my body no longer needed it.",
+    "Food isn’t just fuel. It’s information. And when you give it the right signals, your body remembers how to heal.",
+    "You don’t have to keep medicating a lifestyle that’s out of sync.",
+    "You can start by changing what’s on your plate — and let your body do the rest.",
+    "This isn’t about quitting meds cold turkey. It’s about asking: *What if my symptoms are trying to tell me something?*",
+    "And what if the answer isn’t in another prescription… but in your pantry?"
+  ],
+  "takeaway": "Your daily pill might not be a lifelong requirement — it might be a wake-up call to nourish your body differently. Start with food. Let healing follow.",
+  "question": "What’s one pill you’ve been taking daily that you’d love to no longer need?",
+  "keywords": ["women over 45", "daily medication", "food as medicine", "WILDFIT", "hormonal health", "natural healing", "nutrition coaching", "chronic symptoms", "lifestyle change", "inflammation", "gut health", "energy reset"],
+  "keyword_rationale": "These keywords target the core audience (women 45+ on daily meds) while aligning with WILDFIT’s philosophy and common pain points like hormonal imbalance, inflammation, and fatigue. They’re chosen to attract organic search and algorithmic reach on LinkedIn, especially among users seeking alternatives to long-term medication.",
+  "hashtags": ["#FoodAsMedicine", "#WILDFIT", "#WomenOver45", "#NaturalHealing", "#NutritionCoaching", "#HormonalBalance", "#StopThePill", "#HealWithFood", "#GutHealth", "#EnergyReset"],
+  "hashtag_notes": [
+    "#FoodAsMedicine – Core theme, widely searched in wellness circles.",
+    "#WILDFIT – Brand-specific, builds credibility and niche authority.",
+    "#WomenOver45 – Direct audience targeting.",
+    "#NaturalHealing – Appeals to those seeking alternatives to pharma.",
+    "#NutritionCoaching – Positions Rakhee as a guide, not just a testimonial.",
+    "#HormonalBalance – Key concern for this demographic.",
+    "#StopThePill – Provocative but aligned with goal; encourages engagement.",
+    "#HealWithFood – Reinforces the central message.",
+    "#GutHealth – Hot topic linked to immunity, mood, and inflammation.",
+    "#EnergyReset – Aspirational outcome; highly shareable."
+  ],
+  "comment_a": "I’ve seen this shift happen so many times — not by magic, but by returning to basics. When you stop fighting your body with processed food and start feeding it real nourishment, the need to mask symptoms often fades. It’s not about rejecting medicine — it’s about reducing the need for it. What’s one small food change you’ve made that made a big difference?",
+  "comment_b": "This isn’t anti-medicine. It’s pro-body. Your symptoms are messengers, not enemies. When you listen — really listen — and give your body the tools it needs, incredible things can happen. I’m here to help you decode what yours are trying to say.",
+  "repost_caption": "From pill-dependent to pill-free — not by willpower, but by changing what’s on my plate. If you’re over 45 and tired of masking symptoms with daily medication, let’s talk about how food can be your first medicine.",
+  "reply_templates": [
+    "That’s such a powerful realization — thanks for sharing. What shifted first for you when you changed your eating?",
+    "I love this perspective. It’s not about stopping meds — it’s about creating a body that doesn’t need them as much. What’s one food swap you’d recommend to someone just starting?",
+    "So glad you shared this. So many women feel stuck in the ‘take this pill forever’ loop. Your story is a reminder that change is possible.",
+    "This resonates deeply. Have you noticed changes in your energy, sleep, or mood since shifting your food?",
+    "Thank you for being brave enough to share your journey. It gives others permission to explore what’s possible.",
+    "I’ve seen similar shifts in clients — often, it’s not about perfection, but consistency. What’s one non-negotiable habit you’ve built?",
+    "Your body’s wisdom is incredible. It’s amazing what happens when we stop interfering and start supporting.",
+    "This is exactly the kind of conversation we need more of. Let’s normalize healing through food."
+  ],
+  "publish_window": "Tuesday–Thursday, 7:30–8:30 AM or 5:00–6:30 PM (local time)"
+}

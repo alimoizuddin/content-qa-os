@@ -1,0 +1,62 @@
+{
+  "hook": "Just shipped a workflow that didn’t just work — it made my client’s team cheer.",
+  "body_lines": [
+    "Last week, I delivered an end-to-end automation workflow for a SaaS founder drowning in manual ops.",
+    "No fluff. No over-engineering. Just clean, reliable logic that cut their weekly grunt work by 15 hours.",
+    "They didn’t just say ‘thanks’ — they sent a Loom video of their team high-fiving over Slack.",
+    "That’s the moment I live for: when automation stops being a tool and starts being a relief.",
+    "If you’re a founder tired of watching your team burn out on repetitive tasks…",
+    "Let’s talk. I build workflows that don’t just run — they resonate.",
+    "No sales pitch. Just a 15-minute call to see if we can give your team back their time.",
+    "DM me ‘Workflow’ — I’ll send you a quick audit of where your ops are leaking hours."
+  ],
+  "takeaway": "Great automation doesn’t just save time — it restores morale. Let’s build yours.",
+  "question": "What’s one repetitive task your team hates doing every week?",
+  "keywords": [
+    "AI automation",
+    "workflow automation",
+    "founder productivity",
+    "SaaS operations",
+    "no-code automation",
+    "process optimization",
+    "time savings",
+    "operational efficiency",
+    "client success",
+    "inbound leads"
+  ],
+  "keyword_rationale": "Targeted keywords blend technical specificity (AI automation, workflow automation) with founder-centric pain points (founder productivity, SaaS operations, time savings) to attract the right audience while signaling expertise and results-driven outcomes.",
+  "hashtags": [
+    "#AIAutomation",
+    "#WorkflowAutomation",
+    "#FounderLife",
+    "#SaaSFounder",
+    "#NoCode",
+    "#ProductivityHack",
+    "#AutomateYourBusiness",
+    "#TechLeadership",
+    "#InboundMarketing",
+    "#ClientSuccess"
+  ],
+  "hashtag_notes": [
+    "#AIAutomation and #WorkflowAutomation are high-intent tags for technical buyers.",
+    "#FounderLife and #SaaSFounder directly target the audience.",
+    "#NoCode lowers barrier to entry for non-technical founders.",
+    "#ProductivityHack and #AutomateYourBusiness appeal to outcome-driven readers.",
+    "#TechLeadership and #InboundMarketing position Ali as a strategic partner.",
+    "#ClientSuccess reinforces social proof from the story."
+  ],
+  "comment_a": "This is exactly what I needed to see. My team spends 10+ hours a week on manual data entry between CRM and invoicing. Can you show me a quick example of how you’d approach that?",
+  "comment_b": "Love the human angle — automation isn’t just about efficiency, it’s about giving people their sanity back. How do you balance customization with speed when building these workflows?",
+  "repost_caption": "Sharing this because every founder deserves a team that’s not burned out by busywork. Ali’s workflow didn’t just automate tasks — it restored joy. If you’re ready to give your team back their time, this is the sign to DM him.",
+  "reply_templates": [
+    "Thanks for sharing! I’d love to learn more about your current workflow — what’s the one task that eats up the most time?",
+    "Glad this resonated. I specialize in turning messy manual processes into silent, reliable automations. Happy to jump on a quick call to map out where you’re leaking hours.",
+    "That’s the best kind of feedback — when the team actually notices the difference. Let’s see if we can replicate that for your ops.",
+    "No jargon, no fluff — just practical automation that works. Send me your biggest pain point and I’ll tell you if I can help.",
+    "I’ve helped founders save 10–20 hrs/week with workflows like this. If you’re curious what’s possible, let’s chat — no obligation.",
+    "The best automations are the ones you forget are running… until you realize you haven’t done that task in weeks. Want to find yours?",
+    "I don’t sell tools — I sell time back. If that sounds valuable, let’s talk about where your team is stuck.",
+    "Happy to send over a 3-step audit of where your ops are leaking time — just say the word."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM or 1:00–3:00 PM EST (founders checking LinkedIn before/after work or during lunch)"
+}

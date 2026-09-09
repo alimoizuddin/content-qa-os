@@ -1,0 +1,47 @@
+{
+  "hook": "I start eating at 11 a.m. and stop by 7 p.m. That is my 16:8 window.",
+  "body_lines": [
+    "It is not a rule I impose on anyone.",
+    "It is simply the rhythm my body asked for after years of ignoring hunger.",
+    "Line 3 is white space.",
+    "The craving voice says: 'But what if I am hungry at 10 a.m.?'",
+    "The wiser one answers: 'Then drink water and wait twenty minutes. See if it is thirst or habit.'",
+    "I named the exact ingredient that broke my fast last week: tamarind rice powder in a spoonful of curd rice.",
+    "That spoonful was my signal: my body was ready for nourishment, not punishment.",
+    "Then and now contrast: I used to force breakfast at 7 a.m. and crash by 3 p.m.",
+    "Now I work through the morning with clarity and break my fast when the sun is high.",
+    "Reverence for season and ritual: in summer I break my fast with cucumber and mint; in winter with warm dal and ghee.",
+    "One sensory payoff sentence: The first bite of curd rice with tamarind powder is cool, tangy, and slightly sweet, spreading through my mouth like a quiet yes.",
+    "This is not about the clock. It is about listening to the body, mind and emotions as one."
+  ],
+  "takeaway": "Freedom begins when you stop fighting hunger and start reading it.",
+  "question": "What is one hunger signal you noticed today that you usually ignore? Share it below.",
+  "keywords": [
+    "WILDFIT coach",
+    "food freedom",
+    "craving care",
+    "types of hunger",
+    "listening to the body",
+    "corporate teams"
+  ],
+  "keyword_rationale": "These terms align with the core idea of using a 16:8 schedule as a tool for listening, not restriction. They speak directly to corporate teams navigating energy crashes and conditioned eating patterns, reinforcing the post’s focus on awareness over discipline.",
+  "hashtags": [
+    "#HealthCoach",
+    "#FoodFreedom",
+    "#WILDFIT"
+  ],
+  "hashtag_notes": [
+    "#HealthCoach positions the post within professional nutrition guidance.",
+    "#FoodFreedom reflects the non-restrictive, awareness-based approach shared.",
+    "#WILDFIT ties the method to the coach’s certified framework and community."
+  ],
+  "comment_a": "I use this window myself because it fits my energy, not because it is a prescription. If you try it, notice how your hunger shifts over three days. What changes did you observe in your focus or cravings?",
+  "comment_b": "The real detail I did not carry in the post: I adjust my window by 30 minutes on days I teach live sessions. Flexibility is part of listening, not failure.",
+  "repost_caption": "A schedule is only useful if it serves your body’s rhythm. This is how I learned to let mine lead.",
+  "reply_templates": [
+    "Thank you—I’m glad it resonated. What is one small hunger cue you’ve started to notice since?",
+    "I break my fast with curd rice and tamarind rice powder because it is light, familiar, and signals safety to my gut. What is your go-to first bite?",
+    "You’re right—rigidity backfires. The goal is not to hit the clock perfectly, but to build trust with your body’s signals over time."
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

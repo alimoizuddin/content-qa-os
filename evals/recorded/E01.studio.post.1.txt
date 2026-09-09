@@ -1,0 +1,25 @@
+{
+  "hook": "Automation isn’t about saving time. It’s about seeing clearly.",
+  "body_lines": [
+    "Most founders chase automation to cut hours. They miss the point.",
+    "The real win is turning fuzzy intent into repeatable steps.",
+    "When your workflow forces you to name every assumption, clarity follows.",
+    "That’s why I build systems that make you write the prompt before you run the flow.",
+    "It’s not magic. It’s a mirror for your thinking."
+  ],
+  "takeaway": "Automation exposes the gaps between what you think you do and what you actually do.",
+  "question": "Do you automate to save time or to see your process?",
+  "keywords": ["AI automation", "AI Automation Engineer", "automation for non-technical founders", "think in words, not code", "clarity engine", "n8n"],
+  "keyword_rationale": "These terms reflect the core message: automation as a tool for clarity, not just efficiency. They align with the founder audience and the persona’s identity as someone who builds systems for non-technical thinkers using specific tools like n8n.",
+  "hashtags": ["#Automation", "#n8n", "#NoCode", "#FounderLife"],
+  "hashtag_notes": ["#Automation broad reach for the topic", "#n8n specific tool used in builds", "#NoCode speaks to non-technical founders", "#FounderLife targets the audience directly"],
+  "comment_a": "Just documented a lead research workflow in n8n that forced me to rewrite my ideal customer profile three times. The automation didn’t save time until the clarity kicked in. What’s one process you’ve automated that revealed a hidden assumption?",
+  "comment_b": "When we scaled the Radio Club from zero to 200, we didn’t start with better mics. We started with a one-page SOP for recording episodes. That doc exposed how vague our ‘weekly show’ idea actually was. Systems don’t just run work—they define it.",
+  "repost_caption": "Clarity isn’t a side effect of good systems. It’s the point. The Radio Club’s growth didn’t come from more content—it came from knowing exactly what ‘good’ looked like.",
+  "reply_templates": [
+    "Thanks! What’s one step in your workflow you’ve never actually written down?",
+    "I use n8n with Apify for enrichment and an AI quality gate—fully documented in my workflow library. Which part feels most unclear to you?",
+    "You’re right that time savings matter—but only after the process is visible. Automation without clarity just speeds up confusion."
+  ],
+  "publish_window": "10:00 to 11:30 AM IST"
+}
