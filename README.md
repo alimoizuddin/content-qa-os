@@ -197,6 +197,20 @@ ui/stages.py           the five stages
 assets/fonts/          vendored Inter (SIL Open Font Licence)
 ```
 
+## Documents
+
+| File | What it is |
+| --- | --- |
+| `directive.md` | The main submission document. Problem, priority, approach, solution, expected outcome |
+| `summary.pdf` | Two-page overview. Rebuild it with `python docs/build_summary.py` |
+| `docs/EVALUATION.md` | The evaluation package: cases, results, failure analysis, before and after |
+| `docs/AI_COLLABORATION.md` | What AI did, what I kept, what I rejected |
+| `docs/WORKFLOW_MAP.md` | The workflow before and after, and where a human still decides |
+| `docs/RUNBOOK.md` | Operator guide. What to do when it misbehaves |
+| `docs/CASE_STUDY.md` | Rebuild notes: what changed from the prototype and why |
+| `docs/LOOM_SCRIPT.md` | Script for the demo recording |
+| `evals/README.md` | How the evaluation works and why the scorer is independent |
+
 Persona specifications are distilled by hand from the canonical engine document for
 each person. The source corpus is never read at runtime, and no raw export, profile,
 archive, private media, or contact detail is reproduced in the app. See

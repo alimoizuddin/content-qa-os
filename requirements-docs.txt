@@ -1,0 +1,3 @@
+# Documentation tooling only. NOT needed to run the studio.
+#   python docs/build_summary.py   ->  summary.pdf
+reportlab==5.0.1
