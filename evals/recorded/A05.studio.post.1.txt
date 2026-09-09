@@ -1,0 +1,23 @@
+{
+  "hook": "I have read 900+ ATS resumes this year, and I can tell you which ones get shortlisted. Most look the same.",
+  "body_lines": [
+    "They list duties, not impact. They use generic verbs. They miss the keywords the ATS is actually scanning for.",
+    "I’ve seen the pattern: a clean, one-page format with quantified results in the top third gets 3x more interview calls.",
+    "This isn’t theory. It’s what I shortlist every week for roles in my 50+ person company."
+  ],
+  "takeaway": "[[Your resume format decides if you’re seen or skipped—make it ATS-native, not just neat.]]",
+  "question": "Want me to review your resume format and tell you one change that could get you shortlisted this week?",
+  "keywords": ["ATS resume", "get shortlisted", "freshers", "900+ ATS resumes", "4.9 out of 5 rating", "Head of HR"],
+  "keyword_rationale": "These terms reflect the verified proof and audience focus: 'ATS resume' and 'get shortlisted' address the core tactic, while '900+ ATS resumes' and '4.9 out of 5 rating' anchor the advice in real experience. 'Head of HR' establishes the hiring-desk perspective, and 'freshers' targets the primary job-seeker audience seeking actionable, credible guidance.",
+  "hashtags": ["#Employability", "#ATSResume", "#Freshers", "#JobSeekers"],
+  "hashtag_notes": ["#Employability aligns with the core promise of becoming hire-ready.", "#ATSResume targets the specific tool and tactic discussed.", "#Freshers speaks directly to the audience needing resume guidance.", "#JobSeekers broadens reach to all active candidates seeking shortlisting."],
+  "comment_a": "I’ve noticed many resumes bury achievements in job descriptions. Moving one quantified result to the top third—under a clear headline—can change screening outcomes fast. Try it and tell me what shifts.",
+  "comment_b": "Beyond format, the language matters: replace ‘responsible for’ with action verbs like ‘reduced’, ‘increased’, or ‘led’. That’s what the ATS and hiring managers both scan for.",
+  "repost_caption": "Your resume isn’t just a document—it’s your first interview. Make it speak the language of the ATS and the hiring desk.",
+  "reply_templates": [
+    "Thanks! What’s one role you’re targeting—I’ll tell you the keyword to add.",
+    "I suggest adding a metric to your most recent role—even an estimate like ‘supported 10+ clients weekly’ helps.",
+    "You’re right that design matters, but for ATS, clarity beats columns every time—here’s why.",
+  ],
+  "publish_window": "9:00 to 10:30 AM IST"
+}

@@ -1,0 +1,39 @@
+{
+  "hook": "They said it felt like magic. No code. Just words.",
+  "body_lines": [
+    "The workflow was delivered and it worked.",
+    "Clients got back hours each week without touching a single line of Python.",
+    "All they did was describe what they wanted in plain English."
+  ],
+  "takeaway": "Clarity is the new compile button.",
+  "question": "Do you start with the outcome or the steps when you explain a task to AI?",
+  "keywords": [
+    "AI automation",
+    "think in words, not code",
+    "non-technical founder",
+    "clarity engine",
+    "workflow automation"
+  ],
+  "keyword_rationale": "These terms reflect the core message: non-technical founders using plain language to drive automation. They align with the audience's self-identity and the proven outcome of the workflow—no code, just clarity. Using them consistently helps the platform recognize the post's relevance to founders seeking accessible AI systems.",
+  "hashtags": [
+    "#ArtificialIntelligence",
+    "#FounderLife",
+    "#NoCode",
+    "#WorkflowAutomation"
+  ],
+  "hashtag_notes": [
+    "Broad reach for AI and automation conversations.",
+    "Targets founders building in public, aligned with audience.",
+    "Highlights the no-code, words-first approach central to the post.",
+    "Signals the practical system delivered, not just theory."
+  ],
+  "comment_a": "The workflow was built in n8n with Apify for scraping and OpenAI for reasoning. No fine-tuning, no training data—just clear prompting and structured inputs. Want me to share how the trigger was set up?",
+  "comment_b": "When we scaled the Radio Club from zero, we didn’t start with tech—we started with clear roles and repeatable rhythms. Automation works the same way: get the human system right first, then layer in the tools.",
+  "repost_caption": "Great automation isn’t about the tools—it’s about making the invisible work visible through clarity. This post nails why founders don’t need to code to lead in AI.",
+  "reply_templates": [
+    "Thanks! What’s one task you wish you could explain to AI instead of doing manually?",
+    "I start with the outcome—what does ‘done’ look like? Then I work backward into steps. How do you approach it?",
+    "You’re right—tools matter less than intent. The magic is in translating human judgment into repeatable logic, not in the platform itself."
+  ],
+  "publish_window": "10:00 to 11:30 AM IST"
+}

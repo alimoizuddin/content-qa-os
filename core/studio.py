@@ -31,6 +31,19 @@ class Section:
     help: str = ""
     multiline: bool = True
     copyable: bool = False  # the blocks meant to be pasted straight into LinkedIn
+    publishable: bool = True
+    """Whether this text is destined for LinkedIn, or is a working note.
+
+    The distinction decides what an open slot means. In a post, an open slot is an
+    unfilled claim and must block publication. In a calendar, the evidence column
+    is *asked* to carry open slots wherever the proof does not exist yet: that is
+    the calendar telling you what you still have to go and get.
+
+    The evaluation harness found this as a flat contradiction. A correctly
+    generated calendar could never be approved, because the instruction that
+    produced it and the gate that judged it disagreed about what an open slot was
+    for.
+    """
 
 
 # ---------------------------------------------------------------------------
@@ -185,7 +198,14 @@ def calendar_sections(spec: PersonaSpec, data: dict[str, Any]) -> list[Section]:
             for e in entries
         )
         sections.append(
-            Section(f"week_{week}", f"Week {week}", block, "Four entries. Formats rotate.")
+            Section(
+                f"week_{week}",
+                f"Week {week}",
+                block,
+                "Four entries. Formats rotate. Open slots here are the plan naming "
+                "the proof you still have to gather, not an unfilled claim.",
+                publishable=False,
+            )
         )
     return sections
 
@@ -229,8 +249,18 @@ def delivery_text(sections: list[Section]) -> str:
 # ---------------------------------------------------------------------------
 
 
-def run_qa(spec: PersonaSpec, sections: dict[str, str], proof: str = "") -> dict[str, Any]:
-    """Lint then audit every section. Returns cleaned text and both flag sets."""
+def run_qa(
+    spec: PersonaSpec,
+    sections: dict[str, str],
+    proof: str = "",
+    planning: set[str] | None = None,
+) -> dict[str, Any]:
+    """Lint then audit every section. Returns cleaned text and both flag sets.
+
+    ``planning`` names the keys that are working notes rather than copy destined
+    for LinkedIn. They are audited exactly the same way; the only difference is
+    that an open slot in one of them does not block publication.
+    """
     cleaned: dict[str, str] = {}
     lint_flags: list[str] = []
     audit_flags: list[str] = []
@@ -242,26 +272,51 @@ def run_qa(spec: PersonaSpec, sections: dict[str, str], proof: str = "") -> dict
         lint_flags.extend(f"{key}: {flag}" for flag in linted["flags"])
         audit_flags.extend(f"{key}: {flag}" for flag in audited["flags"])
 
+    planning = planning or set()
+
+    def blocks(flag: str) -> bool:
+        key, _, body = flag.partition(": ")
+        if body.startswith("REVIEW"):
+            return False
+        # An unverified figure in a working note is the note telling you which
+        # number you still have to go and find. Nothing is published from it, so it
+        # is information rather than a blocker. A safety breach in a note still
+        # blocks, because a calendar row becomes a post later.
+        if key in planning and body.startswith("UNVERIFIED"):
+            return False
+        return True
+
     return {
         "outputs": cleaned,
+        "planning": sorted(planning),
         "lint_flags": lint_flags,
         "audit_flags": audit_flags,
-        "blocking_flags": [f for f in audit_flags if not f.split(": ", 1)[-1].startswith("REVIEW")],
+        "blocking_flags": [f for f in audit_flags if blocks(f)],
     }
 
 
 def approve_package(qa_result: dict[str, Any]) -> dict[str, Any]:
     """The gate. Every reason it refuses is returned, not just the first."""
     reasons: list[str] = []
+    planning = set(qa_result.get("planning") or ())
 
-    open_slots = [k for k, v in qa_result["outputs"].items() if OPEN_SLOT in v]
+    open_slots = [
+        k for k, v in qa_result["outputs"].items() if OPEN_SLOT in v and k not in planning
+    ]
     if open_slots:
         reasons.append(
             f"{OPEN_SLOT} still present in: {', '.join(open_slots)}. Supply the real "
             "evidence or remove the claim."
         )
 
-    blocked = qa_result.get("blocking_flags") or blocking(qa_result["audit_flags"])
+    # Membership, not truthiness. An empty blocking list is a clean result, and
+    # `or` treated it as absent and recomputed from the raw flags, which discards
+    # the planning exclusion. The evaluation harness caught this as a calendar that
+    # stayed blocked with nothing blocking it.
+    if "blocking_flags" in qa_result:
+        blocked = qa_result["blocking_flags"]
+    else:
+        blocked = blocking(qa_result["audit_flags"])
     if blocked:
         reasons.append(f"{len(blocked)} blocking finding(s) must be resolved.")
 

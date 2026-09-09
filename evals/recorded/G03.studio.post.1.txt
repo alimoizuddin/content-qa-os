@@ -1,0 +1,25 @@
+{
+  "hook": "I have read 900+ ATS resumes this month, and here is what I see: a summary that says 'I hope to contribute' gets skipped. A summary that says 'I decided to build this project to solve X' gets read.",
+  "body_lines": [
+    "Hope is vague. Decision is evidence.",
+    "One says you are waiting for a chance. The other shows you already took it.",
+    "The difference is not in the words alone. It is in the mindset behind them.",
+    "When you write what you decided to do, you signal employability before the interview even starts."
+  ],
+  "takeaway": "Your resume summary is not a wishlist. It is a record of choices you have already made.",
+  "question": "What is one decision you made in the last six months that you can put on your resume today?",
+  "keywords": ["career ready", "employable", "ATS resume", "freshers", "stand out", "900+ ATS resumes"],
+  "keyword_rationale": "These terms reflect the core message about resume summaries for early-career job seekers. 'Career ready' and 'employable' tie to the outcome. 'ATS resume' and '900+ ATS resumes' anchor the advice in verified experience. 'Freshers' and 'stand out' define the audience and goal.",
+  "hashtags": ["#Employability", "#ATSResume", "#Freshers"],
+  "hashtag_notes": ["#Employability connects to the core idea of being job-ready.", "#ATSResume grounds the advice in the screening process I oversee.", "#Freshers targets the audience this post is written for."],
+  "comment_a": "I reviewed 900+ ATS resumes this month and saw this pattern repeat: summaries focused on action and decisions got more recruiter time. If you are updating your resume today, start with what you decided to do, not what you hope to do. What is one project or task you completed recently that shows initiative?",
+  "comment_b": "Another detail from the desk: the resumes that stood out often included a specific tool or method they used to achieve the result. It is not just about the decision—it is about how you carried it out. What tool or method did you use in that decision you just shared?",
+  "repost_caption": "Revisiting this because your resume summary is often the first—and sometimes only—thing a recruiter reads. Make it count by showing decisions, not hopes. What is one decision you can add to your summary today?",
+  "reply_templates": [
+    "Thanks! To go deeper: what is one decision you made last week that you could put on your resume?",
+    "I suggest starting with a specific project where you chose to learn a tool or solve a problem without being asked. What is one example from your experience?",
+    "You are right that hopes matter for motivation. On a resume, though, recruiters look for proof of action. What is one action you have already taken?",
+    "Great point about confidence. The resume is where you show it through what you have done, not what you wish to do. What is one thing you have done?"
+  ],
+  "publish_window": "9:00 to 10:30 AM IST"
+}

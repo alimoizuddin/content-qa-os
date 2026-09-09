@@ -1,0 +1,34 @@
+{
+  "hook": "I reached for the namkeen packet. My body was asking for tamarind rice powder.",
+  "body_lines": [
+    "",
+    "The craving hit at 4 pm. Sharp, specific. Not hunger. A pull toward sourness.",
+    "I named it: tamarind. Not 'something tangy'. Tamarind rice powder from my mother’s jar.",
+    "My hand moved to the snack shelf first. Eyes faster than tongue.",
+    "Pause. I asked: what is this craving trying to tell me?",
+    "Two voices inside. One: eat the packet now. Two: wait, what does my body actually need?",
+    "I chose the powder. Mixed it with eggs. Ate slowly.",
+    "The craving softened. Not gone. Informed.",
+    "Then and now: I used to fight the pull. Now I read it.",
+    "Season matters. Ritual matters. My kitchen wardrobe holds the answer.",
+    "One sensory payoff: the warm egg, the sour powder hitting my tongue, the memory of my grandmother’s kitchen in Chennai rising with it.",
+    "Craving is not the enemy. It is the messenger.",
+    "Listen. Pause. Respond.",
+    "What is your body telling you through your cravings today?"
+  ],
+  "takeaway": "Craving is information about the body, not a failure of discipline.",
+  "question": "What is your body telling you through your cravings today?",
+  "keywords": ["WILDFIT coach", "craving care", "types of hunger", "kitchen wardrobe", "listening to the body", "Indian food culture"],
+  "keyword_rationale": "These terms reflect the core method of reading cravings as signals, the personal kitchen ritual described, and the cultural context of Indian flavours. They help the post reach midlife women and professionals seeking a non-restrictive, aware approach to eating.",
+  "hashtags": ["#WILDFIT", "#CravingCare", "#TheIndianPlate", "#FoodPsychology", "#SeasonalEating"],
+  "hashtag_notes": ["#WILDFIT identifies her coaching method and credibility.", "#CravingCare names her unique approach to hunger signals.", "#TheIndianPlate grounds the post in Indian food culture and rituals.", "#FoodPsychology supports the idea of cravings as information.", "#SeasonalEating honours the role of ritual and timing in nourishment."],
+  "comment_a": "That tamarind rice powder moment reminded me how our bodies speak in flavours we grew up with. Not in calories or macros. Have you noticed a specific taste your body asks for when you’re tired or stressed?",
+  "comment_b": "I kept that tamarind powder jar on my counter for a week after that day. A physical reminder to pause before reaching for the packaged thing. Small rituals rewire big habits.",
+  "repost_caption": "A craving for namkeen led me to tamarind powder—and a deeper conversation with my body. What flavour is your hunger speaking in today?",
+  "reply_templates": [
+    "Thank you! I’m curious—what’s one flavour your body has been asking for lately?",
+    "That pause between craving and action is where awareness lives. For me, it’s often sour or bitter when I need reset.",
+    "You’re right—discipline isn’t the issue. It’s about learning the language our bodies use to ask for what they need."
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

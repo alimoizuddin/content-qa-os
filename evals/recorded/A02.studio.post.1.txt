@@ -1,0 +1,33 @@
+{
+  "hook": "I stopped depending on daily pills myself.",
+  "body_lines": [
+    "",
+    "It was not a decision. It was a discovery.",
+    "For years I took a pill every morning for acid reflux.",
+    "I thought it was part of being a woman over forty.",
+    "Then I learned to read my cravings.",
+    "Not as weakness, but as messages.",
+    "The burn came after fried food, late nights, skipped meals.",
+    "My body was not broken. It was asking for change.",
+    "I listened. I adjusted my plate. I honored my kitchen wardrobe.",
+    "The pill bottle gathered dust. Then I let it go.",
+    "No fanfare. Just quiet relief.",
+    "This is not about stopping medication. It is about listening first.",
+    "Your body knows. Are you ready to hear it?"
+  ],
+  "takeaway": "Listen to your cravings. They are not the enemy.",
+  "question": "What is one craving you’ve been ignoring lately?",
+  "keywords": ["craving care", "food freedom", "listening to the body", "midlife women", "WILDFIT coach"],
+  "keyword_rationale": "These terms reflect the core message of using cravings as guidance rather than suppression, directly addressing women over 45 on medication who seek sustainable, body-led change. They align with Rakhee’s identity and method, reinforcing discoverability through authentic, repeated vocabulary.",
+  "hashtags": ["#WILDFIT", "#CravingCare", "#TheIndianPlate", "#FoodFreedom", "#MindfulEating"],
+  "hashtag_notes": ["#WILDFIT identifies her certification and method.", "#CravingCare names her unique approach to hunger signals.", "#TheIndianPlate grounds her advice in cultural context.", "#FoodFreedom reflects the outcome of listening to the body.", "#MindfulEating ties to the practice of awareness over restriction."],
+  "comment_a": "I stopped my daily reflux pill after three years of tuning into what my body was really asking for — not more medication, but better timing, less fried food, and honoring my hunger cycles. It wasn’t about willpower. It was about awareness. What’s one small food shift you’ve noticed changes how you feel?",
+  "comment_b": "Many women tell me they’re afraid to question their daily meds — and rightly so. I never suggest stopping anything without your doctor’s guidance. My journey began with awareness, not action. The shift came from listening, then discussing changes with my physician. Have you ever talked to your doctor about how your food affects your symptoms?",
+  "repost_caption": "Years ago, I believed my daily pill was non-negotiable. Then I learned to listen. Not to fix, but to understand. What if your cravings aren’t problems to solve — but clues to follow?",
+  "reply_templates": [
+    "Thank you — I’m glad it resonated. What’s one craving you’ve been curious about lately?",
+    "I stopped my reflux pill after noticing patterns: it flared after late dinners and stress eating. Tracking those helped me adjust — with my doctor’s support. What time of day do your symptoms usually show up?",
+    "You’re absolutely right — medication decisions belong with your doctor. My point was about the power of listening first. Often, what we treat as a side effect is actually a signal. Have you noticed any patterns between your meals and how you feel?",
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

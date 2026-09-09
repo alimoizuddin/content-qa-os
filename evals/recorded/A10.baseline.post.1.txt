@@ -1,0 +1,38 @@
+{
+  "hook": "Let’s be real: most hashtag advice is noise. But what if I told you there’s a simple, data-backed hashtag strategy that actually works — and it’s not about stuffing 30 tags?",
+  "body_lines": [
+    "As an AI Automation Engineer, I’ve reverse-engineered how LinkedIn’s ranking model uses hashtags — not as vanity metrics, but as semantic signals.",
+    "The algorithm doesn’t care how many you use. It cares about relevance, specificity, and topical clustering.",
+    "Here’s the guaranteed framework I use for every post — and it’s helped clients and colleagues 3x their reach consistently:",
+    "1️⃣ Lead with 1 ultra-niche tag (e.g., #AIFounders or #LLMOps) — this tells the algorithm exactly who to show it to.",
+    "2️⃣ Add 1–2 broad but active tags (e.g., #AI, #Automation) — these give you discoverability in high-volume feeds.",
+    "3️⃣ Finish with 1 rising/trending tag (check LinkedIn’s ‘Trending’ tab or use tools like Shield or Taplio) — this rides algorithmic momentum.",
+    "Never use more than 4 hashtags. Ever. More than that dilutes signal and looks spammy.",
+    "The goal isn’t to be seen by everyone — it’s to be seen by the *right* people, at the right time, with the right context.",
+    "When your hashtags mirror how your ideal audience thinks and searches, the algorithm doesn’t just rank you — it recommends you.",
+    "Try this on your next post. Track the difference in impressions and engagement. Then come back and tell me what changed.",
+    "P.S. Hashtags aren’t magic — but when you treat them like keywords in a search engine? That’s when the algorithm starts working for you."
+  ],
+  "takeaway": "Stop guessing with hashtags. Use 1 niche + 1–2 broad + 1 trending = a signal-dense combo that tells LinkedIn’s algorithm exactly who to show your post to — and why it should care.",
+  "question": "What’s one hashtag you’ve used that surprisingly drove real engagement? I’d love to hear what’s working for you.",
+  "keywords": ["hashtag strategy", "LinkedIn algorithm", "AI automation", "content reach", "creator growth", "founder branding", "semantic tagging", "viral post formula", "engagement hack", "niche targeting"],
+  "keyword_rationale": "These keywords align with the core topic (hashtag strategy for virality), Ali’s expertise (AI Automation Engineering), and the audience’s goals (creators and founders seeking reach). Terms like 'semantic tagging' and 'algorithmic signal' reflect the technical depth, while 'creator growth' and 'founder branding' speak to audience motivations. Avoided fluff; focused on search-intent and platform-specific behavior.",
+  "hashtags": ["#AIFounders", "#AI", "#LinkedInGrowth", "#ContentStrategy"],
+  "hashtag_notes": [
+    "#AIFounders: Ultra-niche — targets builders in AI space, high intent, low competition.",
+    "#AI: Broad but essential — captures general AI audience without being too generic.",
+    "#LinkedInGrowth: Rising/trending in creator circles — signals relevance to algorithm’s current focus.",
+    "#ContentStrategy: Anchors the post in a evergreen, high-value topic for founders and creators."
+  ],
+  "comment_a": "I’ve seen posts with 20+ hashtags get buried — not because the content was bad, but because the signal was scattered. This 4-tag rule is a game-changer.",
+  "comment_b": "Pro tip: Rotate your niche tag based on the post’s specific angle. One day it’s #LLMOps, next it’s #AIethics — keeps the algorithm guessing in a good way.",
+  "repost_caption": "If you treat hashtags like SEO keywords instead of lottery tickets, your reach stops being luck and starts being engineered.",
+  "reply_templates": [
+    "Great question! I’ve found that niche tags like #AIFounders or #WomenInAI consistently outperform generic ones because they attract engaged, relevant audiences.",
+    "I use Shield.app to track tag performance over time — but even manually checking LinkedIn’s ‘Trending’ tab weekly gives you a solid edge.",
+    "Absolutely avoid #fyp, #viral, or #followforfollow. They trigger spam filters and tell the algorithm your content is low-quality.",
+    "Start with 1 niche tag that matches your audience’s identity. Then layer in 1–2 broad ones they follow. Finally, add 1 rising tag from your feed’s 'Trending' section.",
+    "Yes — and it’s not just about reach. The right hashtags improve comment quality and connection requests from people who actually get your work."
+  ],
+  "publish_window": "Tuesday–Thursday, 8–10 AM or 12–2 PM local time (when creators and founders are most likely scrolling)"
+}

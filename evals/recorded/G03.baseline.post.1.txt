@@ -1,0 +1,35 @@
+{
+  "hook": "Most resume summaries sound like wishes. The ones that get interviews sound like decisions.",
+  "body_lines": [
+    "I’ve reviewed 900+ ATS-optimized resumes for freshers and early-career candidates.",
+    "And I keep seeing the same quiet mistake: summaries that say ‘I hope to…’ instead of ‘I have decided to…’",
+    "‘I hope to contribute to a dynamic team…’ — vague, passive, forgettable.",
+    "‘I have decided to apply my data analysis skills to reduce operational inefficiencies in SaaS environments…’ — specific, owned, compelling.",
+    "Hope is nice. But hiring managers don’t hire hope. They hire people who’ve made a choice — and can prove it.",
+    "Your summary isn’t a dream journal. It’s a declaration of intent.",
+    "Swap ‘I hope to…’ for ‘I have decided to…’ — then back it with one concrete skill, one relevant project, or one measurable outcome.",
+    "Watch how your tone shifts from applicant to asset.",
+    "This isn’t about fluff. It’s about framing.",
+    "The difference between being overlooked and being called in? Often, just one verb."
+  ],
+  "takeaway": "Your resume summary shouldn’t express hope — it should announce a decision. Own your direction, and the ATS (and humans) will notice.",
+  "question": "What’s one decision you’ve made about your career direction — and how did you reflect it in your resume summary?",
+  "keywords": ["resume summary", "freshers job search", "ATS optimization", "early career branding", "career decision making", "job application tips", "LinkedIn for students", "hire me mindset", "career clarity", "resume writing"],
+  "keyword_rationale": "Selected keywords align with the core theme (resume summary as declaration), audience (freshers/early-career), and Isshita’s expertise (ATS, HR, employability training). Terms like ‘ATS optimization’, ‘early career branding’, and ‘career decision making’ target search intent while ‘hire me mindset’ and ‘resume writing’ tap into aspirational, shareable phrases. Avoided overused generic terms like ‘career growth’ in favor of specificity that matches the post’s nuanced insight.",
+  "hashtags": ["#ResumeTips", "#FreshersJobs", "#CareerClarity", "#ATSFriendly", "#EarlyCareer", "#JobSearchHelp", "#HireMe", "#LinkedInForStudents", "#IsshitaDebnath", "#EmployabilityTraining"],
+  "hashtag_notes": ["#ResumeTips — high-volume, evergreen tag for resume advice", "#FreshersJobs — targets the exact audience; low competition, high relevance", "#CareerClarity — ties to the post’s core message of decisive framing", "#ATSFriendly — leverages Isshita’s credibility in ATS optimization", "#EarlyCareer — broad but relevant; captures those 1-3 years in", "#JobSearchHelp — positions the post as helpful, not promotional", "#HireMe — aspirational, encourages engagement from job seekers", "#LinkedInForStudents — niche but active community; Isshita can engage here", "#IsshitaDebnath — personal brand reinforcement", "#EmployabilityTraining — niche authority tag; signals expertise to HR/recruiter networks"],
+  "comment_a": "I’ve seen this so often: candidates write summaries like they’re writing a letter to Santa. ‘I hope I get a chance…’ Meanwhile, the ones who get interviews say: ‘I’ve built X, I’ve solved Y, and I’m here to do Z for your team.’ It’s not arrogance — it’s clarity. And clarity gets you hired.",
+  "comment_b": "Pro tip: If your summary could be copied and pasted into 10 other resumes without changing a word — it’s not working. Your decision should sound like yours. Unique. Owned. Unmistakable.",
+  "repost_caption": "The difference between a resume that gets ignored and one that gets an interview? Often, just one shift in mindset: from hoping to deciding. Share this with someone who’s still writing their summary like a wish list.",
+  "reply_templates": [
+    "Thanks for sharing this — I just rewrote my summary using your ‘I have decided to…’ framework. Feels so much more powerful.",
+    "This is exactly what I needed to hear. I’ve been stuck in ‘hope mode’ for months. Time to get decisive.",
+    "Love this. As someone who’s reviewed 100+ resumes, I can confirm: the decisive ones stand out immediately.",
+    "Question: How do you suggest framing a decision if you’re still exploring multiple career paths?",
+    "This resonated deeply. I’m going to audit my summary tonight. Thanks for the nudge, Isshita.",
+    "Brilliant insight. I’ll be sharing this with my university’s career cell — freshers need to hear this.",
+    "I tried this today and got my first recruiter message in 3 weeks. Coincidence? I don’t think so.",
+    "This is why I follow you. Practical, data-backed, and human. No fluff — just truth."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM IST (peak job-seeking scroll time for freshers)"
+}

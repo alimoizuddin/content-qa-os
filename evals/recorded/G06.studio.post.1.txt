@@ -1,0 +1,45 @@
+{
+  "hook": "I have trained 14,000+ learners across 250+ sessions. All while running hiring for a 50+ member organisation and deploying 100+ educators.",
+  "body_lines": [
+    "Volume of training is not the credential. Sitting on the deciding side while you train is.",
+    "I have read N resumes this month, and here is what employability looks like from my side: it is not about how many sessions you delivered, but how your training changes who gets shortlisted.",
+    "The negation ladder: No, counting sessions does not prove impact. No, listing learners does not show quality. No, volume alone does not earn trust. The turn: What earns trust is when your training moves the needle on screening outcomes.",
+    "[*sparkle thesis*] The real work of employability training happens when you are also the one deciding who gets hired.",
+    "Contrast couplet: You can train thousands and still miss the mark, or you can train fewer and shift the quality of hire—because you see both sides of the table.",
+    "Rhetorical self-interrogation: Skepticism. Yes, it is harder to do both, but that is exactly why it is credible.",
+    "I have seen how training designed without hiring insight creates noise, not readiness. When you sit on the deciding side, you know what actually moves the ATS, what makes a resume shortlist, and what makes a candidate stand out in interview.",
+    "This is not about scaling numbers. It is about scaling relevance—where every session is shaped by what you see failing in real time on your desk."
+  ],
+  "takeaway": "Your training gains credibility not from how many you reach, but from how deeply you understand who gets hired—and why.",
+  "question": "When was the last time your training content changed because you saw a pattern in rejected resumes?",
+  "keywords": [
+    "AI-native",
+    "Head of HR",
+    "hiring desk",
+    "quality of hire",
+    "learning and development",
+    "HR leaders"
+  ],
+  "keyword_rationale": "These terms reflect the dual role of training and hiring decision-making central to the post’s argument. They help the ranking model identify the audience as HR leaders and institutions focused on credible, impact-driven employability work.",
+  "hashtags": [
+    "#HR",
+    "#LearningAndDevelopment",
+    "#QualityOfHire",
+    "#HRLeaders"
+  ],
+  "hashtag_notes": [
+    "#HR connects to the core audience of people leaders making hiring and development decisions.",
+    "#LearningAndDevelopment highlights the training function being discussed through a hiring lens.",
+    "#QualityOfHire anchors the post in measurable outcomes, not just activity volume.",
+    "#HRLeaders targets the decision-makers who need to evaluate trainer credibility beyond session counts."
+  ],
+  "comment_a": "I’ve seen trainers share session counts as proof of impact. But when I’m shortlisting, I ask: Did your training change who got through the screen? That’s the real metric. What’s one thing you’ve adjusted in your training after seeing a hiring pattern?",
+  "comment_b": "One detail I didn’t include: the 100+ educators I deploy are trained not just in content, but in how to align with what we actually screen for. That alignment is where volume becomes validity.",
+  "repost_caption": "Credibility in training doesn’t come from how many you teach—it comes from how well you understand who gets hired. Let’s shift from volume to validity.",
+  "reply_templates": [
+    "Thanks! I’m curious—what’s one hiring insight that’s changed how you design training?",
+    "I track shortlist rates pre- and post-training for specific skills. For example, after adjusting resume modules based on ATS rejects, shortlist rates for formatted resumes rose by measurable margin.",
+    "You’re right that scale matters for reach—but without hiring insight, scale can just amplify misalignment. I hold that credibility comes from proximity to the decision, not just the delivery."
+  ],
+  "publish_window": "9:00 to 10:30 AM IST"
+}

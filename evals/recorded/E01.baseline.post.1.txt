@@ -1,0 +1,40 @@
+{
+  "hook": "Automation isn’t about replacing people. It’s about removing ambiguity.",
+  "body_lines": [
+    "Too many founders treat automation like a magic button: ‘Just plug in AI and watch the chaos disappear.’",
+    "But automation doesn’t fix broken processes — it exposes them.",
+    "If your workflow is vague, inconsistent, or undocumented, automation won’t scale. It’ll just amplify the noise.",
+    "The real work isn’t in the code. It’s in the clarity before the code.",
+    "Mapping the steps. Naming the decisions. Defining the exceptions. Writing the rules like they’re contracts — not suggestions.",
+    "That’s where 80% of the value lives. Not in the LLM or the RPA bot. In the shared understanding.",
+    "Founders who win with automation aren’t the ones with the fanciest stack. They’re the ones who took the time to make the invisible, visible.",
+    "Clarity isn’t sexy. But it’s the foundation everything else builds on.",
+    "Automate the clear. Not the confused."
+  ],
+  "takeaway": "Before you automate anything, ask: ‘Can someone who’s never seen this follow it perfectly?’ If not, fix the process first — the tech will follow.",
+  "question": "What’s one process in your business you’ve automated — or tried to — that revealed how unclear it actually was?",
+  "keywords": ["automation", "founder", "process clarity", "AI engineering", "workflow design", "operational excellence", "scaling startups", "no-code", "RPA", "decision logic"],
+  "keyword_rationale": "Selected terms balance technical credibility (AI Engineering, RPA, decision logic) with founder-relevant pain points (process clarity, workflow design, scaling startups). Avoided overused buzzwords like 'disrupt' or 'synergy' to keep tone grounded and authentic. Each keyword reflects a concept Ali would genuinely discuss — grounded in his role as an Automation Engineer who sees the human/system interface.",
+  "hashtags": ["#Automation", "#FounderMindset", "#ProcessOverTech", "#AIEngineering", "#ClarityFirst"],
+  "hashtag_notes": [
+    "#Automation - core topic, high search volume in tech/business circles",
+    "#FounderMindset - targets audience directly, invites reflection",
+    "#ProcessOverTech - contrarian but memorable; challenges automation hype",
+    "#AIEngineering - positions Ali as technical authority, not just a commentator",
+    "#ClarityFirst - encapsulates the post’s thesis; repeatable as a brand mantra"
+  ],
+  "comment_a": "This hits home. We automated our client onboarding last year — only to realize half the team was doing it differently. The bot didn’t fail. Our documentation did. Took us 3 weeks to fix the process before we could even touch the automation again. Worth every minute.",
+  "comment_b": "I’ve seen founders spend $50k on AI tools to ‘fix’ sales follow-up… only to find out no one agreed on what a ‘qualified lead’ even meant. Automation didn’t fail. Alignment did. Clarity isn’t optional — it’s the prerequisite.",
+  "repost_caption": "Sharing this because too many founders chase automation as a shortcut — when it’s really a mirror. If your process is fuzzy, automation just makes the fuzziness louder. Start with clarity. The tech will thank you.",
+  "reply_templates": [
+    "Thanks for sharing — I’ve seen the same thing. What’s one small step you took to gain clarity before automating?",
+    "Great point. How do you get buy-in from teams who see process documentation as ‘bureaucracy’?",
+    "This is why I always start with a ‘process autopsy’ before touching any tool. Curious: what’s your framework for mapping unclear workflows?",
+    "Love the ‘clarity first’ angle. Have you found any tools or rituals that help teams visualize ambiguity?",
+    "This is the silent killer of automation ROI. Have you ever had to roll back an automation because the underlying process was too broken?",
+    "As a founder, I used to think automation was about speed. Now I see it’s about sanity. Thanks for articulating this.",
+    "Would love to hear how you help founders who are overwhelmed by where to start with clarity — any starter exercises?",
+    "This should be required reading for any founder before they buy their first AI tool."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM EST (founders checking LinkedIn before deep work)"
+}

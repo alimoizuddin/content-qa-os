@@ -1,0 +1,51 @@
+{
+  "hook": "In 2014 I weighed 82kg at 42. By my first half marathon in 2017 I was 62kg after three years of training.",
+  "body_lines": [
+    "I had run 100 kilometres. I had swum a 1km swimathon.",
+    "",
+    "But every afternoon, the craving came like a knock on the door.",
+    "Not for food. For quiet. For a moment when my body didn’t feel like a problem to solve.",
+    "I would reach for the tamarind rice powder my mother kept in the steel dabba.",
+    "One spoon in warm water. Sour. Sharp. Alive.",
+    "That was my ritual. Not hunger. Not thirst. A pause I had learned to name.",
+    "The craving whispered: You are tired. The wiser voice answered: Then rest. Not eat.",
+    "I did not lose weight to earn peace. I learned to listen, and the weight released.",
+    "Now I keep the dabba on the shelf. Not as a tool. As a memory.",
+    "My body is not a project. It is a companion.",
+    "I speak to my doctor about my own situation. You should too."
+  ],
+  "takeaway": "Freedom is not in the scale. It is in the pause between craving and choice.",
+  "question": "What does your body ask for when you stop calling it a craving?",
+  "keywords": [
+    "WILDFIT coach",
+    "food freedom",
+    "craving care",
+    "types of hunger",
+    "listening to the body",
+    "midlife women"
+  ],
+  "keyword_rationale": "These terms reflect the core journey of relearning hunger signals without restriction, grounded in personal experience and aligned with the audience’s need for sustainable, self-aware eating. They support discoverability by matching how midlife women search for alternatives to diet culture.",
+  "hashtags": [
+    "#WILDFIT",
+    "#FoodFreedom",
+    "#CravingCare",
+    "#MindfulEating",
+    "#HolisticHealth"
+  ],
+  "hashtag_notes": [
+    "Identifies her certification and method.",
+    "Names the core outcome of the post.",
+    "Highlights the emotional layer of eating behavior.",
+    "Connects to the practice of pausing before eating.",
+    "Signals the broader wellness context without promising results."
+  ],
+  "comment_a": "That tamarind rice powder ritual was my anchor for years. It wasn’t about the taste—it was about creating a moment to check in. What’s one small ritual you use to pause before eating?",
+  "comment_b": "I still keep that steel dabba in my kitchen. Not for the powder anymore. For the spoon. It reminds me that some tools outlive their purpose and become teachers.",
+  "repost_caption": "Three years of training changed my weight. Three years of listening changed my relationship with food. The real shift happened in the quiet.",
+  "reply_templates": [
+    "Thank you—I’m glad it resonated. What’s one hunger signal you’ve started to notice lately?",
+    "I used tamarind rice powder because it was my mother’s remedy for digestion. It’s not a protocol—it’s a personal anchor.",
+    "You’re right—weight isn’t the only marker of health. That’s why I focus on how my body feels, not just what it weighs.",
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

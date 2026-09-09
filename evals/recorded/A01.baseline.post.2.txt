@@ -1,0 +1,35 @@
+{
+  "hook": "For years, I accepted fatigue, brain fog, and monthly migraines as 'just part of being a woman in midlife.' Then I tried WILDFIT—and in 90 days, my thyroid labs normalized and my migraines vanished. No medication. Just food, timing, and mindset.",
+  "body_lines": [
+    "I was doing everything 'right': eating clean, exercising, taking supplements—but my TSH kept creeping up, and the migraines came like clockwork, derailing my weeks.",
+    "WILDFIT didn’t ask me to count calories or cut out food groups forever. It taught me to listen to my body’s hunger signals, reset my relationship with sugar, and eat seasonally.",
+    "Within weeks, my energy stabilized. By month two, the headaches were less frequent. By month three? No migraines. My thyroid panel? Optimal for the first time in years.",
+    "This isn’t about restriction—it’s about rhythm. WILDFIT helped me stop fighting my biology and start working with it.",
+    "If you’re tired of feeling like your body is betraying you, and you’re ready for a sustainable shift—not another quick fix—this might be the reset you’ve been waiting for."
+  ],
+  "takeaway": "Your symptoms aren’t just 'aging'—they’re signals. WILDFIT helped me decode mine, and in 90 days, I reclaimed my health without pills or extremes.",
+  "question": "Have you ever felt like your body was working against you—despite doing everything 'right'?",
+  "keywords": ["WILDFIT", "thyroid health", "migraine relief", "midlife wellness", "hormone balance", "functional nutrition", "sugar reset", "seasonal eating", "health coaching", "women over 40"],
+  "keyword_rationale": "Selected keywords reflect Rakhee’s personal journey (thyroid, migraines), the WILDFIT methodology, and the target audience (midlife women). Terms like 'hormone balance' and 'functional nutrition' align with wellness search intent, while 'WILDFIT' and 'health coaching' establish credibility and niche authority.",
+  "hashtags": ["#WILDFIT", "#ThyroidHealth", "#MigraineRelief", "#MidlifeWellness", "#HormoneBalance", "#FunctionalNutrition", "#SugarReset", "#WomenOver40", "#HealthCoaching", "#FeelGoodAgain"],
+  "hashtag_notes": [
+    "#WILDFIT is essential for brand visibility and algorithm reach within the program’s community.",
+    "#ThyroidHealth and #MigraineRelief target specific pain points with high search volume among midlife women.",
+    "#MidlifeWellness and #WomenOver40 speak directly to the audience’s identity and life stage.",
+    "#HormoneBalance and #FunctionalNutrition attract those seeking root-cause solutions over symptom management.",
+    "#SugarReset highlights a core WILDFIT principle without sounding extreme.",
+    "#HealthCoaching establishes Rakhee’s professional role.",
+    "#FeelGoodAgain adds emotional resonance—aspired outcome, not just clinical fix."
+  ],
+  "comment_a": "I had almost given up on feeling energetic again—thought it was just perimenopause. After WILDFIT, I’m sleeping through the night, my mood is steady, and I haven’t had a migraine in 8 months. Thank you, Rakhee, for sharing this—it gave me the courage to try it too.",
+  "comment_b": "This is exactly what I needed to hear. I’ve been skeptical of ‘another program,’ but the fact that it’s food-based, time-bound, and rooted in biology makes sense. Did you find the first 21 days the hardest? I struggle with sugar cravings.",
+  "repost_caption": "Rakhee Singhi’s story is a powerful reminder: healing doesn’t always come from a prescription. Sometimes, it comes from returning to how we’re designed to eat. If you’re a midlife woman tired of bandaid solutions, her WILDFIT journey is worth a look.",
+  "reply_templates": [
+    "Thanks for sharing—so glad this resonated. The first 21 days are tough, but the cravings shift fast once your hormones start to rebalance. Happy to share what helped me get through it.",
+    "I felt the same way—skeptical, tired of quick fixes. What made WILDFIT different was that it didn’t feel like a diet. It felt like coming home to my body.",
+    "So happy to hear you’re considering it. The migraines were my body’s way of screaming for change. Once I listened, everything shifted.",
+    "You’re not alone in feeling like your body’s changed—and it’s not your fault. WILDFIT helped me work *with* my biology, not against it.",
+    "The thyroid improvement was the bonus I didn’t expect. But honestly? Freedom from migraines changed everything—my work, my presence, my joy."
+  ],
+  "publish_window": "Tuesday or Wednesday, 7:30–8:30 AM IST (when midlife women are likely checking LinkedIn before work)"
+}

@@ -1,0 +1,35 @@
+{
+  "hook": "This week, a candidate walked into an interview with a resume full of buzzwords… and left with zero answers to back them up.",
+  "body_lines": [
+    "Mr. Sharma from our Pune office came in confident — listed ‘AI-driven talent analytics’ as a core skill on his resume.",
+    "When asked to explain how he’d used it in his last role… silence.",
+    "Then came: ‘Can you walk me through a project where you applied machine learning to hiring?’",
+    "He blinked. Then said, ‘I… I think I saw a demo once?’",
+    "No examples. No metrics. No context. Just a keyword copied from a job description.",
+    "This isn’t rare. It’s rampant.",
+    "Freshers: your resume is not a bingo card. It’s your story.",
+    "If you can’t explain it simply, you don’t know it well enough.",
+    "Stop stuffing skills. Start owning them.",
+    "The best candidates don’t have the longest lists — they have the clearest proof."
+  ],
+  "takeaway": "Your resume should reflect what you’ve done — not what you wish you’d done. Be ready to defend every line.",
+  "question": "What’s one skill on your resume you can explain in 60 seconds — with a real example?",
+  "keywords": ["resume honesty", "interview prep", "skill validation", "freshers guide", "AI employability", "HR insights", "authentic branding", "skill gap", "interview mistakes", "career readiness"],
+  "keyword_rationale": "Selected terms target freshers navigating early-career job searches, emphasizing authenticity over buzzword stuffing. ‘Resume honesty’ and ‘skill validation’ directly address the core issue. ‘AI employability’ and ‘HR insights’ align with Isshita’s role. ‘Interview prep’ and ‘career readiness’ are high-intent search terms for the audience. Avoided overly generic terms like ‘success’ or ‘growth’ to maintain specificity and relevance.",
+  "hashtags": ["#ResumeTruth", #InterviewReady, #FreshersGuide, #SkillOverBuzzword, #HRInsights, #Employability, #AIinHR, #CareerAdvice, #BeAuthentic, #HiringTruth"],
+  "hashtag_notes": ["#ResumeTruth: Directly calls out the issue — memorable and shareable.", "#InterviewReady: High-intent tag for job seekers actively preparing.", "#FreshersGuide: Positions the post as helpful, not critical — builds trust.", "#SkillOverBuzzword: Reinforces the core message in a catchy, repeatable phrase.", "#HRInsights: Leverages Isshita’s authority — attracts HR peers and candidates alike.", "#Employability: Broad but relevant; aligns with her personal brand.", "#AIinHR: Niche but growing — signals expertise in her domain.", "#CareerAdvice: Evergreen tag with wide reach among students and early-career.", "#BeAuthentic: Encourages engagement through values-driven messaging.", "#HiringTruth: Invites others to share similar stories — boosts comments and reach."],
+  "comment_a": "I’ve seen this too — candidates listing ‘Python’ when they’ve only opened a Jupyter notebook once. It’s not about perfection; it’s about integrity. If you’re learning something, say so — and show how you’re building it. That’s far more impressive than faking mastery.",
+  "comment_b": "This is why we now ask: ‘Tell me about a time you failed using this skill.’ It separates the performers from the pretenders. Freshers — your honesty about gaps, paired with your plan to close them, is your superpower.",
+  "repost_caption": "A real interview moment from this week — and a wake-up call for every fresher building their resume. Let’s stop pretending. Start proving.",
+  "reply_templates": [
+    "Thanks for sharing this — it’s exactly the reality check we needed. I’ve been guilty of padding my resume too. Time to fix it.",
+    "This hit home. I listed ‘data analysis’ but only used Excel for sorting. Going to rebuild my resume with real projects this week.",
+    "As an HR person, I appreciate this perspective. We need more candidates who say ‘I’m learning’ instead of ‘I’m an expert’.",
+    "What’s the best way to show a skill you’re still developing — without underselling yourself?",
+    "I’ve interviewed 50+ freshers this month. This is the #1 pattern. Let’s normalize talking about growth, not just glory.",
+    "This is why I now ask for a 2-minute demo of any skill listed. It’s shocking how many can’t do it.",
+    "Love this. My resume used to be a keyword salad. Now it’s a story. And I get more interviews.",
+    "Can we make a ‘Resume Integrity’ pledge? I’ll start: I will only list what I can explain."
+  ],
+  "publish_window": "Tuesday–Thursday, 8–10 AM IST (when freshers are checking LinkedIn before class or work)"
+}

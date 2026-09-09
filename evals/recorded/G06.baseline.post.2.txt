@@ -1,0 +1,37 @@
+{
+  "hook": "I’ve trained 14,000+ learners. I’ve hired for a 50+ org. I’ve deployed 100+ educators. And here’s what I’ve learned: volume of training is not the credential. Sitting on the deciding side while you train is.",
+  "body_lines": [
+    "Too many HR leaders and institutions measure impact by hours delivered, modules completed, or certifications issued.",
+    "But real employability isn’t built in the classroom — it’s forged in the feedback loop between training and hiring.",
+    "When you train while simultaneously making hiring decisions, you see what skills actually stick, what gaps persist, and what candidates truly need to succeed.",
+    "That dual role — trainer and selector — creates a rare clarity: you stop teaching theory and start shaping readiness.",
+    "It’s not about how many sessions you run. It’s about how many hiring outcomes you improve because you were in the room when the decision was made.",
+    "The most effective employability programs aren’t those with the highest attendance — they’re the ones where trainers are accountable for the talent they help produce.",
+    "If you’re only delivering training, you’re guessing at impact. If you’re training while hiring, you’re measuring it.",
+    "That’s the edge. That’s the credential.",
+    "HR leaders: stop outsourcing your talent readiness to metrics that don’t reflect real-world performance.",
+    "Start embedding your trainers in the hiring process — not as observers, but as decision-makers.",
+    "Because the best employability training doesn’t happen in a vacuum. It happens at the intersection of learning and selection.",
+    "And if you’re not sitting on both sides of that table — you’re not training for employability. You’re just checking a box."
+  ],
+  "takeaway": "True employability isn’t measured by how much training you deliver — it’s measured by how well your training predicts hiring success. Sit on both sides of the table, or you’re not training for impact — you’re just delivering content.",
+  "question": "How many of your trainers are also involved in hiring decisions — and what would change if they were?",
+  "keywords": ["employability training", "HR leadership", "talent development", "hiring and training alignment", "skills validation", "learning effectiveness", "workforce readiness", "trainer accountability", "skill gap analysis", "HR innovation"],
+  "keyword_rationale": "These keywords target HR leaders and institutions focused on measurable talent outcomes. Terms like 'hiring and training alignment' and 'trainer accountability' directly support the post’s core argument, while 'skills validation' and 'workforce readiness' connect to broader industry conversations. Avoiding overly generic terms like 'L&D' or 'upskilling' ensures relevance to the contested idea — that volume ≠ impact — and positions the author as a practitioner who bridges learning and selection.",
+  "hashtags": ["#Employability", "#HRLeadership", "#TalentDevelopment", "#HiringAndTraining", "#SkillsGap", "#WorkforceReady", "#LearningImpact", "#HRInnovation"],
+  "hashtag_notes": ["#Employability - core theme of the post", "#HRLeadership - targets the intended audience", "#TalentDevelopment - broad but relevant HR function", "#HiringAndTraining - directly reflects the dual-role argument", "#SkillsGap - pain point the post addresses", "#WorkforceReady - outcome-focused, aligns with credential alternative", "#LearningImpact - challenges vanity metrics", "#HRInnovation - positions the idea as forward-thinking"],
+  "comment_a": "This is exactly the shift we need. I’ve seen too many ‘train-the-trainer’ programs that never touch the hiring desk. When trainers are accountable for hire quality, the content evolves fast — and so does the candidate experience.",
+  "comment_b": "Love this. It’s not just about alignment — it’s about feedback velocity. When you’re in the hiring room, you hear the unspoken objections: ‘They know the theory but can’t apply it.’ That’s gold for curriculum design. Trainers who don’t hire are flying blind.",
+  "repost_caption": "Reframing employability training: it’s not about how much you teach — it’s about whether your teaching predicts who gets hired. If you’re not in the hiring room while you’re training, you’re guessing. Let’s stop measuring volume and start measuring validity.",
+  "reply_templates": [
+    "Great point — I’ve found that when trainers sit in on final interviews, they start redesigning modules around real rejection reasons, not just curriculum gaps.",
+    "This resonates. In our org, we rotated trainers into hiring panels quarterly. The drop in early turnover was immediate — and the trainers started asking for real job simulations, not just case studies.",
+    "Absolutely. The moment we tied trainer KPIs to 6-month hire performance, our completion rates went down — but our quality of hire went up. Worth every trade-off.",
+    "I agree — but how do you scale this in large institutions where training and hiring are siloed by design? Would love to hear your thoughts on structural fixes.",
+    "This is why ‘learning outcomes’ must be defined by hiring managers, not L&D teams. Otherwise, we’re optimizing for compliance, not capability.",
+    "The best trainers I’ve worked with don’t just deliver content — they collect hiring feedback like it’s product data. That’s how you build employability, not just attendance.",
+    "We started requiring trainers to present hiring trend reports after every cohort. It transformed our L&D function from a cost center to a talent strategy partner.",
+    "If your training team isn’t getting hired managers’ feedback weekly, you’re not training for employability — you’re training for completion."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM or 1:00–3:00 PM local time (when HR leaders are most likely to be planning talent strategy)"
+}

@@ -1,0 +1,66 @@
+{
+  "hook": "What if your SDR pipeline ran 24/7, never slept, never missed a lead — and cost you $0 to acquire?",
+  "body_lines": [
+    "That’s not a dream. It’s what we built.",
+    "Using n8n for workflow orchestration and Apify for intelligent web scraping, we automated the entire SDR research-to-outreach pipeline — from identifying ICP prospects to enriching data, personalizing outreach, and triggering follow-ups.",
+    "Zero human oversight. Zero manual data entry. Zero cost per lead acquired.",
+    "The result? A self-sustaining lead engine that runs while you sleep — scaling outreach without scaling headcount.",
+    "Founders: if you’re still paying for SDRs to manually LinkedIn-stalk prospects… you’re leaving money on the table.",
+    "This isn’t about replacing humans. It’s about freeing them to do what only humans can: build trust, close deals, and strategize.",
+    "The tech is here. The ROI is real. The only thing holding you back? The belief that automation can’t be this good.",
+    "It can. And it is."
+  ],
+  "takeaway": "Automate your SDR research with n8n + Apify — slash CAC to zero, scale outreach infinitely, and let your team focus on revenue, not research.",
+  "question": "What’s one repetitive task in your sales process you’d love to automate — and what’s stopping you?",
+  "keywords": [
+    "SDR automation",
+    "n8n workflow",
+    "Apify scraping",
+    "zero CAC",
+    "AI sales engineer",
+    "founder growth hack",
+    "lead generation automation",
+    "outbound sales tech",
+    "no-code sales stack",
+    "AI-powered prospecting"
+  ],
+  "keyword_rationale": "Selected keywords balance high-intent founder/search terms (e.g., 'zero CAC', 'founder growth hack') with specific tech stacks (n8n, Apify) to attract both technical builders and business leaders. Avoids overused terms like 'AI revolution' in favor of concrete, measurable outcomes and tool names that signal credibility to early adopters and engineers.",
+  "hashtags": [
+    "#SDRAutomation",
+    "#n8n",
+    "#Apify",
+    "#ZeroCAC",
+    "#FounderTools",
+    "#SalesAutomation",
+    "#AIEngineering",
+    "#GrowthHacking",
+    "#NoCodeStack",
+    "#FutureOfSales"
+  ],
+  "hashtag_notes": [
+    "#SDRAutomation - Targets sales ops and founders looking to eliminate manual work",
+    "#n8n - Core tool; attracts automation engineers and workflow builders",
+    "#Apify - Signals deep web scraping capability; pulls in data engineers and growth hackers",
+    "#ZeroCAC - High-impact, provocative phrase that stops scrollers; speaks directly to founder pain",
+    "#FounderTools - Niche but high-intent; reaches decision-makers actively hunting for leverage",
+    "#SalesAutomation - Broad but relevant; captures mid-funnel interest",
+    "#AIEngineering - Positions Ali as a technical builder, not just a marketer",
+    "#GrowthHacking - Appeals to early-stage founders obsessed with scalable, low-cost acquisition",
+    "#NoCodeStack - Validates the approach is accessible, not requiring heavy dev lift",
+    "#FutureOfSales - Positions the post as forward-thinking; encourages shares from thought leaders"
+  ],
+  "comment_a": "This is exactly what we implemented at our Series A startup — reduced SDR headcount by 60% while increasing qualified meetings by 3x. The key? Trust the pipeline. Let it run. Monitor outcomes, not micromanage steps.",
+  "comment_b": "Curious: how do you handle data quality and compliance (GDPR/CCPA) when scraping at scale with Apify? Would love to hear your guardrails — especially for outbound in regulated industries.",
+  "repost_caption": "Just saw this and had to share: Ali Moizuddin built a zero-human-oversight SDR pipeline using n8n + Apify that drove CAC to zero. If you’re a founder still manually researching leads — this is your wake-up call. The tech isn’t coming. It’s here. And it’s quietly crushing traditional outbound.",
+  "reply_templates": [
+    "Thanks for sharing — this is exactly the kind of leverage we’re chasing. How long did it take to build the first stable version?",
+    "Love the Apify + n8n combo. Did you hit any rate-limiting or anti-bot walls? How did you solve them?",
+    "This is inspiring. Are you open to a quick 15-min chat? I’m exploring similar automation for my outbound stack and would value your insight.",
+    "Zero CAC is the holy grail. Did you see any drop in lead quality or response rate when you removed human touchpoints?",
+    "Just implemented a similar n8n flow for lead enrichment — curious if you use custom Apify actors or rely on public ones?",
+    "This is why I follow you. Practical, technical, and brutally effective. Keep building.",
+    "Would you consider sharing a sanitized version of your workflow? Even a high-level diagram would be gold for founders trying to replicate this.",
+    "The real magic isn’t the tools — it’s the trust to let it run. How did you get your team (or yourself) to stop checking it every hour?"
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM EST (founders checking LinkedIn before standups)"
+}

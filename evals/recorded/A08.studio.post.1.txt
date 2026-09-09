@@ -1,0 +1,23 @@
+{
+  "hook": "The transcription pipeline has processed [OPEN SLOT] hours of audio.",
+  "body_lines": [
+    "That is time not spent rewinding, not spent typing, not spent guessing what was said.",
+    "It is time returned to the founder who thinks in words, not code.",
+    "The system runs on n8n with OpenAI API as the engine and Apify for the input layer."
+  ],
+  "takeaway": "Automation for non-technical founders is not about the tool, it is about the hours you get back to build.",
+  "question": "What would you build with ten extra hours a week?",
+  "keywords": ["AI automation", "AI Automation Engineer", "n8n", "OpenAI API", "Apify", "non-technical founder"],
+  "keyword_rationale": "These terms reflect the verified stack and audience focus. They anchor the post in the persona's documented systems and speak directly to founders who leverage automation without coding.",
+  "hashtags": ["#ArtificialIntelligence", "#n8n", "#AIAgents", "#FounderLife"],
+  "hashtag_notes": ["Broad reach for AI conversation.", "Specific to the workflow tool named.", "Highlights the agentic layer in the pipeline.", "Targets the founder audience for relatability."],
+  "comment_a": "The pipeline uses Whisper via OpenAI API for transcription and Apify to scrape or ingest raw audio from various sources. It runs on n8n’s free tier with a human-in-the-loop step for quality check. What part of this stack feels most familiar to your current process?",
+  "comment_b": "In the Radio Club we built SOPs for episode publishing that cut our post-production time by half. It was not about fancy gear, it was about removing repeatable steps. Systems thinking scales what passion starts.",
+  "repost_caption": "When we scaled the Radio Club from zero to 200+ members, the real leverage was in documenting the repeatable tasks. Automation does the same for solo founders: it turns effort into output.",
+  "reply_templates": [
+    "Thanks! What is one repetitive task in your week you wish would just run itself?",
+    "The n8n workflow connects Apify to OpenAI API, then routes the transcript to a Notion database via the built-in node. Human review happens before final save.",
+    "You are right that the tools matter, but the real gain is in the time reclaimed. That is where the founder gets to build again."
+  ],
+  "publish_window": "10:00 to 11:30 AM IST"
+}

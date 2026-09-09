@@ -1,0 +1,66 @@
+{
+  "hook": "Most HR leaders measure training success by hours logged or sessions completed. I measure it by who gets hired — and who stays.",
+  "body_lines": [
+    "I’ve trained 14,000+ learners across 250+ sessions — but that number means nothing if it doesn’t translate into employability.",
+    "Running hiring for a 50+ member organisation while deploying 100+ educators taught me one hard truth: volume is vanity. Impact is the only metric that matters.",
+    "When you sit on the deciding side of hiring — reviewing resumes, conducting interviews, making offers — you see the gap between what’s taught and what’s needed.",
+    "That’s why I don’t just design training. I co-design it with hiring managers, audit outcomes against real job performance, and iterate based on retention and promotion data.",
+    "The credential isn’t the certificate. It’s the job offer. The promotion. The manager who says, ‘This person actually knows how to do the work.’",
+    "If your training isn’t closing the skills-to-hire gap, you’re not upskilling — you’re just checking a box.",
+    "HR leaders: stop celebrating attendance. Start demanding accountability.",
+    "Institutions: stop counting sessions. Start tracking placements.",
+    "The future of employability isn’t in more training — it’s in smarter, hiring-aligned training.",
+    "And that only happens when the trainer has skin in the game."
+  ],
+  "takeaway": "True employability training isn’t measured in volume — it’s measured in hires, retention, and performance. If you’re not sitting on the deciding side of hiring while you train, you’re guessing — not guiding.",
+  "question": "How do you currently link your training outcomes to actual hiring and promotion metrics?",
+  "keywords": [
+    "employability training",
+    "HR leadership",
+    "skills gap",
+    "hiring alignment",
+    "learning outcomes",
+    "talent development",
+    "workforce readiness",
+    "training ROI",
+    "internal mobility",
+    "learning and development"
+  ],
+  "keyword_rationale": "These keywords target HR leaders and institutional decision-makers focused on proving the business impact of L&D. Terms like 'skills gap', 'hiring alignment', and 'training ROI' reflect the core argument — that training must be tied to talent outcomes. 'Employability training' and 'workforce readiness' position the post as forward-thinking, while 'internal mobility' and 'talent development' speak to retention and growth — key concerns for HR leaders navigating tight labor markets.",
+  "hashtags": [
+    "#HRLeadership",
+    "#LearningAndDevelopment",
+    "#Employability",
+    "#SkillsGap",
+    "#TalentDevelopment",
+    "#TrainingROI",
+    "#WorkforceReadiness",
+    "#HiringAlignment",
+    "#L&DInnovation",
+    "#FutureOfWork"
+  ],
+  "hashtag_notes": [
+    "#HRLeadership targets the core audience directly.",
+    "#LearningAndDevelopment is broad but essential for reach in the L&D community.",
+    "#Employability is the central theme and differentiates from generic training posts.",
+    "#SkillsGap and #HiringAlignment reinforce the post’s contrarian, data-driven stance.",
+    "#TrainingROI speaks to HR leaders under pressure to justify L&D spend.",
+    "#WorkforceReadiness and #TalentDevelopment connect to institutional goals.",
+    "#L&DInnovation and #FutureOfWork position the author as a thought leader.",
+    "Avoids overused tags like #HR or #Leadership to maintain specificity and authority."
+  ],
+  "comment_a": "This is exactly the shift we need. I’ve seen too many ‘certificate factories’ where learners finish programs but can’t pass a basic technical screen. When we started requiring trainers to sit in on hiring panels for the roles they’re training for, our placement rates jumped 40% in six months. It’s not about more content — it’s about relevant content, validated by the people who hire.",
+  "comment_b": "Love this. As a university career services director, I’ve pushed for years to get faculty to co-design modules with employers. Resistance is high — ‘we’re academics, not vocational trainers.’ But the data doesn’t lie: students who complete employer-co-designed modules are 3x more likely to get hired in-field. Isshita, how do you convince academic stakeholders that this isn’t ‘dumbing down’ — it’s raising the bar?",
+  "repost_caption": "Reframing the metrics that matter in employability training. If you’re not seeing the hiring outcomes, you’re not training — you’re just hosting sessions.",
+  "reply_templates": [
+    "Thanks for sharing — this resonates deeply. We’ve seen the same disconnect in our programs. How do you suggest balancing academic rigor with hiring relevance when faculty push back?",
+    "Great point about sitting on the deciding side. Have you found specific ways to integrate hiring manager feedback into curriculum design without slowing down development cycles?",
+    "This challenges the status quo in a necessary way. What’s one small step HR leaders can take this quarter to start aligning training with real hiring outcomes?",
+    "I love the focus on retention and promotion — not just placement. How do you track long-term impact beyond the first hire?",
+    "Your experience running hiring while training gives you rare credibility. How do you structure your time to stay close to both functions without burning out?",
+    "The ‘volume vs. impact’ tension is real. Have you seen institutions successfully shift from counting sessions to tracking employability metrics?",
+    "This is the kind of thinking that’ll define the next era of L&D. Do you have a framework or checklist you use to audit training for hiring alignment?",
+    "As someone who’s built hiring-aligned programs, what’s the biggest myth you’ve seen about what makes training ‘effective’?"
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM or 1:00–3:00 PM local time (when HR leaders are most likely to be planning or reviewing talent strategy)"
+}

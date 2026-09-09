@@ -1,0 +1,29 @@
+{
+  "hook": "Last week, I shipped a workflow that didn’t just run — it delivered.",
+  "body_lines": [
+    "No hype. No fluff. Just clean, reliable automation that solved a real pain point.",
+    "The client? A founder drowning in manual ops — invoices, approvals, data syncs — eating up 15+ hours a week.",
+    "I built it end-to-end: triggered by email, validated with AI, routed to Slack and QuickBooks, with audit logs and fallback alerts.",
+    "They tested it for 72 hours. Zero errors. Zero manual intervention.",
+    "Then came the message: ‘This is the first thing in 6 months that actually saved us time — not just promised it.’",
+    "That’s the moment I live for.",
+    "If you’re a founder tired of tools that overpromise and underdeliver — let’s talk.",
+    "I don’t sell automation. I ship outcomes that stick."
+  ],
+  "takeaway": "Great automation isn’t about the tech — it’s about giving founders back their time, reliably.",
+  "question": "What’s one repetitive task in your business you wish would just… disappear?",
+  "keywords": ["AI automation", "workflow automation", "founder productivity", "no-code/low-code", "process optimization", "SaaS integrations", "operational efficiency", "AI-powered workflows", "founder tools", "automation engineer"],
+  "keyword_rationale": "Targeted keywords blend technical specificity (AI automation, workflow automation) with founder-centric pain points (productivity, operational efficiency) to attract decision-makers actively seeking reliable automation partners — not just vendors.",
+  "hashtags": ["#AIAutomation", "#FounderLife", "#WorkflowAutomation", "#NoCode", "#ProcessOptimization", "#SaaS", "#AutomationEngineer", "#FounderTools", "#OperationalEfficiency", "#BuildNotBuy"],
+  "hashtag_notes": "Mix of broad reach (#FounderLife, #SaaS) and niche specificity (#AIAutomation, #AutomationEngineer) to attract both algorithmic visibility and qualified inbound leads. Avoided overused tags like #Innovation or #Leadership.",
+  "comment_a": "Just saw this — and honestly? This is the kind of post that makes me want to reach out. I’ve been burned by ‘automation consultants’ who delivered fragile Zapier chains. How do you ensure long-term reliability beyond the initial handoff?",
+  "comment_b": "This resonates hard. We’re trying to automate our client onboarding but keep hitting walls with data validation. Do you typically start with a process audit, or jump straight into building?",
+  "reply_templates": [
+    "Thanks for the question! I always start with a 90-minute process audit — mapping every manual step, decision point, and failure mode. Automation without understanding the ‘why’ just builds faster broken systems.",
+    "Glad this hit home. For client onboarding, I usually begin with a ‘happy path’ MVP — automate the 80% that’s repeatable, then layer in exception handling via human-in-the-loop triggers. Want to share your biggest bottleneck? I’ll give you a quick sanity check.",
+    "Love that you’re thinking about longevity. I build with observability from day one: logging, alerts, and version-controlled workflows (Git-backed where possible). Handoff includes a 2-week hypercare period + a simple ops doc — so your team owns it, not me.",
+    "Appreciate the trust. If you’re open to a 15-minute no-pitch call, I can show you exactly how we’d map your current flow — and where the 10+ hours/week are hiding. No obligation, just clarity.",
+    "Happy to share a redacted version of the workflow doc I used for the last client — shows how we handled edge cases without over-engineering. Just say the word."
+  ],
+  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM EST (founders checking LinkedIn before deep work)"
+}

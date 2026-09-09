@@ -1,0 +1,33 @@
+{
+  "hook": "I start eating at 11 a.m. and stop by 7 p.m. This is the window I use myself.",
+  "body_lines": [
+    "It is not a rule. It is a rhythm I found after years of fighting hunger.",
+    "The craving voice says: You will faint if you skip breakfast.",
+    "The wiser one asks: What if your body is not asking for food but for pause?",
+    "I used to eat at 7 a.m. because that is what the clock said, not what my body needed.",
+    "Now I wait. I drink water. I notice the hunger rise and fall like a tide.",
+    "By 11 a.m. the hunger feels different. Clear. Not frantic. Ready to nourish.",
+    "I break my fast with tamarind rice powder stirred into warm water, then a plate of seasonal vegetables and dal.",
+    "I eat until I am satisfied, not stuffed, and I am done by 7 p.m.",
+    "The evening feels lighter. Sleep comes easier. No crash at 3 p.m.",
+    "This is not about skipping meals. It is about matching my plate to my body’s real signal.",
+    "I have taught this rhythm to corporate teams in Chennai and they report more steady energy through the afternoon.",
+    "The shift is small. The awareness is everything."
+  ],
+  "takeaway": "Your hunger is not the enemy. It is the messenger.",
+  "question": "Try this window for three days and notice: what does your hunger actually want to tell you?",
+  "keywords": ["WILDFIT coach", "food freedom", "types of hunger", "listening to the body", "corporate teams", "Chennai"],
+  "keyword_rationale": "These terms reflect the core method of distinguishing hunger types and applying it to real-life corporate schedules, grounded in the coach’s personal practice and location. They help the post reach the intended audience seeking sustainable, awareness-based eating patterns.",
+  "hashtags": ["#WILDFIT", #FoodFreedom", "#ListeningToTheBody"],
+  "hashtag_notes": ["#WILDFIT identifies her certified method and coaching approach.", "#FoodFreedom captures the outcome of listening to hunger instead of fighting it.", "#ListeningToTheBody highlights the core skill taught in the post."],
+  "comment_a": "I’ve shared the eating window I use daily. It’s not a prescription but an invitation to test what works for your body. Remember to hydrate well and break your fast with nourishing, whole foods. What time does your hunger usually peak?",
+  "comment_b": "I often get asked if this works for night shifts. I’ve coached teams in BPOs who adapt the window to their awake hours—fasting during their rest period and eating during their shift. The principle stays: match food to your body’s actual signal, not the clock.",
+  "repost_caption": "What if your eating schedule followed your body’s rhythm instead of the office clock? A simple shift in timing can change how you feel all day.",
+  "reply_templates": [
+    "Thank you! I’m curious—what’s one time you’ve noticed hunger showing up that didn’t feel like a true need for food?",
+    "I break my fast with tamarind rice powder in warm water because it gently awakens digestion without shocking it. What’s your go-to first food after a pause?",
+    "You’re right—rigid rules backfire. This isn’t about copying my hours. It’s about using them as a starting point to discover your own.",
+    "Exactly. The goal isn’t to hit the clock perfectly. It’s to build awareness so you can adjust with kindness, not judgment."
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}

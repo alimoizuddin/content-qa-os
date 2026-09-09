@@ -1,0 +1,70 @@
+{
+  "hook": "In 2014, I hit a wall with fad diets and endless cardio. Then I tried something simple: 1,200 calories a day — not as punishment, but as a reset. By December, I’d lost 22 pounds and felt stronger than I had in years. No shakes. No starvation. Just real food, real consistency.",
+  "body_lines": [
+    "This isn’t about deprivation — it’s about clarity. A 1,200-calorie target works for many women because it creates a sustainable deficit without triggering starvation mode or binge cycles.",
+    "Pair it with protein at every meal (think eggs, chicken, lentils, Greek yogurt), plenty of non-starchy veggies, and healthy fats like avocado or olive oil to keep you full and energized.",
+    "Skip liquid calories — sugary coffees, juices, and alcohol add up fast. Water, herbal tea, and black coffee are your friends.",
+    "Weigh yourself once a week, same time, same conditions. Progress isn’t linear, but the trend should move down.",
+    "By December 31st, aim to be 8–12 pounds lighter than today — that’s realistic, healthy, and maintainable if you stay consistent.",
+    "This isn’t a crash diet. It’s a foundation. Once you hit your goal, you can adjust calories up slightly to maintain — but you’ll have learned how to nourish your body, not fight it.",
+    "If you’ve tried everything and nothing stuck, try this: 1,200 calories. Whole foods. No excuses. Just for 8 weeks. See what happens.",
+    "I kept a simple notebook back then — no apps needed. Just wrote down what I ate. Awareness changed everything.",
+    "You don’t need perfection. You need persistence. One day at a time.",
+    "Your future self in December is counting on you to start today."
+  ],
+  "takeaway": "Set a 1,200-calorie daily target focused on whole, nutrient-dense foods. Aim to lose 8–12 pounds by December 31st — not through extremes, but through consistent, mindful eating. This isn’t a temporary fix; it’s a reset that builds lasting awareness and control.",
+  "question": "What’s one small change you’ll make this week to hit your 1,200-calorie goal?",
+  "keywords": [
+    "weight loss for women",
+    "1200 calorie diet",
+    "healthy eating plan",
+    "sustainable weight loss",
+    "nutrition coaching",
+    "WILDFIT method",
+    "female fat loss",
+    "December fitness goal",
+    "whole foods diet",
+    "calorie tracking",
+    "mindful eating",
+    "weight loss journey"
+  ],
+  "keyword_rationale": "Keywords target women seeking realistic, sustainable weight loss strategies — blending specific calorie targets with holistic nutrition principles. Terms like 'WILDFIT method' and 'whole foods diet' align with Rakhee’s expertise, while 'December fitness goal' and 'calorie tracking' tap into seasonal motivation and practical behavior. Avoids overly clinical or extreme language to remain accessible and encouraging.",
+  "hashtags": [
+    "#WeightLoss",
+    "#HealthyEating",
+    "#NutritionCoach",
+    "#WILDFIT",
+    "#FatLoss",
+    "#MindfulEating",
+    "#HealthyHabits",
+    "#WomensHealth",
+    "#FitnessMotivation",
+    "#CleanEating"
+  ],
+  "hashtag_notes": [
+    "#WeightLossJourney is broad but highly searched — connects with emotional motivation.",
+    "#1200CalorieDiet is specific and niche — attracts those actively seeking this approach.",
+    "#SustainableWeightLoss differentiates from fad diets and aligns with long-term health.",
+    "#HealthyEating and #CleanEating are evergreen, high-reach tags for nutrition content.",
+    "#NutritionCoach and #WILDFIT establish credibility and target ideal audience.",
+    "#FatLoss and #WomensHealth speak directly to the demographic’s goals.",
+    "#MindfulEating and #HealthyHabits emphasize behavior over restriction — key for retention.",
+    "#FitnessMotivation leverages seasonal urgency (year-end goals).",
+    "#WomensHealth ensures visibility in relevant feeds.",
+    "#CleanEating remains popular despite being somewhat generic — still drives discovery."
+  ],
+  "comment_a": "I tried 1,200 calories for a month last year and felt awful — turns out I wasn’t eating enough protein or fat. Once I adjusted my macros within that limit, my energy stabilized and the weight started coming off. It’s not just the number — it’s what those calories are made of.",
+  "comment_b": "Does this approach work if you’re breastfeeding or have a history of disordered eating? I’d love to hear how to adapt it safely — or if another framework might be better suited.",
+  "repost_caption": "Sometimes the simplest tools are the most powerful. This 1,200-calorie framework helped me reset in 2014 — not because it was extreme, but because it brought clarity. If you’re a woman ready to lose weight sustainably by December, this is a place to start.",
+  "reply_templates": [
+    "Thanks for sharing — so glad this resonated. Remember, it’s not about hitting 1,200 perfectly every day, but about building awareness. Progress > perfection.",
+    "Great question. If you have a history of disordered eating or are breastfeeding, please consult a healthcare provider first. This approach assumes general good health and should be personalized.",
+    "You’re absolutely right — food quality matters just as much as quantity. I focused on protein, fiber, and healthy fats to stay full and energized within the calorie target.",
+    "Consistency beats intensity. Even hitting the target 5 days a week creates meaningful change over time. Be kind to yourself — this is a practice.",
+    "Love that you’re thinking ahead. Maintenance comes after the goal — and it’s where the real lifestyle shift begins. Let’s get you there first.",
+    "Tracking doesn’t have to be forever. Do it for 4–6 weeks to learn your portions and patterns, then transition to intuitive eating with awareness.",
+    "If 1,200 feels too low, start where you are and reduce by 200–300 calories from your current intake. The deficit matters more than the exact number.",
+    "You’ve got this. One meal, one day at a time. I’m cheering for you."
+  ],
+  "publish_window": "Tuesday–Thursday, 7:00–8:30 AM or 12:00–1:30 PM local time (when target audience is most likely scrolling with intent)"
+}

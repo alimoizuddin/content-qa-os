@@ -11,7 +11,7 @@ from core.auditor import audit_content
 from core.carousel import build_carousel_assets, portrait_slug, render_slides
 from core.imagegen import art_direction, create_picture, image_provider_configured
 from core.linter import lint_text
-from core.personas import PERSONA_NAMES, get_persona, voice_brief
+from core.personas import OPEN_SLOT, PERSONA_NAMES, get_persona, voice_brief
 from core.schemas import CarouselDraft
 from core.studio import approve_package, build_sections, run_qa
 from tests.conftest import PAYLOADS
@@ -579,3 +579,61 @@ def test_an_empty_output_selection_keeps_the_user_on_the_brief(monkeypatch, nvid
 
     assert app.session_state["stage"] == "brief"
     assert app.error
+
+
+# ---------------------------------------------------------------------------
+# Planning sections
+#
+# Both of these are regressions from bugs the evaluation harness found. Neither
+# was reachable through the unit tests as they stood, because both needed a real
+# calendar to exist before they showed up.
+# ---------------------------------------------------------------------------
+
+
+def test_calendar_weeks_are_planning_not_publishable():
+    sections = build_sections(ALI, "calendar", PAYLOADS["calendar"])
+    assert sections and all(not s.publishable for s in sections)
+
+
+def test_post_sections_are_publishable():
+    sections = build_sections(ALI, "post", PAYLOADS["post"])
+    assert all(s.publishable for s in sections)
+
+
+def test_an_open_slot_in_a_plan_does_not_block_but_one_in_a_post_does():
+    """A calendar is asked to mark the proof it still needs. A post is not."""
+    plan = run_qa(ALI, {"week_1": f"Evidence needed: {OPEN_SLOT}"}, planning={"week_1"})
+    post = run_qa(ALI, {"post": f"We saved {OPEN_SLOT} hours."})
+    assert approve_package(plan)["approved"]
+    assert not approve_package(post)["approved"]
+
+
+def test_an_unverified_figure_in_a_plan_is_information_not_a_blocker():
+    qa = run_qa(ALI, {"week_1": "Anchored to the 47 hour rebuild."}, planning={"week_1"})
+    assert qa["audit_flags"], "the figure should still be flagged and redacted"
+    assert not qa["blocking_flags"]
+    assert approve_package(qa)["approved"]
+
+
+def test_a_safety_breach_in_a_plan_still_blocks():
+    """A calendar row becomes a post later, so a claim in one is not harmless."""
+    qa = run_qa(
+        RAKHEE,
+        {"week_1": "Hook angle: how the programme cures thyroid disease."},
+        planning={"week_1"},
+    )
+    assert not approve_package(qa)["approved"]
+
+
+def test_a_clean_result_is_not_mistaken_for_an_absent_one():
+    """An empty blocking list is falsy, and the gate used to recompute on it.
+
+    That discarded the planning exclusion and left a calendar blocked with nothing
+    blocking it. Asserting on the empty case directly is the only way this stays
+    fixed.
+    """
+    qa = run_qa(ALI, {"week_1": f"Evidence: {OPEN_SLOT}"}, planning={"week_1"})
+    assert qa["blocking_flags"] == []
+    verdict = approve_package(qa)
+    assert verdict["approved"]
+    assert verdict["blocking_flags"] == []

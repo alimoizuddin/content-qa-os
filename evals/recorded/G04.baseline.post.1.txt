@@ -1,0 +1,62 @@
+{
+  "hook": "That moment when you reach for a packaged snack… but what your body *really* wants is tamarind rice powder on eggs?",
+  "body_lines": [
+    "Cravings aren’t weaknesses. They’re messages.",
+    "As a WILDFIT Health and Nutrition Coach, I’ve learned that when we pause and listen — really listen — our cravings point us toward what our body actually needs.",
+    "Recently, I found myself staring at a bag of chips, thinking I wanted something salty and crunchy. But when I tuned in, what I truly craved was the tangy, familiar comfort of tamarind rice powder — a flavor from my childhood kitchen — sprinkled over a simple egg.",
+    "It wasn’t about willpower. It was about wisdom.",
+    "For midlife women and busy professionals in India, our bodies often signal through flavor, memory, and comfort — not just calories or macros.",
+    "Honoring those signals doesn’t derail your health journey; it deepens it.",
+    "Next time a craving hits, ask: ‘What is my body trying to tell me?’",
+    "You might be surprised by the answer — and how good it feels to respond with kindness, not guilt."
+  ],
+  "takeaway": "Your cravings are not failures of discipline — they’re intelligent signals from your body. Listen to them with curiosity, not judgment.",
+  "question": "What’s a recent craving that turned out to be about flavor, memory, or comfort — not just hunger?",
+  "keywords": [
+    "mindful eating",
+    "intuitive eating",
+    "women's health India",
+    "midlife wellness",
+    "healthy cravings",
+    "WILDFIT coach",
+    "nutrition coaching",
+    "emotional eating",
+    "Indian superfoods",
+    "holistic health"
+  ],
+  "keyword_rationale": "Selected keywords align with Rakhee Singhi’s expertise as a WILDFIT coach and resonate with midlife Indian women and professionals seeking sustainable, culturally relevant health approaches. Terms like 'intuitive eating', 'mindful eating', and 'women's health India' target her audience’s search behavior and values. Including 'WILDFIT coach' and 'nutrition coaching' reinforces her professional identity, while 'Indian superfoods' and 'holistic health' tie into culturally grounded wellness.",
+  "hashtags": [
+    "#MindfulEating",
+    "#IntuitiveEating",
+    "#WILDFIT",
+    "#WomenHealthIndia",
+    "#MidlifeWellness",
+    "#HealthyCravings",
+    "#NutritionCoach",
+    "#HolisticHealth",
+    "#IndianSuperfoods",
+    "#EatWithAwareness"
+  ],
+  "hashtag_notes": [
+    "#MindfulEating and #IntuitiveEating are widely used in wellness communities and attract engagement from those rejecting diet culture.",
+    "#WILDFIT is her certification — using it builds credibility and reaches people familiar with the program.",
+    "#WomenHealthIndia and #MidlifeWellness are niche but high-intent hashtags for her target audience.",
+    "#HealthyCravings reframes the narrative positively and is unique enough to stand out.",
+    "#IndianSuperfoods ties traditional wisdom to modern wellness — highly relevant and shareable.",
+    "#EatWithAwareness encourages reflection and invites comments, boosting engagement."
+  ],
+  "comment_a": "I love this reframe! So often we shame ourselves for cravings, but they’re really just our body’s way of communicating. Tamarind on eggs? That’s such a beautiful, flavorful example of listening to wisdom over impulse. Thank you for sharing this — it’s exactly the mindset shift we need.",
+  "comment_b": "This hit home. As a working mom in my 40s, I used to fight my cravings for chaat or pickles, thinking I lacked control. Now I see they were my body asking for the tangy, spicy flavors that feel like home. Honoring them — in balance — has made my eating journey so much more peaceful. Thank you, Rakhee, for this reminder.",
+  "repost_caption": "Such an important reminder: cravings aren’t the enemy. They’re information. Let’s stop fighting them and start listening.",
+  "reply_templates": [
+    "That’s such a relatable moment — thanks for sharing your experience!",
+    "I love how you tuned into what your body really needed. That’s the power of mindful eating.",
+    "So glad this resonated. Cravings really are messengers when we learn to listen.",
+    "Your story is a perfect example of honoring hunger with wisdom, not guilt.",
+    "Exactly — it’s not about restriction, but about understanding.",
+    "Thank you for adding your voice. These conversations matter.",
+    "This is why intuitive eating is so transformative — it meets us where we are.",
+    "So true! Our bodies know more than we give them credit for."
+  ],
+  "publish_window": "Weekday mornings between 7:30 AM–9:00 AM IST (when professionals check LinkedIn before work)"
+}

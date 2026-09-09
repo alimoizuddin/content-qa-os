@@ -1,0 +1,23 @@
+{
+  "hook": "300+ transcription hours processed at 95%+ accuracy.",
+  "body_lines": [
+    "The pipeline runs on n8n with Whisper API and a custom post-processor.",
+    "No human touched the audio after upload. Output went straight to Notion.",
+    "Founders think transcription is about speed. It is about signal hygiene."
+  ],
+  "takeaway": "Clean input beats clever prompts every time.",
+  "question": "Do you transcribe first or prompt first?",
+  "keywords": ["transcription pipeline", "n8n", "non-technical founder"],
+  "keyword_rationale": "The post centers on a verified transcription pipeline built with n8n, directly addressing non-technical founders who need reliable, word-based automation. These terms anchor the proof and audience without overreach.",
+  "hashtags": ["#Automation", "#n8n", "#FounderLife"],
+  "hashtag_notes": ["Broad tag for discoverability in automation space.", "Niche tool tag matching the verified stack.", "Audience tag for founder-led operational builds."],
+  "comment_a": "The pipeline uses Whisper API via n8n’s HTTP node with a 10-minute chunker and a BM25 rerank step for low-confidence segments. All free-tier. Want the exact n8n JSON structure?",
+  "comment_b": "In the Radio Club, we ran a similar pipeline for episode transcripts. Zero budget, one laptop, and a shared Google Drive. The SOP was three steps: upload, wait, publish. Scaled to 200+ members because the work disappeared.",
+  "repost_caption": "Systems thinking starts when the task vanishes. That is what we built in the Radio Club—and what Ali builds now with AI.",
+  "reply_templates": [
+    "Thanks! What part of the pipeline feels most fragile to you?",
+    "The BM25 rerank step catches Whisper’s hallucinations on proper nouns. It is a simple n8n function node.",
+    "You are right—speed matters. But if the signal is noisy, you are just automating noise."
+  ],
+  "publish_window": "10:00 to 11:30 AM IST"
+}

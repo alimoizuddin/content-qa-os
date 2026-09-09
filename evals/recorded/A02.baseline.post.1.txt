@@ -1,0 +1,33 @@
+{
+  "hook": "I used to take 5 pills every morning. Now I take none — and I feel better than I did at 35.",
+  "body_lines": [
+    "If you're a woman over 45 on daily medication — for blood pressure, cholesterol, acid reflux, sleep, or anxiety — I want you to know something: your body isn’t broken. It’s just been asking for the right fuel.",
+    "For years, I masked symptoms with pills. I thought that was ‘managing my health.’ Turns out, I was just silencing the alarm while the fire kept burning.",
+    "When I switched to WILDFIT — not as a diet, but as a return to how humans are designed to eat — my body started healing. Not overnight. But steadily. Surely.",
+    "Within 8 weeks: my reflux vanished. My energy stabilized. My sleep deepened. And one day, I realized… I hadn’t taken a pill in weeks.",
+    "This isn’t about quitting medication cold turkey. It’s about giving your body the nutrients, rhythm, and relief it needs so it can stop screaming for help.",
+    "Your pills may be managing symptoms. But food? Food can change the root cause.",
+    "If you’re tired of feeling like a slave to your prescription bottle — let’s talk. Not about another supplement. About your plate.",
+    "Your body knows how to heal. It just needs you to stop feeding it confusion — and start feeding it truth."
+  ],
+  "takeaway": "You don’t need to rely on daily pills forever. Healing starts with what you put on your plate — not just what you swallow from a bottle.",
+  "question": "What’s one daily pill you wish you didn’t have to take — and what’s one food change you’ve been too tired to try?",
+  "keywords": ["women over 45", "medication reduction", "food as medicine", "WILDFIT", "natural healing", "chronic symptoms", "nutritional therapy", "hormonal balance", "gut health", "lifestyle medicine", "preventive health", "holistic wellness"],
+  "keyword_rationale": "These keywords target the core audience (women 45+ on meds) and align with WILDFIT’s philosophy of food-first healing. Terms like 'food as medicine' and 'natural healing' attract those seeking alternatives to pharmaceuticals, while 'WILDFIT' and 'nutritional therapy' position the coach as a credentialed guide. Including symptom-specific terms like 'gut health' and 'hormonal balance' increases discoverability for those searching for relief from common midlife issues.",
+  "hashtags": ["#FoodAsMedicine", "#WILDFIT", "#WomenOver45", "#MedicationFreeLiving", "#GutHealth", "#HormonalBalance", "#NaturalHealing", "#LifestyleMedicine", "#StopThePills", "#HealFromWithin"],
+  "hashtag_notes": ["#FoodAsMedicine - Core philosophy, high engagement in wellness circles", "#WILDFIT - Brand-specific, builds authority and searchability", "#WomenOver45 - Precise audience targeting", "#MedicationFreeLiving - Aspirational, speaks directly to goal", "#GutHealth - High-search-volume topic linked to many chronic symptoms", "#HormonalBalance - Critical for women 45+, drives relevant traffic", "#NaturalHealing - Appeals to those wary of pharma dependency", "#LifestyleMedicine - Positions approach as evidence-based, not fad", "#StopThePills - Bold, provocative, encourages shares and comments", "#HealFromWithin - Emotional resonance, reinforces self-efficacy"],
+  "comment_a": "I stopped my statin after 6 months on WILDFIT — my doctor was shocked my cholesterol improved without it. Food really is the most powerful medicine we have.",
+  "comment_b": "This resonates so deeply. I’ve been on PPIs for 12 years for reflux. The thought of being free from them feels like a miracle — but also scary. Where do you even start?",
+  "reply_templates": [
+    "Start with one meal. Breakfast. Swap toast and juice for protein, fat, and fiber — like eggs, avocado, and spinach. Notice how you feel by 10 AM. That’s your body saying thank you.",
+    "I get the fear. I felt it too. But your body isn’t failing you — it’s been trying to tell you something. Let’s talk about what it’s been saying.",
+    "You don’t have to quit your meds tomorrow. You just have to start giving your body a chance to heal. One real meal at a time.",
+    "The first step isn’t willpower — it’s curiosity. What if your symptoms aren’t random? What if they’re messages?",
+    "I’m not here to tell you to stop your pills. I’m here to show you how your body might not need them anymore — if you feed it right.",
+    "Many women tell me they’re tired of feeling like a pharmacy. Let’s change that. Not with another pill — with your plate.",
+    "Your body has been waiting for you to listen. It’s not too late to start.",
+    "Healing isn’t about perfection. It’s about direction. Are you moving toward relief — or just managing the pain?"
+  ],
+  "publish_window": "Tuesday–Thursday, 7:00–8:30 AM or 12:00–1:30 PM (when women 45+ are most likely checking LinkedIn during morning routines or lunch breaks)"
+}
+]

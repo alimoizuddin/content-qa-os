@@ -1,0 +1,67 @@
+{
+  "hook": "For years, I thought my fatigue, brain fog, and monthly migraines were just part of being a woman in midlife. Turns out, they were my body screaming for help — and WILDFIT finally listened.",
+  "body_lines": [
+    "I was diagnosed with hypothyroidism in my late 30s. Medication helped the numbers, but not how I felt.",
+    "Migraines came like clockwork — debilitating, nauseating, stealing days from my life and my family.",
+    "I tried elimination diets, supplements, sleep hacks. Nothing stuck. I felt broken.",
+    "Then I found WILDFIT — not another diet, but a reset of my relationship with food and my body’s natural wisdom.",
+    "In just 90 days, my thyroid markers normalized without increasing medication.",
+    "My migraines? Gone. Not managed. Not reduced. Gone.",
+    "No pills. No extremes. Just real food, seasonal eating, and tuning into what my body actually needs.",
+    "WILDFIT didn’t mask symptoms — it addressed the root: inflammation, blood sugar chaos, and years of processed food confusion.",
+    "If you’re tired of feeling ‘off’ and being told it’s just aging — your body might be ready for a reset too.",
+    "You don’t have to accept fatigue, pain, or imbalance as your new normal."
+  ],
+  "takeaway": "Your symptoms aren’t just ‘part of getting older’ — they’re signals. WILDFIT helped me listen, and in three months, I reclaimed my health.",
+  "question": "What’s one symptom you’ve been ignoring that your body might be trying to tell you something about?",
+  "keywords": [
+    "WILDFIT",
+    "thyroid health",
+    "migraine relief",
+    "midlife women",
+    "hormonal balance",
+    "functional nutrition",
+    "food freedom",
+    "inflammation",
+    "holistic healing",
+    "natural remedies",
+    "health transformation",
+    "midlife wellness"
+  ],
+  "keyword_rationale": "Selected keywords reflect Rakhee’s personal journey (thyroid, migraines), the WILDFIT methodology, and the target audience (midlife women). Terms like 'hormonal balance', 'inflammation', and 'functional nutrition' align with WILDFIT’s science-backed approach while improving discoverability among women seeking natural health solutions.",
+  "hashtags": [
+    "#WILDFIT",
+    "#ThyroidHealth",
+    "#MigraineRelief",
+    "#MidlifeWellness",
+    "#HormonalBalance",
+    "#FunctionalNutrition",
+    "#FoodFreedom",
+    "#HolisticHealth",
+    "#WomenOver40",
+    "#HealthTransformation"
+  ],
+  "hashtag_notes": [
+    "#WILDFIT is essential — branded and program-specific.",
+    "#ThyroidHealth and #MigraineRelief target specific pain points for discoverability.",
+    "#MidlifeWellness and #WomenOver40 speak directly to the audience.",
+    "#HormonalBalance and #FunctionalNutrition reflect WILDFIT’s core principles.",
+    "#FoodFreedom and #HolisticHealth appeal to those tired of restrictive diets.",
+    "#HealthTransformation signals tangible results.",
+    "Mix of niche and broad tags to maximize reach within relevant communities."
+  ],
+  "comment_a": "I had no idea my migraines were linked to my blood sugar swings and inflammatory foods. WILDFIT taught me how to eat in tune with my body — not against it. Life-changing.",
+  "comment_b": "Three months in and my energy is back, my mood is stable, and I haven’t had a single migraine. I wish I’d found this sooner — but I’m so glad I found it now.",
+  "repost_caption": "From struggling with thyroid issues and monthly migraines to feeling vibrant and in control — all in 90 days with WILDFIT. If you’re a midlife woman tired of feeling ‘off’, this might be the reset you’ve been waiting for.",
+  "reply_templates": [
+    "Thank you for sharing — I’m so glad this resonated. If you’re curious about how WILDFIT works, I’m happy to answer questions.",
+    "I felt the same way for years — like my body was working against me. WILDFIT helped me rebuild trust with it.",
+    "It’s not about perfection — it’s about progress and listening. Small shifts led to big changes for me.",
+    "Everyone’s journey is different, but the foundation is the same: real food, seasonal awareness, and metabolic healing.",
+    "I used to think I had to live with this. Now I know better — and I want others to know they don’t have to either.",
+    "The best part? No counting, no deprivation. Just eating in a way that supports your biology.",
+    "If you’re tired of quick fixes that don’t last, WILDFIT offers something different — a sustainable reset.",
+    "Your body isn’t broken. It’s been misinformed. WILDFIT helps correct that."
+  ],
+  "publish_window": "Best posted Tuesday–Thursday, 7:30–8:30 AM or 11:00 AM–12:30 PM local time for maximum engagement with midlife women professionals."
+}

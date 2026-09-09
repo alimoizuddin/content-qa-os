@@ -1,0 +1,68 @@
+{
+  "hook": "I hit my goal weight after training for a half marathon… and still felt completely disconnected from my body.",
+  "body_lines": [
+    "In 2014, at 42, I weighed 82kg. I was tired, medicated, and going through the motions.",
+    "By 2017, after three years of consistent training, I crossed the finish line of my first half marathon at 62kg.",
+    "I looked the part. I felt stronger. But inside? I was still guessing when to eat, still ignoring hunger cues, still relying on pills to manage how I felt.",
+    "I had changed my body—but not my relationship with it.",
+    "No one handed me a manual for listening to my own signals. No app, no plan, no pill taught me how to trust myself.",
+    "What I needed wasn’t another diet or workout plan. It was permission to slow down, to feel, to ask: What does my body actually need today?",
+    "That’s where WILDFIT met me—not as a fix, but as a return to intuition.",
+    "If you’re midlife and wondering why the ‘success’ still doesn’t feel like peace… you’re not broken. You’re just ready to listen differently.",
+    "Speak to your doctor about your own situation. This is my story—not a prescription for yours."
+  ],
+  "takeaway": "Changing your body doesn’t automatically heal your relationship with it. True wellness begins when you stop outsourcing your hunger and start listening inward.",
+  "question": "What’s one small way you’ve started listening to your body’s signals lately?",
+  "keywords": [
+    "midlife wellness",
+    "intuitive eating",
+    "body trust",
+    "health coaching",
+    "WILDFIT",
+    "hunger cues",
+    "non-diet approach",
+    "women's health",
+    "mindful nutrition",
+    "self-trust"
+  ],
+  "keyword_rationale": "These keywords align with Rakhee’s coaching niche and the post’s themes: midlife focus, intuitive eating, body autonomy, and WILDFIT methodology. They avoid prescriptive language while targeting women seeking sustainable, internalized health shifts—not quick fixes.",
+  "hashtags": [
+    "#IntuitiveEating",
+    "#MidlifeWellness",
+    "#BodyTrust",
+    "#WILDFIT",
+    "#HealthCoaching",
+    "#MindfulNutrition",
+    "#WomenOver40",
+    "#ListenToYourBody",
+    "#NoMoreDiets",
+    "#InnerWisdom"
+  ],
+  "hashtag_notes": [
+    "#IntuitiveEating – core theme of relearning hunger cues",
+    "#MidlifeWellness – targets the intended audience",
+    "#BodyTrust – reflects the emotional shift described",
+    "#WILDFIT – credits the methodology that supported her journey",
+    "#HealthCoaching – establishes Rakhee’s professional role",
+    "#MindfulNutrition – aligns with non-restrictive, aware eating",
+    "#WomenOver40 – speaks directly to demographic",
+    "#ListenToYourBody – reinforces the central message",
+    "#NoMoreDiets – signals rejection of restrictive culture",
+    "#InnerWisdom – ties to self-trust and intuition"
+  ],
+  "comment_a": "I remember hitting my goal weight and feeling… empty. Like I’d won a race I didn’t even want to run. It took me years to realize health isn’t a number—it’s a conversation. Thanks for naming this so honestly.",
+  "comment_b": "This resonates deeply. I’ve spent decades tracking calories, steps, macros—yet still felt out of sync. Learning to pause and ask, ‘What do I really need?’ has been the most radical act of self-care I’ve ever tried.",
+  "repost_caption": "Rakhee Singhi shares a powerful, personal reflection on what it truly means to reconnect with your body—not through achievement, but through awareness. A must-read for any woman who’s ever felt ‘successful’ on the outside but unsettled within.",
+  "reply_templates": [
+    "Thank you for sharing this—it’s exactly what I needed to hear today.",
+    "I’ve been there too. The scale changed, but the inner noise didn’t. How did you begin to quiet it?",
+    "This is so validating. I’m learning to trust my hunger, and it feels scary and freeing at the same time.",
+    "You’ve put into words something I’ve felt but couldn’t name. Grateful for your honesty.",
+    "Same here. Finished the race, but still felt like I was running from something inside.",
+    "Your story reminds me that wellness isn’t a destination—it’s a practice of returning to myself.",
+    "I’m curious: what was the first small signal you learned to trust after years of ignoring it?",
+    "This is why I love WILDFIT—it’s not about fixing, it’s about remembering."
+  ],
+  "publish_window": "Tuesday or Wednesday, 7:30–8:30 AM or 5:00–6:00 PM local time"
+}
+</output>

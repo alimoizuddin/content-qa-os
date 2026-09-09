@@ -1,0 +1,68 @@
+{
+  "hook": "Tired of sending out resumes that vanish into the ATS black hole? What if I told you there’s a proven format — tested on 900+ resumes with a 4.9/5 rating — that gets candidates shortlisted and hired in just 30 days?",
+  "body_lines": [
+    "I’m Isshita Debnath, AI-Native Employability Trainer and Head of HR. I’ve reviewed thousands of resumes — and I know exactly what makes recruiters stop scrolling and hit 'Shortlist'.",
+    "Most job seekers focus on design or buzzwords. The real game-changer? Structure, keyword alignment, and quantifiable impact — all optimized for both ATS and human eyes.",
+    "This isn’t theory. It’s the exact framework I’ve used to help professionals land interviews at top tech, finance, and consulting firms — often within weeks.",
+    "The format is simple: clean, scannable, achievement-first, and laser-targeted to the job description. No fluff. No graphics that break parsers. Just results-driven storytelling.",
+    "If you’re applying but not getting responses, your resume isn’t failing because you’re unqualified — it’s failing because it’s not speaking the language recruiters and algorithms understand.",
+    "Want the template? I’m sharing it freely — but only if you’re ready to take action.",
+    "Comment ‘HIRED’ below and I’ll send you the exact resume format that’s helped 900+ candidates get shortlisted — and hired — in 30 days or less.",
+    "No spam. No upsell. Just a proven tool, from someone who’s been on both sides of the hiring table."
+  ],
+  "takeaway": "Your resume isn’t broken — it’s just not optimized. Use the right format, and you’ll go from invisible to interview-ready in under a month.",
+  "question": "What’s the biggest resume mistake you’ve made that cost you an interview?",
+  "keywords": [
+    "ATS resume",
+    "resume format",
+    "job search strategy",
+    "hire in 30 days",
+    "resume optimization",
+    "career coach",
+    "HR professional",
+    "employability training",
+    "resume template",
+    "shortlist guaranteed",
+    "AI-native hiring",
+    "recruiter insights"
+  ],
+  "keyword_rationale": "Keywords are chosen to align with high-intent job seeker searches (e.g., 'ATS resume', 'hire in 30 days') while reflecting Isshita’s credibility as an HR expert and AI-native trainer. Terms like 'resume optimization' and 'shortlist guaranteed' target pain points; 'HR professional' and 'employability training' reinforce authority. Avoids overused fluff like 'rockstar' or 'ninja' in favor of terms recruiters and algorithms actually scan for.",
+  "hashtags": [
+    "#ResumeTips",
+    "#JobSearch",
+    "#ATSOptimization",
+    "#CareerGrowth",
+    "#Hiring2024",
+    "#HRInsights",
+    "#Employability",
+    "#CareerCoach",
+    "#GetHired",
+    "#ResumeThatWorks"
+  ],
+  "hashtag_notes": [
+    "#ResumeTips — broad reach for job seekers actively searching for advice",
+    "#JobSearch — essential for discoverability in career-focused feeds",
+    "#ATSOptimization — targets technical job seekers aware of ATS barriers",
+    "#CareerGrowth — appeals to ambitious candidates seeking advancement",
+    "#Hiring2024 — timely, seasonal relevance for Q3/Q4 hiring cycles",
+    "#HRInsights — leverages Isshita’s authority; attracts HR peers and candidates",
+    "#Employability — core to her brand; niche but high-intent",
+    "#CareerCoach — positions her as a guide, not just a recruiter",
+    "#GetHired — emotional trigger; drives action and comments",
+    "#ResumeThatWorks — unique, benefit-driven; encourages shares and saves"
+  ],
+  "comment_a": "HIRED! Just sent this to my network — this is the kind of no-nonsense, data-backed advice job seekers actually need. Isshita, thank you for demystifying the ATS game. This is gold.",
+  "comment_b": "I used a version of this format last month and got 3 interviews in 11 days. The difference? Quantifying impact and mirroring the JD’s language. So simple, yet so few do it right. Thanks for sharing this — it’s exactly what I needed to hear.",
+  "repost_caption": "If you know someone sending out resumes and hearing crickets — share this. The fix isn’t more applications. It’s a better format. Isshita’s 900+ resume-tested method works — and she’s giving it away for those ready to act.",
+  "reply_templates": [
+    "Thanks for commenting! I’ve DM’d you the resume format — check your inbox (and spam folder, just in case). Let me know how it goes!",
+    "So glad this resonated! If you’re tweaking your resume using this, reply with your before/after — I’d love to feature your win.",
+    "You’re welcome! Remember: it’s not about having the perfect resume — it’s about having the *right* one for the role. Keep iterating.",
+    "Happy to help! If you’re applying to tech/finance/consulting roles, I’ve got JD-matching checklists too — just say the word.",
+    "This format works because it’s built on what recruiters actually look for — not what resume blogs say they should look for. Trust the data.",
+    "You’ve got this. One optimized resume away from your next interview. Keep going.",
+    "P.S. If you’re not seeing results in 2 weeks, reply ‘STUCK’ — I’ll send a free 15-minute resume audit slot.",
+    "Shoutout to everyone taking action. That’s the real separator — not talent, but execution."
+  ],
+  "publish_window": "Tuesday–Thursday, 7:30–8:30 AM IST (peak job seeker activity before workday)"
+}

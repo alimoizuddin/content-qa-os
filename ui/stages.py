@@ -50,12 +50,23 @@ def _edited_sections(output_type: str) -> dict[str, str]:
     return {s.key: edits.get(s.key, s.text) for s in package["sections"]}
 
 
-def all_edited_sections() -> dict[str, str]:
+def all_edited_sections() -> tuple[dict[str, str], set[str]]:
+    """Every edit field, and the subset that is a working note rather than copy.
+
+    The second half matters at the gate. An open slot in a post is an unfilled
+    claim and must block publication. An open slot in a calendar is the plan
+    naming proof you have not gathered yet, which is what a calendar is for.
+    """
     merged: dict[str, str] = {}
-    for output_type in st.session_state["package"]:
-        for key, value in _edited_sections(output_type).items():
-            merged[f"{output_type}.{key}"] = value
-    return merged
+    planning: set[str] = set()
+    for output_type, package in st.session_state["package"].items():
+        edits = st.session_state["edits"].get(output_type, {})
+        for section in package["sections"]:
+            key = f"{output_type}.{section.key}"
+            merged[key] = edits.get(section.key, section.text)
+            if not section.publishable:
+                planning.add(key)
+    return merged, planning
 
 
 # ---------------------------------------------------------------------------
@@ -459,8 +470,8 @@ def stage_qa(spec: PersonaSpec) -> None:
         return
 
     brief = _current_brief()
-    sections = all_edited_sections()
-    qa = run_qa(spec, sections, proof=brief.proof)
+    sections, planning = all_edited_sections()
+    qa = run_qa(spec, sections, proof=brief.proof, planning=planning)
     verdict = approve_package(qa)
     st.session_state["qa"] = qa
 

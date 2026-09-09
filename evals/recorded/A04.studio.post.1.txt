@@ -1,0 +1,27 @@
+{
+  "hook": "This week, Mr. Sharma from Pune sat across from me for an interview. He listed Python on his resume but could not explain what a loop does.",
+  "body_lines": [
+    "I have read 900+ ATS resumes this month, and this is not rare.",
+    "He smiled when asked about his project, then fell silent.",
+    "No amount of formatting fixes a gap between claim and capability.",
+    "Your resume is not a wishlist. It is a promise you must keep.",
+    "✨ The real work begins when you can defend every line you write. ✨",
+    "I shortlisted him for clarity. He lost the role for credibility."
+  ],
+  "takeaway": "Employability is not about keywords. It is about being able to talk about what you claim.",
+  "question": "Can you explain every skill on your resume right now?",
+  "keywords": ["freshers", "ATS resume", "employable", "shortlist", "stand out", "900+ ATS resumes"],
+  "keyword_rationale": "The post targets freshers who often pad resumes with skills they cannot discuss. Using 'ATS resume' and '900+ ATS resumes' grounds the advice in verified experience. 'Employable', 'shortlist', and 'stand out' connect directly to the hiring outcome and audience goal.",
+  "hashtags": ["#Employability", "#ATSResume", "#Freshers"],
+  "hashtag_notes": ["Broad tag for the core theme of the post.", "Niche tag tied to the verified artifact and central example.", "Audience-specific tag to reach the intended reader group."],
+  "comment_a": "Mr. Sharma’s story is not about one person. It is a pattern I see weekly. If you list it, be ready to defend it. What’s one skill on your resume you could explain in 60 seconds?",
+  "comment_b": "I did not mention it in the post, but his resume had three other skills he could not describe. The gap was not a slip; it was a pattern. Always audit your claims.",
+  "repost_caption": "Re-sharing this because resume inflation hurts freshers the most. Your first job deserves honesty, not hustle. What’s one line you will audit today?",
+  "reply_templates": [
+    "Thanks! To build on that: what’s one project you could walk me through step by step?",
+    "I recommend reviewing each skill with the STAR method before applying. It exposes gaps fast.",
+    "You’re right that ATS needs keywords—but human interviews need truth. Both matter.",
+    "The window for posting is 9:00 to 10:30 AM IST."
+  ],
+  "publish_window": "9:00 to 10:30 AM IST"
+}

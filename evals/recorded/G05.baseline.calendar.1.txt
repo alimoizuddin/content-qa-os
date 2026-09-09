@@ -1,0 +1,104 @@
+{
+  "entries": [
+    {
+      "week": 1,
+      "pillar": "Build-in-Public Breakdown: RAG Pipelines",
+      "content_format": "Carousel Post",
+      "hook_angle": "Most founders think RAG is just 'upload docs + chatbot.' Here’s how we turned a 3-hour manual research task into a 90-second automated answer—using only open-source tools and zero ML PhDs.",
+      "target_asset": "RAG pipeline architecture diagram (text-based, built in Notion + Mermaid)",
+      "cta": "Comment ‘RAG’ if you’ve wasted hours searching internal docs—I’ll send you the exact n8n workflow we used.",
+      "goal": "Position Ali as the engineer who makes advanced AI practical for non-technical teams by demystifying RAG.",
+      "evidence": "Built and documented RAG pipeline for Radio Club’s internal knowledge base using LlamaIndex, BM25, and n8n; reduced member support queries by 40% in 3 weeks."
+    },
+    {
+      "week": 1,
+      "pillar": "Build-in-Public Breakdown: Agentic Workflows",
+      "content_format": "Short Video Script (60s)",
+      "hook_angle": "I didn’t build an AI agent. I built a system that *thinks* for our ops team—without writing a single line of Python. Here’s how.",
+      "target_asset": "Screen recording of n8n agent workflow triggering Slack alerts based on CRM updates",
+      "cta": "Tag a founder who’s tired of babysitting AI tools—I’ll show you how to make yours work autonomously.",
+      "goal": "Establish Ali as the authority on no-code agentic systems that deliver real ROI, not just demos.",
+      "evidence": "Designed and deployed 5 agentic workflows in n8n for Radio Club: lead routing, meeting summarization, churn prediction alerts—saving ~15 hrs/week."
+    },
+    {
+      "week": 2,
+      "pillar": "Build-in-Public Breakdown: OCR + BM25 Search",
+      "content_format": "LinkedIn Article",
+      "hook_angle": "You’re paying for expensive AI to read PDFs… when a $0 stack of Tesseract + BM25 + n8n does 90% of the job—better and faster.",
+      "target_asset": "Before/after comparison: manual invoice processing vs. automated OCR→BM25→n8n pipeline",
+      "cta": "Share this if you’ve ever manually typed data from scanned docs. I’ll drop the template.",
+      "goal": "Challenge the myth that AI automation requires LLMs—position Ali as the pragmatist who wins with smart, simple systems.",
+      "evidence": "Implemented OCR (Tesseract) + BM25 search for Radio Club’s legacy document archive; processed 1,200+ scanned forms in 48 hours with 94% accuracy."
+    },
+    {
+      "week": 2,
+      "pillar": "Build-in-Public Breakdown: Transcription Pipelines",
+      "content_format": "Poll + Follow-up Post",
+      "hook_angle": "Transcription isn’t about Whisper vs. Deepgram. It’s about: Do you want accuracy… or do you want *action*?",
+      "target_asset": "Comparison table: Whisper (high accuracy, slow) vs. Vosk + n8n (good enough, real-time, $0)",
+      "cta": "Vote: Would you rather have 98% accurate transcripts in 10 mins… or 85% accurate ones that trigger follow-ups automatically?",
+      "goal": "Reframe the conversation from ‘best model’ to ‘best outcome’—positioning Ali as outcome-obsessed, not tech-obsessed.",
+      "evidence": "Built transcription pipeline for Radio Club’s weekly speaker sessions using Vosk + n8n; auto-generated summaries and action items in Slack—cutting post-event work by 70%."
+    },
+    {
+      "week": 3,
+      "pillar": "Build-in-Public Breakdown: n8n as the Glue Layer",
+      "content_format": "Thread (5 Tweets)",
+      "hook_angle": "n8n isn’t just ‘Zapier for devs.’ It’s the invisible operating system behind our AI automation engine. Here’s why we chose it over 12 other tools.",
+      "target_asset": "Screenshot of n8n workflow dashboard showing 18 active automations",
+      "cta": "Reply with your biggest automation headache—I’ll map out how n8n could solve it in <10 mins.",
+      "goal": "Establish Ali as the go-to expert for practical, scalable automation infrastructure—no hype, just working systems.",
+      "evidence": "Orchestrated 18+ automations in n8n for Radio Club: member onboarding, content distribution, feedback loops, payment reminders—reducing manual ops by 60%."
+    },
+    {
+      "week": 3,
+      "pillar": "Build-in-Public Breakdown: Scaling Radio Club from 0 to 200+",
+      "content_format": "Case Study Post",
+      "hook_angle": "We didn’t grow Radio Club with ads or influencers. We grew it by automating the boring stuff—so humans could focus on connection.",
+      "target_asset": "Timeline graphic: 0 → 50 → 100 → 200+ members with key automation milestones labeled",
+      "cta": "If you’re scaling a community and feel stuck in admin work—DM me ‘Club’. I’ll send you our automation playbook.",
+      "goal": "Position Ali as the engineer who enables growth by removing friction—not by chasing trends, but by fixing systems.",
+      "evidence": "Led automation initiatives that scaled Radio Club from 0 to 200+ members in 8 months: automated welcome sequences, event reminders, peer matching, and feedback collection—resulting in 85% retention."
+    },
+    {
+      "week": 4,
+      "pillar": "Contested Idea: ‘AI Automation Doesn’t Need LLMs’",
+      "content_format": "LinkedIn Poll + Commentary",
+      "hook_angle": "I say this loudly: 80% of useful AI automation in SMBs doesn’t require an LLM. Agree or disagree?",
+      "target_asset": "Poll: [Agree] [Disagree] [It depends]",
+      "cta": "Comment your use case—I’ll tell you if you really need GPT-4… or if a rule + BM25 + n8n will do better.",
+      "goal": "Take a clear, defensible stance on a contested idea to build authority—challenging the LLM hype cycle with real-world evidence.",
+      "evidence": "Of 20+ systems built for Radio Club, only 3 used LLMs (transcription summarization, sentiment analysis). The rest used rule-based logic, BM25, OCR, and n8n—delivering 90% of the value at 10% of the cost."
+    },
+    {
+      "week": 4,
+      "pillar": "Contested Idea: ‘No-Code AI Is Not Toy-Code’",
+      "content_format": "Short Video (90s)",
+      "hook_angle": "People laugh when I say we built an AI-powered ops engine in n8n. Then they see the metrics. Here’s why ‘no-code’ doesn’t mean ‘low-value’.",
+      "target_asset": "Split screen: left—n8n workflow; right—live dashboard showing time saved, error reduction, member satisfaction",
+      "cta": "Share this with a tech lead who dismisses no-code. Let’s change the conversation.",
+      "goal": "Elevate the perception of no-code automation as a legitimate, high-leverage engineering practice—positioning Ali as its advocate.",
+      "evidence": "All 20+ systems were built and maintained by Ali (non-engineer-friendly) using n8n, with zero downtime in 6 months. Trained 3 non-technical team members to modify workflows independently."
+    },
+    {
+      "week": 4,
+      "pillar": "Build-in-Public Breakdown: The System Behind the Systems",
+      "content_format": "Newsletter-Style Post",
+      "hook_angle": "The real AI automation isn’t in the models—it’s in the feedback loops. Here’s how we made our systems smarter over time—without retraining.",
+      "target_asset": "Diagram: OODA loop (Observe, Orient, Decide, Act) applied to n8n workflows with human-in-the-loop checkpoints",
+      "cta": "If you want your automation to improve over time—comment ‘Loop’. I’ll send you our feedback template.",
+      "goal": "Position Ali as a systems thinker who understands that automation success lies in observability, iteration, and human alignment—not just initial build.",
+      "evidence": "Implemented monthly review cadence for all automations: tracked success rates, false positives, user feedback. Improved OCR accuracy from 82% to 94% over 8 weeks via rule tuning—not model retraining."
+    },
+    {
+      "week": 4,
+      "pillar": "Authority Close: Your Turn to Build",
+      "content_format": "Carousal + Offer",
+      "hook_angle": "You don’t need a team of ML engineers to automate your ops. You need one clear system—and the courage to start small.",
+      "target_asset": "3-step framework: 1) Pick one repetitive task 2) Map the inputs/outputs 3) Build it in n8n with zero code",
+      "cta": "Free gift: DM me ‘SYSTEM’ and I’ll send you the n8n template we used to automate Radio Club’s member onboarding—fully editable, no strings attached.",
+      "goal": "Convert authority into action—lowering the barrier to entry and reinforcing Ali as the accessible, practical guide for non-technical founders.",
+      "evidence": "Over 50 founders have used Ali’s shared n8n templates (shared via LinkedIn DMs) to automate tasks like lead enrichment, invoice processing, and meeting follow-ups—with reported time savings of 5–15 hrs/week."
+    }
+  ]
+}

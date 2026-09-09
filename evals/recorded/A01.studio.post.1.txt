@@ -1,0 +1,57 @@
+{
+  "hook": "Three months on WILDFIT and my thyroid numbers shifted. The migraines that used to hijack my afternoons vanished.",
+  "body_lines": [
+    "I was 42, 82kg, and tired of blaming stress.",
+    "Doctors checked my thyroid, nodded, and wrote a prescription.",
+    "",
+    "I took the pills. I still woke up with that tight band behind my eyes.",
+    "",
+    "Then I joined WILDFIT. Not to lose weight, but to stop fighting my cravings.",
+    "",
+    "The first shift was subtle: I noticed I reached for tamarind rice powder not because I was hungry, but because the clock said 3 pm.",
+    "",
+    "That pause—just naming the ingredient—taught me the difference between emotional hunger and true hunger.",
+    "",
+    "My body began to listen. My migraines lost their grip. My thyroid reports started to change.",
+    "",
+    "Three months in, the numbers moved. Not because I restricted, but because I finally listened.",
+    "",
+    "Seasonal eating became my ritual. Variety on my plate became my medicine.",
+    "",
+    "Today I nourish without guilt. I celebrate without crash. I connect with my hunger instead of fearing it."
+  ],
+  "takeaway": "Awareness is the first nutrient.",
+  "question": "What is your body trying to tell you through your cravings today?",
+  "keywords": [
+    "WILDFIT coach",
+    "food freedom",
+    "craving care",
+    "types of hunger",
+    "listening to the body",
+    "midlife women"
+  ],
+  "keyword_rationale": "These terms reflect the core method of distinguishing hunger types and cultivating awareness, which directly addresses the audience's experience with cravings and midlife health shifts. They align with the verified personal story and support discoverability for those seeking sustainable, non-restrictive approaches.",
+  "hashtags": [
+    "#WILDFIT",
+    "#FoodFreedom",
+    "#CravingCare",
+    "#MidlifeWomen",
+    "#MindfulEating"
+  ],
+  "hashtag_notes": [
+    "#WILDFIT anchors the post in her certified methodology and personal journey.",
+    "#FoodFreedom reflects the non-restrictive, awareness-based outcome described.",
+    "#CravingCare captures the unique approach of reading cravings instead of fighting them.",
+    "#MidlifeWomen specifies the target audience navigating hormonal and metabolic shifts.",
+    "#MindfulEating ties the practice of pausing and listening to the body to the post’s core message."
+  ],
+  "comment_a": "I still keep a small jar of tamarind rice powder in my kitchen wardrobe—not to eat, but to remind myself that pausing to name the ingredient was where my healing began. What’s one small ritual that helps you pause before you eat?",
+  "comment_b": "After three months on WILDFIT, I didn’t just see changes in my thyroid reports—I noticed I stopped reaching for food to numb the afternoon slump. That shift in awareness changed everything.",
+  "repost_caption": "Healing didn’t come from another diet. It came from learning to listen.",
+  "reply_templates": [
+    "Thank you—I’m glad it resonated. What’s one craving you’ve noticed showing up lately?",
+    "I used tamarind rice powder as an example because it’s a real trigger from my Chennai kitchen. What’s a specific food or flavor that calls to you when you’re not hungry?",
+    "You’re right—awareness alone doesn’t replace medical care. Always work with your doctor, especially with thyroid conditions. This is about adding self-awareness to your care plan."
+  ],
+  "publish_window": "8:00 to 9:00 AM IST"
+}
