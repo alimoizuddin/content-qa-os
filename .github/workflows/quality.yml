@@ -1,0 +1,45 @@
+name: quality
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements.lock
+
+      - name: Install locked dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.lock
+
+      - name: Check the dependency graph is consistent
+        run: python -m pip check
+
+      - name: Confirm the vendored font is present
+        # Slide typography must be identical here and on a developer machine. If the
+        # font is missing the renderer silently degrades, so fail instead.
+        run: python -c "from core.fonts import vendored_font_available; assert vendored_font_available(), 'assets/fonts/Inter.ttf is missing'"
+
+      - name: Compile
+        run: python -m compileall -q app.py core ui tests evals
+
+      - name: Tests
+        run: python -m pytest -q
+
+      - name: Evaluation, replayed from recordings
+        # Exercises the real parser, auditor, and approval gate against captured
+        # provider responses. No credits, no network, and exit code 2 means a case
+        # that must not ship did, which is a review signal rather than a build break.
+        run: python -m evals.run_evals
+
+      - name: Dependency audit
+        run: pip-audit -r requirements.lock

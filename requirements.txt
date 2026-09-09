@@ -1,0 +1,7 @@
+streamlit==1.63.0
+openai==3.8.0
+pydantic==2.13.5
+pillow==12.3.0
+python-dotenv==1.2.3
+pytest==9.1.1
+pip-audit==2.10.1
