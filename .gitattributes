@@ -1,0 +1,8 @@
+# Binary files must never have line endings rewritten, or they are corrupted
+# on checkout. summary.pdf was being treated as text.
+*.pdf binary
+*.docx binary
+*.png binary
+*.jpg binary
+*.ttf binary
+*.zip binary
