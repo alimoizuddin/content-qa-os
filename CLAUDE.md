@@ -56,6 +56,7 @@ occurrence of the same mistake:
 | Two generation attempts, never three | A model that has failed a schema twice fails a third time with a longer wait |
 | Provider response bodies are never displayed | They can carry a URL, a request id, or part of a key. Status codes are classified into a safe sentence instead |
 | The app never posts to LinkedIn | A human presses publish, always |
+| The `engine` arm gets the studio's prompt and no gate | It is the control for "would a Claude Project have caught this". Give it a weaker prompt and the comparison flatters the studio for free |
 
 ---
 
@@ -74,7 +75,7 @@ has asked for this directly.
 ## After you change anything
 
 ```bash
-python -m pytest -q          # 139 tests, all must pass
+python -m pytest -q          # 146 tests, all must pass
 python -m evals.run_evals    # replays the saved run, costs nothing
 ```
 
@@ -85,7 +86,13 @@ recordings are stale.** Replaying them measures the old prompt. Re-record:
 python -m evals.run_evals --live --record --model nvidia/nemotron-3-super-120b-a12b
 ```
 
-That costs money and takes about 20 minutes. It calls the provider 40 times.
+That costs money and takes about 20 minutes. With three arms it calls the provider
+at least 60 times, and more when an arm needs its second attempt.
+
+**Check the balance on the account first.** A live run that drains an account
+part-way through does not stop. It records the cases that succeeded and reports
+every case after the 402 as a failure, which looks exactly like a broken system
+until you read the error. This has already happened once.
 
 **Exit code 2 means a human must look.** Something that should not publish did, or
 a normal brief was blocked. It is a review signal, not a build failure.
@@ -99,7 +106,7 @@ app.py                 shell only: page config, sidebar, stage router
 core/personas.py       the single source of truth for all three people
 core/brief.py          the structured brief
 core/prompts.py        prompt construction, one builder per output type
-core/providers.py      NVIDIA and OpenRouter, allowlisted
+core/providers.py      NVIDIA and Mesh, allowlisted
 core/generator.py      two-attempt structured generation
 core/schemas.py        output shapes, deliberately tolerant
 core/linter.py         style, advisory
@@ -108,7 +115,7 @@ core/studio.py         sections, QA orchestration, the approval gate
 core/carousel.py       slide rendering, PDF, ZIP
 core/imagegen.py       optional raster generation
 core/history.py        local SQLite
-ui/                    theme and the five stages
+ui/                    theme, the five stages, and every word of on-screen help
 evals/                 the harness, the cases, the recordings
 ```
 
@@ -128,8 +135,15 @@ treated a clean result as absent and recomputed it down the wrong path. There is
 test asserting on the empty case specifically. Do not remove it.
 
 **Models get retired.** Every model in the allowlist was called and confirmed
-working. NVIDIA switches them off on a schedule. The sidebar has a **Check models
-are still served** button.
+working. Providers switch them off on a schedule. The sidebar has a **Check the AI
+models still work** button.
+
+**Per model request differences belong in `core/providers.py`.** Reasoning models
+need thinking turned off. Claude Opus 5 and Sonnet 5 reject `temperature` with a
+400. Both are declared on `ModelOption` rather than special-cased at a call site,
+because both are properties of the model. A temperature hardcoded at the call site
+is what turned a whole live evaluation run into "did not generate" and looked like
+a schema bug.
 
 **Reasoning models spend the whole budget thinking.** The allowlist marks which
 ones need `chat_template_kwargs: {"thinking": false}`. Do not send that flag to a

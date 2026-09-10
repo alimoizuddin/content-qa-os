@@ -1,13 +1,24 @@
-"""The two arms, and the record/replay layer that makes a run reproducible.
+"""The three arms, and the record/replay layer that makes a run reproducible.
 
 **studio** is the full system: the persona specification in the prompt, the schema,
 the deterministic normalisation, the linter, the auditor, and the approval gate.
 
-**baseline** is the control: the same model, the same schema so the output parses,
+**engine** is the Claude Project. It receives the studio's own system prompt, in
+full: every voice rule, the verified fact table, the banned phrasings, the safety
+rules, the numbers rule. Then nothing enforces any of it. No auditor, no gate; it
+publishes whatever it wrote. That is exactly what a written engine document run as
+a Claude Project is, and it isolates one variable and only one: whether the rules
+are text the model is asked to obey, or code that runs.
+
+Ali asked the honest question directly, which is why this arm exists. The earlier
+report compared the studio only against a generic prompt, so it could say the
+structure beat a stranger and could not say anything at all about whether it beat
+his own engine.
+
+**baseline** is the floor: the same model, the same schema so the output parses,
 and nothing else. No persona facts, no verified-number list, no safety rules, no
-audit, no gate. It answers the question the eval exists to answer, which is not
-"does the studio work" but "what does the structure actually buy over asking a good
-model politely".
+audit, no gate. It answers what the structure buys over asking a good model
+politely.
 
 Every provider response is recorded to ``evals/recorded/``. A recorded run replays
 through the real parser and the real gate without spending a credit, which is what
@@ -24,7 +35,12 @@ from typing import Any
 from core.brief import ContentBrief
 from core.generator import _clean_json, generate_output
 from core.personas import get_persona
-from core.providers import create_client, request_options
+from core.providers import (
+    create_client,
+    provider_for,
+    request_options,
+    sampling_options,
+)
 from core.schemas import OUTPUT_SCHEMAS
 from core.studio import approve_package, build_sections, run_qa
 from evals.scoring import Violation, score_text, serious
@@ -32,7 +48,7 @@ from evals.scoring import Violation, score_text, serious
 EVALS = Path(__file__).resolve().parent
 RECORDED = EVALS / "recorded"
 
-ARMS = ("studio", "baseline")
+ARMS = ("studio", "engine", "baseline")
 
 
 # ---------------------------------------------------------------------------
@@ -101,6 +117,24 @@ MANIFEST = RECORDED / "manifest.json"
 
 def has_recordings() -> bool:
     return RECORDED.is_dir() and any(RECORDED.glob("*.txt"))
+
+
+def recorded_arms() -> set[str]:
+    """Which arms the recordings on disk actually cover.
+
+    Recordings predate the arms added after them. Replaying an arm that was never
+    recorded produces twenty identical "no recording" lines, which reads like a
+    broken harness rather than an absent measurement. Knowing what is on disk lets
+    the runner say the true thing instead.
+    """
+    if not RECORDED.is_dir():
+        return set()
+    found: set[str] = set()
+    for path in RECORDED.glob("*.txt"):
+        parts = path.name.split(".")
+        if len(parts) >= 2:
+            found.add(parts[1])
+    return found & set(ARMS)
 
 
 def write_manifest(model: str) -> None:
@@ -178,8 +212,8 @@ def run_baseline(
             response = client.chat.completions.create(
                 model=model,
                 messages=messages,
-                temperature=0.4 if attempt == 1 else 0.1,
                 max_tokens=3000,
+                **sampling_options(model, attempt),
                 **request_options(model),
             )
             content = response.choices[0].message.content or ""
@@ -248,20 +282,24 @@ def run_case(
     output_type = case["outputs"][0]
     case_id = case["id"]
 
+    provider = provider_for(model)
+
     def client_for(_provider=None):
         if live:
-            inner = create_client("NVIDIA")
+            inner = create_client(provider)
             return RecordingClient(inner, case_id, arm, output_type) if record else inner
         return ReplayClient(case_id, arm, output_type)
 
     try:
-        if arm == "studio":
+        if arm in ("studio", "engine"):
+            # The engine arm shares the studio's generation exactly. They differ
+            # only in what happens afterwards, which is the whole point.
             import core.generator as generator
 
             original = generator.create_client
             generator.create_client = client_for
             try:
-                outcome = generate_output(brief, output_type, "NVIDIA", model)
+                outcome = generate_output(brief, output_type, provider, model)
             finally:
                 generator.create_client = original
         else:
@@ -288,7 +326,9 @@ def run_case(
         text = "\n\n".join(v for v in qa["outputs"].values() if v.strip())
         reasons = list(verdict["reasons"])
     else:
-        # The control has no gate. That is the control.
+        # Neither the engine arm nor the baseline has a gate. For the baseline that
+        # is the absence of rules. For the engine it is the presence of rules with
+        # nothing enforcing them, which is the more interesting of the two.
         shipped = True
         reasons = []
 

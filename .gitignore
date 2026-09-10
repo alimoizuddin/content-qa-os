@@ -8,3 +8,6 @@ venv/
 data/history.db
 assets/portraits/*
 !assets/portraits/.gitkeep
+
+# Incomplete live run kept for reference only. Not a measurement.
+evals/recorded-opus5-partial/

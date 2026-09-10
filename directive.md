@@ -335,7 +335,7 @@ Two, and both are real, not simulated.
   PDF, and the ZIP. No image service. No remote fonts. The font is included in the
   repository so the slides look the same on any machine.
 
-Optional and clearly marked as optional: **OpenRouter**, for extra text models and
+Optional and clearly marked as optional: **Mesh API**, for Claude models and
 for turning the picture prompt into an actual image. Without it, everything except
 the raster image still works.
 

@@ -16,12 +16,14 @@ import streamlit as st
 
 from core.personas import PersonaSpec
 
+# Plain words, because the person reading them has not been told what a "brief"
+# or a "QA pass" is and should not have to be.
 STAGES: tuple[tuple[str, str], ...] = (
-    ("brief", "Brief"),
-    ("generate", "Generate"),
-    ("edit", "Edit and preview"),
-    ("qa", "QA and approve"),
-    ("history", "History"),
+    ("brief", "1. Your idea"),
+    ("generate", "2. Write it"),
+    ("edit", "3. Check and edit"),
+    ("qa", "4. Safety check"),
+    ("history", "5. Saved posts"),
 )
 
 

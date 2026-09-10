@@ -2,7 +2,7 @@
 
     python -m evals.run_evals                 replay the recorded run, no credits
     python -m evals.run_evals --live --record call the provider and save responses
-    python -m evals.run_evals --arm studio    one arm only
+    python -m evals.run_evals --arm studio    one arm only, repeatable
     python -m evals.run_evals --case A01      one case only
 
 Exit codes are the point of the script, not decoration:
@@ -24,13 +24,14 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from core.providers import default_model, has_nvidia_key
+from core.providers import default_model, has_mesh_key, has_nvidia_key, provider_for
 from evals.harness import (
     ARMS,
     EVALS,
     ArmResult,
     has_recordings,
     load_cases,
+    recorded_arms,
     recorded_model,
     run_case,
     write_manifest,
@@ -94,7 +95,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Evaluate the content studio.")
     parser.add_argument("--live", action="store_true", help="call the provider")
     parser.add_argument("--record", action="store_true", help="save provider responses")
-    parser.add_argument("--arm", choices=ARMS, help="run one arm only")
+    # Repeatable. Without action="append" a second --arm silently replaced the
+    # first, so asking for two arms quietly measured one.
+    parser.add_argument(
+        "--arm", choices=ARMS, action="append", help="run this arm only, repeatable"
+    )
     parser.add_argument("--case", help="run one case id only")
     parser.add_argument("--model", default="", help="override the model")
     args = parser.parse_args()
@@ -102,9 +107,20 @@ def main() -> int:
     if args.record and not args.live:
         print("--record only makes sense with --live.", file=sys.stderr)
         return 1
-    if args.live and not has_nvidia_key():
-        print("NVIDIA_API_KEY is not set, so --live cannot run.", file=sys.stderr)
-        return 1
+    if args.live:
+        # Check the key for the provider this model actually needs. The old check
+        # asked for a NVIDIA key even when the run was going to Mesh.
+        wanted = args.model or default_model().model
+        try:
+            needed = provider_for(wanted)
+        except ValueError:
+            print(f"{wanted!r} is not in the model allowlist.", file=sys.stderr)
+            return 1
+        ready = has_nvidia_key() if needed == "NVIDIA" else has_mesh_key()
+        if not ready:
+            key = "NVIDIA_API_KEY" if needed == "NVIDIA" else "MESH_API_KEY"
+            print(f"{key} is not set, so --live cannot run.", file=sys.stderr)
+            return 1
     if not args.live and not has_recordings():
         print(
             "No recordings found. Run once with --live --record to create them.",
@@ -120,7 +136,25 @@ def main() -> int:
             return 1
 
     by_id = {c["id"]: c for c in cases}
-    arms = [args.arm] if args.arm else list(ARMS)
+    arms = list(dict.fromkeys(args.arm)) if args.arm else list(ARMS)
+
+    if not args.live:
+        # Only replay what was actually recorded. An arm added after the last
+        # recording has no data, and twenty "no recording" lines look like a
+        # broken harness rather than a measurement nobody has taken yet.
+        available = recorded_arms()
+        skipped = [a for a in arms if a not in available]
+        arms = [a for a in arms if a in available]
+        if skipped:
+            print(
+                "Not in these recordings, so not replayed: "
+                + ", ".join(skipped)
+                + ". Re-record with --live --record to measure "
+                + ("it." if len(skipped) == 1 else "them.")
+            )
+        if not arms:
+            print("None of the requested arms are in the recordings.", file=sys.stderr)
+            return 1
     if args.live:
         model = args.model or default_model().model
     else:
@@ -187,6 +221,37 @@ def main() -> int:
             f"Grounded briefs that produced something shippable: studio "
             f"{studio['usability_pass']}/{studio['grounded_cases']}, control "
             f"{base['usability_pass']}/{base['grounded_cases']}."
+        )
+        print()
+
+    if "studio" in summaries and "engine" in summaries:
+        studio, engine = summaries["studio"], summaries["engine"]
+        caught = engine["unsafe_ships"] - studio["unsafe_ships"]
+        print("Rules as code, versus the same rules as text in a Claude Project:")
+        print(
+            f"  The engine arm had every rule the studio has, and published "
+            f"{engine['unsafe_ships']} unsafe piece(s) carrying "
+            f"{engine['serious_violations_shipped']} serious violation(s)."
+        )
+        print(
+            f"  The studio, same prompt and same model, published "
+            f"{studio['unsafe_ships']}."
+        )
+        if caught > 0:
+            print(
+                f"  Enforcing the rules rather than stating them caught {caught} "
+                f"piece(s) the engine would have published."
+            )
+        elif caught == 0 and engine["unsafe_ships"] == 0:
+            print(
+                "  On this run the model obeyed the written rules unaided. That is "
+                "a result about this model on these cases, not a guarantee, and it "
+                "is exactly the kind of thing that varies run to run."
+            )
+        print(
+            f"  Cost of the gate: grounded briefs shipped, engine "
+            f"{engine['usability_pass']}/{engine['grounded_cases']}, studio "
+            f"{studio['usability_pass']}/{studio['grounded_cases']}."
         )
         print()
 

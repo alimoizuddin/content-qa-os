@@ -20,14 +20,25 @@ from pydantic import BaseModel, ValidationError
 from core.brief import ContentBrief
 from core.personas import PersonaSpec, get_persona
 from core.prompts import build_messages
-from core.providers import create_client, request_options, validate_selection
+from core.providers import (
+    create_client,
+    request_options,
+    sampling_options,
+    validate_selection,
+)
 from core.schemas import OUTPUT_SCHEMAS
 
+# These are ceilings, not targets: a model that finishes early costs early. They
+# were tuned against Nemotron and were too tight for a reasoning model, which
+# spends part of the same budget thinking before it writes a character of JSON.
+# When the budget runs out mid-string the response is a truncated object, and the
+# old code reported that as "did not match the required structure", which sent
+# people off to change their brief over a problem the brief did not cause.
 MAX_TOKENS = {
-    "post": 3000,
-    "carousel": 3400,
-    "calendar": 4200,
-    "picture": 1200,
+    "post": 8000,
+    "carousel": 9000,
+    "calendar": 12000,
+    "picture": 3000,
 }
 
 GENERIC_PROVIDER_ERROR = (
@@ -49,6 +60,10 @@ STATUS_MESSAGES: dict[int, str] = {
     410: "That model has reached end of life and is no longer served. Choose another in the sidebar.",
     413: "The request was too large. Shorten the brief or the proof.",
     422: "The provider could not process the request as sent.",
+    402: (
+        "The provider account is out of credit. Top up the account for this key, or "
+        "switch to another model in the sidebar."
+    ),
     429: "Rate limited by the provider. Wait a moment and try again.",
     500: "The provider had an internal error. Try again shortly.",
     502: "The provider is unreachable right now. Try again shortly.",
@@ -73,6 +88,11 @@ def classify_provider_error(error: Exception) -> str:
 SCHEMA_FAILURE = (
     "The model returned a response that did not match the required structure, twice. "
     "Try a different model, or shorten the brief."
+)
+
+TRUNCATED = (
+    "The model ran out of room before it finished writing, twice. Ask for fewer "
+    "things at once, or choose another model in the sidebar."
 )
 
 
@@ -143,6 +163,8 @@ def generate_output(
     schema = OUTPUT_SCHEMAS[output_type]
     safe_brief = brief.truncated()
 
+    truncated = False
+
     for attempt in (1, 2):
         try:
             response = client.chat.completions.create(
@@ -150,11 +172,19 @@ def generate_output(
                 messages=build_messages(
                     spec, safe_brief, output_type, schema, corrective=attempt == 2
                 ),
-                temperature=0.4 if attempt == 1 else 0.1,
                 max_tokens=MAX_TOKENS[output_type],
+                **sampling_options(model, attempt),
                 **request_options(model),
             )
-            content = response.choices[0].message.content or ""
+            choice = response.choices[0]
+            content = choice.message.content or ""
+            # A cut-off response is a budget problem, not a comprehension problem,
+            # and saying so is the difference between a fixable error and a
+            # misleading one. Recordings replayed from disk carry no finish
+            # reason, so its absence is never treated as truncation.
+            if getattr(choice, "finish_reason", None) == "length":
+                truncated = True
+                continue
             parsed = schema.model_validate_json(_clean_json(content))
             data = normalise(spec, safe_brief, output_type, parsed)
             return {"success": True, "data": data, "attempts": attempt}
@@ -168,7 +198,7 @@ def generate_output(
                 "attempts": attempt,
             }
 
-    return {"success": False, "error": SCHEMA_FAILURE, "attempts": 2}
+    return {"success": False, "error": TRUNCATED if truncated else SCHEMA_FAILURE, "attempts": 2}
 
 
 def generate_bundle(

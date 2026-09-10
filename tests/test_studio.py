@@ -6,6 +6,8 @@ from pathlib import Path
 import pytest
 from streamlit.testing.v1 import AppTest
 
+from ui.guide import fix_for
+
 from core import history
 from core.auditor import audit_content
 from core.carousel import build_carousel_assets, portrait_slug, render_slides
@@ -439,14 +441,13 @@ def test_the_art_direction_prompt_carries_the_palette_and_the_safety_rules():
 
 
 def test_an_image_provider_failure_degrades_to_the_prompt(monkeypatch):
-    monkeypatch.setenv("OPENROUTER_API_KEY", "test-key")
-    monkeypatch.setenv("OPENROUTER_IMAGE_MODEL", "some/image-model")
+    monkeypatch.setenv("MESH_API_KEY", "test-key")
+    monkeypatch.setenv("MESH_IMAGE_MODEL", "some/image-model")
 
-    class Exploding:
-        def __init__(self, **_kwargs):
-            raise RuntimeError("gateway timeout at https://openrouter.ai key sk-SECRET")
+    def exploding(_provider):
+        raise RuntimeError("gateway timeout at https://api.meshapi.ai key rsk-SECRET")
 
-    monkeypatch.setattr("openai.OpenAI", Exploding)
+    monkeypatch.setattr("core.providers.create_client", exploding)
     result = create_picture(ALI, "A frayed rope on a dark field.")
     assert result["image_status"] == "failed"
     assert result["image_bytes"] is None
@@ -538,7 +539,7 @@ def _fill_brief(app, formats=("post", "carousel")):
         "n8n SDR research pipeline: about 10 hours a week down to about 3."
     )
     app.multiselect(key="formats").set_value(list(formats))
-    return _submit(app, "Save brief and continue")
+    return _submit(app, "Save and continue")
 
 
 def test_the_app_starts_on_the_brief_stage(nvidia_only):
@@ -605,11 +606,69 @@ def test_a_hand_typed_medical_claim_blocks_approval_in_the_ui(monkeypatch, nvidi
     assert any("cure" in f.lower() for f in app.session_state["qa"]["audit_flags"])
 
 
-def test_the_sidebar_reports_nvidia_only_and_offers_no_openrouter_model(nvidia_only):
+def test_a_blocked_finding_is_shown_with_the_action_that_clears_it(monkeypatch, nvidia_only):
+    """A finding states the problem. A stopped person needs the next move.
+
+    The audit message is written for accuracy: it names the rule that fired. On its
+    own that leaves a non-technical user staring at a red box with no idea what to
+    change, which is the difference between a guardrail and a dead end.
+    """
+    _stub_generation(monkeypatch)
+    app = AppTest.from_file(str(APP), default_timeout=90).run()
+    app.selectbox(key="persona").set_value("Rakhee Singhi").run()
+    _fill_brief(app, formats=("post",))
+    app.button(key="generate_button").click().run()
+
+    app.text_area(key="edit_post_post").set_value(
+        "This protocol cures thyroid disease in ninety days."
+    ).run()
+    app.button(key="edit_to_qa").click().run()
+
+    captions = " ".join(c.value for c in app.caption)
+    assert "What to do:" in captions
+    assert fix_for("BLOCKED: cures thyroid disease") in captions
+
+
+def test_every_shipped_fix_message_is_plain_and_actionable():
+    """The guidance is the product here, so it gets asserted like code.
+
+    Every fix line has to tell someone what to change. None of them may carry a
+    dash character: all three personas ban em dashes and en dashes, and guidance
+    that breaks the house style teaches the wrong thing.
+    """
+    from ui.guide import FIXES, STAGE_GUIDE, WHAT_THIS_IS
+
+    prose = [WHAT_THIS_IS]
+    prose += [g["title"] for g in STAGE_GUIDE.values()]
+    prose += [g["body"] for g in STAGE_GUIDE.values()]
+    prose += [instruction for _, instruction in FIXES]
+
+    for text in prose:
+        assert "\u2014" not in text and "\u2013" not in text, text
+
+    for _, instruction in FIXES:
+        assert instruction[0].isupper(), instruction
+        assert instruction.endswith("."), instruction
+
+
+def test_a_missing_key_explains_setup_instead_of_failing_later(monkeypatch):
+    """With no key at all the app must say so on screen one, not at generation."""
+    monkeypatch.delenv("NVIDIA_API_KEY", raising=False)
+    monkeypatch.delenv("MESH_API_KEY", raising=False)
+    monkeypatch.delenv("DEFAULT_MODEL", raising=False)
+
+    app = AppTest.from_file(str(APP), default_timeout=60).run()
+    errors = " ".join(e.value for e in app.error)
+    assert "cannot write anything yet" in errors
+    # And it must not have drawn the brief form behind the error.
+    assert "fill_example" not in {b.key for b in app.button}
+
+
+def test_the_sidebar_reports_nvidia_only_and_offers_no_mesh_model(nvidia_only):
     app = AppTest.from_file(str(APP), default_timeout=60).run()
     labels = app.selectbox(key="model_label").options
     assert labels
-    assert all("OpenRouter" not in label for label in labels)
+    assert all("Mesh" not in label for label in labels)
     assert app.session_state["provider"] == "NVIDIA"
 
 
@@ -618,7 +677,7 @@ def test_an_empty_output_selection_keeps_the_user_on_the_brief(monkeypatch, nvid
     app = AppTest.from_file(str(APP), default_timeout=60).run()
     app.text_area(key="core_idea").set_value("An idea.")
     app.multiselect(key="formats").set_value([])
-    _submit(app, "Save brief and continue")
+    _submit(app, "Save and continue")
 
     assert app.session_state["stage"] == "brief"
     assert app.error

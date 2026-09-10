@@ -122,11 +122,12 @@ def fake_client_for(output_type: str, *, extra: list[str] | None = None) -> Fake
 
 @pytest.fixture
 def nvidia_only(monkeypatch):
-    """A machine with NVIDIA configured and no OpenRouter key."""
+    """A machine with NVIDIA configured and no Mesh key."""
     monkeypatch.setenv("NVIDIA_API_KEY", "test-key-not-a-real-one")
     monkeypatch.setenv("NVIDIA_MODEL", "nvidia/nemotron-3-super-120b-a12b")
-    monkeypatch.delenv("OPENROUTER_API_KEY", raising=False)
-    monkeypatch.delenv("OPENROUTER_IMAGE_MODEL", raising=False)
+    monkeypatch.delenv("DEFAULT_MODEL", raising=False)
+    monkeypatch.delenv("MESH_API_KEY", raising=False)
+    monkeypatch.delenv("MESH_IMAGE_MODEL", raising=False)
 
 
 @pytest.fixture

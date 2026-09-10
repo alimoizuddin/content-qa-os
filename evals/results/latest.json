@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-09-09T18:11:58+00:00",
-  "mode": "live",
+  "run_at": "2026-09-10T03:28:25+00:00",
+  "mode": "replay",
   "model": "nvidia/nemotron-3-super-120b-a12b",
   "summaries": {
     "studio": {
@@ -444,7 +444,7 @@
         "serious_violations": [],
         "all_violations": [],
         "block_reasons": [],
-        "error": "baseline produced no valid structure"
+        "error": "No recording for A03 baseline post attempt 2. Run with --live --record first."
       },
       {
         "id": "A04",
@@ -472,7 +472,7 @@
         "serious_violations": [],
         "all_violations": [],
         "block_reasons": [],
-        "error": "baseline produced no valid structure"
+        "error": "No recording for A05 baseline post attempt 2. Run with --live --record first."
       },
       {
         "id": "A06",

@@ -6,7 +6,8 @@ engagement blocks, a branded carousel rendered as real 1080x1350 slides with a
 LinkedIn-ready PDF and a ZIP, art direction for a picture, and a four-week calendar.
 Nothing is approved until it has passed a fact and safety audit.
 
-NVIDIA NIM is the default and the only required provider. OpenRouter is optional.
+NVIDIA NIM is the default and the only required provider. Mesh API is optional and
+adds the Anthropic catalogue plus picture rendering.
 
 ## Run it
 
@@ -109,9 +110,10 @@ This is the part worth understanding before you rely on the output.
 | Variable | Required | Effect |
 | --- | --- | --- |
 | `NVIDIA_API_KEY` | Yes | Enables generation. |
-| `NVIDIA_MODEL` | No | Picks the default allowlisted NVIDIA model. Unknown values are ignored, not fatal. |
-| `OPENROUTER_API_KEY` | No | Adds OpenRouter text models to the sidebar. Without it they are not offered at all. |
-| `OPENROUTER_IMAGE_MODEL` | No | With the key above, renders the picture package. |
+| `MESH_API_KEY` | No | Adds Claude models to the sidebar and turns on picture rendering. Without it they are not offered at all. |
+| `DEFAULT_MODEL` | No | Which allowlisted model the sidebar starts on. A Mesh model here is ignored unless `MESH_API_KEY` is also set, so the app never defaults to something it cannot call. Unknown values are ignored, not fatal. |
+| `NVIDIA_MODEL` | No | Older name for the same thing, still honoured. `DEFAULT_MODEL` wins when both are set. |
+| `MESH_IMAGE_MODEL` | No | Which image model renders the picture package. Defaults to a fast, cheap one. |
 
 Models are allowlisted. An environment variable cannot introduce one that is not on
 the list. Requests have a bounded timeout and at most one transport retry.
@@ -126,11 +128,30 @@ button that compares the allowlist against the live catalogue and names anything
 has gone. A retired model otherwise fails at generation time, and the studio will say
 so and tell you to pick another.
 
-**Known limitation.** NVIDIA NIM's text endpoint does not return rasters, so the
-only way to get a generated image inside the app is an OpenRouter key plus an
-image-capable model. Everything else, the carousel included, works NVIDIA-only.
+**On sampling.** The newest Anthropic models reject a `temperature` parameter with
+a 400 rather than ignoring it. That is declared per model in the allowlist, not
+handled at the call site, because it is a property of the model.
+
+**Known limitation.** NVIDIA NIM's text endpoint does not return rasters, so a
+generated picture needs a Mesh key. Everything else, the carousel included, works
+NVIDIA-only, and without any image provider the picture package still returns its
+art-direction prompt, which is a deliverable in its own right.
 
 ## Does the structure earn its keep
+
+The evaluation has three arms, not two:
+
+| Arm | Prompt | Enforcement |
+| --- | --- | --- |
+| `studio` | the full persona specification | linter, auditor, approval gate |
+| `engine` | **the same full specification** | none |
+| `baseline` | a competent generic request | none |
+
+The middle one is the interesting control. It is what a written engine document run
+as a Claude Project actually is: every rule present, stated clearly, and nothing but
+the model's own compliance enforcing them. Comparing `studio` against `engine`
+isolates one variable, which is whether the rules are text or code. Comparing
+against `baseline` only ever answered the easier question.
 
 There is an evaluation harness in `evals/`, and it exists because a test suite
 cannot answer that question. Twenty labelled briefs run through two arms: the full
@@ -172,7 +193,7 @@ pip-audit -r requirements.lock
 The test suite runs entirely offline against a fake provider and never spends
 credits. It covers every output type, mixed bundles, empty selection, schema retry
 success and failure, provider error redaction, carousel PNG, PDF and ZIP rendering,
-the NVIDIA-only image fallback, OpenRouter gating in both directions, approval
+the NVIDIA-only image fallback, Mesh gating in both directions, approval
 blocking, every persona safety rule, and the full UI flow through Streamlit's
 `AppTest`.
 
@@ -183,7 +204,7 @@ app.py                 shell: page config, sidebar, stage router
 core/personas.py       the single source of truth for all three personas
 core/brief.py          the structured brief
 core/prompts.py        prompt construction, one builder per output type
-core/providers.py      NVIDIA and OpenRouter, allowlisted
+core/providers.py      NVIDIA and Mesh, allowlisted
 core/generator.py      two-attempt structured generation
 core/schemas.py        output schemas
 core/linter.py         style lint, advisory

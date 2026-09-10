@@ -19,7 +19,7 @@ from core.providers import (
     NVIDIA_MODELS,
     available_models,
     default_model,
-    has_openrouter_key,
+    has_mesh_key,
     validate_selection,
 )
 from core.schemas import CarouselDraft, ContentCalendar, PicturePrompt, PostDraft
@@ -162,24 +162,91 @@ def test_clean_json_leaves_a_bare_object_alone():
     assert _clean_json('  {"a": 1}  ') == '{"a": 1}'
 
 
+def test_a_truncated_response_says_so_instead_of_blaming_the_brief(
+    brief, monkeypatch, nvidia_only
+):
+    """A cut-off response is a budget problem, and the message has to say that.
+
+    Found by a live run. Claude Opus 5 spends part of the token budget thinking
+    before it writes any JSON, overran a ceiling tuned for a smaller model, and the
+    object arrived cut off in the middle of a string. The old code called that a
+    structure mismatch and told the user to shorten their brief, which would not
+    have helped and was not their fault.
+    """
+    from core.generator import TRUNCATED
+
+    class Truncating:
+        """Returns a well formed prefix, flagged as cut off by the provider."""
+
+        def __init__(self):
+            self.chat = type("Chat", (), {"completions": self})()
+
+        def create(self, **_kwargs):
+            message = type("Message", (), {"content": '{"hook":"a good start'})()
+            choice = type("Choice", (), {"message": message, "finish_reason": "length"})()
+            return type("Response", (), {"choices": [choice]})()
+
+    monkeypatch.setattr("core.generator.create_client", lambda _p: Truncating())
+    result = generate_output(brief, "post", "NVIDIA", default_model().model)
+
+    assert not result["success"]
+    assert result["error"] == TRUNCATED
+    assert "shorten the brief" not in result["error"]
+
+
+def test_an_out_of_credit_provider_is_named_as_such(nvidia_only):
+    """402 used to fall through to the generic message.
+
+    A live evaluation run drained an account halfway through and reported thirteen
+    cases as "could not complete this request. Check your connection", which is
+    the one thing it definitely was not. The classifier now names it.
+    """
+    from core.generator import classify_provider_error
+
+    class Broke(Exception):
+        status_code = 402
+
+    message = classify_provider_error(Broke())
+    assert "out of credit" in message
+    assert "connection" not in message.lower()
+
+
 # ---------------------------------------------------------------------------
 # Providers
 # ---------------------------------------------------------------------------
 
 
-def test_openrouter_models_are_hidden_without_a_key(nvidia_only):
-    assert not has_openrouter_key()
+def test_mesh_models_are_hidden_without_a_key(nvidia_only):
+    assert not has_mesh_key()
     providers = {m["provider"] for m in available_models()}
     assert providers == {"NVIDIA"}
     with pytest.raises(ValueError):
-        validate_selection("OpenRouter", "openai/gpt-4o")
+        validate_selection("Mesh", "anthropic/claude-opus-5")
 
 
-def test_openrouter_models_appear_once_a_key_exists(monkeypatch, nvidia_only):
-    monkeypatch.setenv("OPENROUTER_API_KEY", "test-key")
+def test_mesh_models_appear_once_a_key_exists(monkeypatch, nvidia_only):
+    monkeypatch.setenv("MESH_API_KEY", "test-key")
     providers = {m["provider"] for m in available_models()}
-    assert providers == {"NVIDIA", "OpenRouter"}
-    validate_selection("OpenRouter", "openai/gpt-4o")
+    assert providers == {"NVIDIA", "Mesh"}
+    validate_selection("Mesh", "anthropic/claude-opus-5")
+
+
+def test_a_mesh_default_is_ignored_when_no_mesh_key_exists(monkeypatch, nvidia_only):
+    """DEFAULT_MODEL must never select something the machine cannot call.
+
+    Otherwise copying someone else's .env, or revoking a key, starts the app on a
+    model that fails at generation time instead of falling back cleanly.
+    """
+    monkeypatch.setenv("DEFAULT_MODEL", "anthropic/claude-opus-5")
+    assert default_model().provider == "NVIDIA"
+    assert {m["provider"] for m in available_models()} == {"NVIDIA"}
+
+
+def test_a_mesh_default_is_honoured_once_a_key_exists(monkeypatch, nvidia_only):
+    monkeypatch.setenv("MESH_API_KEY", "test-key")
+    monkeypatch.setenv("DEFAULT_MODEL", "anthropic/claude-opus-5")
+    assert default_model().model == "anthropic/claude-opus-5"
+    assert available_models()[0]["model"] == "anthropic/claude-opus-5"
 
 
 def test_nvidia_model_env_var_is_honoured(monkeypatch, nvidia_only):

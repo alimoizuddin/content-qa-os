@@ -27,6 +27,7 @@ from core.studio import (
     delivery_text,
     run_qa,
 )
+from ui.guide import EXAMPLES, fix_for, stage_intro
 from ui.theme import card, finding, swatches
 
 ORDER = ("post", "carousel", "picture", "calendar")
@@ -75,14 +76,23 @@ def all_edited_sections() -> tuple[dict[str, str], set[str]]:
 
 
 def stage_brief(spec: PersonaSpec) -> None:
-    st.subheader("1. Brief")
-    st.caption(
-        "The brief is the grounding contract. Everything the generator writes has to "
-        "come from here or from the verified fact list. The proof field is the one that "
-        "decides whether you get publishable content or a set of open slots."
-    )
+    st.subheader("Step 1 of 5. Your idea")
+    stage_intro("brief")
 
     existing = _current_brief()
+
+    # A blank form is the hardest screen in the app for someone who has never used
+    # it. One button turns it into a worked example they can edit.
+    example = EXAMPLES.get(spec.name)
+    if example and st.button(
+        "Fill in an example for me",
+        key="fill_example",
+        help="You can change every word after.",
+    ):
+        st.session_state["core_idea"] = example["core_idea"]
+        st.session_state["proof"] = example["proof"]
+        st.session_state["audience"] = example["audience"]
+        st.rerun()
     pillar_options = [""] + [f"{p.key} {p.name}" for p in spec.pillars]
 
     with st.form("brief_form"):
@@ -94,54 +104,61 @@ def stage_brief(spec: PersonaSpec) -> None:
                 key="core_idea",
                 value=existing.core_idea,
                 height=110,
-                placeholder="The one thing this piece argues. Write it as a sentence you believe.",
+                placeholder="Example: the hard part of automation is describing the work, not the tools.",
             )
             proof = st.text_area(
-                "Verified proof, project, experience, or asset",
+                "Your proof. The real thing behind the idea",
                 key="proof",
                 value=existing.proof,
                 height=140,
                 placeholder=(
-                    "The real material this is anchored to. A project, a number you can "
-                    "stand behind, a moment that actually happened. Numbers you put here "
-                    "are treated as verified for this piece."
+                    "A project you built, a number you can stand behind, something that "
+                    "actually happened. Any number you write here is treated as proven "
+                    "for this post."
                 ),
                 help=(
-                    "Leave this empty and every place the writing needs evidence will be "
-                    f"marked {OPEN_SLOT}, and approval stays blocked until you fill it in."
+                    "This is the most important box on the screen. Leave it empty and the "
+                    f"app will write {OPEN_SLOT} wherever it needed proof, and it will not "
+                    "let you approve the post until you fill those in."
                 ),
             )
             notes = st.text_area(
-                "Anything else the writer should know",
+                "Anything else you want it to know (optional)",
                 key="notes",
                 value=existing.notes,
                 height=80,
-                placeholder="Optional. Constraints, a phrase to include, a angle to avoid.",
+                placeholder="A phrase to include, an angle to avoid, a length you want.",
             )
 
         with right:
-            goal = st.selectbox("Content goal", GOALS, key="goal")
+            goal = st.selectbox(
+                "What do you want this post to do?", GOALS, key="goal"
+            )
             audience = st.text_input(
                 "Audience",
                 key="audience",
                 value=existing.audience or spec.audience,
-                help="Who this is written at. The persona default is prefilled.",
+                help="Who you are talking to. Already filled in for this person.",
             )
-            pillar = st.selectbox("Content pillar", pillar_options, key="pillar")
+            pillar = st.selectbox(
+                "Which theme does this belong to? (optional)",
+                pillar_options,
+                key="pillar",
+            )
             register = st.selectbox(
-                "Register", list(spec.registers), key="register",
+                "Which voice should it use?", list(spec.registers), key="register",
                 help=" | ".join(f"{k}: {v}" for k, v in spec.registers.items()),
             )
-            tone = st.selectbox("Tone", TONE_HINTS, key="tone")
+            tone = st.selectbox("How should it sound?", TONE_HINTS, key="tone")
             formats = st.multiselect(
-                "Outputs to produce",
+                "What should it make?",
                 list(OUTPUT_TYPES),
                 default=["post", "carousel"],
                 key="formats",
                 format_func=lambda key: OUTPUT_TYPES[key],
             )
 
-        submitted = st.form_submit_button("Save brief and continue", type="primary")
+        submitted = st.form_submit_button("Save and continue", type="primary")
 
     if submitted:
         brief = ContentBrief(
@@ -158,7 +175,7 @@ def stage_brief(spec: PersonaSpec) -> None:
         )
         missing = brief.missing_required()
         if missing:
-            st.error("Still needed: " + ", ".join(missing) + ".")
+            st.error("Please fill these in first: " + ", ".join(missing) + ".")
             return
         st.session_state["brief"] = brief
         st.session_state["package"] = {}
@@ -166,12 +183,18 @@ def stage_brief(spec: PersonaSpec) -> None:
         st.session_state["qa"] = None
         goto("generate")
 
-    with st.expander("What this persona is allowed to claim"):
-        st.markdown("**Verified facts.** Only these, plus whatever you put in the proof field.")
+    with st.expander(f"What {spec.name.split()[0]} is allowed to say"):
+        st.markdown(
+            "These are the facts the app will let into a post. Anything else has to "
+            "come from the proof box above."
+        )
         for fact in spec.star_facts:
             st.markdown(f"- {fact.claim}")
         if spec.pending_verification:
-            st.markdown("**Believed but not verified. The studio will not write these.**")
+            st.markdown(
+                "**These are believed but not proven yet, so the app refuses to "
+                "write them.**"
+            )
             for item in spec.pending_verification:
                 st.markdown(f"- {item}")
 
@@ -183,13 +206,15 @@ def stage_brief(spec: PersonaSpec) -> None:
 
 def stage_generate(spec: PersonaSpec) -> None:
     brief = st.session_state.get("brief")
-    st.subheader("2. Generate")
+    st.subheader("Step 2 of 5. Write it")
 
     if brief is None:
-        st.info("Write the brief first.")
-        if st.button("Back to the brief", key="gen_back_empty"):
+        st.info("Fill in your idea first.")
+        if st.button("Back to step 1", key="gen_back_empty"):
             goto("brief")
         return
+
+    stage_intro("generate")
 
     for note in brief.warnings(spec):
         st.warning(note)
@@ -197,7 +222,11 @@ def stage_generate(spec: PersonaSpec) -> None:
     left, right = st.columns([3, 2])
     with left:
         card("Core idea", brief.core_idea)
-        card("Proof", brief.proof or "None supplied. Open slots will be inserted.")
+        card(
+            "Proof",
+            brief.proof
+            or "You did not give any. The app will leave gaps you must fill.",
+        )
     with right:
         card("Goal", brief.goal)
         card("Audience", brief.audience)
@@ -259,7 +288,8 @@ def stage_generate(spec: PersonaSpec) -> None:
 
 
 def stage_edit(spec: PersonaSpec) -> None:
-    st.subheader("3. Edit and preview")
+    st.subheader("Step 3 of 5. Check and edit")
+    stage_intro("edit")
     package = st.session_state["package"]
 
     if not package:
@@ -267,11 +297,6 @@ def stage_edit(spec: PersonaSpec) -> None:
         if st.button("Go to generate", key="edit_back_empty"):
             goto("generate")
         return
-
-    st.caption(
-        "Every field below is yours to change. Whatever is in these boxes when you press "
-        "approve is what gets audited and what gets saved."
-    )
 
     for output_type, message in (st.session_state.get("failures") or {}).items():
         st.error(f"{OUTPUT_TYPES[output_type]} was not produced. {message}")
@@ -292,10 +317,10 @@ def stage_edit(spec: PersonaSpec) -> None:
     st.divider()
     columns = st.columns([1, 1, 4])
     with columns[0]:
-        if st.button("Run QA", type="primary", key="edit_to_qa"):
+        if st.button("Check it for problems", type="primary", key="edit_to_qa"):
             goto("qa")
     with columns[1]:
-        if st.button("Regenerate", key="edit_regenerate"):
+        if st.button("Write it again", key="edit_regenerate"):
             st.session_state["package"] = {}
             goto("generate")
 
@@ -320,7 +345,7 @@ def _render_editor(spec: PersonaSpec, output_type: str) -> None:
         if OPEN_SLOT in value:
             st.caption(f"Contains {OPEN_SLOT}. Approval is blocked until this is resolved.")
 
-    with st.expander("Copy the whole package as one block"):
+    with st.expander("Copy everything as one block"):
         rebuilt = [
             Section(s.key, s.label, edits.get(s.key, s.text), s.help, s.multiline, s.copyable)
             for s in package["sections"]
@@ -399,7 +424,7 @@ def _render_picture(spec: PersonaSpec) -> None:
         st.info(
             "No image provider is configured, so this package is the art-direction prompt "
             "only. That prompt is a deliverable: it goes to a designer or an image tool "
-            "unchanged. Set OPENROUTER_API_KEY and OPENROUTER_IMAGE_MODEL to render it here."
+            "unchanged. Add MESH_API_KEY to your .env file to render it here."
         )
         return
 
@@ -460,14 +485,16 @@ def _render_calendar_table(output_type: str) -> None:
 
 
 def stage_qa(spec: PersonaSpec) -> None:
-    st.subheader("4. QA and approve")
+    st.subheader("Step 4 of 5. Safety check")
     package = st.session_state["package"]
 
     if not package:
-        st.info("Nothing to check yet.")
-        if st.button("Go to generate", key="qa_back_empty"):
+        st.info("There is nothing to check yet.")
+        if st.button("Go back and write something", key="qa_back_empty"):
             goto("generate")
         return
+
+    stage_intro("qa")
 
     brief = _current_brief()
     sections, planning = all_edited_sections()
@@ -476,29 +503,42 @@ def stage_qa(spec: PersonaSpec) -> None:
     st.session_state["qa"] = qa
 
     metrics = st.columns(4)
-    metrics[0].metric("Sections checked", len(sections))
-    metrics[1].metric("Blocking", len(verdict["blocking_flags"]))
-    metrics[2].metric("Advisory", len(qa["audit_flags"]) - len(verdict["blocking_flags"]))
+    metrics[0].metric("Pieces checked", len(sections))
+    metrics[1].metric("Must fix", len(verdict["blocking_flags"]))
+    metrics[2].metric("Worth a look", len(qa["audit_flags"]) - len(verdict["blocking_flags"]))
     metrics[3].metric("Style notes", len(qa["lint_flags"]))
 
     if verdict["approved"]:
-        st.success("Clean. Nothing is blocking this package.")
+        st.success("All clear. Nothing is stopping this. You can approve it below.")
     else:
+        st.error(
+            f"{len(verdict['blocking_flags'])} thing(s) must be fixed before you can "
+            "approve this. Each one below tells you what to do."
+        )
         for reason in verdict["reasons"]:
-            st.error(reason)
+            st.caption(reason)
 
     if qa["audit_flags"]:
-        st.markdown("#### Facts and safety")
+        st.markdown("#### Facts, safety and privacy")
+        blocking = set(verdict["blocking_flags"])
         for flag in qa["audit_flags"]:
-            finding(flag, "review" if ": REVIEW" in flag else "block")
+            stops_you = flag in blocking
+            finding(flag, "block" if stops_you else "review")
+            # The finding says what is wrong. A person who has just been stopped
+            # needs the next action, so it is spelled out underneath.
+            st.caption(
+                f"**What to do:** {fix_for(flag)}"
+                if stops_you
+                else "This does not stop you. Worth a read."
+            )
 
     if qa["lint_flags"]:
-        st.markdown("#### Style and voice")
-        st.caption("Advisory. These never block approval on their own.")
+        st.markdown("#### Style suggestions")
+        st.caption("You can ignore all of these and still approve.")
         for flag in qa["lint_flags"]:
             finding(flag, "lint")
 
-    with st.expander("Sanitised text that would be saved"):
+    with st.expander("See exactly what would be saved"):
         for key, value in qa["outputs"].items():
             st.markdown(f"**{key}**")
             st.code(value, language=None)
@@ -507,7 +547,7 @@ def stage_qa(spec: PersonaSpec) -> None:
     columns = st.columns([1, 1, 3])
     with columns[0]:
         approve = st.button(
-            "Approve and save",
+            "Approve and save it",
             type="primary",
             disabled=not verdict["approved"],
             key="approve_button",
@@ -515,6 +555,12 @@ def stage_qa(spec: PersonaSpec) -> None:
     with columns[1]:
         if st.button("Back to editing", key="qa_back"):
             goto("edit")
+    with columns[2]:
+        if not verdict["approved"]:
+            st.caption(
+                "The approve button turns on by itself once nothing is red. There is "
+                "no way to override it, and that is deliberate."
+            )
 
     if approve and verdict["approved"]:
         package_id = history.save_approved_package(
@@ -533,10 +579,11 @@ def stage_qa(spec: PersonaSpec) -> None:
 
 
 def stage_history(spec: PersonaSpec) -> None:
-    st.subheader("5. History")
+    st.subheader("Step 5 of 5. Saved posts")
+    stage_intro("history")
     st.caption(
-        "Approved, sanitised text only. Briefs, raw model output, provider errors, and "
-        "keys are never written to this database."
+        "Approved and cleaned text only. Your briefs, the raw AI output, error "
+        "messages and your key are never saved here."
     )
 
     only_this = st.checkbox(

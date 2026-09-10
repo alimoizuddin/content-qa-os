@@ -2,14 +2,17 @@
 
 The picture package always produces something useful: a detailed, safe
 art-direction prompt. Rendering that prompt into an actual image is optional and
-requires an OpenRouter key plus an image-capable model, because NVIDIA NIM's text
-endpoint does not return rasters.
+requires a Mesh API key, because NVIDIA NIM's text endpoint does not return
+rasters.
 
-The previous implementation posted to ``https://openrouter.ai/api/v1/images``,
-which is not a route OpenRouter serves, so the feature had never once produced an
-image; it fell through to the prompt every time and the tests only ever exercised
-the fallback. Image output on OpenRouter comes back through chat completions with
-image modalities requested, which is what this does.
+This module has now been wrong twice, in the same way, and the history is worth
+keeping. The first implementation posted to ``https://openrouter.ai/api/v1/images``,
+a route OpenRouter does not serve, so the feature had never once produced an image.
+The second went through OpenRouter chat completions with image modalities, which
+is a real route but a fiddly one: the raster arrives buried in a data URI on a
+non-standard message field. Mesh serves a plain OpenAI-compatible
+``/images/generations`` that returns base64, so the third version is the boring
+one, and boring is the point.
 
 Two rules this module will not break: it never claims a prompt is a generated
 image, and it never fails the surrounding generation. A missing key, a timeout, a
@@ -22,13 +25,29 @@ import base64
 import os
 from typing import Any
 
+from dotenv import load_dotenv
+
 from core.personas import PersonaSpec
 
-IMAGE_TIMEOUT = 60.0
+# The key checks below read the environment directly, so this module has to load
+# the .env itself. It previously relied on core.providers having been imported
+# first, which is true in the app and false in a bare unit test.
+load_dotenv()
+
+IMAGE_TIMEOUT = 120.0
 
 STATUS_PROMPT_ONLY = "prompt_only"
 STATUS_RENDERED = "rendered"
 STATUS_FAILED = "failed"
+
+# Confirmed against the live Mesh catalogue. Overridable with MESH_IMAGE_MODEL for
+# anyone who wants a different look, but the default has to work out of the box.
+DEFAULT_IMAGE_MODEL = "black-forest-labs/flux.1-schnell"
+
+# LinkedIn's portrait slot is 4:5. Providers accept a fixed set of sizes rather
+# than arbitrary pixels, so this is the nearest 4:5 that is widely supported, and
+# a provider that rejects it gets a second attempt with no size at all.
+IMAGE_SIZE = "1024x1280"
 
 SAFETY_SUFFIX = (
     "No text overlays, no logos, no identifiable people, no faces, no charts of "
@@ -36,11 +55,12 @@ SAFETY_SUFFIX = (
 )
 
 
+def image_model() -> str:
+    return os.getenv("MESH_IMAGE_MODEL", "").strip() or DEFAULT_IMAGE_MODEL
+
+
 def image_provider_configured() -> bool:
-    return bool(
-        os.getenv("OPENROUTER_API_KEY", "").strip()
-        and os.getenv("OPENROUTER_IMAGE_MODEL", "").strip()
-    )
+    return bool(os.getenv("MESH_API_KEY", "").strip())
 
 
 def art_direction(spec: PersonaSpec, prompt: str) -> str:
@@ -58,30 +78,33 @@ def art_direction(spec: PersonaSpec, prompt: str) -> str:
     )
 
 
-def _extract_image(message: Any) -> bytes | None:
-    """Pull raster bytes out of an OpenRouter chat response.
+def _extract_image(payload: Any) -> bytes | None:
+    """Pull raster bytes out of an images response.
 
-    The shape is `message.images[i].image_url.url` holding a data URI. Both dict
-    and object forms show up depending on SDK version, so both are handled.
+    ``b64_json`` is the documented field. Some gateways return a data URI in
+    ``url`` instead, so that is handled too rather than reported as a failure.
     """
-    images = getattr(message, "images", None)
-    if images is None and isinstance(message, dict):
-        images = message.get("images")
-    if not images:
+    entries = getattr(payload, "data", None)
+    if entries is None and isinstance(payload, dict):
+        entries = payload.get("data")
+    if not entries:
         return None
 
-    entry = images[0]
-    url = None
+    entry = entries[0]
     if isinstance(entry, dict):
-        url = (entry.get("image_url") or {}).get("url")
+        encoded = entry.get("b64_json")
+        url = entry.get("url")
     else:
-        image_url = getattr(entry, "image_url", None)
-        url = getattr(image_url, "url", None)
-    if not isinstance(url, str) or "base64," not in url:
+        encoded = getattr(entry, "b64_json", None)
+        url = getattr(entry, "url", None)
+
+    if not encoded and isinstance(url, str) and "base64," in url:
+        encoded = url.split("base64,", 1)[1]
+    if not isinstance(encoded, str) or not encoded:
         return None
 
     try:
-        return base64.b64decode(url.split("base64,", 1)[1])
+        return base64.b64decode(encoded)
     except Exception:
         return None
 
@@ -96,30 +119,28 @@ def create_picture(spec: PersonaSpec, prompt: str) -> dict[str, object]:
             "image_bytes": None,
             "image_status": STATUS_PROMPT_ONLY,
             "detail": (
-                "No image provider configured. Set OPENROUTER_API_KEY and "
-                "OPENROUTER_IMAGE_MODEL to render this prompt, or take the prompt to the "
-                "image tool of your choice. The prompt is the deliverable either way."
+                "No image provider configured. Add MESH_API_KEY to your local .env "
+                "file to render this prompt, or take the prompt to the image tool of "
+                "your choice. The prompt is the deliverable either way."
             ),
         }
 
-    # Imported here so a missing OpenRouter configuration never affects import time.
-    from openai import OpenAI
+    # Imported here so a missing Mesh configuration never affects import time.
+    from core.providers import create_client
 
     try:
-        client = OpenAI(
-            base_url="https://openrouter.ai/api/v1",
-            api_key=os.environ["OPENROUTER_API_KEY"].strip(),
-            timeout=IMAGE_TIMEOUT,
-            max_retries=0,
-        )
-        response = client.chat.completions.create(
-            model=os.environ["OPENROUTER_IMAGE_MODEL"].strip(),
-            messages=[{"role": "user", "content": safe_prompt}],
-            extra_body={"modalities": ["image", "text"]},
-        )
-        data = _extract_image(response.choices[0].message)
+        client = create_client("Mesh")
+        model = image_model()
+        try:
+            response = client.images.generate(
+                model=model, prompt=safe_prompt, n=1, size=IMAGE_SIZE
+            )
+        except Exception:
+            # A provider that rejects the size still renders happily without it, and
+            # a square picture is a better outcome than no picture.
+            response = client.images.generate(model=model, prompt=safe_prompt, n=1)
+        data = _extract_image(response)
     except Exception:
-        data = None
         return {
             "prompt": safe_prompt,
             "image_bytes": None,
@@ -145,5 +166,5 @@ def create_picture(spec: PersonaSpec, prompt: str) -> dict[str, object]:
         "prompt": safe_prompt,
         "image_bytes": data,
         "image_status": STATUS_RENDERED,
-        "detail": "Rendered by the configured image provider.",
+        "detail": f"Rendered by {image_model()} through Mesh API.",
     }
