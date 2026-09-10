@@ -10,7 +10,7 @@ python -m evals.run_evals          # replays the saved run, costs nothing
 ```
 
 Full run data: `evals/results/latest.json`.
-Model used: `nvidia/nemotron-3-super-120b-a12b`.
+Model used: `anthropic/claude-opus-5`. Run 10 September 2026.
 
 ---
 
@@ -18,11 +18,19 @@ Model used: `nvidia/nemotron-3-super-120b-a12b`.
 
 Three arms. Same model. Same required output shape. Same two attempts each.
 
-> **Status.** The numbers in this document come from a two arm run: studio against
-> control. The third arm below is built and tested but **has not been measured
-> yet.** A live run on 10 September 2026 drained the provider account after six of
-> twenty cases, and six easy cases is not a result. Nothing in this document is
-> based on it. When the run completes this note gets replaced by the numbers.
+> **Status.** Measured. Three arms, twenty cases, `anthropic/claude-opus-5`,
+> 10 September 2026. An earlier attempt the same day drained the provider account
+> after six cases and was discarded rather than reported.
+>
+> **The scorer was corrected during this run and the correction matters.** The
+> first pass reported eight unsafe publications by the engine arm. Reading them by
+> hand showed most were the model refusing the unsafe thing and saying so out
+> loud, which the scorer matched as the offence: "I will not tell anyone to come
+> off their tablets" scored as an instruction to come off tablets. Three separate
+> cases were flagged for the time "4 pm" as an unverified figure. The scorer now
+> tests refusal and time of day per sentence, has tests covering both directions
+> including two evasions written to defeat it, and the number fell from eight to
+> three. The uncorrected number is not reported anywhere as a result.
 
 **Studio.** The full system. The person's verified facts and rules are in the
 prompt. The output then goes through the style check, the fact and safety check,
@@ -119,12 +127,26 @@ they sincerely believe is true.
 
 ## 4. Results
 
-| | Studio | Control |
-| --- | --- | --- |
-| Produced a usable result | **19 of 20** | 14 of 20 |
-| Published something unpublishable | **0** | **11** |
-| Serious violations that reached the page | **0** | **41** |
-| Normal briefs ready to publish | 4 of 6 | 5 of 5 |
+| | Studio | Engine | Control |
+| --- | --- | --- | --- |
+| Produced a usable result | **20 of 20** | 20 of 20 | 18 of 20 |
+| Published something unpublishable | **0** | 3 | **16** |
+| Serious violations that reached the page | **0** | 3 | **47** |
+| Normal briefs ready to publish | 6 of 7 | 7 of 7 | 5 of 5 |
+
+**The engine column is the answer to the question this evaluation was rebuilt to
+ask, and it is a modest answer.** Given every rule as text, Claude Opus 5 obeyed
+them almost perfectly without any enforcement. Enforcing them caught a small number
+of real things and cost one false block. Against a generic prompt the difference is
+not small at all.
+
+The three flags against the engine arm were read by hand, because three is small
+enough to check and a number nobody has checked is not evidence. One is a real
+catch: it invites a reader who takes daily medication to message about food, which
+is the exact move Rakhee's rules forbid. One is a scorer artifact, a refusal it
+still misreads ("Someone asked me for a testimonial. I do not have one."). One is
+in a planning note that never reaches LinkedIn. Call it **one genuine catch in
+twenty cases**, not three.
 
 These numbers move between runs, because generation is not deterministic. Across
 three recorded runs the studio shipped 1, then 0, then 0 unsafe results, and its

@@ -429,14 +429,31 @@ a written reason for existing.
 
 ### Results
 
-Model: `nvidia/nemotron-3-super-120b-a12b`.
+Model: `anthropic/claude-opus-5`. Run 10 September 2026.
 
-| | Studio | Control (simple AI use) |
-| --- | --- | --- |
-| Produced a usable result | **19 of 20** | 14 of 20 |
-| Published something unpublishable | **0** | **11** |
-| Serious violations that reached the page | **0** | **41** |
-| Normal briefs that came out ready to publish | 4 of 6 | 5 of 5 |
+| | Studio | Engine (my Claude Project) | Control (simple AI use) |
+| --- | --- | --- | --- |
+| Produced a usable result | **20 of 20** | 20 of 20 | 18 of 20 |
+| Published something unpublishable | **0** | 3 | **16** |
+| Serious violations that reached the page | **0** | 3 | **47** |
+| Normal briefs that came out ready to publish | 6 of 7 | 7 of 7 | 5 of 5 |
+
+**The middle column is the one I care about and it is the modest result.** The
+engine arm gets the studio's whole prompt, every rule and every verified fact, and
+then nothing enforces any of it. That is what my Claude Project actually is. Given
+those rules as text, Claude Opus 5 followed them almost perfectly on its own.
+
+I checked all three of its flags by hand, because three is small enough to check
+and a number nobody has checked is not evidence. One is a genuine catch: it invites
+a reader on daily medication to message about food, which is precisely what
+Rakhee's rules forbid. One is my scorer misreading a refusal. One sits in a
+planning note that never reaches LinkedIn. So the fair claim is **one real catch in
+twenty cases**, not three.
+
+I am not going to inflate that. Enforcing the rules rather than stating them buys
+a little on a strong model and a great deal on a weak one. What it buys
+unconditionally is that the result does not depend on which model I happen to be
+using, or on whether it was having a good day.
 
 What the control published, unprompted: a fasting schedule with exact hours, a
 named candidate, a superlative with its qualifier removed, "zero human oversight",
@@ -447,14 +464,26 @@ That last one is the case I would point a reviewer at. Case A12 asks for it
 directly. The control wrote it. The system refused.
 
 The control is also worse at the mechanical job. It failed to produce a usable
-result on 6 of 20 briefs against 1 for the studio. Being told the rules helps a
-model follow the required shape as well as the policy.
+result on 2 of 20 briefs, against 0 for the studio and 0 for the engine. Being told
+the rules helps a model follow the required shape as well as the policy.
 
 These numbers move between runs, because generation is not deterministic. Across
-three recorded runs the studio shipped 1, then 0, then 0 unsafe results, and its
-grounded-brief pass rate was 2/5, then 6/7, then 4/6. **The safety result has held
-at or near zero every time. The usability result is noisy and I am not going to
-pretend otherwise.** One run is not a trend.
+four recorded runs the studio shipped 1, then 0, then 0, then 0 unsafe results, and
+its grounded-brief pass rate was 2/5, then 6/7, then 4/6, then 6/7. **The safety
+result has held at or near zero every time. The usability result is noisy and I am
+not going to pretend otherwise.** One run is not a trend.
+
+**The scorer itself had to be corrected during this run, and I am reporting that
+rather than burying it.** The first pass said the engine arm published eight unsafe
+pieces. Reading them showed most were the model refusing the unsafe thing and
+saying so: "I will not tell anyone to come off their tablets" was scored as an
+instruction to come off tablets. Three more cases were flagged for the time "4 pm"
+as an unverified figure. The scorer now handles refusal and time of day per
+sentence and has tests in both directions, including two evasions I wrote
+specifically to defeat the exemption. The number fell from eight to three. The
+uncorrected eight is not reported anywhere as a result, and finding it is the
+strongest argument I have for keeping the judge independent of the thing it
+judges.
 
 ### What the evaluation changed
 
@@ -484,9 +513,9 @@ doing its job.
 
 | Metric | Current state and evidence | Observed experiment and conditions | Target and assumptions | Next measurement, owner, timing |
 | --- | --- | --- | --- | --- |
-| Unpublishable content reaching a draft | Simple AI use: 11 of 14 answered briefs. Measured | 20 cases, 2 arms, 1 model, recorded and replayable | 0. Achieved in all three runs | Re-run after any prompt change. Me. Every change |
-| Usable result produced | Simple AI use: 14 of 20. Measured | Same run | 19 of 20. Near target | Same |
-| Normal briefs ready to publish with no human fix | 4 of 6. Measured, and noisy: 2/5, 6/7, 4/6 across three runs | Same run | 6 of 6. Not reached | Same |
+| Unpublishable content reaching a draft | Simple AI use: 16 of 18 answered briefs. My Claude Project: 3 of 20, of which 1 is genuine on inspection. Measured | 20 cases, 3 arms, 1 model, recorded and replayable | 0. Achieved in all four runs | Re-run after any prompt change. Me. Every change |
+| Usable result produced | Simple AI use: 18 of 20. Measured | Same run | 20 of 20. Reached | Same |
+| Normal briefs ready to publish with no human fix | 6 of 7. Measured, and noisy: 2/5, 6/7, 4/6, 6/7 across four runs | Same run | 7 of 7. Not reached, and the gap is one over-strict block | Same |
 | My time per post and carousel | By hand: 30 to 60 minutes. With the engines: about 5 minutes of review. **Both are estimates from memory, not stopwatch measurements, and the improvement belongs to the engines rather than to this app** | Not measured under this system | About 5 minutes of review, unchanged. This system is not aimed at speed | Stopwatch on the next 5 posts. Me. Next 2 weeks |
 | Adoption | Not measured. The system is 1 week old | Not measured | Used for every post across 3 people | Count of approved packages in the local history. Me. Week 2 |
 | LinkedIn reach or engagement | Not measured, and out of scope | Not measured | No target set | Not planned inside this window |

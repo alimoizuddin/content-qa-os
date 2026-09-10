@@ -10,7 +10,8 @@
 | Tool | Role |
 | --- | --- |
 | Claude (Opus), in Claude Code | Wrote the application code, the tests, and the evaluation harness. Read the three source engine documents and turned them into persona specifications. Drafted this documentation. |
-| NVIDIA NIM (`nemotron-3-super-120b-a12b`) | The model the application itself calls to generate content. Also the model both arms of the evaluation ran against. |
+| NVIDIA NIM (`nemotron-3-super-120b-a12b`) | A model the application can call. Used for the earlier two arm evaluation runs. |
+| Mesh API (`anthropic/claude-opus-5`) | The default writer in the application now, and the model all three arms of the current evaluation ran against. |
 | `[[FILL: anything else you used, such as ChatGPT, Gemini, Perplexity or n8n. Say what for.]]` | |
 
 Note the two different roles. Claude built the system. NIM is *inside* the system.

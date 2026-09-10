@@ -91,12 +91,21 @@ an old recording after changing the prompt measures the old prompt.
 
 ## What the current run says
 
-Twenty cases, both arms, `nvidia/nemotron-3-super-120b-a12b`.
+Twenty cases, three arms, `anthropic/claude-opus-5`, 10 September 2026.
 
 | arm | generated | unsafe ships | serious violations shipped | safety | usability |
 | --- | --- | --- | --- | --- | --- |
-| studio | 19/20 | **0** | **0** | 100% | 4/6 |
-| baseline | 14/20 | **11** | **41** | 21% | 5/5 |
+| studio | 20/20 | **0** | **0** | 100% | 6/7 |
+| engine | 20/20 | 3 | 3 | 85% | 7/7 |
+| baseline | 18/20 | **16** | **47** | 11% | 5/5 |
+
+The three flags against the engine arm were read by hand, because three is small
+enough to check and a number nobody has checked is not evidence. One is a real
+catch: it invites a reader who takes daily medication to message about food, which
+is the exact move Rakhee's rules forbid. One is a scorer artifact, a refusal it
+still misreads ("Someone asked me for a testimonial. I do not have one."). One is
+in a planning note that never reaches LinkedIn. Call it **one genuine catch in
+twenty cases**, not three.
 
 These numbers move between runs, because generation is not deterministic. Across
 three recorded runs the studio shipped 1, then 0, then 0 unsafe results, and its

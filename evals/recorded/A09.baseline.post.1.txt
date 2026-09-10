@@ -1,62 +1,55 @@
 {
-  "hook": "Just shipped a workflow that didn’t just work — it made my client’s team cheer.",
+  "hook": "\"Can you build this for our other three departments too?\"\n\nThat was the message I got 48 hours after shipping my client's last workflow.",
   "body_lines": [
-    "Last week, I delivered an end-to-end automation workflow for a SaaS founder drowning in manual ops.",
-    "No fluff. No over-engineering. Just clean, reliable logic that cut their weekly grunt work by 15 hours.",
-    "They didn’t just say ‘thanks’ — they sent a Loom video of their team high-fiving over Slack.",
-    "That’s the moment I live for: when automation stops being a tool and starts being a relief.",
-    "If you’re a founder tired of watching your team burn out on repetitive tasks…",
-    "Let’s talk. I build workflows that don’t just run — they resonate.",
-    "No sales pitch. Just a 15-minute call to see if we can give your team back their time.",
-    "DM me ‘Workflow’ — I’ll send you a quick audit of where your ops are leaking hours."
+    "Here's the thing about automation: nobody actually gets excited about the tech.",
+    "They get excited about what disappears.",
+    "For this client, what disappeared was a manual process their ops team had quietly accepted as \"just part of the job.\" Copy from one system. Paste into another. Check for errors. Repeat.",
+    "We shipped the workflow. It ran. It kept running.",
+    "No dashboard nobody logs into. No 40-page handover doc. No \"phase two\" that never arrives.",
+    "Just a process that used to eat hours a week, now handled quietly in the background.",
+    "The best feedback I get isn't \"this is impressive.\"",
+    "It's \"can you do this again, over here.\"",
+    "That's the whole game. Ship something small that actually works, and the trust compounds.",
+    "If you're a founder staring at a process your team has learned to tolerate — that's usually the highest-ROI thing I can automate for you."
   ],
-  "takeaway": "Great automation doesn’t just save time — it restores morale. Let’s build yours.",
-  "question": "What’s one repetitive task your team hates doing every week?",
+  "takeaway": "Good automation isn't measured in features shipped. It's measured in how fast the client asks you to do it again.",
+  "question": "What's the one manual process your team has quietly accepted as \"just part of the job\"?",
   "keywords": [
     "AI automation",
     "workflow automation",
-    "founder productivity",
-    "SaaS operations",
-    "no-code automation",
-    "process optimization",
-    "time savings",
-    "operational efficiency",
-    "client success",
-    "inbound leads"
+    "automation engineer",
+    "founders",
+    "operations efficiency",
+    "process automation",
+    "AI workflows",
+    "manual processes",
+    "business automation",
+    "n8n"
   ],
-  "keyword_rationale": "Targeted keywords blend technical specificity (AI automation, workflow automation) with founder-centric pain points (founder productivity, SaaS operations, time savings) to attract the right audience while signaling expertise and results-driven outcomes.",
+  "keyword_rationale": "Terms founders and ops leaders actually search when looking for automation help. 'AI automation', 'workflow automation', and 'process automation' anchor the service category. 'Founders' and 'operations efficiency' signal audience fit. 'n8n' captures technical buyers already scoping tooling.",
   "hashtags": [
     "#AIAutomation",
     "#WorkflowAutomation",
-    "#FounderLife",
-    "#SaaSFounder",
-    "#NoCode",
-    "#ProductivityHack",
-    "#AutomateYourBusiness",
-    "#TechLeadership",
-    "#InboundMarketing",
-    "#ClientSuccess"
+    "#Founders",
+    "#Operations",
+    "#AIAgents",
+    "#Startups"
   ],
   "hashtag_notes": [
-    "#AIAutomation and #WorkflowAutomation are high-intent tags for technical buyers.",
-    "#FounderLife and #SaaSFounder directly target the audience.",
-    "#NoCode lowers barrier to entry for non-technical founders.",
-    "#ProductivityHack and #AutomateYourBusiness appeal to outcome-driven readers.",
-    "#TechLeadership and #InboundMarketing position Ali as a strategic partner.",
-    "#ClientSuccess reinforces social proof from the story."
+    "#AIAutomation and #WorkflowAutomation target intent-driven discovery.",
+    "#Founders and #Startups reach the decision-maker audience directly.",
+    "#Operations pulls in ops leads who often champion these projects internally.",
+    "#AIAgents rides current interest without overloading the post."
   ],
-  "comment_a": "This is exactly what I needed to see. My team spends 10+ hours a week on manual data entry between CRM and invoicing. Can you show me a quick example of how you’d approach that?",
-  "comment_b": "Love the human angle — automation isn’t just about efficiency, it’s about giving people their sanity back. How do you balance customization with speed when building these workflows?",
-  "repost_caption": "Sharing this because every founder deserves a team that’s not burned out by busywork. Ali’s workflow didn’t just automate tasks — it restored joy. If you’re ready to give your team back their time, this is the sign to DM him.",
+  "comment_a": "For context on scope: this wasn't a six-month build. It was scoped, built, and live inside two weeks. Most of the automations I ship land in that window — because the goal is a working process, not a platform.",
+  "comment_b": "If you want to know whether a process is worth automating, ask your team one question: \"What part of your week do you dread?\" You'll get your roadmap in about ten minutes.",
+  "repost_caption": "Reposting this because the response surprised me. Turns out a lot of founders are sitting on the exact same problem: a process everyone hates and nobody has time to fix. If that's you, my DMs are open.",
   "reply_templates": [
-    "Thanks for sharing! I’d love to learn more about your current workflow — what’s the one task that eats up the most time?",
-    "Glad this resonated. I specialize in turning messy manual processes into silent, reliable automations. Happy to jump on a quick call to map out where you’re leaking hours.",
-    "That’s the best kind of feedback — when the team actually notices the difference. Let’s see if we can replicate that for your ops.",
-    "No jargon, no fluff — just practical automation that works. Send me your biggest pain point and I’ll tell you if I can help.",
-    "I’ve helped founders save 10–20 hrs/week with workflows like this. If you’re curious what’s possible, let’s chat — no obligation.",
-    "The best automations are the ones you forget are running… until you realize you haven’t done that task in weeks. Want to find yours?",
-    "I don’t sell tools — I sell time back. If that sounds valuable, let’s talk about where your team is stuck.",
-    "Happy to send over a 3-step audit of where your ops are leaking time — just say the word."
+    "Appreciate that. What's the process you'd want handled first? Happy to tell you straight whether it's worth automating.",
+    "Thanks — and yes, this is exactly the kind of thing I build. Drop me a DM and I'll ask you three questions to see if it's a fit.",
+    "That's the most common one I hear. There's usually a clean fix. Want me to walk you through how I'd approach it?",
+    "Glad it landed. If you're mapping out where to start, I'm happy to look at your current setup — no pitch, just a quick read on what's automatable.",
+    "Exactly right. The tolerated processes are always the expensive ones. What does yours look like?"
   ],
-  "publish_window": "Tuesday–Thursday, 8:00–10:00 AM or 1:00–3:00 PM EST (founders checking LinkedIn before/after work or during lunch)"
+  "publish_window": "Tuesday–Thursday, 8:00–9:30am in your audience's primary time zone"
 }

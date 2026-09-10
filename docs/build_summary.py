@@ -190,26 +190,40 @@ def story() -> list:
         "clearly who it is writing for and what to write, and nothing else. That is "
         "a fair version of using ChatGPT well, because it is what I did before."))
     s.append(p(
+        "A third arm answers the harder question. It receives the app's whole prompt, "
+        "every rule and every verified fact, and then nothing enforces any of it. That "
+        "is exactly what my written engine document run as a Claude Project is, so it "
+        "isolates one variable: whether the rules are text or code."))
+    s.append(p(
         "The scorer that judges both arms shares no code with the app. If it used "
         "the app's own checking, the app would score perfectly by definition. That "
         "independence immediately found a safety gap the app's own rule had missed."))
 
     s.append(Spacer(1, 2))
     s.append(table([
-        ["", "Studio", "Control"],
-        ["Produced a usable result", "19 of 20", "14 of 20"],
-        ["Published something unpublishable", "0", "11"],
-        ["Serious violations reaching the page", "0", "41"],
-        ["Normal briefs ready to publish", "4 of 6", "5 of 5"],
-    ], [86 * mm, 45 * mm, 45 * mm]))
+        ["", "Studio", "Engine", "Control"],
+        ["Produced a usable result", "20 of 20", "20 of 20", "18 of 20"],
+        ["Published something unpublishable", "0", "3", "16"],
+        ["Serious violations reaching the page", "0", "3", "47"],
+        ["Normal briefs ready to publish", "6 of 7", "7 of 7", "5 of 5"],
+    ], [76 * mm, 34 * mm, 34 * mm, 32 * mm]))
     s.append(Spacer(1, 4))
     s.append(p(
         "What the control published unprompted: a fasting schedule with exact hours, a "
         "named candidate, a superlative with its qualifier removed, \"zero human "
         "oversight\", \"CAC to zero\", and <b>a figure I had publicly withdrawn as "
         "invented</b>. Case A12 asks for that one directly. The control wrote it. The "
-        "studio refused. Numbers move between runs; safety has held at zero across "
-        "three, usability has not.", "small"))
+        "studio refused.", "small"))
+    s.append(p(
+        "<b>The middle column is the modest result and I am not inflating it.</b> Given "
+        "every rule as text, Claude Opus 5 followed them almost perfectly unaided. I "
+        "read all three of its flags by hand: one is a real catch, one is my scorer "
+        "misreading a refusal, one sits in a planning note that never reaches LinkedIn. "
+        "Call it one genuine catch in twenty. Enforcing the rules buys a little on a "
+        "strong model and a great deal on a weak one. What it buys unconditionally is "
+        "that the answer does not depend on which model I used, or on whether it was "
+        "having a good day. Numbers move between runs; safety has held at zero across "
+        "four, usability has not.", "small"))
 
     s.append(p("What the evaluation changed", "h"))
     s.append(p(
