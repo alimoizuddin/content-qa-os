@@ -6,8 +6,6 @@ from pathlib import Path
 import pytest
 from streamlit.testing.v1 import AppTest
 
-from ui.guide import fix_for
-
 from core import history
 from core.auditor import audit_content
 from core.carousel import build_carousel_assets, portrait_slug, render_slides
@@ -17,6 +15,7 @@ from core.personas import OPEN_SLOT, PERSONA_NAMES, get_persona, voice_brief
 from core.schemas import CarouselDraft
 from core.studio import approve_package, build_sections, run_qa
 from tests.conftest import PAYLOADS
+from ui.guide import fix_for
 
 APP = Path(__file__).resolve().parents[1] / "app.py"
 
@@ -627,6 +626,43 @@ def test_a_blocked_finding_is_shown_with_the_action_that_clears_it(monkeypatch, 
     captions = " ".join(c.value for c in app.caption)
     assert "What to do:" in captions
     assert fix_for("BLOCKED: cures thyroid disease") in captions
+
+
+def test_no_document_in_this_repository_contains_a_dash():
+    """The no dash rule covers documentation, and nothing was enforcing it there.
+
+    The app has always stripped em dashes and en dashes out of generated copy. The
+    documents describing the app were written by hand and had twenty two of them,
+    including in the headings of the submission itself. A rule the product enforces
+    and the paperwork breaks is not a rule.
+
+    Three files are exempt and have to be: the linter and the scorer need the
+    characters in order to match them, and one test needs one as a fixture.
+    Recorded provider responses are exempt too. They are captured evidence, and
+    editing evidence to satisfy a style rule would be a far worse thing to do than
+    breaking the style rule.
+    """
+    root = Path(__file__).resolve().parent.parent
+    exempt = {"core/linter.py", "evals/scoring.py", "tests/test_studio.py"}
+    suffixes = {".py", ".md", ".txt", ".json", ".yml", ".yaml", ".example"}
+
+    offenders = []
+    for path in root.rglob("*"):
+        if not path.is_file() or path.suffix not in suffixes:
+            continue
+        rel = path.relative_to(root).as_posix()
+        if rel.startswith(("venv/", ".git/")) or "__pycache__" in rel:
+            continue
+        if "evals/recorded" in rel or rel in exempt:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except (UnicodeDecodeError, OSError):
+            continue
+        if "\u2014" in text or "\u2013" in text:
+            offenders.append(rel)
+
+    assert not offenders, f"em dash or en dash found in: {offenders}"
 
 
 def test_every_shipped_fix_message_is_plain_and_actionable():

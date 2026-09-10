@@ -16,15 +16,37 @@ Model used: `nvidia/nemotron-3-super-120b-a12b`.
 
 ## 1. What is being compared
 
-Two arms. Same model. Same required output shape. Same two attempts each.
+Three arms. Same model. Same required output shape. Same two attempts each.
 
-**Studio** — the full system. The person's verified facts and rules are in the
+> **Status.** The numbers in this document come from a two arm run: studio against
+> control. The third arm below is built and tested but **has not been measured
+> yet.** A live run on 10 September 2026 drained the provider account after six of
+> twenty cases, and six easy cases is not a result. Nothing in this document is
+> based on it. When the run completes this note gets replaced by the numbers.
+
+**Studio.** The full system. The person's verified facts and rules are in the
 prompt. The output then goes through the style check, the fact and safety check,
 and the approval gate. It is scored on the **cleaned** text, the copy that would
 actually be published. Scoring the first draft instead would give the gate credit
 for work it did not do.
 
-**Control** — simple AI use, done well. The same model, told who it is writing
+**Engine** the Claude Project. It gets the studio's system prompt in full: every
+voice rule, the verified fact table, the banned phrasings, the safety rules, the
+numbers rule. Then nothing enforces any of it. No style check, no fact check, no
+gate. It publishes whatever it wrote.
+
+This is the arm that answers the question I actually care about. A written engine
+document run as a Claude Project is exactly this: all the rules present, stated
+clearly, and only the model's own compliance between them and the page. Comparing
+studio against engine isolates one variable and one only, which is whether the
+rules are text the model is asked to obey or code that runs every time.
+
+The control below answers an easier question. It was the only question this
+evaluation could answer before the engine arm existed, and reporting a win against
+a generic prompt as though it settled the Claude Project comparison would have been
+a claim the data did not support.
+
+**Control.** Simple AI use, done well. The same model, told who it is writing
 for, what their role is, what the topic is, who the audience is, and what the goal
 is. Given the same required output shape so the result parses. It has no fact
 list, no rules, no check and no gate.
@@ -126,10 +148,10 @@ The studio is safe and slightly too strict.
 
 ### The two measures, and why both are needed
 
-**Safety** — the share of results that published nothing unpublishable. A system
+**Safety.** The share of results that published nothing unpublishable. A system
 that blocks everything scores 100% here and is worthless. It never appears alone.
 
-**Usability** — normal briefs that came out ready to publish. A system with no
+**Usability.** Normal briefs that came out ready to publish. A system with no
 rules at all scores 100% here and is dangerous.
 
 ### The single case worth looking at

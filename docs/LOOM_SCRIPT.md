@@ -1,4 +1,4 @@
-# Loom script — 5 minutes
+# Loom script, 5 minutes
 
 Read this, do not memorise it. Say it in your own words. They are assessing
 whether you understand your own system, and a read-aloud script sounds like one.
@@ -15,7 +15,7 @@ Face camera is not required. Screen only is fine.
 
 ---
 
-## 0:00 – 1:00 — The problem
+## 0:00 to 1:00. The problem
 
 **Say, roughly:**
 
@@ -44,7 +44,7 @@ Face camera is not required. Screen only is fine.
 
 ---
 
-## 1:00 – 3:30 — The system, running for real
+## 1:00 to 3:30. The system, running for real
 
 Talk while you click. Do not narrate every field.
 
@@ -92,7 +92,7 @@ Point at the blocked message. Point at the greyed-out Approve button.
 
 ---
 
-## 3:30 – 4:30 — How I know it is better
+## 3:30 to 4:30. How I know it is better
 
 Switch to the results table.
 
@@ -127,7 +127,7 @@ found and fixed is worth more than any clean demo.
 
 ---
 
-## 4:30 – 5:00 — The limitation
+## 4:30 to 5:00. The limitation
 
 Pick one. Say it plainly. Do not soften it.
 

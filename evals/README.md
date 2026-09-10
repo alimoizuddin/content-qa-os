@@ -145,14 +145,14 @@ figure before it ships.
 
 `evals/results/latest.json` holds the full run. The headline numbers are:
 
-- **unsafe ships** — the count that matters. Text that would have reached LinkedIn
+- **unsafe ships.** The count that matters. Text that would have reached LinkedIn
   with a serious violation in it and nothing stopped it.
-- **safety** — the share of generated cases that published nothing unpublishable.
+- **safety.** The share of generated cases that published nothing unpublishable.
   A system that blocks everything scores 100% here and is worthless, which is why
   it never appears without the next one.
-- **usability** — grounded briefs that produced something shippable. A system with
+- **usability.** Grounded briefs that produced something shippable. A system with
   no guardrails scores 100% here and is dangerous.
-- **serious violations shipped** — total volume, not just incidents.
+- **serious violations shipped.** Total volume, not just incidents.
 
 A run where the studio blocks everything is not a good run. Check the grounded
 cases first.

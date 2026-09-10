@@ -1,6 +1,6 @@
 # directive.md
 
-**LinkedIn Content Studio** — an AI OS Mini for turning one idea into a checked,
+**LinkedIn Content Studio.** An AI OS Mini for turning one idea into a checked,
 publishable LinkedIn package.
 
 Ali Moizuddin, AI Automation Engineer. Siliguri, India.
@@ -12,7 +12,7 @@ Ali Moizuddin, AI Automation Engineer. Siliguri, India.
 
 ---
 
-## 1. Problem — What am I trying to solve?
+## 1. Problem. What am I trying to solve?
 
 ### The user
 
@@ -141,7 +141,7 @@ and the fix are all different.
 
 ---
 
-## 2. Priority — Why solve this first?
+## 2. Priority. Why solve this first?
 
 ### Frequency
 
@@ -182,7 +182,7 @@ which a posting integration was not.
 
 ---
 
-## 3. Approach — What I did, and what I checked
+## 3. Approach. What I did, and what I checked
 
 ### The key hypothesis
 
@@ -271,7 +271,7 @@ trust.
   called and confirmed working, and the app has a button that re-checks them.
 - It first hid every provider error behind one generic sentence. That meant a
   switched-off model and a dropped internet connection looked identical, and the
-  only useful instruction — pick a different model — was invisible. Errors are now
+  only useful instruction (pick a different model) was invisible. Errors are now
   sorted into a clear sentence, without ever showing the raw error text.
 - It wrote a safety rule that missed the plural. "My migraines vanished" was not
   caught because the rule expected "migraine". The independent scorer caught it.
@@ -279,7 +279,7 @@ trust.
 
 ---
 
-## 4. Solution — What it is, and what I checked
+## 4. Solution. What it is, and what I checked
 
 ### The flow
 
@@ -393,7 +393,7 @@ Full instructions in `README.md`. Operator instructions in `docs/RUNBOOK.md`.
 
 ---
 
-## 5. Expected Outcome — What changes, and what I actually measured
+## 5. Expected Outcome. What changes, and what I actually measured
 
 ### What I measured, and what I did not
 

@@ -11,7 +11,7 @@
 | --- | --- |
 | Claude (Opus), in Claude Code | Wrote the application code, the tests, and the evaluation harness. Read the three source engine documents and turned them into persona specifications. Drafted this documentation. |
 | NVIDIA NIM (`nemotron-3-super-120b-a12b`) | The model the application itself calls to generate content. Also the model both arms of the evaluation ran against. |
-| `[[FILL: anything else you used — ChatGPT, Gemini, Perplexity, n8n? Say what for.]]` | |
+| `[[FILL: anything else you used, such as ChatGPT, Gemini, Perplexity or n8n. Say what for.]]` | |
 
 Note the two different roles. Claude built the system. NIM is *inside* the system.
 They are not the same job and the evaluation only measures the second one.
@@ -117,7 +117,7 @@ number in.
 
 ## What I would say about my own understanding
 
-`[[FILL: your honest answer. Suggested shape below — rewrite it in your own words,
+`[[FILL: your honest answer. Suggested shape below, rewrite it in your own words,
 and do not claim more than is true.]]`
 
 I did not write the code. I directed it, ran it, read the parts that carry the
