@@ -8,7 +8,7 @@ Ali Moizuddin, AI Automation Engineer. Siliguri, India.
 - Repository: https://github.com/alimoizuddin/content-qa-os (private, reviewer access on request)
 - App: runs locally at `http://127.0.0.1:8501`. Setup is three commands, in the README.
 - Evaluation results: `evals/results/latest.json`, and `docs/EVALUATION.md`
-- Demo video: `[[FILL: Loom URL]]`
+- Demo video: **ALI: paste the Loom URL here after recording.**
 
 ---
 
@@ -544,7 +544,7 @@ doing its job.
 
 ## Publication consent
 
-`[[FILL: choose one and delete the other]]`
+**ALI: delete one of the two lines below. This is your decision and nobody else can make it.**
 
 I consent to publication on MUST Hunt if selected.
 
