@@ -30,7 +30,9 @@ RAKHEE = get_persona("Rakhee Singhi")
 
 
 def test_all_three_personas_are_present():
-    assert PERSONA_NAMES == ("Ali Moizuddin", "Isshita Debnath", "Rakhee Singhi")
+    # The three people this was built for must always be there. More can be added:
+    # START_HERE.md explains how, and test_handoff proves a new one works.
+    assert PERSONA_NAMES[:3] == ("Ali Moizuddin", "Isshita Debnath", "Rakhee Singhi")
 
 
 def test_ali_title_is_exactly_the_approved_one():

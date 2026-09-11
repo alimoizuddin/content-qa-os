@@ -148,3 +148,50 @@ def test_the_saved_posts_screen_says_where_things_are_kept(nvidia_only):
     captions = " ".join(c.value for c in app.caption)
     assert "Where it is kept" in captions
     assert "download" in captions.lower()
+
+
+def test_a_new_person_works_end_to_end_once_added(brief, patch_client, nvidia_only, monkeypatch):
+    """START_HERE.md tells a helper how to add a new person. This proves the claim
+    behind those steps: once a person is defined and added to the list, nothing
+    else in the app has to change. They appear in the app, writing works, the
+    checks run with their rules, and their slides render."""
+    import dataclasses
+
+    from streamlit.testing.v1 import AppTest
+
+    from core import personas
+    from core.brief import ContentBrief
+    from core.carousel import build_carousel_assets
+    from core.schemas import CarouselDraft
+    from core.studio import approve_package, build_sections, run_qa
+
+    new = dataclasses.replace(
+        personas.RAKHEE,
+        name="Sam Example",
+        title="Community Manager",
+        visual=dataclasses.replace(personas.RAKHEE.visual, accent="#2A7F62"),
+    )
+    monkeypatch.setitem(personas.PERSONAS, new.name, new)
+    monkeypatch.setattr(personas, "PERSONA_NAMES", tuple(personas.PERSONAS))
+
+    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()
+    assert "Sam Example" in app.selectbox(key="persona").options
+
+    patch_client("post")
+    their_brief = ContentBrief(
+        persona=new.name,
+        goal=brief.goal,
+        audience=brief.audience,
+        core_idea=brief.core_idea,
+        proof=brief.proof,
+        formats=("post",),
+    )
+    result = generate_output(their_brief, "post", "NVIDIA", default_model().model)
+    assert result["success"], result.get("error")
+
+    built = build_sections(new, "post", result["data"])
+    qa = run_qa(new, {s.key: s.text for s in built}, proof=their_brief.proof, planning=set())
+    assert "blocking_flags" in approve_package(qa)
+
+    assets = build_carousel_assets(new, CarouselDraft.model_validate(PAYLOADS["carousel"]))
+    assert assets["slides"] and assets["pdf"]

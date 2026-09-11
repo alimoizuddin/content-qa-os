@@ -135,8 +135,9 @@ Things this deliberately does not try to do.
 
 - Posting to LinkedIn. No API, no scheduling, no automation of the publish step.
   A human presses publish, always.
-- Adding new people. Three is the set. Adding a fourth is a code change and that
-  is the honest state of it.
+- Adding new people from inside the app. Three is the set. Adding a fourth is a
+  code change, written down step by step in `START_HERE.md`, and a test proves a new
+  person works end to end once added. A self-serve form is deliberately not built.
 - Analytics or reach measurement. I cannot measure LinkedIn reach honestly inside
   five days, so I do not claim it.
 - Generating images of people. The picture package produces art direction, and a

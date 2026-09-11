@@ -1,5 +1,8 @@
 # LinkedIn Content Studio
 
+> **New here?** Read [START_HERE.md](START_HERE.md) first. It sets everything up
+> from nothing, in plain words, and explains how to add a new person.
+
 A private, local content studio for three LinkedIn personas. It takes a grounded
 brief and produces a publishable package: the post with its hashtags, keywords and
 engagement blocks, a branded carousel rendered as real 1080x1350 slides with a
