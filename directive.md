@@ -113,12 +113,25 @@ voice rule, and a claim that cannot be published.
 So the fix is not a better prompt. It is a system that carries the person's
 verified facts and rules, and refuses to let unchecked work reach the publish step.
 
+### Goals
+
+1. **Nothing unpublishable reaches the publish step.** No invented number, no
+   medical promise, no named candidate, no client that does not exist.
+2. **Normal requests still come out ready to publish**, so the checking does not
+   make the tool useless.
+3. **Anyone can use it without help**, including someone who has never written
+   code.
+4. **Every claim about it can be checked by someone else, for free.** The
+   evaluation replays from saved responses with no key and no paid model.
+
 ### Scope
 
 **In scope.** Three people. Four output types: post package, carousel, picture
 art direction, four-week calendar. One local app. One approval gate.
 
-**Out of scope, deliberately.**
+### Non-goals
+
+Things this deliberately does not try to do.
 
 - Posting to LinkedIn. No API, no scheduling, no automation of the publish step.
   A human presses publish, always.
@@ -383,11 +396,26 @@ Put an NVIDIA key in `.env`, then:
 python -m streamlit run app.py
 ```
 
-To re-run the evaluation without spending anything:
+**No paid model is needed for any of this.** The app runs on NVIDIA NIM alone,
+with a free developer key. Mesh and Claude are optional: they only add a stronger
+writer and picture rendering. The automatic tests use no key at all. The
+evaluation replays from the saved responses with no key and no model, and gives
+the same numbers every time:
 
 ```bash
 python -m evals.run_evals
 ```
+
+To run it live on the free NVIDIA model instead of replaying, without touching the
+saved responses:
+
+```bash
+python -m evals.run_evals --live --model nvidia/nemotron-3-super-120b-a12b
+```
+
+That gives its own numbers, which will differ from the Claude run because the
+model is different. That is a measurement of a different model, not a failure to
+reproduce.
 
 Full instructions in `README.md`. Operator instructions in `docs/RUNBOOK.md`.
 
@@ -509,7 +537,10 @@ the calendar back when the app's own fact table said it was verified. Correct a
 fact, replay, and yesterday's output is correctly rejected. That is the loop
 doing its job.
 
-### Metrics table
+### Success metrics
+
+How I decide whether this worked. Each metric has its current state, how it was
+measured, and a target.
 
 | Metric | Current state and evidence | Observed experiment and conditions | Target and assumptions | Next measurement, owner, timing |
 | --- | --- | --- | --- | --- |

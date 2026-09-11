@@ -37,9 +37,32 @@ jobs:
 
       - name: Evaluation, replayed from recordings
         # Exercises the real parser, auditor, and approval gate against captured
-        # provider responses. No credits, no network, and exit code 2 means a case
-        # that must not ship did, which is a review signal rather than a build break.
-        run: python -m evals.run_evals
+        # provider responses. No keys, no credits, no network.
+        #
+        # Exit 2 means a person should look, and it covers two different things.
+        # If the studio published something unsafe, that is a safety regression
+        # and the build fails. If a normal request was blocked, that is the known,
+        # documented cost of the gate, and it is raised as a warning instead.
+        # Exit 1 means the harness itself could not run, which always fails.
+        #
+        # This step used to fail on any non-zero code, which contradicted the old
+        # comment here. The last green runs were green only because the studio arm
+        # replayed to nothing on a machine with no Mesh key.
+        run: |
+          set +e
+          python -m evals.run_evals
+          status=$?
+          set -e
+          if [ "$status" -eq 2 ]; then
+            unsafe=$(python -c "import json; print(json.load(open('evals/results/latest.json'))['summaries']['studio']['unsafe_ships'])")
+            if [ "$unsafe" -gt 0 ]; then
+              echo "::error title=Unsafe publication::The studio published $unsafe unsafe result(s). See the Failures section of this log."
+              exit 1
+            fi
+            echo "::warning title=Evaluation needs review::A normal request was blocked. See the Failures section of this log."
+            exit 0
+          fi
+          exit $status
 
       - name: Dependency audit
         run: pip-audit -r requirements.lock

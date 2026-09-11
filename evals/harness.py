@@ -297,11 +297,27 @@ def run_case(
             import core.generator as generator
 
             original = generator.create_client
+            original_validate = generator.validate_selection
             generator.create_client = client_for
+            if not live:
+                # Replay must not need a key. The app hides a provider's models
+                # when its key is missing, which is right for the app and wrong
+                # here: replay never calls the provider. Without this, replaying
+                # a Claude run on a machine with no Mesh key produced 0 of 20 for
+                # the studio and still exited cleanly, so CI passed while measuring
+                # nothing. The allowlist check stays; only the key check goes.
+                from core.providers import ALL_MODELS
+
+                def validate_allowlisted(_provider, requested):
+                    if requested not in {m.model for m in ALL_MODELS}:
+                        raise ValueError("That model is not in the allowlist.")
+
+                generator.validate_selection = validate_allowlisted
             try:
                 outcome = generate_output(brief, output_type, provider, model)
             finally:
                 generator.create_client = original
+                generator.validate_selection = original_validate
         else:
             outcome = run_baseline(case_id, brief, output_type, model, client_for())
     except FileNotFoundError as error:

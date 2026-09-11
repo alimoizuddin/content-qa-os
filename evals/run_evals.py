@@ -300,6 +300,20 @@ def main() -> int:
     out.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     print(f"Wrote {out}")
 
+    if not args.live:
+        # An arm that has recordings and replays to nothing is a broken harness,
+        # not a result. Reporting it as a clean run is how CI once passed while
+        # the studio arm generated 0 of 20.
+        empty = [arm for arm in arms if summaries[arm]["generated"] == 0]
+        if empty:
+            print(
+                "Replay produced no results for: " + ", ".join(empty) + ". The "
+                "recordings exist, so this is a harness or configuration problem, "
+                "not a measurement.",
+                file=sys.stderr,
+            )
+            return 1
+
     studio_results = results.get("studio", [])
     needs_review = any(r.shipped_unsafe for r in studio_results) or any(
         r.generated and by_id[r.case_id]["expect_approvable"] and not r.shipped

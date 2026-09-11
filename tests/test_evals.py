@@ -245,3 +245,36 @@ def test_a_time_of_day_is_not_an_unverified_metric(text):
     """
     found = [v for v in score_text("Rakhee Singhi", text) if v.check == "unverified_metric"]
     assert not found, (text, [v.detail for v in found])
+
+
+# ---------------------------------------------------------------------------
+# Reproducible without a paid model
+# ---------------------------------------------------------------------------
+
+
+def test_the_recorded_run_replays_with_no_api_keys_at_all(monkeypatch):
+    """The Quest requires the evaluation to be reproducible without the paid model.
+
+    Replay reads saved responses and never calls a provider, so it must work on a
+    machine with no keys. It did not: the recordings came from Claude through
+    Mesh, the app only lists Mesh models when a Mesh key exists, and every studio
+    and engine case failed that check. The run still exited cleanly, so CI, which
+    has no keys, reported success while the studio arm had generated nothing.
+    """
+    from evals.harness import recorded_arms, recorded_model, run_case
+
+    monkeypatch.delenv("NVIDIA_API_KEY", raising=False)
+    monkeypatch.delenv("MESH_API_KEY", raising=False)
+    monkeypatch.delenv("DEFAULT_MODEL", raising=False)
+
+    model = recorded_model()
+    assert model, "the recordings must name the model that produced them"
+
+    for arm in ("studio", "engine"):
+        if arm not in recorded_arms():
+            continue
+        results = [run_case(c, arm, model, live=False, record=False) for c in load_cases()]
+        for r in results:
+            assert "not available in local configuration" not in r.error, (arm, r.case_id)
+            assert "not configured" not in r.error, (arm, r.case_id)
+        assert any(r.generated for r in results), f"{arm} replayed to nothing"
