@@ -87,10 +87,10 @@ What it still could not do:
 
 ```mermaid
 flowchart TD
-    A[Trigger: a post is due] --> B[Brief<br/>person, goal, audience, idea, PROOF]
-    B --> C[Generate<br/>2 attempts, then it stops]
-    C --> D[Edit and preview<br/>every part editable, slides render]
-    D --> E{QA}
+    A[Trigger: a post is due] --> B[Your idea<br/>person, goal, audience, idea, PROOF]
+    B --> C[Write it<br/>2 attempts, then it stops]
+    C --> D[Check and edit<br/>every part editable, slides render]
+    D --> E{Safety check}
     E -->|style advice| F[Ignore or fix.<br/>Never blocks]
     E -->|unverified number| G[Replaced with OPEN SLOT.<br/>Blocks]
     E -->|safety breach| H[Blocked.<br/>No override in the app]

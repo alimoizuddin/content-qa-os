@@ -138,8 +138,8 @@ def story() -> list:
 
     s.append(p("The core workflow", "h"))
     s.append(p(
-        "<b>Brief &rarr; Generate &rarr; Edit and preview &rarr; QA and approve "
-        "&rarr; History.</b> Five steps, fixed order."))
+        "<b>Your idea &rarr; Write it &rarr; Check and edit &rarr; Safety check "
+        "&rarr; Saved posts.</b> Five steps, fixed order."))
     s.append(p(
         "The brief collects the person, goal, audience, core idea and <b>proof</b>. "
         "Proof is the grounding contract: any number typed there is treated as "
@@ -184,72 +184,63 @@ def story() -> list:
     # ---------------------------------------------------------------- page 2
     s.append(p("What I measured", "h"))
     s.append(p(
-        "20 written test cases, two arms, same model "
-        "(<font face='Helvetica-Oblique'>nemotron-3-super-120b</font>). "
-        "<b>Studio</b> is the full system. <b>Control</b> is the same model told "
-        "clearly who it is writing for and what to write, and nothing else. That is "
-        "a fair version of using ChatGPT well, because it is what I did before."))
-    s.append(p(
-        "A third arm answers the harder question. It receives the app's whole prompt, "
-        "every rule and every verified fact, and then nothing enforces any of it. That "
-        "is exactly what my written engine document run as a Claude Project is, so it "
-        "isolates one variable: whether the rules are text or code."))
-    s.append(p(
-        "The scorer that judges both arms shares no code with the app. If it used "
-        "the app's own checking, the app would score perfectly by definition. That "
-        "independence immediately found a safety gap the app's own rule had missed."))
+        "20 written test cases, three arms, one model "
+        "(<font face='Helvetica-Oblique'>claude-opus-5</font>). <b>Studio</b> is the "
+        "full system. <b>Engine</b> gets the same prompt, every rule and verified "
+        "fact, and nothing enforces any of it: that is my written engine run as a "
+        "Claude Project, so it isolates whether rules work better as text or as code. "
+        "<b>Control</b> is the same model asked plainly, which is how I worked before. "
+        "The scorer shares no code with the app, so the app cannot mark its own "
+        "homework."))
 
     s.append(Spacer(1, 2))
     s.append(table([
         ["", "Studio", "Engine", "Control"],
         ["Produced a usable result", "20 of 20", "20 of 20", "18 of 20"],
         ["Published something unpublishable", "0", "3", "16"],
-        ["Serious violations reaching the page", "0", "3", "47"],
+        ["Serious violations reaching the page", "0", "3", "46"],
         ["Normal briefs ready to publish", "6 of 7", "7 of 7", "5 of 5"],
     ], [76 * mm, 34 * mm, 34 * mm, 32 * mm]))
     s.append(Spacer(1, 4))
     s.append(p(
-        "What the control published unprompted: a fasting schedule with exact hours, a "
-        "named candidate, a superlative with its qualifier removed, \"zero human "
-        "oversight\", \"CAC to zero\", and <b>a figure I had publicly withdrawn as "
-        "invented</b>. Case A12 asks for that one directly. The control wrote it. The "
-        "studio refused.", "small"))
+        "What the control published, each checked by reading the sentence: a fasting "
+        "schedule with the hours laid out, a superlative with its qualifier removed, a "
+        "client I do not have, a results timeline nobody measured, and <b>a figure I "
+        "had publicly withdrawn as invented</b>. The studio refused all of them.",
+        "small"))
     s.append(p(
-        "<b>The middle column is the modest result and I am not inflating it.</b> Given "
-        "every rule as text, Claude Opus 5 followed them almost perfectly unaided. I "
-        "read all three of its flags by hand: one is a real catch, one is my scorer "
-        "misreading a refusal, one sits in a planning note that never reaches LinkedIn. "
-        "Call it one genuine catch in twenty. Enforcing the rules buys a little on a "
-        "strong model and a great deal on a weak one. What it buys unconditionally is "
-        "that the answer does not depend on which model I used, or on whether it was "
-        "having a good day. Numbers move between runs; safety has held at zero across "
-        "four, usability has not.", "small"))
+        "<b>The middle column is the modest result.</b> Given every rule as text, "
+        "Claude Opus 5 followed them almost perfectly. I read its three flags by hand: "
+        "one real catch, one scorer misreading a refusal, one in a planning note that "
+        "never reaches LinkedIn. Enforcing the rules buys a little on a strong model "
+        "and a lot on a weak one, and it does not depend on the model having a good "
+        "day. Safety has held at zero across four runs; usability has not.", "small"))
 
     s.append(p("What the evaluation changed", "h"))
     s.append(p(
         "The first run was worse: 17 of 20 produced, one unpublishable thing "
         "shipped, 2 of 5 normal briefs clean. Five fixes came out of reading the "
         "failures. The one that mattered: a post kept every medication sentence in "
-        "the first person, which the safety rule was written to permit, and still "
-        "closed by telling the reader their daily pill might be unnecessary. The "
-        "exemption is now cancelled by any sentence that speaks to the reader."))
+        "the first person, which the safety rule permits, and still told the reader "
+        "their daily pill might be unnecessary. Speaking to the reader now cancels "
+        "that exemption."))
     s.append(p(
-        "Two of the five could not have been found by the unit tests, because both "
-        "needed a real generated calendar to exist first. 136 offline tests were "
-        "passing before any of them surfaced.", "small"))
+        "It also caught my own tools being wrong. The judge scored refusals as "
+        "offences, so my Claude Project first showed eight unsafe posts instead of "
+        "three, the flattering error. Both checkers also read the time \"4 pm\" as an "
+        "invented number. All fixed, and the corrected numbers are the ones reported.",
+        "small"))
 
     s.append(p("Expected impact, and what is not measured", "h"))
     s.append(table([
         ["Metric", "Evidence", "Status"],
         ["Unpublishable content reaching a draft",
-         "Control 13 of 15. Studio 0", "<b>Measured</b>"],
-        ["Usable result produced", "Control 15 of 20. Studio 20 of 20",
-         "<b>Measured</b>"],
-        ["Normal briefs needing no human fix", "4 of 6. Noisy: 2/5, 6/7, 4/6 across runs",
-         "<b>Measured</b>"],
+         "Control 16 of 18. Engine 3 of 20, 1 real. Studio 0", "<b>Measured</b>"],
+        ["Normal briefs needing no human fix",
+         "6 of 7. Noisy: 2/5, 6/7, 4/6, 6/7 across runs", "<b>Measured</b>"],
         ["My review time per package",
          "30 to 60 min by hand, then ~5 min with the engines",
-         "<b>Estimate from memory. The saving belongs to the engines, not this app</b>"],
+         "<b>Estimate from memory. The saving belongs to the engines</b>"],
         ["Adoption", "System is one week old", "<b>Not measured</b>"],
         ["LinkedIn reach or engagement", "Out of scope",
          "<b>Not measured. Not claimed</b>"],
@@ -257,17 +248,13 @@ def story() -> list:
 
     s.append(p("Limitations", "h"))
     s.append(p(
-        "<b>Two normal briefs in six still get blocked.</b> The model adds a "
-        "number the brief did not supply, the checker correctly removes it, and a "
-        "person has to delete the sentence. The checker is right and the writing is "
-        "wrong. Reduced, not eliminated."))
-    s.append(p(
-        "<b>My time saving is not measured.</b> The before-numbers are recollection "
-        "and are labelled as estimates throughout. <b>20 cases is small</b> and is "
-        "not a statistical result. <b>The labels are my judgement</b>: \"this must "
-        "not be published\" is a human call, and the reasoning for each case is "
-        "written down so it can be argued with. <b>One model</b>: the numbers would "
-        "move on another."))
+        "<b>One normal brief in seven is still stopped.</b> The model added a safe "
+        "line telling the reader to see their doctor about medication, and Rakhee's "
+        "rule forbids speaking to the reader about their medication at all. It is "
+        "strict on purpose; loosening it is her call. <b>Time saving is not "
+        "measured</b>: the before-numbers are estimates. <b>20 cases is small</b>, "
+        "the labels are my judgement, and the judge still over-counts a few control "
+        "lines, so 46 is an upper bound."))
     s.append(p(
         "<b>A prototype existed before the Quest.</b> About 1,200 lines that "
         "generated text and audited it. The rebuild, the evaluation and the "
@@ -275,10 +262,11 @@ def story() -> list:
 
     s.append(p("Next two weeks", "h"))
     s.append(p(
-        "1. Time five real posts with a stopwatch, so the time claim becomes a "
-        "measurement. 2. Close the last blocking case. 3. Have one person who is "
-        "not me open it cold and reach a finished carousel unaided. 4. Re-run the "
-        "evaluation after each change, which the recorded run makes free."))
+        "1. Time five real posts with a stopwatch. 2. Ask Rakhee whether her "
+        "medication rule should allow a safe line sending the reader to their "
+        "doctor. 3. Have one person who is not me reach a finished carousel "
+        "unaided. 4. Re-run the evaluation after each change, which replay makes "
+        "free."))
 
     return s
 

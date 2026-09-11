@@ -126,7 +126,7 @@ Do this once, about 15 minutes before you record. Tick each one off.
 | --- | --- |
 | Press **Alt** and **Tab** to switch to **summary.pdf**. Point at the table. | I did not want to just claim this works, so I measured it. Twenty test requests. Twelve of them deliberately ask for things that must never be posted. |
 | Point at each column heading, one at a time. | Three ways of doing the same job, with the same AI. Control is just asking plainly. Engine is my old Claude Project, with all my rules written down. Studio is this app, where the rules are checked every single time. |
-| Point at the **Control** column. | Asked plainly, the AI published something unsafe 16 times, with 47 serious problems. That includes a figure I had publicly withdrawn as made up. |
+| Point at the **Control** column. | Asked plainly, the AI published something unsafe 16 times, with 46 serious problems. That includes a figure I had publicly withdrawn as made up. |
 | Point at the **Studio** column. | This app published zero. |
 | Point at the **Engine** column. | Now the honest part. My Claude Project did nearly as well. The checker flagged three posts, and I read all three myself. Only one was a real problem. So with a strong AI, the app beats my rulebook by a little. Compared with asking plainly, it is a huge difference. |
 | Keep pointing at the table. | One more thing. The first time I scored this, it said my Claude Project made eight mistakes. Most of those were the AI correctly refusing, and my checker reading the refusal as the mistake. I fixed the checker and reported the smaller number, even though the bigger one made my app look better. |
@@ -139,9 +139,9 @@ Do this once, about 15 minutes before you record. Tick each one off.
 
 | On your screen (do this) | Say this |
 | --- | --- |
-| Press **Alt** and **Tab** to go back to the app. | What is not finished. One normal request in seven still gets stopped when it should not. The AI leaves a gap in a comment, the app correctly refuses it, and I have to fill that gap by hand. |
+| Press **Alt** and **Tab** to go back to the app. | What is not finished. One normal request in seven still gets stopped. The AI added a kind line telling the reader to talk to their doctor about their medication. That line is safe, but Rakhee's rule says never speak to the reader about their medication at all, so the app stops it. Loosening that is Rakhee's decision, not a click. |
 | Keep still. | And I have not timed myself with a stopwatch. My before and after times come from memory, and I say so everywhere. |
-| Keep still. | In the next two weeks I will time five real posts properly, fix that last case, and have someone who is not me use the app without any help. |
+| Keep still. | In the next two weeks I will time five real posts properly, ask Rakhee whether that one kind of sentence should be allowed, and have someone who is not me use the app without any help. |
 | Stop the recording. | Thank you. |
 
 ## How to practise
@@ -184,11 +184,11 @@ Three short rounds, then record. Do not practise more than this. It starts to so
 | **3** | People you write for. 3 posts a week for you, 4 a week for each of the others. |
 | **30 to 60 minutes** | One post by hand. With your Claude Project, about 5 minutes of review. Both are from memory, not a stopwatch. |
 | **20** | Test requests. 12 of them ask for things that must never be posted. |
-| **16 and 47** | Asking plainly: 16 unsafe posts, 47 serious problems. |
+| **16 and 46** | Asking plainly: 16 unsafe posts, 46 serious problems. |
 | **3, and 1 real** | Your Claude Project: 3 posts flagged. You checked them yourself and only 1 was a real problem. |
 | **0** | This app: nothing unsafe published. |
-| **1 in 7** | Normal requests that still get stopped when they should not. The honest cost. |
-| **166** | Automatic tests that check the app every time it changes. All of them pass. |
+| **1 in 7** | Normal requests that still get stopped, because Rakhee's medication rule is strict on purpose. The honest cost. |
+| **178** | Automatic tests that check the app every time it changes. All of them pass. |
 
 ## After you record
 

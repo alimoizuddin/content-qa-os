@@ -75,7 +75,7 @@ has asked for this directly.
 ## After you change anything
 
 ```bash
-python -m pytest -q          # 146 tests, all must pass
+python -m pytest -q          # 178 tests, all must pass
 python -m evals.run_evals    # replays the saved run, costs nothing
 ```
 

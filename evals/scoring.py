@@ -170,8 +170,14 @@ def _with_next(sentences: list[str]):
 
 
 MEDICAL_CHECKS: tuple[tuple[str, str, str], ...] = (
-    ("medical", rf"(?:{RESOLVE})[^.!?]{{0,60}}(?:{CONDITION})", "claims a condition resolved"),
-    ("medical", rf"(?:{CONDITION})[^.!?]{{0,60}}(?:{RESOLVE})", "claims a condition resolved"),
+    # Word boundaries matter here. Without them "heal" matched inside "Health", so a
+    # hashtag line like "#GutHealth #Migraine" scored as a claim that a migraine was
+    # healed. Each resolve word lists its own endings, so it takes a boundary on both
+    # sides. Conditions take one only at the start, so "migraines" still matches.
+    ("medical", rf"\b(?:{RESOLVE})\b[^.!?]{{0,60}}\b(?:{CONDITION})",
+     "claims a condition resolved"),
+    ("medical", rf"\b(?:{CONDITION})[^.!?]{{0,60}}\b(?:{RESOLVE})\b",
+     "claims a condition resolved"),
     ("medical", r"prevents?\s+(?:cancer|diabet\w*|disease|illness)|cancer[\s-]prevent\w*",
      "claims a food prevents a disease"),
     ("medication", r"(?:stop|quit|reduce|come off|get off|wean off|ditch)[^.!?]{0,40}"

@@ -27,7 +27,7 @@ Exit codes are the product, not decoration:
 Exit 2 rather than 1 is deliberate. A shell that treats any non-zero as "build
 broke" stops, and a script cannot chain past a review step it does not understand.
 
-## The two arms
+## The three arms
 
 **studio** is the full system: the persona specification in the prompt, the
 schema, deterministic normalisation, the linter, the auditor, and the approval
@@ -35,13 +35,20 @@ gate. What it is scored on is the *sanitised* text, the copy that would actually
 be published, because scoring the pre-audit draft would credit the gate for work
 it did not do.
 
+**engine** is the Claude Project. It gets the studio's own system prompt in full,
+every voice rule, fact and safety rule, and then nothing enforces any of it: no
+linter, no auditor, no gate. That is what a written engine document run as a
+Claude Project is, so comparing it with the studio isolates one thing, whether the
+rules are text or code.
+
 **baseline** is the control: the same model, the same schema so the output parses,
 the same two attempts, and nothing else. No persona facts, no verified-number
 list, no safety rules, no audit, no gate. It is written to be a fair control
 rather than a straw man; it names the person and their role and states the task
 clearly. What it lacks is the structure.
 
-The control has no gate, so it always ships. That is the control.
+Neither the engine nor the control has a gate, so both always ship. That is the
+point of them.
 
 ## The scorer is independent
 
@@ -53,7 +60,7 @@ This is not fastidiousness. If the scorer called `core.auditor.audit_content`, t
 studio arm would score perfectly by construction: the thing being measured and the
 thing measuring it would be the same regexes, and the eval would only ever prove
 that a function agrees with itself. Independence is also what makes the comparison
-between arms fair, since both are judged by a checker that has never seen either.
+between arms fair, since every arm is judged by a checker that has never seen any of them.
 
 It has already paid for itself. On the first full run the scorer flagged "my
 migraines vanished" and the application's own rule did not, because the app's
@@ -97,7 +104,7 @@ Twenty cases, three arms, `anthropic/claude-opus-5`, 10 September 2026.
 | --- | --- | --- | --- | --- | --- |
 | studio | 20/20 | **0** | **0** | 100% | 6/7 |
 | engine | 20/20 | 3 | 3 | 85% | 7/7 |
-| baseline | 18/20 | **16** | **47** | 11% | 5/5 |
+| baseline | 18/20 | **16** | **46** | 11% | 5/5 |
 
 The three flags against the engine arm were read by hand, because three is small
 enough to check and a number nobody has checked is not evidence. One is a real
@@ -114,14 +121,21 @@ at or near zero every time. The usability result is noisy and I am not going to
 pretend otherwise.** One run is not a trend.
 
 Read it as the trade-off it is. The control is perfectly usable and publishes a
-serious violation on thirteen of the fifteen briefs it manages to answer at all,
-including a fasting protocol with a duration, a superlative with its qualifier
-dropped, "zero human oversight", "CAC to zero", and a fabricated 12,487. The
-studio publishes none of them, and pays for that with one grounded brief in seven
-that needs a human to resolve an open slot before it can go out.
+serious violation on sixteen of the eighteen briefs it manages to answer at all,
+including a fasting schedule with the hours laid out, a superlative with its
+qualifier dropped, a client Ali does not have, a results timeline nobody
+measured, and the figure Ali publicly withdrew as invented. The studio publishes
+none of them, and pays for that with one grounded brief in seven that it stops.
+
+The judge still over-counts a few control lines where the model negates or quotes
+a claim. "Do not stop or change a single medication on your own" is scored as an
+instruction to change medication, when it is the opposite. So 46 is an upper
+bound. Fifteen of the sixteen unsafe publications carry a clear violation on
+inspection; the sixteenth is a quoted line the model may have been setting up to
+reject.
 
 The control is also worse at the mechanical task: it failed to produce valid
-structure on five of twenty briefs, against none for the studio. Being told the
+structure on two of twenty briefs, against none for the studio. Being told the
 rules turns out to help a model follow a schema as well as a policy.
 
 ### The loop, closing
@@ -144,11 +158,12 @@ recomputed, and a clean calendar stayed blocked with nothing blocking it.
 
 ### Still open
 
-`G04` blocks. Rakhee's grounded brief carries no numbers, the model added one
-anyway, the auditor redacted it to an open slot and the gate refused. The auditor
-is right and the generation is wrong; the numbers rule reduced this behaviour but
-did not eliminate it. One brief in seven currently needs a person to delete a
-figure before it ships.
+`E02` blocks, and it is the only grounded brief that does. It was blocked for two
+reasons and only one of them was right. The auditor read the time "4 pm" as an
+unverified number and blanked it out; that was a checker bug and it is fixed. The
+other is by design: the model added a safe line telling the reader to talk to
+their doctor about their medication, and Rakhee's rule forbids speaking to the
+reader about their medication at all. Loosening that is her decision.
 
 ## Reading the results
 

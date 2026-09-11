@@ -297,26 +297,26 @@ trust.
 ### The flow
 
 ```
-Brief  ->  Generate  ->  Edit and preview  ->  QA and approve  ->  History
+Your idea  ->  Write it  ->  Check and edit  ->  Safety check  ->  Saved posts
 ```
 
 Five steps, in a fixed order. You cannot approve something you have not generated,
 and the check always runs on whatever is in the boxes at that moment, not on what
 the model first produced.
 
-**1. Brief.** Pick the person. Fill in the goal, the audience, the core idea, and
+**1. Your idea.** Pick the person. Fill in the goal, the audience, the core idea, and
 the proof. Proof is the field that matters: any number you type there is treated
 as verified for that piece. Leave it empty and the system writes `[OPEN SLOT]`
 wherever evidence belongs, and refuses to approve until you deal with it.
 
-**2. Generate.** One call per output type. Two tries each: the request, then one
+**2. Write it.** One call per output type. Two tries each: the request, then one
 corrective retry if the answer did not fit the required shape. No third try.
 
-**3. Edit and preview.** Every part of the package is its own editable box. The
+**3. Check and edit.** Every part of the package is its own editable box. The
 carousel renders into real 1080x1350 slides you can look at, with a PDF and a ZIP
 to download.
 
-**4. QA and approve.** Two layers.
+**4. Safety check.** Two layers.
    - *Lint* is advice. Cliches, em dashes, engagement bait, too many hashtags. It
      never blocks. Style is a judgement and the writer gets the last word.
    - *Audit* blocks. Unverified numbers, inflated versions of true claims, and the
@@ -324,7 +324,7 @@ to download.
      `[OPEN SLOT]`, not just flagged, because a flagged number in an editable box
      gets pasted by accident.
 
-**5. History.** Only approved, cleaned text is saved, in a local database file.
+**5. Saved posts.** Only approved, cleaned text is saved, in a local database file.
 Briefs, raw model output, error messages and API keys are never written to it.
 
 ### Human decision points
@@ -377,9 +377,11 @@ the repository. `.env.example` shows the shape with no real values. I checked:
 - No posting to LinkedIn.
 - No fourth persona without a code change.
 - No reach or engagement measurement.
-- One grounded brief in seven still needs a person to delete a number the model
-  added on its own. The check is right; the writing is wrong. This is measured,
-  not estimated. See section 5.
+- One grounded brief in seven is still stopped. The model added a safe line
+  telling the reader to talk to their doctor about their medication, and Rakhee's
+  rule forbids speaking to the reader about their medication at all. The rule is
+  strict on purpose, and loosening it is her decision. This is measured, not
+  estimated. See section 5.
 
 ### How to reproduce it
 
@@ -447,7 +449,7 @@ two attempts.
   write, and nothing else. No fact list, no rules, no check, no gate. This is a
   fair version of "just use ChatGPT well", not a weak one.
 
-The scorer that judges both arms shares no code with the app. If it used the app's
+The scorer that judges all three arms shares no code with the app. If it used the app's
 own checking code, the app would score perfectly by definition and the number
 would mean nothing.
 
@@ -463,7 +465,7 @@ Model: `anthropic/claude-opus-5`. Run 10 September 2026.
 | --- | --- | --- | --- |
 | Produced a usable result | **20 of 20** | 20 of 20 | 18 of 20 |
 | Published something unpublishable | **0** | 3 | **16** |
-| Serious violations that reached the page | **0** | 3 | **47** |
+| Serious violations that reached the page | **0** | 3 | **46** |
 | Normal briefs that came out ready to publish | 6 of 7 | 7 of 7 | 5 of 5 |
 
 **The middle column is the one I care about and it is the modest result.** The
@@ -483,10 +485,17 @@ a little on a strong model and a great deal on a weak one. What it buys
 unconditionally is that the result does not depend on which model I happen to be
 using, or on whether it was having a good day.
 
-What the control published, unprompted: a fasting schedule with exact hours, a
-named candidate, a superlative with its qualifier removed, "zero human oversight",
-"CAC to zero", "my clients" when I have none, and **the figure I publicly withdrew
-as invented**.
+What the control published, unprompted, each one checked by reading the sentence
+it came from: a fasting schedule with the hours laid out, a superlative with its
+qualifier removed, "my client" when I have none, a results timeline nobody
+measured, and **the figure I publicly withdrew as invented**.
+
+The judge still over-counts a few control lines where the model negates or quotes
+a claim. "Do not stop or change a single medication on your own" is scored as an
+instruction to change medication, when it is the opposite. So 46 is an upper
+bound. Fifteen of the sixteen unsafe publications carry a clear violation on
+inspection; the sixteenth is a quoted line the model may have been setting up to
+reject.
 
 That last one is the case I would point a reviewer at. Case A12 asks for it
 directly. The control wrote it. The system refused.
@@ -564,8 +573,9 @@ measured, and a target.
 
 1. Time myself properly on five real posts, so the time claim becomes a measurement
    rather than a memory.
-2. Close the last blocking case: the model still occasionally adds a number the
-   brief did not give it.
+2. Ask Rakhee whether the one kind of sentence her medication rule still stops, a
+   safe line telling the reader to talk to their doctor, should be allowed. That is
+   a change to her rules, made with her, not a setting.
 3. Have one person who is not me open it cold and get to a finished carousel
    without asking me anything.
 4. Re-run the evaluation after each change, because the recorded run makes that

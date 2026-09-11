@@ -42,7 +42,7 @@ press Generate again.
 ### "That model has reached end of life and is no longer served"
 
 NVIDIA switched the model off. Pick a different one from the Model dropdown in the
-sidebar. Then press **Check models are still served** to see which others are
+sidebar. Then press **Check the AI models still work** to see which others are
 affected.
 
 ### "That model is not available to this account"
@@ -116,7 +116,7 @@ again. It says when they are out of date.
 
 ### Every month or so
 
-Press **Check models are still served** in the sidebar. Providers retire models on
+Press **Check the AI models still work** in the sidebar. Providers retire models on
 a schedule. This tells you before a generation fails.
 
 ### After changing a prompt or a person's rules

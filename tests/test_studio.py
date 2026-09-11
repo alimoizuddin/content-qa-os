@@ -605,6 +605,41 @@ def test_a_hand_typed_medical_claim_blocks_approval_in_the_ui(monkeypatch, nvidi
     assert any("cure" in f.lower() for f in app.session_state["qa"]["audit_flags"])
 
 
+@pytest.mark.parametrize(
+    "text",
+    [
+        "The 4 pm murukku tin was the honest detail I almost cut.",
+        "For me it was the 4pm gap.",
+        "The 4 p.m. biscuit did not move at all.",
+        "At 4 o'clock every day the craving came.",
+        "Publish on Tuesday at 8:30 AM.",
+    ],
+)
+def test_a_time_of_day_is_not_redacted_as_an_unverified_number(text):
+    """Found by the evaluation: the one normal brief in seven the gate still blocked.
+
+    Case E02 is Rakhee writing about a craving that arrives at 4 pm. The auditor
+    only recognised a time when it had minutes, so it redacted the 4, left open
+    slots in a comment and a reply template, and blocked a post with nothing wrong
+    in it. The limitation had been written up as the model adding a figure. It was
+    the checker misreading a clock.
+    """
+    result = audit_content(RAKHEE, text)
+    assert result["audited_text"] == text
+    assert not [f for f in result["flags"] if f.startswith("UNVERIFIED")]
+
+
+def test_a_time_does_not_license_the_same_digit_elsewhere():
+    """The exemption is positional. A time must not vouch for a claim beside it.
+
+    The old version collected the digits inside any time and trusted them
+    everywhere in the text, so "4 pm" would have waved through a made-up "4 kg".
+    """
+    result = audit_content(RAKHEE, "At 4 pm I realised I had lost 4 kg.")
+    assert result["audited_text"] == f"At 4 pm I realised I had lost {OPEN_SLOT} kg."
+    assert any(f.startswith("UNVERIFIED") for f in result["flags"])
+
+
 def test_a_blocked_finding_is_shown_with_the_action_that_clears_it(monkeypatch, nvidia_only):
     """A finding states the problem. A stopped person needs the next move.
 

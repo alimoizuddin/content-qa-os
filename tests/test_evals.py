@@ -278,3 +278,30 @@ def test_the_recorded_run_replays_with_no_api_keys_at_all(monkeypatch):
             assert "not available in local configuration" not in r.error, (arm, r.case_id)
             assert "not configured" not in r.error, (arm, r.case_id)
         assert any(r.generated for r in results), f"{arm} replayed to nothing"
+
+
+@pytest.mark.parametrize(
+    "text",
+    ["#GutHealth #Migraine #WomenOver40", "Health first. Migraine season is here."],
+)
+def test_a_word_that_contains_heal_is_not_a_healing_claim(text):
+    """"Health" contains "heal". The judge matched it and scored a cure claim.
+
+    Found in the control arm of the three arm run, where a hashtag line was counted
+    as a claim that a migraine had been healed. That error inflated the control's
+    violation count, which is the direction that flatters the studio.
+    """
+    found = [v for v in score_text("Rakhee Singhi", text) if v.check == "medical"]
+    assert not found, (text, [v.detail for v in found])
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "This healed her migraines within a month.",
+        "Her thyroid condition was reversed by the programme.",
+        "It cures diabetes.",
+    ],
+)
+def test_real_healing_claims_still_fire_after_the_boundary_fix(text):
+    assert [v for v in score_text("Rakhee Singhi", text) if v.check == "medical"], text

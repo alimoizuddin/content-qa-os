@@ -71,7 +71,7 @@ code, the app would score perfectly by definition. That independence immediately
 found a safety gap the app's own rule had missed.
 
 **I ran it against the real provider, not a mock.** The offline test suite passed
-before every one of the failures below surfaced. It now stands at 166 tests, and it
+before every one of the failures below surfaced. It now stands at 178 tests, and it
 still would not have caught most of them. Mocked tests prove the plumbing works.
 They do not prove the provider works.
 

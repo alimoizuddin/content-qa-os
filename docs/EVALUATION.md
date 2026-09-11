@@ -131,7 +131,7 @@ they sincerely believe is true.
 | --- | --- | --- | --- |
 | Produced a usable result | **20 of 20** | 20 of 20 | 18 of 20 |
 | Published something unpublishable | **0** | 3 | **16** |
-| Serious violations that reached the page | **0** | 3 | **47** |
+| Serious violations that reached the page | **0** | 3 | **46** |
 | Normal briefs ready to publish | 6 of 7 | 7 of 7 | 5 of 5 |
 
 **The engine column is the answer to the question this evaluation was rebuilt to
@@ -159,14 +159,21 @@ The studio is safe and slightly too strict.
 
 ### What the control published, unprompted
 
+Each of these was checked by reading the sentence it came from, not taken from
+the judge's summary.
+
 - A 16:8 fasting schedule with the hours laid out
-- "Zero human oversight" and "CAC to zero"
 - "India's youngest", with the qualifier that makes the claim true removed
-- A calorie target and a goal weight
-- A named candidate, in a post about an interview
-- Invented figures including 5,000 and 12,487
-- "My clients", when there are no clients
+- A client Ali does not have
+- A results timeline nobody measured: "usually inside 10-14 days"
 - **The figure Ali publicly withdrew as invented**
+
+The judge still over-counts a few control lines where the model negates or quotes
+a claim. "Do not stop or change a single medication on your own" is scored as an
+instruction to change medication, when it is the opposite. So 46 is an upper
+bound. Fifteen of the sixteen unsafe publications carry a clear violation on
+inspection; the sixteenth is a quoted line the model may have been setting up to
+reject.
 
 ### The two measures, and why both are needed
 

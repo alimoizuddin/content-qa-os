@@ -31,8 +31,14 @@ NUMBER_PATTERN = re.compile(
 _STRUCTURAL = re.compile(
     r"\b(?:week|slide|day|step|part|phase|point|no\.?|number)\s*#?\s*(\d+)\b", re.IGNORECASE
 )
-# Clock times inside a publishing window are not metrics.
-_CLOCK = re.compile(r"\b\d{1,2}[:.]\d{2}\s*(?:AM|PM)?\b", re.IGNORECASE)
+# Clock times are not metrics: "8:30 AM", "4 pm", "4 p.m.", "4 o'clock". The hour is
+# limited to 1 to 12 in the forms without minutes, so "42 am" is not read as a time.
+_CLOCK = re.compile(
+    r"\b\d{1,2}[:.]\d{2}\s*(?:AM|PM)?\b"
+    r"|\b(?:1[0-2]|0?[1-9])\s*(?:am|pm|a\.m\.|p\.m\.)(?!\w)"
+    r"|\b(?:1[0-2]|0?[1-9])\s*o'?\s?clock\b",
+    re.IGNORECASE,
+)
 # A sentence that addresses the reader is instruction, whatever else is in it.
 # The evaluation harness found a post whose every medication sentence carried a
 # first-person marker, and whose takeaway still told the reader their daily pill
@@ -52,10 +58,7 @@ _SENTENCE = re.compile(
 
 
 def _structural_tokens(text: str) -> set[str]:
-    tokens = set(_STRUCTURAL.findall(text))
-    for match in _CLOCK.finditer(text):
-        tokens.update(NUMBER_PATTERN.findall(match.group(0)))
-    return tokens
+    return set(_STRUCTURAL.findall(text))
 
 
 def _normalise(token: str) -> str:
@@ -113,24 +116,40 @@ def audit_content(
             )
 
     # 3. Unverified numbers.
+    #
+    # Times of day are skipped where they stand, not by value. The old version
+    # collected the digits inside any time and then trusted those digits everywhere
+    # in the text, so a time could vouch for a made-up figure in the next sentence.
+    # It also only recognised a time that had minutes, so "4 pm" was redacted as an
+    # unverified number, which left an open slot in a post with nothing wrong in it.
+    # That was the one normal brief in seven the gate still stopped.
     licensed = licensed_numbers(spec, proof)
     structural = _structural_tokens(audited)
-    seen: set[str] = set()
+    clock_spans = [m.span() for m in _CLOCK.finditer(audited)]
 
-    for token in NUMBER_PATTERN.findall(audited):
+    def inside_a_time(position: int) -> bool:
+        return any(start <= position < end for start, end in clock_spans)
+
+    redact: list[tuple[int, int]] = []
+    flagged: set[str] = set()
+    for match in NUMBER_PATTERN.finditer(audited):
+        if inside_a_time(match.start()):
+            continue
+        token = match.group(0)
         bare = _normalise(token)
-        if not bare or bare in seen:
+        if not bare or bare in structural or bare in licensed:
             continue
-        seen.add(bare)
-        if bare in structural or bare in licensed:
-            continue
-        flags.append(
-            f"UNVERIFIED: {token.strip()!r} is not in the verified fact list and was not "
-            f"supplied as proof. Replaced with {OPEN_SLOT}."
-        )
-        audited = re.sub(
-            rf"(?<![\w.]){re.escape(token.strip())}(?![\w.])", OPEN_SLOT, audited
-        )
+        redact.append(match.span())
+        if bare not in flagged:
+            flagged.add(bare)
+            flags.append(
+                f"UNVERIFIED: {token.strip()!r} is not in the verified fact list and was not "
+                f"supplied as proof. Replaced with {OPEN_SLOT}."
+            )
+
+    # Replaced from the end so earlier positions stay valid.
+    for start, end in reversed(redact):
+        audited = audited[:start] + OPEN_SLOT + audited[end:]
 
     return {
         "original_text": text,

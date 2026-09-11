@@ -83,12 +83,12 @@ blocker and discovering a second is worse than seeing both.
 Distilling three canonical engines into one specification surfaced things worth
 recording.
 
-- Two claims commonly attached to this work are not in the corpus. The Be10x first
-  prize is verified; its attribution to a named project is not. A transcription
-  hours and accuracy metric does not appear in any of the ten documents for that
-  persona. Both are in `pending_verification`, which means the studio refuses to
-  write them and says why. Writing them anyway would have made the honesty layer
-  decorative.
+- Two claims commonly attached to this work were not in the engine documents: the
+  attribution of the Be10x first prize to a named project, and a transcription
+  hours and accuracy metric. They went into `pending_verification` first, which
+  means the studio refuses to write them and says why. Ali's newer master profile
+  then confirmed both, so they are verified facts now. The correction is
+  described further down.
 - "Systems Architect" and a credits metric appear nowhere in the corpus. In the old
   code they survived only as a negative assertion in a test. That assertion is kept,
   broadened to all three personas, and now runs against the assembled prompt rather
@@ -212,16 +212,22 @@ it happening a third time.
 
 ## What is still open
 
-- The picture package needs an OpenRouter key and an image-capable model to produce
-  a raster. NVIDIA NIM's text endpoint does not return images. Everything else,
-  including the whole carousel pipeline, runs NVIDIA-only.
+- The picture package needs a Mesh key to produce a raster, because NVIDIA NIM's
+  text endpoint does not return images. Without one it returns its art-direction
+  prompt, which is still a deliverable. Everything else, including the whole
+  carousel pipeline, runs NVIDIA-only.
 - One persona's engine prescribes six content formats and treats carousels as one of
   them rather than the default. The studio currently offers post, carousel, picture,
   and calendar for everyone. Her format-rotation weighting is encoded in the calendar
   prompt but not yet in the output selector.
-- One grounded brief in seven still blocks: the model adds a figure the brief did
-  not supply, the auditor redacts it, and a person has to delete the sentence. The
-  numbers rule reduced this and did not remove it.
+- One grounded brief in seven still blocks. It was blocked for two reasons, and
+  only one of them was right. The auditor read the time "4 pm" as an unverified
+  number and blanked it out; that was a checker bug and it is fixed. The other is
+  by design: the model added a line telling the reader to talk to their doctor
+  about their medication. The sentence is safe, but Rakhee's rule forbids speaking
+  to the reader about their medication at all, and the rule fails closed. Whether
+  to allow that one kind of sentence is her decision, made in `core/personas.py`,
+  not a setting.
 - Every platform pass in the source corpus carries a refresh date, and the oldest is
   undated. Platform behaviour is the part of these engines that expires. Treating it
   as a dated, swappable module rather than prose inside a persona spec is the obvious

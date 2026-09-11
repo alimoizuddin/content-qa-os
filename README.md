@@ -34,19 +34,19 @@ generate with.
 
 Five stages, in order, and the order is enforced.
 
-1. **Brief.** Persona, goal, audience, core idea, and proof. Proof is the field that
+1. **Your idea.** Persona, goal, audience, core idea, and proof. Proof is the field that
    matters: numbers you put there are treated as verified for that piece. Leave it
    empty and the studio writes `[OPEN SLOT]` wherever evidence belongs, and blocks
    approval until you resolve it.
-2. **Generate.** One provider call per output type, two attempts each: the request,
+2. **Write it.** One provider call per output type, two attempts each: the request,
    then one corrective retry. Provider failures are classified into an actionable
    sentence; the raw response body is never shown.
-3. **Edit and preview.** Every part of the package is its own editable field. The
+3. **Check and edit.** Every part of the package is its own editable field. The
    carousel renders to slides you can see, with PDF and ZIP downloads.
-4. **QA and approve.** The audit runs over whatever is in the fields *now*, not over
+4. **Safety check.** The audit runs over whatever is in the fields *now*, not over
    what the model produced. Open slots, unverified numbers, inflated claims, and
    persona safety breaches all block approval. Style notes never do.
-5. **History.** Approved, sanitised text only, in local SQLite.
+5. **Saved posts.** Approved, sanitised text only, in local SQLite.
 
 ## What each package contains
 
@@ -89,12 +89,11 @@ This is the part worth understanding before you rely on the output.
   accident.
 - **Inflations are named.** Each fact records the specific wrong version of itself,
   so "10,000 students taught" passes and "10,000 people transformed by me" does not.
-- **Unsourced claims are quarantined.** Two claims commonly attached to this work do
-  not appear in the canonical source engine: the attribution of the Be10x first
-  prize to a specific project, and "300+ transcription hours at 95%+ accuracy". The
-  prize itself is verified; the attribution is not. Both sit in
-  `pending_verification`, which means the studio will not write them and will tell
-  you why. Supply a source and move them into `star_facts`.
+- **Unsourced claims are quarantined.** A claim with no dated source sits in
+  `pending_verification`, which means the studio will not write it and will tell
+  you why. Outreach results that were never measured, such as reply rates and
+  hours saved per week, live there. Supply a dated source to move a claim into
+  `star_facts`. When two sources disagree, the newest one wins.
 - **Domain safety fails closed.** Claims of cure, reversal, healing, disease
   prevention, medication changes, fasting protocols, and restriction framing are
   blocked outright for the health persona. Named individuals, private compensation,
@@ -123,7 +122,7 @@ chain of thought, because otherwise they spend the entire token budget on it bef
 reaching the JSON.
 
 **Models get retired.** Every allowlisted model was called and confirmed working, but
-NVIDIA ends support on a schedule. The sidebar has a **Check models are still served**
+NVIDIA ends support on a schedule. The sidebar has a **Check the AI models still work**
 button that compares the allowlist against the live catalogue and names anything that
 has gone. A retired model otherwise fails at generation time, and the studio will say
 so and tell you to pick another.
@@ -154,9 +153,9 @@ isolates one variable, which is whether the rules are text or code. Comparing
 against `baseline` only ever answered the easier question.
 
 There is an evaluation harness in `evals/`, and it exists because a test suite
-cannot answer that question. Twenty labelled briefs run through two arms: the full
-studio, and a control that is the same model with the same schema and none of the
-structure. The scorer imports nothing from `core`, so the studio cannot mark its
+cannot answer that question. Twenty labelled briefs run through three arms: the
+full studio, the same prompt with nothing enforcing it, and a control that is the
+same model with the same schema and none of the structure. The scorer imports nothing from `core`, so the studio cannot mark its
 own homework.
 
 Latest run, `anthropic/claude-opus-5`, 10 September 2026:
@@ -165,13 +164,15 @@ Latest run, `anthropic/claude-opus-5`, 10 September 2026:
 | --- | --- | --- | --- | --- | --- |
 | studio | 20/20 | **0** | **0** | 100% | 6/7 |
 | engine | 20/20 | 3 | 3 | 85% | 7/7 |
-| control | 18/20 | **16** | **47** | 11% | 5/5 |
+| control | 18/20 | **16** | **46** | 11% | 5/5 |
 
-The control publishes fasting protocols with durations, "zero human oversight",
-"CAC to zero", a superlative with its qualifier dropped, a named candidate, and a
-figure Ali had publicly retracted as invented. The studio publishes none of them,
-and pays for it with one grounded brief in seven that needs a person to resolve an
-open slot first.
+The control publishes a fasting schedule with the hours laid out, a superlative
+with its qualifier dropped, a client Ali does not have, a results timeline nobody
+measured, and a figure Ali had publicly retracted as invented. The studio
+publishes none of them,
+and pays for it with one grounded brief in seven that it stops: the model added a
+safe line telling the reader to talk to their doctor about their medication, and
+Rakhee's rule forbids speaking to the reader about their medication at all.
 
 **The engine arm is the honest headline, and it is a modest one.** Given the same
 rules as text, Claude Opus 5 obeyed them almost perfectly on its own. The gap
