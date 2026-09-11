@@ -113,3 +113,19 @@ def delete_package(database_path: Path | str = DEFAULT_HISTORY_PATH, *, package_
             "DELETE FROM approved_packages WHERE id = ?", (package_id,)
         )
         return cursor.rowcount > 0
+
+
+def package_as_text(entry: dict[str, Any]) -> str:
+    """One saved package as a plain text file a person can open, keep, or paste from.
+
+    The database is the right place to keep approved work and the wrong thing to
+    hand a person. Ali approved a post and then could not find where it had gone.
+    """
+    lines = [
+        f"{entry['persona']}, saved package #{entry['id']}, {entry.get('created_at', '')}",
+        f"Written with {entry.get('model', '')}",
+        "",
+    ]
+    for key, value in entry["outputs"].items():
+        lines += [f"[{key}]", str(value).strip(), ""]
+    return "\n".join(lines).rstrip() + "\n"

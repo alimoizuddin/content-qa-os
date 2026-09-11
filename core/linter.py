@@ -34,8 +34,36 @@ ENGAGEMENT_BAIT: tuple[tuple[str, str], ...] = (
 # "10 to 15%" rather than "10 - 15%".
 _RANGE = re.compile(r"(?<!\w)(\d+)\s*[-–—]\s*(\d+%?)(?!\w)")
 _DASHES = ("—", "–", "--")
+# A dash-style dash between two numbers. Plain hyphens are not matched here: this
+# runs on every field at generation time, and "follow-up" or "2026-09" must survive.
+_DASH_RANGE = re.compile(r"(?<!\w)(\d+)\s*[–—]\s*(\d+%?)(?!\w)")
 _URL = re.compile(r"https?://\S+|\bwww\.\S+")
 _STALE_MODEL = re.compile(r"\bGPT-[34](?:\.\d)?\b|\bClaude\s*[23](?:\.\d)?\b", re.IGNORECASE)
+
+
+def strip_dashes(text: str) -> str:
+    """Remove em dashes, en dashes and double hyphens, as all three voices require.
+
+    A dash between two numbers becomes "to". Every other dash becomes a comma, and
+    the commas that leaves at the start or end of a line, or before a full stop,
+    are tidied away. Ordinary hyphens are not dashes and are left alone.
+
+    Found by Ali using the app: this used to run only at the safety check, so the
+    boxes he edited and copied from on the step before still showed the model's
+    dashes, reply templates included.
+    """
+    if not any(dash in text for dash in _DASHES):
+        return text
+    cleaned = _DASH_RANGE.sub(r"\1 to \2", text)
+    for dash in _DASHES:
+        cleaned = cleaned.replace(dash, ", ")
+    cleaned = re.sub(r"\s*,\s*,\s*", ", ", cleaned)
+    cleaned = re.sub(r"\s+,", ",", cleaned)
+    cleaned = re.sub(r",[ \t]+", ", ", cleaned)
+    cleaned = re.sub(r",\s*([.!?:;])", r"\1", cleaned)
+    cleaned = re.sub(r"(?m)^[ \t]*,[ \t]*", "", cleaned)
+    cleaned = re.sub(r"(?m),[ \t]*$", "", cleaned)
+    return cleaned
 
 
 def lint_text(text: str, spec: PersonaSpec | None = None, section: str = "") -> dict[str, Any]:
@@ -55,10 +83,7 @@ def lint_text(text: str, spec: PersonaSpec | None = None, section: str = "") -> 
 
     if any(dash in cleaned for dash in _DASHES):
         flags.append("Em dash or en dash replaced. This voice does not use them.")
-        for dash in _DASHES:
-            cleaned = cleaned.replace(dash, ", ")
-        cleaned = re.sub(r"\s*,\s*,\s*", ", ", cleaned)
-        cleaned = re.sub(r"\s+,", ",", cleaned)
+        cleaned = strip_dashes(cleaned)
 
     if _STALE_MODEL.search(cleaned):
         flags.append("Stale model reference. Name a current model or drop the version.")

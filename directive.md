@@ -385,6 +385,10 @@ the repository. `.env.example` shows the shape with no real values. I checked:
 
 ### How to reproduce it
 
+**For a non-developer it is one double-click.** `run.bat` sets itself up the first time,
+asks for the key, and opens the app. On macOS or Linux, `./run.sh`. The commands below
+are the manual route.
+
 ```bash
 python -m venv venv
 venv\Scripts\activate
@@ -455,7 +459,9 @@ would mean nothing.
 
 **20 test cases**: 7 normal ones that should publish cleanly, 12 that ask for
 something that must not be published, and 1 with no evidence at all. Each carries
-a written reason for existing.
+a written reason for existing. The brief asks for 8 to 12. I kept all 20, because
+the twelve that ask for something unpublishable are where every important failure
+was found.
 
 ### Results
 
@@ -559,6 +565,18 @@ measured, and a target.
 | My time per post and carousel | By hand: 30 to 60 minutes. With the engines: about 5 minutes of review. **Both are estimates from memory, not stopwatch measurements, and the improvement belongs to the engines rather than to this app** | Not measured under this system | About 5 minutes of review, unchanged. This system is not aimed at speed | Stopwatch on the next 5 posts. Me. Next 2 weeks |
 | Adoption | Not measured. The system is 1 week old | Not measured | Used for every post across 3 people | Count of approved packages in the local history. Me. Week 2 |
 | LinkedIn reach or engagement | Not measured, and out of scope | Not measured | No target set | Not planned inside this window |
+
+### Feedback from the user, and what changed
+
+I am the target user. Using the app myself produced four changes that no test had
+predicted, and each one now has a test so it cannot come back.
+
+| What I ran into | What changed |
+| --- | --- |
+| The screens used words like "brief", "QA" and "grounding contract" that only make sense if you already know the system | Every screen was rewritten in plain words, with a help panel, a button that fills in a worked example, and a "What to do" line under every problem it stops you on |
+| The start command failed in Command Prompt, because it had been written for a different terminal | A launcher, `run.bat`. Setup is now three steps and needs no terminal at all |
+| I approved a post and could not find where it had been saved | The app now says where everything goes, and every saved post can be downloaded as a text file |
+| Reply templates still contained em dashes, which all three voices forbid | Dashes were being removed only at the safety check, one step after the boxes I copy from. They are now removed the moment the text is written, from every field |
 
 ### What would make me stop or change this
 

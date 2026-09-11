@@ -154,3 +154,12 @@ def patch_client(monkeypatch):
         return client
 
     return install
+
+
+@pytest.fixture(autouse=True)
+def isolated_run_log(tmp_path, monkeypatch):
+    """Every test writes to its own throwaway log, never the real one in data/logs."""
+    from core import runlog
+
+    monkeypatch.setattr(runlog, "LOG_PATH", tmp_path / "runs.jsonl")
+    monkeypatch.setattr(runlog, "ENABLED", True)

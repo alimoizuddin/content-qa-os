@@ -13,11 +13,14 @@ from __future__ import annotations
 
 import json
 import re
+import time
 from typing import Any
 
 from pydantic import BaseModel, ValidationError
 
+from core import runlog
 from core.brief import ContentBrief
+from core.linter import strip_dashes
 from core.personas import PersonaSpec, get_persona
 from core.prompts import build_messages
 from core.providers import (
@@ -141,7 +144,35 @@ def generate_output(
     provider: str,
     model: str,
 ) -> dict[str, Any]:
-    """Generate one output type. Never raises for provider or schema problems."""
+    """Generate one output type. Never raises for provider or schema problems.
+
+    Every call is timed and written to the run log, content free: which person,
+    which model, how long it took, whether it worked, and the app's own reason if
+    it did not.
+    """
+    started = time.perf_counter()
+    result = _generate_output(brief, output_type, provider, model)
+    runlog.log_event(
+        "generate",
+        persona=brief.persona,
+        output_type=output_type,
+        provider=provider,
+        model=model,
+        success=bool(result.get("success")),
+        attempts=result.get("attempts", 0),
+        error=result.get("error", ""),
+        seconds=round(time.perf_counter() - started, 2),
+    )
+    return result
+
+
+def _generate_output(
+    brief: ContentBrief,
+    output_type: str,
+    provider: str,
+    model: str,
+) -> dict[str, Any]:
+    """The generation itself. See ``generate_output``."""
     if output_type not in OUTPUT_SCHEMAS:
         return {"success": False, "error": "Unsupported output type.", "attempts": 0}
 
@@ -229,6 +260,21 @@ def generate_bundle(
 # ---------------------------------------------------------------------------
 
 
+# The brief allows six to eight carousel slides.
+MAX_CAROUSEL_SLIDES = 8
+
+
+def _without_dashes(value: Any) -> Any:
+    """``strip_dashes`` applied to every string inside a nested structure."""
+    if isinstance(value, str):
+        return strip_dashes(value)
+    if isinstance(value, list):
+        return [_without_dashes(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _without_dashes(v) for k, v in value.items()}
+    return value
+
+
 def normalise(
     spec: PersonaSpec,
     brief: ContentBrief,
@@ -242,7 +288,19 @@ def normalise(
     claim, a metric, or a story: that is the whole point of doing it in Python
     rather than asking the model again.
     """
-    data = parsed.model_dump()
+    # Dashes are removed here, at the moment of writing, from every field of every
+    # output. Doing it only at the safety check left them visible in the boxes
+    # people edit and copy from, which is exactly where text gets published from.
+    data = _without_dashes(parsed.model_dump())
+
+    if output_type == "carousel":
+        # A model sometimes writes more slides than allowed. The cover and the
+        # closing slide carry the arc, so they are kept and the middle is trimmed.
+        cap = min(spec.carousel.max_slides, MAX_CAROUSEL_SLIDES)
+        slides = data.get("slides") or []
+        if len(slides) > cap:
+            data["slides"] = slides[: cap - 1] + slides[-1:]
+
     if output_type != "post":
         return data
 

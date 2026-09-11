@@ -75,7 +75,7 @@ has asked for this directly.
 ## After you change anything
 
 ```bash
-python -m pytest -q          # 178 tests, all must pass
+python -m pytest -q          # 186 tests, all must pass
 python -m evals.run_evals    # replays the saved run, costs nothing
 ```
 
@@ -115,6 +115,8 @@ core/studio.py         sections, QA orchestration, the approval gate
 core/carousel.py       slide rendering, PDF, ZIP
 core/imagegen.py       optional raster generation
 core/history.py        local SQLite
+core/runlog.py         content-free run log, data/logs/runs.jsonl
+run.bat, run.sh        one-step launchers for non-developers
 ui/                    theme, the five stages, and every word of on-screen help
 evals/                 the harness, the cases, the recordings
 ```

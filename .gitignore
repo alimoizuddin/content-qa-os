@@ -6,6 +6,7 @@ __pycache__/
 *.py[cod]
 venv/
 data/history.db
+data/logs/
 assets/portraits/*
 !assets/portraits/.gitkeep
 

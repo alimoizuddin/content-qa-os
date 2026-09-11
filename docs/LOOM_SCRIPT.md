@@ -31,7 +31,7 @@ The video is about 5 minutes long and has 5 parts. If you ever forget a line, lo
 | --- | --- |
 | **App** | The LinkedIn Content Studio you built. It opens in a web browser, but it runs only on your own computer. |
 | **Browser tab** | One page open in Chrome or Edge. |
-| **Terminal** | The window where you type a command. You only need it once, to start the app. |
+| **Black window** | The window that opens when you double-click run.bat. It is the app running. Leave it open while you record, and close it to stop the app. |
 | **Loom** | The tool that records your screen and your voice. |
 | **Brief** | The short form where you describe the post you want. |
 | **Safety check** | Step 4 of the app. It reads the post and stops anything false or unsafe. |
@@ -46,17 +46,14 @@ Do this once, about 15 minutes before you record. Tick each one off.
 
 1. **Clear the screen.** Close WhatsApp, Slack, email, and anything else that can pop up. Turn on Do Not Disturb.
 2. **Check your key.** If you changed your Mesh key since the last time the app ran, open the file called `.env` in the project folder with Notepad. Paste the new key after `MESH_API_KEY=` and save.
-3. **Start the app.** Press the Windows key, type **PowerShell**, and press Enter. Type the first line below and press Enter, then the second line and press Enter.
-    `cd C:\Users\aalim\content_qa_os`
-    `.\venv\Scripts\python -m streamlit run app.py`
-4. **Wait** until the window says **You can now view your Streamlit app**. Leave this window open. Closing it closes the app.
-5. **Open the app.** Open Chrome. In the address bar type `127.0.0.1:8501` and press Enter. The app does not open by itself, so this step matters.
-6. **Choose Rakhee.** In the left panel, under **Who is posting?**, choose **Rakhee Singhi**.
-7. **Check the connection.** In the left panel you should see **Ready** next to **NVIDIA NIM** and **Mesh API**. Under **Which AI should write it?** you should see **Mesh . Claude Opus 5 (best writing)**.
-8. **Open the results page.** In the project folder, double click **summary.pdf**. Scroll to the table with three columns: Studio, Engine and Control. Leave this window open. You will switch to it in Part 4.
-9. **Make it easy to read.** Click back into Chrome. Press **F11** for full screen, then press **Ctrl** and **+** once to make the text bigger.
-10. **Set up Loom.** Open Loom. Choose **Screen only**. Showing your face is optional. Choose **Full screen**, not one window, so the recording follows you when you switch to the PDF.
-11. **Test your sound.** Record 10 seconds of yourself talking. Play it back. If you can hear yourself clearly, delete it and you are ready.
+3. **Start the app.** Open the project folder and double-click **run.bat**. A black window opens. Leave it open: closing it closes the app.
+4. **Wait** a few seconds. Your browser opens the app by itself at `127.0.0.1:8501`. If it does not, open Chrome and type that address.
+5. **Choose Rakhee.** In the left panel, under **Who is posting?**, choose **Rakhee Singhi**.
+6. **Check the connection.** In the left panel you should see **Ready** next to **NVIDIA NIM** and **Mesh API**. Under **Which AI should write it?** you should see **Mesh . Claude Opus 5 (best writing)**.
+7. **Open the results page.** In the project folder, double click **summary.pdf**. Scroll to the table with three columns: Studio, Engine and Control. Leave this window open. You will switch to it in Part 4.
+8. **Make it easy to read.** Click back into Chrome. Press **F11** for full screen, then press **Ctrl** and **+** once to make the text bigger.
+9. **Set up Loom.** Open Loom. Choose **Screen only**. Showing your face is optional. Choose **Full screen**, not one window, so the recording follows you when you switch to the PDF.
+10. **Test your sound.** Record 10 seconds of yourself talking. Play it back. If you can hear yourself clearly, delete it and you are ready.
 
 ### The screens you will use
 
@@ -169,8 +166,8 @@ Three short rounds, then record. Do not practise more than this. It starts to so
 
 | What happened | What to do |
 | --- | --- |
-| The browser says **This site can't be reached** | The app is not running. Go back to the PowerShell window and type the start command again. Check that you typed `127.0.0.1:8501`. |
-| PowerShell says the port is **already in use** | An old copy of the app is still running. Close every PowerShell window, open a new one, and start again. If it still fails, restart the computer. |
+| The browser says **This site can't be reached** | The app is not running. Double-click **run.bat** again and wait for the black window to say it is starting. |
+| The black window says the port is **already in use** | An old copy of the app is still running. Close every black app window and double-click **run.bat** again. If it still fails, restart the computer. |
 | Writing takes longer than a minute | Keep talking, using the privacy line from Part 2. If it fails, it will tell you why. Click **Generate** once more. |
 | It says the account is **out of credit** | The Mesh account needs a top up. Or, in the left panel under **Which AI should write it?**, choose an **NVIDIA NIM** model and carry on. |
 | The slides do not appear | Click **Render slides**. |
@@ -188,7 +185,7 @@ Three short rounds, then record. Do not practise more than this. It starts to so
 | **3, and 1 real** | Your Claude Project: 3 posts flagged. You checked them yourself and only 1 was a real problem. |
 | **0** | This app: nothing unsafe published. |
 | **1 in 7** | Normal requests that still get stopped, because Rakhee's medication rule is strict on purpose. The honest cost. |
-| **178** | Automatic tests that check the app every time it changes. All of them pass. |
+| **186** | Automatic tests that check the app every time it changes. All of them pass. |
 
 ## After you record
 

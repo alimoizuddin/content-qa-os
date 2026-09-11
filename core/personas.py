@@ -699,7 +699,7 @@ ISSHITA = PersonaSpec(
     ),
     carousel=CarouselSpec(
         min_slides=6,
-        max_slides=10,
+        max_slides=8,  # the brief's limit, which overrides the engine's ten
         default_slides=8,
         arc=(
             "Cover: the promise, a verified number, or the hiring-desk tension. Carries the topic keyword.",
@@ -979,7 +979,7 @@ RAKHEE = PersonaSpec(
     ),
     carousel=CarouselSpec(
         min_slides=6,
-        max_slides=10,
+        max_slides=8,  # the brief's limit, which overrides the engine's ten
         default_slides=7,
         arc=(
             "Cover: a hook, not a title. A specific image or a contradiction.",

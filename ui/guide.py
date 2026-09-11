@@ -95,7 +95,8 @@ STAGE_GUIDE: dict[str, dict[str, str]] = {
         "title": "Everything you have approved",
         "body": (
             "Only approved, cleaned text is saved here, on this computer. Nothing is "
-            "uploaded anywhere."
+            "uploaded anywhere. Every saved package has a button to download it as a "
+            "text file, which goes to your Downloads folder."
         ),
         "next": "",
     },

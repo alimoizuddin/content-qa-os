@@ -45,6 +45,12 @@ from core.schemas import OUTPUT_SCHEMAS
 from core.studio import approve_package, build_sections, run_qa
 from evals.scoring import Violation, score_text, serious
 
+import core.runlog as runlog
+
+# Replays and evaluation runs are not the operator's activity, so they stay out
+# of the operator's run log.
+runlog.ENABLED = False
+
 EVALS = Path(__file__).resolve().parent
 RECORDED = EVALS / "recorded"
 

@@ -12,7 +12,7 @@ from typing import Any
 
 import streamlit as st
 
-from core import history
+from core import history, runlog
 from core.brief import GOALS, OUTPUT_TYPES, TONE_HINTS, ContentBrief
 from core.carousel import build_carousel_assets, portrait_path
 from core.generator import generate_bundle
@@ -414,6 +414,10 @@ def _render_carousel_assets(spec: PersonaSpec) -> None:
             width="stretch",
             key="download_zip",
         )
+    st.caption(
+        "Downloads go to your browser's Downloads folder, the same place as anything "
+        "else you download."
+    )
 
 
 def _render_picture(spec: PersonaSpec) -> None:
@@ -450,6 +454,7 @@ def _render_picture(spec: PersonaSpec) -> None:
             mime="image/png",
             key="download_image",
         )
+        st.caption("Saved to your browser's Downloads folder.")
     else:
         st.warning(result["detail"])
 
@@ -570,7 +575,27 @@ def stage_qa(spec: PersonaSpec) -> None:
             model=st.session_state["model"],
             output_types=list(package),
         )
-        st.success(f"Saved locally as package #{package_id}.")
+        runlog.log_event(
+            "approve", persona=spec.name, package_id=package_id, output_types=list(package)
+        )
+        st.success(
+            f"Saved as package #{package_id}, on this computer only. You can find it any "
+            "time in Step 5. Saved posts."
+        )
+        saved = next(
+            (e for e in history.list_approved_packages(persona=spec.name, limit=5)
+             if e["id"] == package_id),
+            None,
+        )
+        if saved:
+            st.download_button(
+                "Download this package as a text file",
+                data=history.package_as_text(saved),
+                file_name=f"{spec.name.split()[0].lower()}-package-{package_id}.txt",
+                mime="text/plain",
+                key="download_saved_now",
+            )
+            st.caption("It goes to your browser's Downloads folder.")
 
 
 # ---------------------------------------------------------------------------
@@ -585,6 +610,17 @@ def stage_history(spec: PersonaSpec) -> None:
         "Approved and cleaned text only. Your briefs, the raw AI output, error "
         "messages and your key are never saved here."
     )
+    st.caption(
+        f"Where it is kept: {history.DEFAULT_HISTORY_PATH}. That file is a small "
+        "database, so use the download button on any package below to get a text "
+        "file you can open."
+    )
+    stats = runlog.summary()
+    if stats["runs"]:
+        st.caption(
+            f"Recent writing runs: {stats['worked']} of {stats['runs']} worked, typical "
+            f"time {stats['median_seconds']} seconds. The full log is data/logs/runs.jsonl."
+        )
 
     only_this = st.checkbox(
         f"Only {spec.name}", value=True, key="history_filter_persona"
@@ -605,3 +641,10 @@ def stage_history(spec: PersonaSpec) -> None:
             for key, value in entry["outputs"].items():
                 st.markdown(f"**{key}**")
                 st.code(value, language=None)
+            st.download_button(
+                "Download as a text file",
+                data=history.package_as_text(entry),
+                file_name=f"{entry['persona'].split()[0].lower()}-package-{entry['id']}.txt",
+                mime="text/plain",
+                key=f"download_package_{entry['id']}",
+            )

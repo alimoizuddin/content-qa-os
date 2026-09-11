@@ -11,24 +11,41 @@ adds the Anthropic catalogue plus picture rendering.
 
 ## Run it
 
-```bash
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.lock
-copy .env.example .env
-```
+Three steps. No terminal needed on Windows.
 
-On macOS or Linux use `source venv/bin/activate` and `cp .env.example .env`.
+1. **Get a free key.** Sign up at https://build.nvidia.com and copy your API key.
+2. **Double-click `run.bat`.** The first time, it sets everything up (a few minutes,
+   once) and opens a settings file in Notepad. Paste your key after
+   `NVIDIA_API_KEY=`, save, and close Notepad.
+3. **Double-click `run.bat` again.** The app opens in your browser at
+   `http://127.0.0.1:8501`. Keep the black window open while you use it.
 
-Put your NVIDIA key in `.env`, then:
-
-```bash
-python -m streamlit run app.py
-```
+On macOS or Linux, run `./run.sh` instead of double-clicking `run.bat`.
 
 It binds to `127.0.0.1` only, with XSRF and CORS protection on and Streamlit error
 details hidden from the browser. Nothing leaves the machine except the prompts you
 generate with.
+
+### Where your files go
+
+| What | Where |
+| --- | --- |
+| Carousel PDF and ZIP, picture | Your browser's **Downloads** folder, when you press a download button |
+| Approved posts | `data/history.db` on this computer. Step 5 has a button to download each one as a text file |
+| Run log: timings and outcomes, never any content | `data/logs/runs.jsonl` |
+| Author photos | `assets/portraits/` |
+
+None of these are uploaded anywhere, and none are committed to git.
+
+### Manual setup, for developers
+
+```bash
+python -m venv venv
+venv/Scripts/activate
+pip install -r requirements.lock
+copy .env.example .env
+python -m streamlit run app.py
+```
 
 ## The workflow
 
