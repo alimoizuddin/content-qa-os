@@ -6,3 +6,8 @@
 *.jpg binary
 *.ttf binary
 *.zip binary
+
+# Launchers need exact line endings: a batch file with Unix endings can break its
+# error handling, and a shell script with Windows endings will not run at all.
+*.bat text eol=crlf
+*.sh text eol=lf
