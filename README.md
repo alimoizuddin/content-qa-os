@@ -1,7 +1,8 @@
 # LinkedIn Content Studio
 
-> **New here?** Read [START_HERE.md](START_HERE.md) first. It sets everything up
-> from nothing, in plain words, and explains how to add a new person.
+> **New here?** Read [START_HERE.md](START_HERE.md) first, or print
+> [START_HERE.pdf](START_HERE.pdf). It sets everything up from nothing, in plain
+> words, and explains how to add a new person.
 
 A private, local content studio for three LinkedIn personas. It takes a grounded
 brief and produces a publishable package: the post with its hashtags, keywords and
