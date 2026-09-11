@@ -1,7 +1,7 @@
 # Loom Rehearsal Script
 
 *Your 5 minute video of the LinkedIn Content Studio, step by step*
-*For Ali Moizuddin. MUST Company 5-Day AI OS Sprint Quest. Updated 10 September 2026.*
+*For Ali Moizuddin. MUST Company 5-Day AI OS Sprint Quest. Updated 11 September 2026.*
 
 > The Word version of this script is `docs/Loom_Rehearsal_Script.docx`. Both say the same thing.
 
@@ -44,16 +44,17 @@ The video is about 5 minutes long and has 5 parts. If you ever forget a line, lo
 
 Do this once, about 15 minutes before you record. Tick each one off.
 
-1. **Clear the screen.** Close WhatsApp, Slack, email, and anything else that can pop up. Turn on Do Not Disturb.
-2. **Check your key.** If you changed your Mesh key since the last time the app ran, open the file called `.env` in the project folder with Notepad. Paste the new key after `MESH_API_KEY=` and save.
-3. **Start the app.** Open the project folder and double-click **run.bat**. A black window opens. Leave it open: closing it closes the app.
-4. **Wait** a few seconds. Your browser opens the app by itself at `127.0.0.1:8501`. If it does not, open Chrome and type that address.
-5. **Choose Rakhee.** In the left panel, under **Who is posting?**, choose **Rakhee Singhi**.
-6. **Check the connection.** In the left panel you should see **Ready** next to **NVIDIA NIM** and **Mesh API**. Under **Which AI should write it?** you should see **Mesh . Claude Opus 5 (best writing)**.
-7. **Open the results page.** In the project folder, double click **summary.pdf**. Scroll to the table with three columns: Studio, Engine and Control. Leave this window open. You will switch to it in Part 4.
-8. **Make it easy to read.** Click back into Chrome. Press **F11** for full screen, then press **Ctrl** and **+** once to make the text bigger.
-9. **Set up Loom.** Open Loom. Choose **Screen only**. Showing your face is optional. Choose **Full screen**, not one window, so the recording follows you when you switch to the PDF.
-10. **Test your sound.** Record 10 seconds of yourself talking. Play it back. If you can hear yourself clearly, delete it and you are ready.
+1. **Finish the checklist first.** Do steps 1 to 5 of **My_Checklist.pdf** before you record.
+2. **Clear the screen.** Close WhatsApp, Slack, email, and anything else that can pop up. Turn on Do Not Disturb.
+3. **Change your Mesh key first.** If you have not done it yet: make a new key at meshapi.ai, open the file called `.env` in the project folder with Notepad, paste the new key after `MESH_API_KEY=`, and save. The old key was shared in a chat.
+4. **Start the app.** Open the project folder and double-click **run.bat**. A black window opens. Leave it open: closing it closes the app.
+5. **Wait** a few seconds. Your browser opens the app by itself at `127.0.0.1:8501`. If it does not, open Chrome and type that address.
+6. **Choose Rakhee.** In the left panel, under **Who is posting?**, choose **Rakhee Singhi**.
+7. **Check the connection.** In the left panel you should see **Ready** next to **NVIDIA NIM** and **Mesh API**. Under **Which AI should write it?** you should see **Mesh . Claude Opus 5 (best writing)**.
+8. **Open the results page.** In the project folder, double click **summary.pdf**. Scroll to the table with three columns: Studio, Engine and Control. Leave this window open. You will switch to it in Part 4.
+9. **Make it easy to read.** Click back into Chrome. Press **F11** for full screen, then press **Ctrl** and **+** once to make the text bigger.
+10. **Set up Loom.** Open Loom. Choose **Screen only**. Showing your face is optional. Choose **Full screen**, not one window, so the recording follows you when you switch to the PDF.
+11. **Test your sound.** Record 10 seconds of yourself talking. Play it back. If you can hear yourself clearly, delete it and you are ready.
 
 ### The screens you will use
 
@@ -75,11 +76,11 @@ Do this once, about 15 minutes before you record. Tick each one off.
 
 | On your screen (do this) | Say this |
 | --- | --- |
-| Stay on **Step 1**. Do not click anything. | I write LinkedIn content for three people. Myself, an HR leader called Isshita, and a health coach called Rakhee. Three posts a week for me, and four a week for each of them. |
-| Keep still. | Writing a post by hand used to take me thirty minutes to an hour. I fixed that before this week. I wrote a rulebook for each person and I run it as a Claude Project. Now I only review each post, for about five minutes. |
-| Move the mouse over the help panel at the top of the page. | So this week was not about speed. It was about trust. My rulebook is just text that the AI is asked to follow. Most of the time it does. When it does not, nothing catches it except me. |
-| Keep still. | And some mistakes really matter. Rakhee must never say a food cures an illness. Isshita must never name a job candidate. And none of us can use a number we cannot prove. |
-| Keep still. | I am not a programmer. I have an MA in English Literature. So I am also exactly the kind of person this app has to be simple enough for. |
+| Step 1 of the app. Do not click anything. | I write LinkedIn posts for three people. Me, an HR leader called Isshita, and a health coach called Rakhee. |
+| Stay still. | A post used to take me half an hour to an hour. I already fixed that with a set of rules I run in Claude. Now I just check each post. About five minutes. |
+| Stay still. | But checking is the risky part. The AI is only asked to follow my rules. Sometimes it does not. |
+| Stay still. | And some mistakes really hurt. Rakhee can never say food cures an illness. Isshita can never name a job candidate. None of us can use a number we cannot prove. |
+| Stay still. | I am not a programmer. I studied English Literature. So this app has to be simple enough for me. |
 
 > **Tip.** Do not explain how the app is built here. Do not apologise for anything. Just say why it exists.
 
@@ -89,14 +90,13 @@ Do this once, about 15 minutes before you record. Tick each one off.
 
 | On your screen (do this) | Say this |
 | --- | --- |
-| Scroll down a little. Click **Fill in an example for me**. The boxes fill in by themselves. | This is the form. I say who is posting, what the point is, and, most important of all, the proof. The real thing behind the idea. |
-| Point at the box called **Your proof. The real thing behind the idea**. | Any number I put in this box counts as proven for this post. If I leave it empty, the app leaves a gap everywhere it needed proof, and it will not let me approve the post until I fill those gaps. |
-| Look at **What should it make?** Check that **LinkedIn post package** and **Branded carousel** are both there. Click **Save and continue**. | I will ask for a post and a set of slides. |
-| On **Step 2**, click **Generate**. Wait. It takes about 30 seconds to a minute. | Claude is writing this now, following Rakhee's rules. It gets two tries. If both fail, it stops and tells me why in plain words. It never keeps trying forever. |
-| Still waiting. | While it works, one thing about privacy. This app runs only on my computer. The only thing that leaves it is the writing request. My key, my photos and my saved posts stay here. |
-| **Step 3** opens by itself. Scroll slowly down the post. | Here is the full package. The post, the hashtags with a reason for each one, the first comment, and reply templates. Every piece is its own box, and I can change any word. |
-| Click the tab **Branded carousel (PNG slides, PDF, ZIP)**. Scroll through the slides. | These slides are real images, 1080 by 1350 pixels, made on this computer in Rakhee's own colours. No design tool and no internet. |
-| Click **Download LinkedIn PDF**. Let the file appear at the bottom of the browser. | And that is a PDF, ready to upload to LinkedIn. |
+| Click **Fill in an example for me**. | This is the form. Who is posting, what the post is about, and the proof. The proof is the real thing behind the post. |
+| Point at the **Proof** box. | Any number I write here counts as proven. If I leave it empty, the app leaves a gap and will not let me approve. |
+| Click **Save and continue**. Then click **Generate**. | Now the AI writes it, using Rakhee's rules. It gets two tries. If both fail, it tells me why, in plain words. |
+| Wait for it to finish. | Everything runs on my own computer. Only the writing request goes out. My key and my posts stay here. |
+| Step 3 opens. Scroll down slowly. | Here is the whole post. Hashtags, with a reason for each one. A first comment. Replies. I can change any word. |
+| Click the **Branded carousel** tab. Scroll through the slides. | These slides are real pictures, made on my computer, in Rakhee's colours. |
+| Click **Download LinkedIn PDF**. | And here is the PDF, ready for LinkedIn. It goes to my Downloads folder. |
 
 > **Tip.** If writing is slow on the day, press Generate before you start recording, and begin Part 2 on Step 3. Just say that you generated it a moment earlier. That is honest, and it saves a minute.
 
@@ -106,12 +106,12 @@ Do this once, about 15 minutes before you record. Tick each one off.
 
 | On your screen (do this) | Say this |
 | --- | --- |
-| Click the tab **LinkedIn post package**. Click inside the box called **LinkedIn post**. Press **Ctrl** and **A** to select everything, then type: `This programme cures thyroid disease.` | This is the most important part. Let me try to make it do something dangerous. I am typing a medical claim that Rakhee must never make. |
-| Scroll down. Click **Check it for problems**. | It checks whatever is in the boxes right now, not what the AI first wrote. So nobody can sneak something in afterwards. |
-| **Step 4** opens. Point at the red message, then at the **What to do:** line under it. | Stopped. It tells me what is wrong, and underneath it tells me exactly what to do about it. |
-| Point at the grey **Approve and save it** button. | And the approve button is switched off. There is no override. If I ever think a block is wrong, that is a change to Rakhee's rules, agreed with Rakhee. It is not a click. |
-| Click **Back to editing**. In the **LinkedIn post** box, press **Ctrl** and **A**, then type: `I have coached 5,000 women through their cravings.` Click **Check it for problems**. | One more. A number I have just made up. |
-| Click **See exactly what would be saved**. Point at **[OPEN SLOT]** where the number used to be. | It does not just warn me. It takes the number out and leaves a gap. A warning can be copied by accident. A gap cannot. |
+| Click the **LinkedIn post package** tab. Click in the **LinkedIn post** box. Press **Ctrl** and **A**. Type: *This programme cures thyroid disease.* | Now let me try to break it. I will type something Rakhee must never say. |
+| Click **Check it for problems**. | It checks what is in the boxes right now. So nobody can sneak something in later. |
+| Step 4 opens. Point at the red message, then at **What to do**. | Stopped. It tells me what is wrong, and exactly how to fix it. |
+| Point at the grey **Approve and save it** button. | And I cannot approve it. There is no way around it. That is on purpose. |
+| Click **Back to editing**. Press **Ctrl** and **A** in the post box. Type: *I have coached 5,000 women through their cravings.* Click **Check it for problems**. | One more. A number I just made up. |
+| Click **See exactly what would be saved**. Point at **[OPEN SLOT]**. | It takes the number out and leaves a gap. You cannot copy a gap by mistake. |
 
 > **Tip.** Go slowly in this part. Let the red message stay on screen for two full seconds before you talk about it.
 
@@ -121,12 +121,12 @@ Do this once, about 15 minutes before you record. Tick each one off.
 
 | On your screen (do this) | Say this |
 | --- | --- |
-| Press **Alt** and **Tab** to switch to **summary.pdf**. Point at the table. | I did not want to just claim this works, so I measured it. Twenty test requests. Twelve of them deliberately ask for things that must never be posted. |
-| Point at each column heading, one at a time. | Three ways of doing the same job, with the same AI. Control is just asking plainly. Engine is my old Claude Project, with all my rules written down. Studio is this app, where the rules are checked every single time. |
-| Point at the **Control** column. | Asked plainly, the AI published something unsafe 16 times, with 46 serious problems. That includes a figure I had publicly withdrawn as made up. |
-| Point at the **Studio** column. | This app published zero. |
-| Point at the **Engine** column. | Now the honest part. My Claude Project did nearly as well. The checker flagged three posts, and I read all three myself. Only one was a real problem. So with a strong AI, the app beats my rulebook by a little. Compared with asking plainly, it is a huge difference. |
-| Keep pointing at the table. | One more thing. The first time I scored this, it said my Claude Project made eight mistakes. Most of those were the AI correctly refusing, and my checker reading the refusal as the mistake. I fixed the checker and reported the smaller number, even though the bigger one made my app look better. |
+| Press **Alt** and **Tab** to open **summary.pdf**. Point at the table. | I did not want to just say it works. So I tested it. Twenty tests. Twelve of them ask for things that must never be posted. |
+| Point at the three columns, one by one. | Three ways, same AI. Asking it plainly. My old Claude rules. And this app. |
+| Point at **Control**. | Asked plainly, the AI posted something unsafe sixteen times. Forty-six serious problems. It even used a number I had publicly taken back. |
+| Point at **Studio**. | This app: zero. |
+| Point at **Engine**. | Now the honest part. My old Claude rules did almost as well. Three posts were flagged. I checked each one myself. Only one was a real problem. So the app wins big over asking plainly, and only a little over my own rules. |
+| Keep pointing at the table. | One more thing. The first time I checked, my own checker was wrong. It counted the AI saying no as a mistake. I fixed it and kept the smaller number, even though the bigger one made me look better. |
 
 > **Tip.** This is the part the judges will remember. Slow down, and do not rush the last line.
 
@@ -136,10 +136,10 @@ Do this once, about 15 minutes before you record. Tick each one off.
 
 | On your screen (do this) | Say this |
 | --- | --- |
-| Press **Alt** and **Tab** to go back to the app. | What is not finished. One normal request in seven still gets stopped. The AI added a kind line telling the reader to talk to their doctor about their medication. That line is safe, but Rakhee's rule says never speak to the reader about their medication at all, so the app stops it. Loosening that is Rakhee's decision, not a click. |
-| Keep still. | And I have not timed myself with a stopwatch. My before and after times come from memory, and I say so everywhere. |
-| Keep still. | In the next two weeks I will time five real posts properly, ask Rakhee whether that one kind of sentence should be allowed, and have someone who is not me use the app without any help. |
-| Stop the recording. | Thank you. |
+| Press **Alt** and **Tab** to go back to the app. | What is not finished. One normal post in seven still gets stopped. The AI added a kind line telling people to talk to their doctor about their medicine. Rakhee's rule says never talk to readers about their medicine, so the app stops it. Changing that is Rakhee's choice. |
+| Stay still. | I have not timed myself with a stopwatch yet. My times are from memory, and I say so everywhere. |
+| Stay still. | In the next two weeks: time five real posts, ask Rakhee about that rule, and have someone else try the app without my help. |
+| Stop recording. | Thank you. |
 
 ## How to practise
 
@@ -185,14 +185,14 @@ Three short rounds, then record. Do not practise more than this. It starts to so
 | **3, and 1 real** | Your Claude Project: 3 posts flagged. You checked them yourself and only 1 was a real problem. |
 | **0** | This app: nothing unsafe published. |
 | **1 in 7** | Normal requests that still get stopped, because Rakhee's medication rule is strict on purpose. The honest cost. |
-| **186** | Automatic tests that check the app every time it changes. All of them pass. |
+| **188** | Automatic tests that check the app every time it changes. All of them pass. |
 
 ## After you record
 
 1. **Watch it once** all the way through.
 2. **Copy the Loom link.**
-3. **Paste the link.** Open **directive.md** in the project folder. Find the line that says **ALI: paste the Loom URL here after recording.** and replace it with your link.
-4. **Choose the consent line.** At the very end of **directive.md**, delete one of the two lines about MUST Hunt.
-5. **Read your AI Collaboration Note.** Open **docs/AI_COLLABORATION.md**, read every line marked **Confirm**, and change anything that is not true.
-6. **Submit** the five deliverables.
-7. **Change your Mesh key** at meshapi.ai, because the old one was shared in a chat. Then paste the new key into `.env`, so the app keeps working.
+3. **Put the link in directive.md.** Easiest: send it to Claude. Or open **directive.md**, find **ALI: paste the Loom URL here after recording.** and replace it with your link.
+4. **Choose your consent line.** At the very end of **directive.md**, keep one of the two lines about MUST Hunt and delete the other. Or tell Claude which one.
+5. **Give the reviewers access on GitHub.** Ask Janeth which username to add. Then open your project on GitHub, click **Settings**, then **Collaborators**, then **Add people**.
+6. **Submit the five deliverables** on the Match Hire page: the GitHub link, **docs/EVALUATION.md**, **directive.md** with **summary.pdf**, **docs/AI_COLLABORATION.md**, and your Loom link.
+7. **Tell Janeth** you have submitted.
