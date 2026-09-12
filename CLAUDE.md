@@ -112,10 +112,10 @@ python docs/build_summary.py        # summary.pdf, a Quest deliverable
 python docs/build_start_here.py     # START_HERE.pdf, from START_HERE.md
 ```
 
-`docs/LOOM_SCRIPT.md` and `docs/Loom_Rehearsal_Script.docx` are built together by a
-Node script that lives outside this repository, in Ali's scratchpad, and it shares
-its spoken lines with his personal speaker script. If you edit one of those two by
-hand, edit the other to match, and say so.
+`docs/LOOM_SCRIPT.md` and `docs/Loom_Rehearsal_Script.docx` are built together by
+`tools/build_rehearsal.js`, which shares its spoken lines with Ali's personal
+speaker script through `tools/loom_parts.js`. Edit the lines there, not in the
+generated files. See `tools/README.md`.
 
 ---
 

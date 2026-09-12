@@ -1,0 +1,6 @@
+{
+  "name": "content-qa-os-tools",
+  "private": true,
+  "description": "Document builders for the LinkedIn Content Studio",
+  "dependencies": { "docx": "^9.0.0" }
+}

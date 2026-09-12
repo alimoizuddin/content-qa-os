@@ -12,3 +12,7 @@ assets/portraits/*
 
 # Incomplete live run kept for reference only. Not a measurement.
 evals/recorded-opus5-partial/
+
+# Documents meant for Ali only.
+private/
+tools/node_modules/

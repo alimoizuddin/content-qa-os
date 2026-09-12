@@ -8,8 +8,7 @@ Ali Moizuddin, AI Automation Engineer. Siliguri, India.
 - Repository: https://github.com/alimoizuddin/content-qa-os (private, reviewer access on request)
 - App: runs locally at `http://127.0.0.1:8501`. Setup is three commands, in the README.
 - Evaluation results: `evals/results/latest.json`, and `docs/EVALUATION.md`
-- Demo video: **ALI: paste the video link here.** An unlisted YouTube link, or a
-  Drive link set so that anyone with the link can view it.
+- Demo video: https://youtu.be/nCTNjflA1Mg
 
 ---
 
@@ -609,8 +608,4 @@ predicted, and each one now has a test so it cannot come back.
 
 ## Publication consent
 
-**ALI: delete one of the two lines below. This is your decision and nobody else can make it.**
-
 I consent to publication on MUST Hunt if selected.
-
-I do not consent to publication on MUST Hunt.

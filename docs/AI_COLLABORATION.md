@@ -1,10 +1,8 @@
 # AI Collaboration Note
 
-> **Ali: read this before submitting and correct anything that is not true.**
-> It was drafted from what happened in the build sessions. The blanks have now been
-> filled in from what you actually said and did, and every one of those is marked
-> **Confirm** so you can check it rather than take it on trust. Only you can sign
-> this. Change anything that overstates what you did.
+> **Read and confirmed by Ali Moizuddin on 12 September 2026.** It was drafted from what
+> happened during the build, then checked against what he actually did before he
+> signed it.
 
 ## Tools used, and what each did
 
@@ -16,17 +14,7 @@
 | Claude Projects | Where my three written engine documents run. This is the system this app replaces, and the third arm of the evaluation measures it. |
 | Wispr Flow | Voice dictation. I dictate a month to three months of content calendar in a single sitting rather than typing it. |
 | ChatGPT | General use, over a long period. It is the tool the control arm of the evaluation stands in for. |
-| Minimax | Editing the demo video: joining the parts I recorded and smoothing the cuts. |
-
-> **Confirm:** say exactly what Minimax did. If it also generated or changed the
-> voice, or generated any footage, say so plainly. The judges ask what each tool
-> did, and an edited demo that does not say it was edited is the kind of thing
-> this whole submission argues against.
->
-> **Confirm:** the rest are taken from your own description of your workflow.
-> Add anything else you used during this week, in particular anything you used to
-> check the AI's work rather than to produce it. Remove anything you did not
-> actually use for this project.
+| Minimax | Editing the demo video. I recorded it in parts and joined them in Minimax's own editor app. It did not write, speak, or generate any of the content. |
 
 Note the two different roles. Claude built the system. NIM is *inside* the system.
 They are not the same job and the evaluation only measures the second one.
@@ -61,9 +49,6 @@ They are not the same job and the evaluation only measures the second one.
   is built for, so I used it and produced the numbers.
 - **How this is written.** Plain words and short sentences, in the documents and in
   the app. If a person cannot understand the warning, the warning has not worked.
-
-> **Confirm:** all four are from decisions you made in the build sessions. Cut any
-> you would rather not claim.
 
 ## How I checked what the AI produced
 
@@ -197,6 +182,10 @@ sit down and write them from an empty file.
 What I understand well is the part that is actually mine: what these three people
 may and may not say in public, and what it costs when that goes wrong.
 
-> **Confirm:** this is drafted from what happened. Read the four files named above
-> before you sign it, and cut anything you would not be comfortable being
-> questioned on in an interview. Understating this is safer than overstating it.
+## Signed
+
+There is nothing to click here. This is a document, not a form. Signing it means
+three things: every **Confirm** note above has been dealt with, nothing in it
+overstates what I did, and my name is on it.
+
+Confirmed by Ali Moizuddin, 12 September 2026.
