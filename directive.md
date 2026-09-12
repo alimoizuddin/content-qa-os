@@ -8,7 +8,8 @@ Ali Moizuddin, AI Automation Engineer. Siliguri, India.
 - Repository: https://github.com/alimoizuddin/content-qa-os (private, reviewer access on request)
 - App: runs locally at `http://127.0.0.1:8501`. Setup is three commands, in the README.
 - Evaluation results: `evals/results/latest.json`, and `docs/EVALUATION.md`
-- Demo video: **ALI: paste the Loom URL here after recording.**
+- Demo video: **ALI: paste the video link here.** An unlisted YouTube link, or a
+  Drive link set so that anyone with the link can view it.
 
 ---
 
@@ -22,6 +23,10 @@ content for three people: myself, an HR leader, and a health coach.
 
 This matters for the Quest question "can a non-developer run it". I am the
 non-developer. Every time I ran this system I was testing that, not simulating it.
+
+Isshita Debnath and Rakhee Singhi have both agreed to their names, their verified
+facts, and their safety rules being used in this system and in this submission. My
+own details are mine to share.
 
 ### The job to be done
 

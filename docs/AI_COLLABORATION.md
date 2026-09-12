@@ -16,8 +16,14 @@
 | Claude Projects | Where my three written engine documents run. This is the system this app replaces, and the third arm of the evaluation measures it. |
 | Wispr Flow | Voice dictation. I dictate a month to three months of content calendar in a single sitting rather than typing it. |
 | ChatGPT | General use, over a long period. It is the tool the control arm of the evaluation stands in for. |
+| Minimax | Editing the demo video: joining the parts I recorded and smoothing the cuts. |
 
-> **Confirm:** these three are taken from your own description of your workflow.
+> **Confirm:** say exactly what Minimax did. If it also generated or changed the
+> voice, or generated any footage, say so plainly. The judges ask what each tool
+> did, and an edited demo that does not say it was edited is the kind of thing
+> this whole submission argues against.
+>
+> **Confirm:** the rest are taken from your own description of your workflow.
 > Add anything else you used during this week, in particular anything you used to
 > check the AI's work rather than to produce it. Remove anything you did not
 > actually use for this project.
