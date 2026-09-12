@@ -37,27 +37,28 @@ fair claim is **one genuine catch in twenty**, and every document says so.
 His personal checklist is `private/My_Checklist.pdf`, which is not in git. The
 short version:
 
-1. Confirm the **Confirm** notes in `docs/AI_COLLABORATION.md`, then sign it.
-2. Say what Minimax did to the demo video beyond joining and smoothing the cuts.
-3. Host the demo video and paste the link into `directive.md` line 11.
-4. Keep one of the two consent lines at the end of `directive.md`, delete the other.
-5. Give the reviewers access: the repository is **private** and only Ali has access.
-   The GitHub username of the reviewer is still needed.
-6. Submit the five deliverables, then message Janeth.
-7. Change the Mesh key. The old one was pasted into a chat.
+1. Submit the five deliverables on the Match Hire page, then message Janeth.
+2. Change the Mesh key. The old one was pasted into a chat.
 
-One open question from Ali, not yet answered: whether to change the demo line "I am
-not a programmer" to something that still says he has no coding background but does
-build software by directing AI. The suggested wording is in the session transcript.
+Done on 12 September 2026: the collaboration note is signed, Minimax is described
+as what it was, the demo video is linked, the consent line is chosen, and the
+repository is public so reviewers need no invitation.
+
+Two things were raised and never settled, and neither blocks the submission. The
+demo video runs to seven and a half minutes where the brief asks for five. And the
+demo line "I am not a programmer" could say instead that he has no coding
+background but builds software by directing AI, which is both truer and better
+suited to the role.
 
 ## Decisions that should not be reopened without a reason
 
 - **Adding a person stays a code change.** A self-serve form would break a stated
   non-goal. `START_HERE.md` Part 3b is the written procedure and a test proves a
   fourth person works end to end once registered.
-- **The repository stays private.** Two of the three people are real. They agreed
-  to be in the system and in the submission, which is not the same as being on the
-  open internet.
+- **The repository is public**, since 12 September 2026, on Ali's instruction, with
+  Isshita's and Rakhee's agreement recorded in `directive.md`. Two of the three
+  people are real, so treat everything here as published the moment it is pushed.
+  Nothing private about anyone goes in without their say-so.
 - **The scorer never imports from the app.** It has caught the app twice.
 - **No em dashes anywhere.** A test enforces it across the repository.
 - **20 evaluation cases, not the 8 to 12 the brief asks for.** The extra ones are

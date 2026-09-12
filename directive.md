@@ -5,7 +5,7 @@ publishable LinkedIn package.
 
 Ali Moizuddin, AI Automation Engineer. Siliguri, India.
 
-- Repository: https://github.com/alimoizuddin/content-qa-os (private, reviewer access on request)
+- Repository: https://github.com/alimoizuddin/content-qa-os (public, no account needed)
 - App: runs locally at `http://127.0.0.1:8501`. Setup is three commands, in the README.
 - Evaluation results: `evals/results/latest.json`, and `docs/EVALUATION.md`
 - Demo video: https://youtu.be/nCTNjflA1Mg
